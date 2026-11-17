@@ -4,11 +4,13 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 // base './' keeps every URL relative, so the build runs from any host or sub-path
 // (Vercel, Netlify, GitHub Pages /repo-name/, or a plain folder).
+const artifact = process.env.VITE_TARGET === 'artifact'; // sandboxed preview build: no service worker
+
 export default defineConfig({
   base: './',
   plugins: [
     react(),
-    VitePWA({
+    !artifact && VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['icon.svg'],
       manifest: {

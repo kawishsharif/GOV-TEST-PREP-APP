@@ -1,6 +1,6 @@
 // Routes. Each exam pack lives under /x/:examId/... so more exams can be added later.
 import { lazy, Suspense, useEffect, useState } from 'react';
-import { HashRouter, Routes, Route, Navigate, Outlet, useParams } from 'react-router-dom';
+import { HashRouter, MemoryRouter, Routes, Route, Navigate, Outlet, useParams } from 'react-router-dom';
 import { loadExam } from './lib/bank.js';
 import { global, saveGlobal } from './lib/store.js';
 import { ExamContext, ToastProvider, useStoreVersion } from './components/ui.jsx';
@@ -62,6 +62,9 @@ function StartRedirect() {
   return global.lastExam ? <Navigate to={`/x/${global.lastExam}/dashboard`} replace /> : <Home />;
 }
 
+// The sandboxed preview build keeps routes in memory (its host does not pass #/path links through).
+const Router = import.meta.env.VITE_TARGET === 'artifact' ? MemoryRouter : HashRouter;
+
 export default function App() {
   useStoreVersion();
   useEffect(() => {
@@ -72,7 +75,7 @@ export default function App() {
   });
   return (
     <ToastProvider>
-      <HashRouter>
+      <Router>
         <Suspense fallback={<Loading />}>
           <Routes>
             <Route path="/" element={<StartRedirect />} />
@@ -103,7 +106,7 @@ export default function App() {
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Suspense>
-      </HashRouter>
+      </Router>
     </ToastProvider>
   );
 }
