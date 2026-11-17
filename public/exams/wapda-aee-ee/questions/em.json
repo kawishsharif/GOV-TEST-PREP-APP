@@ -1072,5 +1072,222 @@
    null
   ],
   "source": "bank"
+ },
+ {
+  "id": "em-044",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Magnetic lines of force:",
+  "options": [
+   "Intersect each other",
+   "Never intersect and form closed loops",
+   "Start and end on charges",
+   "Are always straight"
+  ],
+  "answer": 1,
+  "explanation": "Field direction at a point is unique, so lines cannot cross; ∇·B = 0 means they form closed loops.",
+  "why": [
+   "Would mean two directions at one point.",
+   null,
+   "That describes electric field lines.",
+   "They curve."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-045",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "The unit of permeance is:",
+  "options": [
+   "H/m",
+   "Tesla",
+   "AT/Wb",
+   "Wb/AT (henry)"
+  ],
+  "answer": 3,
+  "explanation": "Permeance = 1/reluctance; Wb/AT is dimensionally the henry.",
+  "why": [
+   "That is permeability.",
+   "Flux density.",
+   "That is reluctance.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-046",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "The SI unit of electric field intensity is:",
+  "options": [
+   "V·m",
+   "V/m (or N/C)",
+   "C/m²",
+   "F/m"
+  ],
+  "answer": 1,
+  "explanation": "E = F/q (N/C) = V/d (V/m).",
+  "why": [
+   "Not the unit.",
+   null,
+   "Electric flux density D.",
+   "Permittivity."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-047",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "In steady state a capacitor:",
+  "options": [
+   "Blocks both",
+   "Passes both equally",
+   "Passes DC and blocks AC",
+   "Blocks DC and passes AC"
+  ],
+  "answer": 3,
+  "explanation": "X_{C} = 1/(2πfC) is infinite at f = 0 and falls with frequency.",
+  "why": [
+   "AC passes.",
+   "Reactance depends on frequency.",
+   "That is an inductor.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-048",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "The metal with the highest electrical conductivity is:",
+  "options": [
+   "Copper",
+   "Silver",
+   "Gold",
+   "Aluminium"
+  ],
+  "answer": 1,
+  "explanation": "Silver > copper > gold > aluminium.",
+  "why": [
+   "Second.",
+   null,
+   "Third.",
+   "Fourth among these."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-049",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Charge stored on a 10 µF capacitor at 100 V is:",
+  "options": [
+   "10 mC",
+   "1 C",
+   "0.1 mC",
+   "1 mC"
+  ],
+  "answer": 3,
+  "solution": [
+   "Q = CV",
+   "= 10×10^{-6} × 100",
+   "= 10^{-3} C = 1 mC"
+  ],
+  "explanation": "= 10^{-3} C = 1 mC",
+  "why": [
+   "Off by 10.",
+   "Far too large.",
+   "Off by 10.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-050",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A current of 2 A flows for 5 minutes. The charge transferred is:",
+  "options": [
+   "10 C",
+   "120 C",
+   "600 C",
+   "300 C"
+  ],
+  "answer": 2,
+  "solution": [
+   "Q = It",
+   "= 2 × 300 s",
+   "= 600 C"
+  ],
+  "explanation": "= 600 C",
+  "why": [
+   "Uses minutes.",
+   "Uses 60 s.",
+   null,
+   "Uses 1 A."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-051",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "If the voltage across a capacitor is doubled, its stored energy becomes:",
+  "options": [
+   "Four times",
+   "Half",
+   "Unchanged",
+   "Double"
+  ],
+  "answer": 0,
+  "explanation": "W = ½CV^{2} ∝ V^{2} → (2)^{2} = 4 times.",
+  "why": [
+   null,
+   "Energy increases.",
+   "Energy depends on V.",
+   "Assumes W ∝ V."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-052",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "The SI unit of conductivity is:",
+  "options": [
+   "Ω/m",
+   "Ω·m",
+   "S/m",
+   "S"
+  ],
+  "answer": 2,
+  "explanation": "σ = 1/ρ, measured in siemens per metre.",
+  "why": [
+   "Not a standard unit.",
+   "Resistivity.",
+   null,
+   "Conductance."
+  ],
+  "source": "bank"
  }
 ]

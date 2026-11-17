@@ -1399,5 +1399,319 @@
    "Leakage reactance is only part of X_{s}."
   ],
   "source": "bank"
+ },
+ {
+  "id": "mac-058",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Transformer cores are normally made of:",
+  "options": [
+   "Aluminium",
+   "Cast iron",
+   "Copper",
+   "Cold-rolled grain-oriented (CRGO) silicon steel"
+  ],
+  "answer": 3,
+  "explanation": "CRGO steel has high permeability and low hysteresis loss along the rolling direction; laminated to cut eddy currents.",
+  "why": [
+   "Non-magnetic.",
+   "High losses, poor magnetic properties.",
+   "Non-magnetic.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-059",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "No-load current of a power transformer is typically about:",
+  "options": [
+   "50% of full-load current",
+   "2–5% of full-load current",
+   "Equal to full-load current",
+   "Zero"
+  ],
+  "answer": 1,
+  "explanation": "It only magnetises the core and supplies iron loss; it lags voltage by a large angle (low no-load pf).",
+  "why": [
+   "Far too large.",
+   null,
+   "Only on load.",
+   "Some magnetising current always flows."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-060",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Which transformer loss varies with load?",
+  "options": [
+   "Copper loss",
+   "Dielectric loss",
+   "Hysteresis loss",
+   "Eddy current loss"
+  ],
+  "answer": 0,
+  "explanation": "Copper loss ∝ I^{2} (variable). Iron losses (hysteresis + eddy) depend on voltage and frequency, so they are constant.",
+  "why": [
+   null,
+   "Small and essentially constant.",
+   "Constant (iron loss).",
+   "Constant (iron loss)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-061",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "In a DC motor, the commutator:",
+  "options": [
+   "Reduces speed",
+   "Converts AC supply to DC",
+   "Reverses current in armature conductors so torque stays unidirectional",
+   "Produces the main field"
+  ],
+  "answer": 2,
+  "explanation": "In a motor it acts as a mechanical inverter, switching the external DC so each conductor under a given pole always carries current in the same direction.",
+  "why": [
+   "It does not set speed.",
+   "The supply is already DC.",
+   null,
+   "Field poles do that."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-062",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "Ceiling fans in Pakistan commonly use a:",
+  "options": [
+   "Single-phase capacitor-run (PSC) induction motor",
+   "DC series motor",
+   "Synchronous motor",
+   "Shaded-pole motor"
+  ],
+  "answer": 0,
+  "explanation": "A permanent split-capacitor induction motor (outer-rotor type) gives smooth, quiet running. Speed is controlled by a regulator (resistive, inductive or TRIAC).",
+  "why": [
+   null,
+   "Not used for fans.",
+   "Not used for fans.",
+   "Used in small table fans/hair dryers."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-063",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "A universal motor can operate on:",
+  "options": [
+   "DC only",
+   "AC only",
+   "Both AC and DC",
+   "Three-phase only"
+  ],
+  "answer": 2,
+  "explanation": "It is a series-wound commutator motor; torque direction does not reverse when supply polarity reverses. Used in drills, mixers, vacuum cleaners.",
+  "why": [
+   "Works on AC too.",
+   "Works on DC too.",
+   null,
+   "Single-phase/DC device."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-064",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "The slip of an induction motor at standstill (starting) is:",
+  "options": [
+   "1",
+   "0.5",
+   "Infinite",
+   "0"
+  ],
+  "answer": 0,
+  "explanation": "s = (N_{s} − 0)/N_{s} = 1. At synchronous speed s = 0 (not reachable as a motor).",
+  "why": [
+   null,
+   "Not standstill.",
+   "Slip is bounded here.",
+   "That is synchronous speed."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-065",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "The direction of rotation of a 3-phase induction motor can be reversed by:",
+  "options": [
+   "Reducing voltage",
+   "Reversing the field current",
+   "Interchanging any two supply phases",
+   "Changing the frequency"
+  ],
+  "answer": 2,
+  "explanation": "Swapping two phases reverses the phase sequence and hence the rotating field direction.",
+  "why": [
+   "Changes torque, not direction.",
+   "There is no separate field winding.",
+   null,
+   "Changes speed, not direction."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-066",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A transformer primary of 1000 turns is connected to 2200 V, 50 Hz. Maximum core flux is about:",
+  "options": [
+   "9.9 mWb",
+   "22 mWb",
+   "44 mWb",
+   "0.99 mWb"
+  ],
+  "answer": 0,
+  "solution": [
+   "E = 4.44 f N Φ_{m}",
+   "Φ_{m} = 2200/(4.44 × 50 × 1000)",
+   "≈ 0.0099 Wb = 9.9 mWb"
+  ],
+  "explanation": "≈ 0.0099 Wb = 9.9 mWb",
+  "why": [
+   null,
+   "Uses 2200/100000.",
+   "Ignores 4.44 and f partly.",
+   "Off by 10."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-067",
+  "topic": "machines",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 100 kVA transformer has iron loss 1 kW and full-load copper loss 2 kW. Efficiency at half load, unity pf, is about:",
+  "options": [
+   "94.3%",
+   "96.2%",
+   "97.1%",
+   "98.0%"
+  ],
+  "answer": 2,
+  "solution": [
+   "Output = 50 kW",
+   "Cu loss at half load = (½)^{2} × 2 = 0.5 kW",
+   "η = 50/(50 + 1 + 0.5) ≈ 97.1%"
+  ],
+  "explanation": "η = 50/(50 + 1 + 0.5) ≈ 97.1%",
+  "why": [
+   "Uses full-load copper loss (50/53).",
+   "Assumes Cu loss ∝ load (50/52).",
+   null,
+   "Ignores copper loss (50/51)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-068",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Speed of a synchronous motor from no load to full load:",
+  "options": [
+   "Remains constant",
+   "Rises",
+   "Varies with excitation",
+   "Falls slightly"
+  ],
+  "answer": 0,
+  "explanation": "It runs exactly at N_{s} = 120f/P while in synchronism; overload beyond pull-out torque makes it fall out of step.",
+  "why": [
+   null,
+   "Speed is locked to frequency.",
+   "Excitation changes pf, not speed.",
+   "That is an induction/shunt motor."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-069",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "An induction motor can never run at synchronous speed because:",
+  "options": [
+   "Slip would become negative",
+   "Friction is too high",
+   "There would be no relative motion, so no rotor EMF, current or torque",
+   "The stator would overheat"
+  ],
+  "answer": 2,
+  "explanation": "Torque needs induced rotor current, which needs relative speed between field and rotor.",
+  "why": [
+   "Negative slip occurs only when driven above N_{s} (generator).",
+   "Friction is not the fundamental reason.",
+   null,
+   "Not the reason."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-070",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "An 8-pole alternator runs at 750 rpm. Frequency generated is:",
+  "options": [
+   "25 Hz",
+   "50 Hz",
+   "60 Hz",
+   "100 Hz"
+  ],
+  "answer": 1,
+  "solution": [
+   "f = PN/120",
+   "= 8 × 750/120",
+   "= 50 Hz"
+  ],
+  "explanation": "= 50 Hz",
+  "why": [
+   "Half the value.",
+   null,
+   "Would need 900 rpm.",
+   "Double the value."
+  ],
+  "source": "bank"
  }
 ]

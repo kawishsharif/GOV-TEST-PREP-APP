@@ -1374,5 +1374,268 @@
    "Not related."
   ],
   "source": "bank"
+ },
+ {
+  "id": "pow-058",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Power factor improvement in a distribution system mainly reduces:",
+  "options": [
+   "Line current, losses and voltage drop",
+   "Frequency",
+   "Insulation level",
+   "Real power demand of the load"
+  ],
+  "answer": 0,
+  "explanation": "For the same kW, a higher pf means less current, so I^{2}R losses and voltage drop fall and equipment kVA capacity is released.",
+  "why": [
+   null,
+   "Frequency is a generation–load balance matter.",
+   "Unrelated.",
+   "Real power of the load is unchanged."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-059",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Capacitor banks for power factor correction are connected:",
+  "options": [
+   "Between generator and turbine",
+   "In series with the load",
+   "In parallel (shunt) with the load",
+   "In the neutral"
+  ],
+  "answer": 2,
+  "explanation": "Shunt capacitors supply leading VArs locally; series capacitors are used to compensate line reactance.",
+  "why": [
+   "Not electrical.",
+   "Series capacitors compensate line reactance.",
+   null,
+   "Not a pf correction method."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-060",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "Bundled conductors in EHV lines reduce:",
+  "options": [
+   "Line capacitance and SIL",
+   "Corona loss and line inductive reactance",
+   "Tensile strength",
+   "Skin depth"
+  ],
+  "answer": 1,
+  "explanation": "Bundling increases the effective radius (GMR): lower surface stress (less corona/radio interference), lower inductance, higher capacitance and higher SIL.",
+  "why": [
+   "Capacitance and SIL increase.",
+   null,
+   "Not affected.",
+   "Skin depth is a material/frequency property."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-061",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "Stockbridge dampers are fitted on overhead line conductors to reduce:",
+  "options": [
+   "Skin effect",
+   "Sag",
+   "Corona",
+   "Aeolian (wind-induced) vibration"
+  ],
+  "answer": 3,
+  "explanation": "Small weights on a messenger cable near the clamps absorb vibration energy that would cause fatigue at the suspension points.",
+  "why": [
+   "Electrical effect.",
+   "Sag depends on tension.",
+   "Corona is reduced by larger diameter.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-062",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Which plant is most suitable as a peak-load station?",
+  "options": [
+   "Coal-fired steam",
+   "Gas turbine (open cycle) or pumped storage",
+   "Run-of-river hydro",
+   "Nuclear"
+  ],
+  "answer": 1,
+  "explanation": "Peak plants must start quickly and run few hours; open-cycle gas turbines, storage hydro and pumped storage fit. Nuclear and coal are base-load.",
+  "why": [
+   "Base load; slow start.",
+   null,
+   "Must-run base load (no storage).",
+   "Base load; slow to change output."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-063",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Which type of power plant has the lowest running (operating) cost?",
+  "options": [
+   "Gas turbine",
+   "Coal",
+   "Diesel",
+   "Hydroelectric"
+  ],
+  "answer": 3,
+  "explanation": "No fuel cost; capital cost is high but running cost is the lowest.",
+  "why": [
+   "Fuel cost.",
+   "Fuel cost.",
+   "Highest fuel cost.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-064",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "Steam power plants work on the:",
+  "options": [
+   "Diesel cycle",
+   "Rankine cycle",
+   "Brayton cycle",
+   "Otto cycle"
+  ],
+  "answer": 1,
+  "explanation": "Rankine cycle (with superheat, reheat, regeneration in practice). Gas turbines use Brayton; combined-cycle plants use both.",
+  "why": [
+   "Diesel engines.",
+   null,
+   "Gas turbines.",
+   "Petrol engines."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-065",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "In a thermal power plant the economiser heats:",
+  "options": [
+   "Steam after the turbine",
+   "Coal",
+   "Air for combustion",
+   "Boiler feed water using flue gases"
+  ],
+  "answer": 3,
+  "explanation": "It recovers heat from flue gases to pre-heat feed water; the air pre-heater heats combustion air.",
+  "why": [
+   "That is a reheater (between turbine stages).",
+   "Coal is dried in mills.",
+   "That is the air pre-heater.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-066",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Shunt capacitor banks at a grid station primarily:",
+  "options": [
+   "Absorb reactive power",
+   "Supply reactive power, raising voltage and improving pf",
+   "Limit fault current",
+   "Reduce frequency"
+  ],
+  "answer": 1,
+  "explanation": "Capacitors generate VArs; reactors absorb them.",
+  "why": [
+   "That is a shunt reactor.",
+   null,
+   "Series reactors limit fault current.",
+   "No effect on frequency."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-067",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A plant has maximum demand 50 MW and daily load factor 60%. Energy generated per day is:",
+  "options": [
+   "1200 MWh",
+   "30 MWh",
+   "300 MWh",
+   "720 MWh"
+  ],
+  "answer": 3,
+  "solution": [
+   "Average load = 0.6 × 50 = 30 MW",
+   "Energy = 30 × 24",
+   "= 720 MWh"
+  ],
+  "explanation": "= 720 MWh",
+  "why": [
+   "Uses maximum demand for 24 h.",
+   "That is average MW, not MWh.",
+   "Uses 10 hours.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-068",
+  "topic": "power",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A short line has R = 2 Ω and X = 4 Ω per phase and carries 100 A at 0.8 pf lagging. Approximate voltage drop per phase is:",
+  "options": [
+   "200 V",
+   "400 V",
+   "447 V",
+   "600 V"
+  ],
+  "answer": 1,
+  "solution": [
+   "ΔV ≈ I(R cos φ + X sin φ)",
+   "= 100(2 × 0.8 + 4 × 0.6)",
+   "= 100 × 4.0 = 400 V"
+  ],
+  "explanation": "= 100 × 4.0 = 400 V",
+  "why": [
+   "Uses I × R only.",
+   null,
+   "Uses I × |Z| (overestimates).",
+   "Uses I(R + X) without pf."
+  ],
+  "source": "bank"
  }
 ]

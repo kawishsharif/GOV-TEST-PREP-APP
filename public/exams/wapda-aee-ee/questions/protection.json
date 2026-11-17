@@ -1213,5 +1213,240 @@
    "Uses 3 instead of √3."
   ],
   "source": "bank"
+ },
+ {
+  "id": "prt-051",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "The main protection of a large power transformer against internal electrical faults is:",
+  "options": [
+   "Differential relay",
+   "Distance relay",
+   "Under-frequency relay",
+   "Overcurrent relay"
+  ],
+  "answer": 0,
+  "explanation": "Differential protection compares HV and LV currents (corrected for ratio and vector group); Buchholz is the complementary mechanical protection.",
+  "why": [
+   null,
+   "Line protection.",
+   "Load shedding.",
+   "Back-up only."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-052",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "Thermal overload relays are mainly used to protect:",
+  "options": [
+   "Lightning arresters",
+   "Transmission lines",
+   "Motors against sustained overloads",
+   "Bus bars"
+  ],
+  "answer": 2,
+  "explanation": "A bimetal (or thermal model) mimics motor heating, tripping on sustained overload but riding through short starting currents.",
+  "why": [
+   "Not protected this way.",
+   "Lines use distance/overcurrent.",
+   null,
+   "Bus bars use differential."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-053",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "For frequent switching (e.g. capacitor banks, motors) at 11 kV, the preferred breaker is:",
+  "options": [
+   "Vacuum",
+   "Air-blast",
+   "Rewirable fuse",
+   "Bulk oil"
+  ],
+  "answer": 0,
+  "explanation": "Vacuum interrupters have long mechanical and electrical life with little maintenance.",
+  "why": [
+   null,
+   "Used at EHV, noisy.",
+   "Not a breaker.",
+   "High maintenance, fire risk."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-054",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "Compared with air, SF6 gas is:",
+  "options": [
+   "Toxic in pure form",
+   "Lighter",
+   "About five times heavier",
+   "Flammable"
+  ],
+  "answer": 2,
+  "explanation": "SF6 (molar mass 146) is about 5 times denser than air, colourless, odourless, non-flammable and non-toxic in pure form (its arc by-products can be toxic).",
+  "why": [
+   "Pure SF6 is inert and non-toxic.",
+   "It is heavier.",
+   null,
+   "It is non-flammable."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-055",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "A surge arrester protecting a transformer should be installed:",
+  "options": [
+   "As close as possible to the transformer terminals",
+   "Only at the generating station",
+   "In series with the transformer",
+   "As far as possible from the transformer"
+  ],
+  "answer": 0,
+  "explanation": "Travelling-wave reflections raise voltage beyond the arrester; lead length and separation distance must be minimal.",
+  "why": [
+   null,
+   "Needed at each major equipment location.",
+   "Arresters are shunt devices.",
+   "Protection reduces with distance."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-056",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "The burden of a current transformer is expressed in:",
+  "options": [
+   "Watts per kg",
+   "Amperes",
+   "Volt-amperes (VA)",
+   "Ohms only"
+  ],
+  "answer": 2,
+  "explanation": "Rated burden = VA at rated secondary current (e.g. 15 VA, 5P20).",
+  "why": [
+   "Not a CT rating.",
+   "That is current rating.",
+   null,
+   "Ohms can be converted, but the rating is in VA."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-057",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "An ideal fuse element should have:",
+  "options": [
+   "Low melting point and high conductivity",
+   "High resistance",
+   "High oxidation rate",
+   "High melting point and low conductivity"
+  ],
+  "answer": 0,
+  "explanation": "Low melting point ensures fast operation; high conductivity minimises normal losses. Silver, tin-lead and copper are used.",
+  "why": [
+   null,
+   "Causes heating at normal current.",
+   "Undesirable.",
+   "Would not melt reliably."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-058",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Overvoltages on overhead lines are most commonly caused by:",
+  "options": [
+   "Resonance",
+   "Switching of loads",
+   "Lightning strokes",
+   "Corona"
+  ],
+  "answer": 2,
+  "explanation": "Lightning is the main external cause; switching surges dominate only at EHV.",
+  "why": [
+   "Rare.",
+   "Important at EHV but less common overall.",
+   null,
+   "Corona reduces surges."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-059",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Connecting the metallic body of equipment to earth is called:",
+  "options": [
+   "Equipment (safety) earthing",
+   "Resonant earthing",
+   "Arc suppression",
+   "System (neutral) earthing"
+  ],
+  "answer": 0,
+  "explanation": "Equipment earthing protects people from shock; system earthing connects the neutral to earth.",
+  "why": [
+   null,
+   "A neutral earthing method.",
+   "Petersen coil function.",
+   "That is neutral grounding."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-060",
+  "topic": "protection",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "E = 1 p.u., Z_{1} = Z_{2} = j0.25, Z_{0} = j0.15 and fault impedance Z_{f} = j0.05. The L–G fault current is:",
+  "options": [
+   "4.29 p.u.",
+   "4.62 p.u.",
+   "1.25 p.u.",
+   "3.75 p.u."
+  ],
+  "answer": 3,
+  "solution": [
+   "I_{a0} = E/(Z_{1} + Z_{2} + Z_{0} + 3Z_{f}) = 1/(0.25 + 0.25 + 0.15 + 0.15) = 1.25",
+   "I_{f} = 3I_{a0}",
+   "= 3.75 p.u."
+  ],
+  "explanation": "= 3.75 p.u.",
+  "why": [
+   "Adds Z_{f} once instead of 3Z_{f}.",
+   "Ignores fault impedance.",
+   "That is I_{a0}.",
+   null
+  ],
+  "source": "bank"
  }
 ]

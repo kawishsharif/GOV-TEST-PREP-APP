@@ -1056,5 +1056,143 @@
    "Peshawar."
   ],
   "source": "bank"
+ },
+ {
+  "id": "wap-047",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Karot Hydropower Project (720 MW), developed under CPEC, is on the:",
+  "options": [
+   "Swat River",
+   "Kunhar River",
+   "Indus River",
+   "Jhelum River"
+  ],
+  "answer": 3,
+  "explanation": "Karot is a run-of-river plant on the Jhelum near Rawalpindi/AJK border.",
+  "why": [
+   "Mohmand.",
+   "Suki Kinari.",
+   "Not Karot.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-048",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Suki Kinari Hydropower Project (884 MW) is on the:",
+  "options": [
+   "Kabul River",
+   "Kunhar River",
+   "Swat River",
+   "Neelum River"
+  ],
+  "answer": 1,
+  "explanation": "Suki Kinari, in Kaghan valley (Mansehra), is on the Kunhar River.",
+  "why": [
+   "Warsak.",
+   null,
+   "Mohmand.",
+   "Neelum–Jhelum."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-049",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "The Tarbela 5th Extension Hydropower Project has a planned installed capacity of:",
+  "options": [
+   "969 MW",
+   "2,160 MW",
+   "1,410 MW",
+   "1,530 MW"
+  ],
+  "answer": 3,
+  "explanation": "T5: 3 × 510 MW = 1,530 MW, taking Tarbela to 6,418 MW.",
+  "why": [
+   "Neelum–Jhelum.",
+   "Dasu Stage-I.",
+   "T4.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-050",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "K-Electric (formerly KESC) was privatised in:",
+  "options": [
+   "2015",
+   "1998",
+   "2005",
+   "2010"
+  ],
+  "answer": 2,
+  "explanation": "KESC was privatised in 2005 and later renamed K-Electric.",
+  "why": [
+   "Not the year.",
+   "Not the year.",
+   null,
+   "Not the year."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-051",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "The highest AC transmission voltage widely used in Pakistan’s national grid (as of 2026) is:",
+  "options": [
+   "500 kV",
+   "765 kV",
+   "1,000 kV",
+   "220 kV"
+  ],
+  "answer": 0,
+  "explanation": "500 kV is the backbone; 765 kV has been planned for evacuating power from Dasu.",
+  "why": [
+   null,
+   "Planned, not the established backbone.",
+   "UHV, not used in Pakistan.",
+   "Second level."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-052",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "In the Neelum–Jhelum project, water from the Neelum River is diverted through a tunnel to a powerhouse near:",
+  "options": [
+   "Skardu",
+   "Tarbela",
+   "Muzaffarabad (Chattar Klas)",
+   "Mangla"
+  ],
+  "answer": 2,
+  "explanation": "Diversion at Nauseri, headrace tunnel to the underground powerhouse at Chattar Klas near Muzaffarabad; tailrace into the Jhelum.",
+  "why": [
+   "Different region.",
+   "Different project.",
+   null,
+   "Different project."
+  ],
+  "source": "bank"
  }
 ]

@@ -1062,5 +1062,227 @@
    "Ramp error = 1/K_{v} decreases."
   ],
   "source": "bank"
+ },
+ {
+  "id": "ctl-044",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Which of the following is a closed-loop control system?",
+  "options": [
+   "Manually set washing machine timer",
+   "Electric toaster with a timer",
+   "Air conditioner with a thermostat",
+   "Traffic lights with fixed timing"
+  ],
+  "answer": 2,
+  "explanation": "The thermostat measures room temperature (feedback) and adjusts the compressor.",
+  "why": [
+   "Open loop.",
+   "Timer-based (open loop).",
+   null,
+   "Open loop (fixed timing)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-045",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "Laplace transform of e^{−at} is:",
+  "options": [
+   "1/(s + a)",
+   "a/(s + a)",
+   "s/(s + a)",
+   "1/(s − a)"
+  ],
+  "answer": 0,
+  "explanation": "L{e^{−at}} = 1/(s + a).",
+  "why": [
+   null,
+   "That is related to 1 − e^{−at} only with 1/s.",
+   "Not this transform.",
+   "That is e^{at}."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-046",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "The frequency axis of a Bode plot uses a:",
+  "options": [
+   "Time scale",
+   "Linear scale",
+   "Logarithmic scale",
+   "Polar scale"
+  ],
+  "answer": 2,
+  "explanation": "Log frequency turns products of factors into sums and gives straight-line asymptotes.",
+  "why": [
+   "Bode is a frequency plot.",
+   "Asymptotes would not be straight.",
+   null,
+   "Nyquist/polar plots use polar form."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-047",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "The corner frequency of G(s) = 10/(1 + 0.1s) is:",
+  "options": [
+   "10 rad/s",
+   "100 rad/s",
+   "0.1 rad/s",
+   "1 rad/s"
+  ],
+  "answer": 0,
+  "solution": [
+   "Corner at ω = 1/T",
+   "T = 0.1 s",
+   "ω_{c} = 10 rad/s"
+  ],
+  "explanation": "ω_{c} = 10 rad/s",
+  "why": [
+   null,
+   "Uses gain × 1/T.",
+   "Uses T itself.",
+   "10 times too small — a typical unit/power-of-ten slip."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-048",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "The low-frequency (DC) gain of G(s) = 10/(1 + 0.1s) in decibels is:",
+  "options": [
+   "0 dB",
+   "10 dB",
+   "20 dB",
+   "40 dB"
+  ],
+  "answer": 2,
+  "solution": [
+   "At s → 0, G = 10",
+   "20 log_{10} 10",
+   "= 20 dB"
+  ],
+  "explanation": "= 20 dB",
+  "why": [
+   "That is gain 1.",
+   "dB is 20 log, not the ratio.",
+   null,
+   "That is 100."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-049",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Adding an open-loop pole (not at the origin) generally:",
+  "options": [
+   "Pulls the root locus to the right and reduces relative stability",
+   "Has no effect",
+   "Removes steady-state error",
+   "Pulls the root locus to the left and improves stability"
+  ],
+  "answer": 0,
+  "explanation": "Extra poles add phase lag and bend the locus toward the RHP; adding zeros does the opposite.",
+  "why": [
+   null,
+   "It changes the locus.",
+   "Only a pole at the origin (integrator) does that.",
+   "That is the effect of adding a zero."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-050",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "The characteristic equation of a closed-loop system is:",
+  "options": [
+   "G(s) = H(s)",
+   "1 − G(s) = 0",
+   "G(s)H(s) = 0",
+   "1 + G(s)H(s) = 0"
+  ],
+  "answer": 3,
+  "explanation": "Closed-loop poles are roots of 1 + GH = 0 (negative feedback).",
+  "why": [
+   "Not meaningful.",
+   "Positive feedback with H = 1.",
+   "Gives open-loop zeros.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-051",
+  "topic": "control",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Unity feedback with G(s) = K/[s(s + 2)]. The value of K for critical damping is:",
+  "options": [
+   "0.5",
+   "1",
+   "2",
+   "4"
+  ],
+  "answer": 1,
+  "solution": [
+   "s^{2} + 2s + K = 0 → 2ζω_{n} = 2",
+   "ζ = 1 → ω_{n} = 1",
+   "K = ω_{n}^{2} = 1"
+  ],
+  "explanation": "K = ω_{n}^{2} = 1",
+  "why": [
+   "Overdamped.",
+   null,
+   "Underdamped (ζ = 0.707).",
+   "Underdamped (ζ = 0.5)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-052",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "In a signal flow graph, nodes represent:",
+  "options": [
+   "Feedback loops",
+   "Summing junctions only",
+   "System gains",
+   "Variables (signals)"
+  ],
+  "answer": 3,
+  "explanation": "Nodes are signals; directed branches carry gains (transmittances).",
+  "why": [
+   "Loops are paths.",
+   "Nodes also sum incoming signals but represent variables.",
+   "Branches carry gains.",
+   null
+  ],
+  "source": "bank"
  }
 ]

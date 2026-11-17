@@ -1062,5 +1062,223 @@
    "Needs triggering."
   ],
   "source": "bank"
+ },
+ {
+  "id": "pe-044",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "An SCR is turned on by:",
+  "options": [
+   "Light only",
+   "Gate voltage only, no current",
+   "A gate current pulse (current-controlled)",
+   "Removing anode voltage"
+  ],
+  "answer": 2,
+  "explanation": "SCR gate is current-triggered; MOSFET/IGBT gates are voltage-controlled.",
+  "why": [
+   "Only a LASCR is light-triggered.",
+   "That describes MOSFET/IGBT.",
+   null,
+   "That turns it off."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-045",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "A UJT is commonly used in SCR circuits as a:",
+  "options": [
+   "Relaxation oscillator for triggering pulses",
+   "Snubber",
+   "Free-wheeling device",
+   "Rectifier"
+  ],
+  "answer": 0,
+  "explanation": "The UJT relaxation oscillator produces sharp pulses (via a pulse transformer) to fire SCRs.",
+  "why": [
+   null,
+   "RC network.",
+   "Diode.",
+   "Not its role."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-046",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "In thyristor circuits, \"commutation\" means:",
+  "options": [
+   "Snubbing",
+   "Turning the device on",
+   "Turning the device off",
+   "Rectification"
+  ],
+  "answer": 2,
+  "explanation": "Commutation is the process of turning off a conducting thyristor — natural (line) or forced.",
+  "why": [
+   "Protection.",
+   "That is triggering/firing.",
+   null,
+   "Different function."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-047",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Average output of a single-phase half-wave diode rectifier fed from 230 V (rms) is about:",
+  "options": [
+   "103.5 V",
+   "162.6 V",
+   "207 V",
+   "230 V"
+  ],
+  "answer": 0,
+  "solution": [
+   "V_{m} = √2 × 230 ≈ 325 V",
+   "V_{dc} = V_{m}/π",
+   "≈ 103.5 V"
+  ],
+  "explanation": "≈ 103.5 V",
+  "why": [
+   null,
+   "Uses V_{m}/2.",
+   "Full-wave value.",
+   "RMS input."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-048",
+  "topic": "pe",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A buck converter steps 48 V down to 12 V at 20 kHz switching frequency. On-time per cycle is:",
+  "options": [
+   "25 µs",
+   "50 µs",
+   "12.5 µs",
+   "37.5 µs"
+  ],
+  "answer": 2,
+  "solution": [
+   "D = 12/48 = 0.25",
+   "T = 1/20 kHz = 50 µs",
+   "T_{on} = 0.25 × 50",
+   "= 12.5 µs"
+  ],
+  "explanation": "= 12.5 µs",
+  "why": [
+   "D = 0.5.",
+   "That is the full period.",
+   null,
+   "That is T_{off}."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-049",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "In a sinusoidal PWM inverter (linear range), increasing the modulation index increases the:",
+  "options": [
+   "Fundamental output voltage",
+   "DC link voltage",
+   "Output frequency",
+   "Switching frequency"
+  ],
+  "answer": 0,
+  "explanation": "In the linear range, V_{1} ∝ m_{a}; frequency is set by the reference signal; switching frequency by the carrier.",
+  "why": [
+   null,
+   "Set by the source.",
+   "Set by the reference frequency.",
+   "Set by the carrier."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-050",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "An RC snubber is connected:",
+  "options": [
+   "In the gate circuit",
+   "In series with the load only",
+   "In series with the SCR",
+   "Across (in parallel with) the SCR"
+  ],
+  "answer": 3,
+  "explanation": "Across the device it limits dv/dt; series inductance limits di/dt.",
+  "why": [
+   "Gate circuits use resistors/diodes.",
+   "Not its location.",
+   "Series inductance is for di/dt.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-051",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "The I^{2}t rating of a thyristor is used for:",
+  "options": [
+   "Selecting the gate resistor",
+   "Coordinating fuse protection",
+   "Calculating ripple",
+   "Choosing heat-sink colour"
+  ],
+  "answer": 1,
+  "explanation": "The fuse’s total let-through I^{2}t must be less than the device’s I^{2}t rating to protect it during a fault.",
+  "why": [
+   "Gate design uses gate ratings.",
+   null,
+   "Ripple depends on the converter.",
+   "Not a rating use."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-052",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "A light-activated SCR is known as:",
+  "options": [
+   "GTO",
+   "SCS",
+   "TRIAC",
+   "LASCR"
+  ],
+  "answer": 3,
+  "explanation": "LASCR is triggered by light, giving electrical isolation (used in HVDC valves).",
+  "why": [
+   "Gate turn-off.",
+   "Silicon controlled switch (two gates).",
+   "Bidirectional.",
+   null
+  ],
+  "source": "bank"
  }
 ]

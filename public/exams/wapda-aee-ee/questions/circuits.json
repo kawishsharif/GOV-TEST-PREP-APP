@@ -1340,5 +1340,283 @@
    "That is the star-delta transformation."
   ],
   "source": "bank"
+ },
+ {
+  "id": "ckt-054",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Superposition theorem is based on the principle of:",
+  "options": [
+   "Linearity",
+   "Reciprocity",
+   "Non-linearity",
+   "Duality"
+  ],
+  "answer": 0,
+  "explanation": "Superposition requires additivity and homogeneity — the definition of a linear system.",
+  "why": [
+   null,
+   "Reciprocity is a different theorem.",
+   "Non-linear circuits violate superposition.",
+   "Duality relates series/parallel dual circuits."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ckt-055",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "A network made only of resistors, inductors and capacitors (no sources of energy) is called:",
+  "options": [
+   "Non-linear",
+   "Active",
+   "Passive",
+   "Unilateral"
+  ],
+  "answer": 2,
+  "explanation": "R, L and C cannot deliver net energy over time, so the network is passive.",
+  "why": [
+   "Ideal R, L, C are linear.",
+   "Active networks contain energy sources (or transistors, op-amps).",
+   null,
+   "R, L, C are bilateral elements."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ckt-056",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Nodal analysis is based on:",
+  "options": [
+   "KCL",
+   "Ohm's law only",
+   "Lenz's law",
+   "KVL"
+  ],
+  "answer": 0,
+  "explanation": "Node equations sum currents at each node (KCL); mesh analysis uses KVL.",
+  "why": [
+   null,
+   "Ohm’s law is used inside the equations but the method rests on KCL.",
+   "Electromagnetic induction law.",
+   "Mesh analysis uses KVL."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ckt-057",
+  "topic": "circuits",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "A series RLC circuit operated below its resonant frequency behaves as:",
+  "options": [
+   "Open circuit",
+   "Inductive",
+   "Capacitive",
+   "Purely resistive"
+  ],
+  "answer": 2,
+  "explanation": "Below f_{0}, X_{C} > X_{L}, so net reactance is capacitive and current leads. Above f_{0} it is inductive.",
+  "why": [
+   "It still conducts.",
+   "That is above resonance.",
+   null,
+   "Only at resonance."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ckt-058",
+  "topic": "circuits",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Two branches, each made of two 8 Ω resistors in series, are connected in parallel. Equivalent resistance is:",
+  "options": [
+   "8 Ω",
+   "16 Ω",
+   "32 Ω",
+   "4 Ω"
+  ],
+  "answer": 0,
+  "solution": [
+   "Each branch = 16 Ω",
+   "Two equal branches in parallel = 16/2",
+   "= 8 Ω"
+  ],
+  "explanation": "= 8 Ω",
+  "why": [
+   null,
+   "One branch only.",
+   "All four in series.",
+   "4 Ω is two single 8 Ω resistors in parallel, not two 16 Ω branches."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ckt-059",
+  "topic": "circuits",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 230 V, 1 kW heater is operated at 115 V. Power consumed (resistance constant) is:",
+  "options": [
+   "125 W",
+   "500 W",
+   "250 W",
+   "1000 W"
+  ],
+  "answer": 2,
+  "solution": [
+   "P ∝ V^{2} (R constant)",
+   "(115/230)^{2} = ¼",
+   "1000 × ¼ = 250 W"
+  ],
+  "explanation": "1000 × ¼ = 250 W",
+  "why": [
+   "Uses (½)³.",
+   "Assumes P ∝ V.",
+   null,
+   "Power changes with voltage."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ckt-060",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Power factor of a series circuit with R = 8 Ω and X_{L} = 6 Ω is:",
+  "options": [
+   "0.6 lagging",
+   "0.8 lagging",
+   "0.8 leading",
+   "0.75 lagging"
+  ],
+  "answer": 1,
+  "solution": [
+   "Z = √(8^{2} + 6^{2}) = 10 Ω",
+   "pf = R/Z = 0.8",
+   "inductive → lagging"
+  ],
+  "explanation": "inductive → lagging",
+  "why": [
+   "That is X/Z (sin φ).",
+   null,
+   "Inductive circuits lag.",
+   "That is X/R."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ckt-061",
+  "topic": "circuits",
+  "difficulty": "hard",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "The dual of a series RLC circuit driven by a voltage source is a:",
+  "options": [
+   "Parallel RLC driven by a voltage source",
+   "Bridge circuit",
+   "Series RLC driven by a current source",
+   "Parallel GCL circuit driven by a current source"
+  ],
+  "answer": 3,
+  "explanation": "Duality swaps series↔parallel, voltage↔current, R↔G, L↔C, KVL↔KCL.",
+  "why": [
+   "Source type must change too.",
+   "Not a dual.",
+   "Topology must change to parallel.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ckt-062",
+  "topic": "circuits",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A coil draws 2 A from 100 V DC and 1 A from 100 V, 50 Hz AC. Its inductive reactance is about:",
+  "options": [
+   "50 Ω",
+   "86.6 Ω",
+   "100 Ω",
+   "150 Ω"
+  ],
+  "answer": 1,
+  "solution": [
+   "DC: R = 100/2 = 50 Ω",
+   "AC: Z = 100/1 = 100 Ω",
+   "X_{L} = √(100^{2} − 50^{2}) ≈ 86.6 Ω"
+  ],
+  "explanation": "X_{L} = √(100^{2} − 50^{2}) ≈ 86.6 Ω",
+  "why": [
+   "That is R.",
+   null,
+   "That is Z.",
+   "Adds R and Z."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ckt-063",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "A wattmeter connected in an AC circuit reads:",
+  "options": [
+   "Reactive power",
+   "Peak power",
+   "Apparent power",
+   "Average (true) power"
+  ],
+  "answer": 3,
+  "explanation": "It reads VI cos φ, the real power; a VAR-meter reads reactive power.",
+  "why": [
+   "Needs a VAR-meter.",
+   "Not displayed.",
+   "VA = V × I, read by voltmeter–ammeter.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ckt-064",
+  "topic": "circuits",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 20 V source feeds two 10 Ω resistors in series. Looking across the lower resistor, the Norton current is:",
+  "options": [
+   "1 A",
+   "2 A",
+   "4 A",
+   "0.5 A"
+  ],
+  "answer": 1,
+  "solution": [
+   "V_{th} = 10 V, R_{th} = 10 ∥ 10 = 5 Ω",
+   "I_{N} = V_{th}/R_{th}",
+   "= 2 A (equivalently, short-circuit current = 20/10 = 2 A)"
+  ],
+  "explanation": "= 2 A (equivalently, short-circuit current = 20/10 = 2 A)",
+  "why": [
+   "Uses 10/10.",
+   null,
+   "Uses 20/5.",
+   "Uses 10/20."
+  ],
+  "source": "bank"
  }
 ]

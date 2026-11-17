@@ -1085,5 +1085,278 @@
    "Reads it as decimal digits."
   ],
   "source": "bank"
+ },
+ {
+  "id": "ele-045",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Which device exhibits a negative resistance region in its V–I characteristic?",
+  "options": [
+   "PN rectifier diode",
+   "LED",
+   "Zener diode",
+   "Tunnel diode"
+  ],
+  "answer": 3,
+  "explanation": "Heavy doping allows quantum tunnelling; current falls as voltage rises over part of the forward curve — used in microwave oscillators.",
+  "why": [
+   "Normal exponential curve.",
+   "Normal diode curve.",
+   "Used in reverse breakdown.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-046",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "A photodiode is normally operated in:",
+  "options": [
+   "Forward bias",
+   "Reverse bias",
+   "Zero bias only for power",
+   "Breakdown"
+  ],
+  "answer": 1,
+  "explanation": "Reverse-bias leakage current increases in proportion to incident light.",
+  "why": [
+   "LEDs are forward biased.",
+   null,
+   "Solar cells use zero bias (photovoltaic mode).",
+   "Breakdown is avoided."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-047",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "A varactor (varicap) diode is used as a:",
+  "options": [
+   "Rectifier",
+   "Light source",
+   "Voltage regulator",
+   "Voltage-variable capacitor"
+  ],
+  "answer": 3,
+  "explanation": "Its depletion capacitance changes with reverse voltage — used for electronic tuning.",
+  "why": [
+   "Ordinary diode.",
+   "LED.",
+   "Zener.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-048",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A transistor used as a switch operates in the:",
+  "options": [
+   "Active region only",
+   "Cut-off and saturation regions",
+   "Breakdown region",
+   "Reverse active region"
+  ],
+  "answer": 1,
+  "explanation": "OFF = cut-off, ON = saturation; the active region is used for amplification.",
+  "why": [
+   "Used for amplifiers.",
+   null,
+   "Destructive.",
+   "Rarely used."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-049",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Binary 1101 + 0011 equals:",
+  "options": [
+   "1111",
+   "10010",
+   "1110",
+   "10000"
+  ],
+  "answer": 3,
+  "solution": [
+   "1101 = 13, 0011 = 3",
+   "13 + 3 = 16",
+   "16 = 10000₂"
+  ],
+  "explanation": "16 = 10000₂",
+  "why": [
+   "That is 15.",
+   "That is 18.",
+   "That is 14.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-050",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "IC 555 is commonly used as a:",
+  "options": [
+   "Microprocessor",
+   "Voltage regulator",
+   "Timer (astable/monostable)",
+   "Op-amp"
+  ],
+  "answer": 2,
+  "explanation": "The 555 timer generates time delays and oscillations.",
+  "why": [
+   "Not a processor.",
+   "78xx series are regulators.",
+   null,
+   "741 is an op-amp."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-051",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "Slew rate of an op-amp is expressed in:",
+  "options": [
+   "V/µs",
+   "dB",
+   "Hz",
+   "V/s²"
+  ],
+  "answer": 0,
+  "explanation": "Maximum rate of change of output voltage, e.g. 0.5 V/µs for the 741.",
+  "why": [
+   null,
+   "Gain/CMRR unit.",
+   "Bandwidth unit.",
+   "Not the unit."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-052",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "An energy meter (600 rev/kWh) disc makes 10 revolutions in 36 seconds. The load is about:",
+  "options": [
+   "0.6 kW",
+   "1 kW",
+   "1.67 kW",
+   "16.7 kW"
+  ],
+  "answer": 2,
+  "solution": [
+   "Energy = 10/600 = 0.01667 kWh",
+   "Time = 36/3600 = 0.01 h",
+   "P = 0.01667/0.01 ≈ 1.67 kW"
+  ],
+  "explanation": "P = 0.01667/0.01 ≈ 1.67 kW",
+  "why": [
+   "Uses 600/1000.",
+   "40% lower than the correct result — does not follow from the correct working.",
+   null,
+   "Off by 10."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-053",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "A moving-iron ammeter on AC indicates the:",
+  "options": [
+   "RMS value",
+   "Peak-to-peak value",
+   "Peak value",
+   "Average value"
+  ],
+  "answer": 0,
+  "explanation": "Deflection ∝ I^{2} averaged → calibrated in rms.",
+  "why": [
+   null,
+   "Not displayed.",
+   "Peak-reading meters differ.",
+   "Rectifier PMMC meters respond to average."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-054",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Ripple frequency at the output of a single-phase full-wave rectifier on 50 Hz is:",
+  "options": [
+   "25 Hz",
+   "50 Hz",
+   "100 Hz",
+   "150 Hz"
+  ],
+  "answer": 2,
+  "solution": [
+   "Two pulses per cycle",
+   "2 × 50",
+   "= 100 Hz (half-wave: 50 Hz)"
+  ],
+  "explanation": "= 100 Hz (half-wave: 50 Hz)",
+  "why": [
+   "4 times too small — a typical formula slip.",
+   "Half-wave.",
+   null,
+   "Three-pulse."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-055",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "The 2's complement of the 4-bit number 0101 is:",
+  "options": [
+   "1011",
+   "0110",
+   "1101",
+   "1010"
+  ],
+  "answer": 0,
+  "solution": [
+   "1's complement of 0101 = 1010",
+   "add 1",
+   "= 1011 (represents −5)"
+  ],
+  "explanation": "= 1011 (represents −5)",
+  "why": [
+   null,
+   "89% lower than the correct result — does not follow from the correct working.",
+   "9% higher than the correct result — does not follow from the correct working.",
+   "That is 1's complement."
+  ],
+  "source": "bank"
  }
 ]
