@@ -1,0 +1,67 @@
+{
+  "topic": "machines",
+  "title": "Electrical Machines",
+  "summary": "Highest-yield EE area after power systems. Transformer tests, losses and efficiency; slip and synchronous speed; DC motor characteristics; synchronous machine V-curves and paralleling.",
+  "definitions": [
+    ["Transformer principle", "Mutual induction: alternating flux from the primary induces EMF in the secondary."],
+    ["OC test", "LV side energised at rated voltage, HV open → core (iron) loss, R0, X0."],
+    ["SC test", "HV side at reduced voltage with LV shorted, rated current → full-load copper loss, Z_eq, R_eq, X_eq."],
+    ["Voltage regulation", "(V_no-load − V_full-load)/V_full-load × 100. Can be negative at leading pf."],
+    ["All-day efficiency", "kWh output ÷ kWh input over 24 h — key for distribution transformers."],
+    ["Slip", "s = (N_s − N)/N_s — the fraction by which rotor speed lags the rotating field."],
+    ["Back EMF", "EMF induced in a motor armature opposing the supply: E_b = V − I_aR_a."],
+    ["Synchronous condenser", "Over-excited synchronous motor at no load supplying leading VArs for pf correction."],
+    ["V-curve", "Armature current vs field current at constant load for a synchronous motor; minimum at unity pf."],
+    ["Short-circuit ratio", "Field current for rated OC voltage ÷ field current for rated SC current ≈ 1/X_s(pu)."]
+  ],
+  "formulas": [
+    ["Transformer ratio", "V1/V2 = N1/N2 = I2/I1 = a"],
+    ["EMF equation", "E = 4.44 f N Φ_m"],
+    ["Transformer efficiency", "η = xS cos φ / (xS cos φ + P_i + x²P_cu,fl)"],
+    ["Load for max efficiency", "x = √(P_i / P_cu,fl)  (Cu loss = iron loss)"],
+    ["Copper loss vs load", "P_cu ∝ I² → at half load = ¼ of full-load Cu loss"],
+    ["Auto-transformer Cu saving", "Saving = K = V_low/V_high"],
+    ["Hysteresis / eddy loss", "P_h ∝ f B_m^1.6,  P_e ∝ f² B_m² t²"],
+    ["DC generator EMF", "E = PΦZN/(60A),  lap A = P, wave A = 2"],
+    ["DC motor", "E_b = V − I_aR_a,  N ∝ E_b/Φ,  T ∝ ΦI_a"],
+    ["Synchronous speed", "N_s = 120f/P"],
+    ["Rotor frequency", "f_r = s f"],
+    ["Rotor speed", "N = N_s (1 − s)"],
+    ["Power split", "Rotor Cu loss = s P_g,  P_mech = (1 − s) P_g"],
+    ["Slip at max torque", "s_m = R2/X2;  T_max independent of R2"],
+    ["Star–delta starter", "I_start and T_start = 1/3 of DOL"],
+    ["Torque vs voltage", "T ∝ V²"],
+    ["Alternator poles", "P = 120f/N"]
+  ],
+  "facts": [
+    "Buchholz relay: gas-actuated, in the pipe between main tank and conservator; for oil-immersed transformers (> ~500 kVA).",
+    "Breather contains silica gel (blue when dry, pink when saturated) to dry incoming air.",
+    "Conservator accommodates oil expansion; laminations reduce eddy loss; silicon steel reduces hysteresis loss.",
+    "Transformer rated in kVA because losses depend on V and I, not pf.",
+    "DC on a transformer primary → no back EMF → very high current → burnout.",
+    "Tap changers are on the HV side (lower current, finer steps).",
+    "DC series motor: never start on no load (runs away); best for traction (high starting torque).",
+    "DC shunt motor: nearly constant speed.",
+    "Swinburne's test: no-load test, not for series motors. Hopkinson's: regenerative back-to-back test.",
+    "Single-phase induction motor is not self-starting (pulsating field). Synchronous motor is not self-starting.",
+    "Increase alternator excitation on infinite bus → changes reactive power; increase turbine input → changes real power.",
+    "Hydro alternators: salient pole, many poles, low speed. Turbo-alternators: cylindrical rotor, 2–4 poles.",
+    "Regulation methods: EMF pessimistic, MMF optimistic, ZPF (Potier) most accurate.",
+    "Paralleling alternators: equal voltage, frequency, phase sequence and phase angle. kVA rating need not be equal."
+  ],
+  "traps": [
+    "OC test on LV side, SC test on HV side — not the other way round.",
+    "Maximum efficiency is when Cu loss = iron loss, not at full load.",
+    "Star–delta starter reduces line current to 1/3 (not 1/√3).",
+    "Rotor frequency = s × f (2 Hz at 4% slip), not (1 − s)f.",
+    "Weakening field flux of a DC shunt motor INCREASES speed."
+  ],
+  "examples": [
+    { "q": "20 kVA transformer, iron loss 200 W, full-load Cu loss 500 W. Efficiency at full load, 0.8 pf? At what load is η maximum?",
+      "steps": ["Output = 20 × 0.8 = 16 kW", "η = 16000/(16000 + 200 + 500) = 95.8%", "x = √(200/500) = 0.632 → max η at 63.2% of full load"], "answer": "95.8%; 63% load" },
+    { "q": "6-pole, 50 Hz induction motor runs at 960 rpm. Find slip and rotor frequency.",
+      "steps": ["N_s = 120 × 50/6 = 1000 rpm", "s = (1000 − 960)/1000 = 0.04", "f_r = 0.04 × 50 = 2 Hz"], "answer": "4%, 2 Hz" },
+    { "q": "220 V DC shunt motor, R_a = 0.5 Ω, I_a = 20 A, 1000 rpm. Speed if I_a rises to 40 A (flux constant)?",
+      "steps": ["E_b1 = 220 − 20 × 0.5 = 210 V", "E_b2 = 220 − 40 × 0.5 = 200 V", "N2 = 1000 × 200/210 ≈ 952 rpm"], "answer": "≈ 952 rpm" }
+  ]
+}

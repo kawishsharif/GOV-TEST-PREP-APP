@@ -34,7 +34,7 @@ const TABS = [
   ['notes', 'Notes', 'notes'],
   ['more', 'More', 'more'],
 ];
-const TAB_OF = { quiz: 'practice', result: 'mock', formulas: 'notes', flashcards: 'more', mistakes: 'more', planner: 'more', progress: 'more', ai: 'more', import: 'more', settings: 'more' };
+const TAB_OF = { strategy: 'notes', quiz: 'practice', result: 'mock', formulas: 'notes', flashcards: 'more', mistakes: 'more', planner: 'more', progress: 'more', ai: 'more', import: 'more', settings: 'more' };
 
 export function Page({ title, sub, back, right, tabs = true, full = false, base, children }) {
   const loc = useLocation();

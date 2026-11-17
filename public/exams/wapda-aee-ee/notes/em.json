@@ -1,0 +1,50 @@
+{
+  "topic": "em",
+  "title": "Electromagnetics & Basic Electricity",
+  "summary": "Units and constants, Faraday/Lenz/Fleming, magnetic circuits, inductance, resistance and temperature, capacitors, magnetic materials.",
+  "definitions": [
+    ["Faraday's law", "e = −N dΦ/dt."],
+    ["Lenz's law", "Induced EMF opposes the change that produces it (energy conservation)."],
+    ["Fleming's right-hand rule", "Generator: thumb motion, first finger field, second finger induced current."],
+    ["Fleming's left-hand rule", "Motor: direction of force on a current-carrying conductor."],
+    ["Reluctance", "Opposition to flux, S = l/(μA) (AT/Wb) — like resistance."],
+    ["Hysteresis loop area", "Energy lost per cycle per unit volume."],
+    ["Curie temperature", "Above it a ferromagnet becomes paramagnetic (iron ≈ 770 °C)."]
+  ],
+  "formulas": [
+    ["Coulomb's law", "F = q1q2/(4πε0εr r²)"],
+    ["Capacitance (parallel plate)", "C = ε0 εr A/d"],
+    ["Capacitors", "Series: 1/C = Σ1/Cᵢ;  parallel: C = ΣCᵢ"],
+    ["Resistance", "R = ρl/A;  R_t = R0(1 + α t)"],
+    ["Stretched wire (constant volume)", "R ∝ l² → double length gives 4R"],
+    ["Force on conductor", "F = BIl"],
+    ["Motional EMF", "e = Blv"],
+    ["Magnetic circuit", "Φ = MMF/S,  MMF = NI,  S = l/(μ0μr A)"],
+    ["Self inductance", "L = NΦ/I = N²/S"],
+    ["Mutual inductance", "M = k√(L1L2)"],
+    ["Series inductors", "L = L1 + L2 ± 2M"],
+    ["Solenoid field", "B = μ0 n I"],
+    ["Magnetic energy density", "w = B²/(2μ0)"],
+    ["Battery terminal voltage", "V = E − Ir"],
+    ["Energy unit", "1 kWh = 3.6 MJ"]
+  ],
+  "facts": [
+    "μ0 = 4π × 10⁻⁷ H/m; ε0 = 8.854 × 10⁻¹² F/m; electron charge 1.6 × 10⁻¹⁹ C.",
+    "Units: flux Wb, flux density T (Wb/m²), H in A/m, MMF in AT, reluctance AT/Wb, inductance H.",
+    "Analogy: MMF ↔ EMF, flux ↔ current, reluctance ↔ resistance, permeance ↔ conductance.",
+    "Metals: positive temperature coefficient; semiconductors: negative; manganin/constantan ≈ zero.",
+    "Diamagnetic μr < 1 (bismuth, copper); paramagnetic slightly > 1 (aluminium); ferromagnetic ≫ 1 (Fe, Ni, Co).",
+    "Permanent magnets: high retentivity and coercivity (wide loop). Transformer cores: narrow loop (soft).",
+    "In series, a 60 W lamp glows brighter than a 100 W lamp (higher resistance).",
+    "∇·B = 0: no magnetic monopoles."
+  ],
+  "traps": [
+    "Doubling the length of a wire by stretching gives 4R, not 2R.",
+    "Series-aiding inductance includes +2M, not +M.",
+    "10 cm² = 10⁻³ m² (not 10⁻²)."
+  ],
+  "examples": [
+    { "q": "Coils 4 H and 9 H, k = 0.5. Find M and series-aiding/opposing inductance.",
+      "steps": ["M = 0.5 × √36 = 3 H", "Aiding: 4 + 9 + 6 = 19 H", "Opposing: 4 + 9 − 6 = 7 H"], "answer": "3 H; 19 H; 7 H" }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "topic": "ethics",
+  "title": "Ethics",
+  "summary": "For non-Muslim candidates (select in Settings). Main theories, professional ethics and civic values.",
+  "definitions": [
+    ["Ethics", "Study of moral principles governing right and wrong conduct."],
+    ["Utilitarianism", "Right action = greatest good for the greatest number (Bentham, Mill)."],
+    ["Deontology", "Duty-based ethics; some acts are right/wrong in themselves (Kant)."],
+    ["Virtue ethics", "Focus on good character (Aristotle)."],
+    ["Conflict of interest", "Private interest that could improperly influence official duty."],
+    ["Integrity", "Consistent honesty and adherence to moral principles."],
+    ["Accountability", "Being answerable for decisions and use of resources."]
+  ],
+  "formulas": [],
+  "facts": [
+    "Golden Rule: treat others as you wish to be treated.",
+    "Engineering codes put public safety, health and welfare first.",
+    "Gifts from those you regulate or pay are conflicts of interest/bribery.",
+    "Whistleblowing = reporting wrongdoing through proper channels.",
+    "Confidentiality never justifies hiding hazards to the public.",
+    "Equality before law: Article 25, Constitution of Pakistan."
+  ],
+  "traps": [],
+  "examples": []
+}

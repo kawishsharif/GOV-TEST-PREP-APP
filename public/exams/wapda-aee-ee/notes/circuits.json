@@ -1,0 +1,65 @@
+{
+  "topic": "circuits",
+  "title": "Circuits & Network Theorems",
+  "summary": "Expect 6–9 questions. Most are one-step numericals (Thevenin, max power, star–delta, 3-phase power, resonance) plus theorem conditions (linearity, bilateral).",
+  "definitions": [
+    ["KCL", "Algebraic sum of currents at a node is zero (conservation of charge)."],
+    ["KVL", "Algebraic sum of voltages around a closed loop is zero (conservation of energy)."],
+    ["Thevenin equivalent", "V_{th} (open-circuit voltage) in series with R_{th} (resistance seen at the terminals with independent sources killed)."],
+    ["Norton equivalent", "I_{N} (short-circuit current) in parallel with R_{N} = R_{th}."],
+    ["Superposition", "In a linear network, a response equals the sum of responses to each independent source acting alone (voltage sources shorted, current sources opened)."],
+    ["Reciprocity", "In a linear bilateral network with one source, interchanging source and response positions leaves the ratio unchanged."],
+    ["Resonance", "Condition where X_{L} = X_{C}; the circuit is purely resistive and pf = 1."],
+    ["Quality factor Q", "Ratio of reactive to resistive energy; Q = ω_{0}L/R; sets selectivity."],
+    ["Form factor", "RMS ÷ average value (1.11 for a sine)."],
+    ["Peak (crest) factor", "Peak ÷ RMS value (1.414 for a sine)."]
+  ],
+  "formulas": [
+    ["Ohm's law / power", "V = IR,  P = VI = I²R = V²/R"],
+    ["Series / parallel R", "R_s = R1 + R2 + …,  1/R_p = 1/R1 + 1/R2 + …"],
+    ["Voltage divider", "V_x = V × R_x / ΣR"],
+    ["Current divider (2 branches)", "I1 = I × R2/(R1 + R2)"],
+    ["Max power transfer (DC)", "R_L = R_th,  P_max = V_th²/(4R_th),  η = 50%"],
+    ["Max power transfer (AC)", "Z_L = Z_th* (complex conjugate)"],
+    ["Delta → Star", "R_a = R_ab·R_ca/(R_ab + R_bc + R_ca); equal: R_Y = R_Δ/3"],
+    ["Star → Delta", "R_ab = R_a + R_b + R_a·R_b/R_c; equal: R_Δ = 3R_Y"],
+    ["RMS / average (sine)", "V_rms = V_m/√2 = 0.707V_m,  V_avg = 2V_m/π = 0.637V_m"],
+    ["Reactances", "X_L = 2πfL,  X_C = 1/(2πfC)"],
+    ["Impedance (series RLC)", "Z = √(R² + (X_L − X_C)²),  pf = cos φ = R/Z"],
+    ["Resonant frequency", "f0 = 1/(2π√(LC))"],
+    ["Series RLC Q and bandwidth", "Q = (1/R)√(L/C),  BW = f0/Q"],
+    ["Power triangle", "S = VI (VA),  P = VI cos φ (W),  Q = VI sin φ (VAR),  S² = P² + Q²"],
+    ["Star connection", "V_L = √3 V_ph,  I_L = I_ph"],
+    ["Delta connection", "V_L = V_ph,  I_L = √3 I_ph"],
+    ["3-phase power", "P = √3 V_L I_L cos φ"],
+    ["Two-wattmeter method", "P = W1 + W2,  tan φ = √3 (W1 − W2)/(W1 + W2)"],
+    ["Time constants", "τ_RC = RC,  τ_RL = L/R;  v_C = V(1 − e^(−t/τ))"],
+    ["Stored energy", "W_L = ½LI²,  W_C = ½CV²"]
+  ],
+  "facts": [
+    "Superposition cannot be used for power (power is not linear).",
+    "Efficiency at maximum power transfer is only 50% — power systems are designed for high efficiency, not max power transfer.",
+    "Series resonance: Z minimum, I maximum (acceptor circuit). Parallel resonance: Z maximum, line current minimum (rejector circuit).",
+    "Pure L: current lags 90°; pure C: current leads 90° (ELI the ICE man). Average power in pure L or C is zero.",
+    "Two-wattmeter: pf = 1 → readings equal; pf = 0.5 → one reads zero; pf < 0.5 → one reads negative.",
+    "Ideal voltage source has zero internal resistance; ideal current source has infinite internal resistance.",
+    "Capacitor = open circuit at DC steady state; inductor = short circuit.",
+    "One time constant → 63.2%; 5τ → ~99.3% (considered fully charged).",
+    "Tellegen's theorem holds for ANY lumped network (linear or not) because it rests only on KCL and KVL."
+  ],
+  "traps": [
+    "Two-wattmeter tan φ uses √3 × difference/sum — not the ratio of the readings.",
+    "Star line voltage = √3 × phase voltage, but line current = phase current. Don't mix with delta.",
+    "In 3-phase power use LINE values with √3, or PHASE values with 3 — never line values with 3.",
+    "Max power formula is V²/(4R), not V²/R or V²/(2R).",
+    "Z = 3 + j4 has pf = 0.6 (R/Z), not 0.8 (that is sin φ)."
+  ],
+  "examples": [
+    { "q": "24 V source with 6 Ω internal resistance feeds a 12 Ω resistor. Find Thevenin equivalent across the 12 Ω and the maximum power to a load placed there.",
+      "steps": ["V_th = 24 × 12/(6 + 12) = 16 V", "R_th = 6 ∥ 12 = 4 Ω", "P_max = 16²/(4 × 4) = 16 W at R_L = 4 Ω"], "answer": "16 V, 4 Ω, 16 W" },
+    { "q": "Balanced load: V_L = 400 V, I_L = 10 A, pf 0.8 lagging. Find P, Q and S.",
+      "steps": ["S = √3 × 400 × 10 = 6.93 kVA", "P = S × 0.8 = 5.54 kW", "Q = S × 0.6 = 4.16 kVAR"], "answer": "5.54 kW, 4.16 kVAR, 6.93 kVA" },
+    { "q": "Series RLC: R = 10 Ω, L = 0.1 H, C = 10 µF. Find f0, Q and bandwidth.",
+      "steps": ["f0 = 1/(2π√(0.1 × 10⁻⁵)) = 1/(2π × 10⁻³) ≈ 159 Hz", "Q = (1/10)√(0.1/10⁻⁵) = 10", "BW = 159/10 ≈ 15.9 Hz"], "answer": "159 Hz, Q = 10, 15.9 Hz" }
+  ]
+}

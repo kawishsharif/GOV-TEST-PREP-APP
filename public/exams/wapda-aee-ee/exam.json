@@ -17,37 +17,93 @@
       "name": "Electrical Engineering",
       "weight": 70,
       "topics": [
-        { "id": "circuits", "name": "Circuits & Network Theorems", "weight": 9 },
-        { "id": "machines", "name": "Electrical Machines", "weight": 11 },
-        { "id": "power", "name": "Power Systems", "weight": 12 },
-        { "id": "protection", "name": "Protection & Switchgear", "weight": 9 },
-        { "id": "pe", "name": "Power Electronics", "weight": 6 },
-        { "id": "control", "name": "Control Systems", "weight": 6 },
-        { "id": "electronics", "name": "Electronics & Measurements", "weight": 7 },
-        { "id": "em", "name": "Electromagnetics & Basic Electricity", "weight": 4 },
-        { "id": "wapda", "name": "WAPDA & Pakistan Power Sector", "weight": 6 }
+        {
+          "id": "circuits",
+          "name": "Circuits & Network Theorems",
+          "weight": 9
+        },
+        {
+          "id": "machines",
+          "name": "Electrical Machines",
+          "weight": 11
+        },
+        {
+          "id": "power",
+          "name": "Power Systems",
+          "weight": 12
+        },
+        {
+          "id": "protection",
+          "name": "Protection & Switchgear",
+          "weight": 9
+        },
+        {
+          "id": "pe",
+          "name": "Power Electronics",
+          "weight": 6
+        },
+        {
+          "id": "control",
+          "name": "Control Systems",
+          "weight": 6
+        },
+        {
+          "id": "electronics",
+          "name": "Electronics & Measurements",
+          "weight": 7
+        },
+        {
+          "id": "em",
+          "name": "Electromagnetics & Basic Electricity",
+          "weight": 4
+        },
+        {
+          "id": "wapda",
+          "name": "WAPDA & Pakistan Power Sector",
+          "weight": 6
+        }
       ]
     },
     {
       "id": "ENG",
       "name": "English",
       "weight": 10,
-      "topics": [{ "id": "english", "name": "English", "weight": 10 }]
+      "topics": [
+        {
+          "id": "english",
+          "name": "English",
+          "weight": 10
+        }
+      ]
     },
     {
       "id": "GK",
       "name": "General Knowledge & Current Affairs",
       "weight": 8,
       "topics": [
-        { "id": "gk", "name": "General Knowledge", "weight": 5 },
-        { "id": "current", "name": "Current Affairs", "weight": 3 }
+        {
+          "id": "gk",
+          "name": "General Knowledge",
+          "weight": 5
+        },
+        {
+          "id": "current",
+          "name": "Current Affairs",
+          "weight": 3
+        }
       ]
     },
     {
       "id": "PAK",
       "name": "Pakistan Studies",
       "weight": 5,
-      "topics": [{ "id": "pakstudies", "name": "Pakistan Studies", "weight": 5 }]
+      "topics": [
+        {
+          "id": "pakstudies",
+          "name": "Pakistan Studies",
+          "weight": 5
+        }
+      ]
     },
     {
       "id": "REL",
@@ -55,27 +111,77 @@
       "weight": 4,
       "track": true,
       "topics": [
-        { "id": "islamiat", "name": "Islamic Studies", "weight": 4, "track": "islamiat" },
-        { "id": "ethics", "name": "Ethics", "weight": 4, "track": "ethics" }
+        {
+          "id": "islamiat",
+          "name": "Islamic Studies",
+          "weight": 4,
+          "track": "islamiat"
+        },
+        {
+          "id": "ethics",
+          "name": "Ethics",
+          "weight": 4,
+          "track": "ethics"
+        }
       ]
     },
     {
       "id": "ANA",
       "name": "Analytical Reasoning & Basic Math",
       "weight": 3,
-      "topics": [{ "id": "analytical", "name": "Analytical & Math", "weight": 3 }]
+      "topics": [
+        {
+          "id": "analytical",
+          "name": "Analytical & Math",
+          "weight": 3
+        }
+      ]
     }
   ],
-  "styles": ["WAPDA-style", "PPSC-style", "FPSC-style", "NTS-style", "CTS-style", "Concept variant"],
+  "styles": [
+    "WAPDA-style",
+    "PPSC-style",
+    "FPSC-style",
+    "NTS-style",
+    "CTS-style",
+    "Concept variant"
+  ],
   "files": {
     "questions": [
-      "circuits", "machines", "power", "protection", "pe", "control", "electronics", "em", "wapda",
-      "english", "gk", "current", "pakstudies", "islamiat", "ethics", "analytical"
+      "circuits",
+      "machines",
+      "power",
+      "protection",
+      "pe",
+      "control",
+      "electronics",
+      "em",
+      "wapda",
+      "english",
+      "gk",
+      "current",
+      "pakstudies",
+      "islamiat",
+      "ethics",
+      "analytical"
     ],
     "notes": [
-      "circuits", "machines", "power", "protection", "pe", "control", "electronics", "em", "wapda",
-      "english", "gk", "pakstudies", "islamiat", "ethics", "analytical"
+      "circuits",
+      "machines",
+      "power",
+      "protection",
+      "pe",
+      "control",
+      "electronics",
+      "em",
+      "wapda",
+      "english",
+      "gk",
+      "pakstudies",
+      "islamiat",
+      "ethics",
+      "analytical"
     ],
-    "flashcards": "flashcards.json"
+    "strategy": "strategy.json"
   }
 }

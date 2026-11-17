@@ -1,0 +1,28 @@
+{
+  "topic": "analytical",
+  "title": "Analytical Reasoning & Basic Math",
+  "summary": "Series, percentages, ratio, speed/time, work, clocks, calendars, coding, relations, directions, syllogisms. Fast methods win time for Electrical questions.",
+  "definitions": [],
+  "formulas": [
+    ["km/h → m/s", "× 5/18"],
+    ["Average speed (equal distances)", "2v1v2/(v1 + v2)"],
+    ["Work together", "1/T = 1/A + 1/B"],
+    ["Clock angle", "|30H − 5.5M| degrees"],
+    ["Simple interest", "SI = PRT/100"],
+    ["Profit %", "(SP − CP)/CP × 100"],
+    ["Percentage change", "(new − old)/old × 100"],
+    ["Odd days", "days mod 7"]
+  ],
+  "facts": [
+    "Common series: n², n³, n(n + 1), ×2 + 1, primes, Fibonacci.",
+    "Syllogism: 'All A are B' gives 'Some B are A', never 'All B are A'.",
+    "Pythagorean triples for direction questions: 3-4-5, 5-12-13, 6-8-10."
+  ],
+  "traps": [
+    "Average speed over equal distances is NOT the arithmetic mean.",
+    "Percentage increase is on the OLD value."
+  ],
+  "examples": [
+    { "q": "Angle between hands at 3:30?", "steps": ["|30 × 3 − 5.5 × 30| = |90 − 165|", "= 75°"], "answer": "75°" }
+  ]
+}

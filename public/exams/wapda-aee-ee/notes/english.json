@@ -1,0 +1,29 @@
+{
+  "topic": "english",
+  "title": "English",
+  "summary": "About 10 questions: vocabulary (synonyms/antonyms), grammar and sentence correction, idioms, prepositions, analogies, short comprehension. Accuracy here is cheap marks.",
+  "definitions": [
+    ["Subject–verb agreement", "Singular subjects take singular verbs; 'each', 'every', 'either', 'neither', 'everyone' are singular."],
+    ["Neither…nor / Either…or", "Verb agrees with the nearer subject."],
+    ["Subjunctive 'were'", "Hypothetical conditions: 'If I were you…' for all persons."],
+    ["Gerund after 'to' (preposition)", "look forward to meeting, object to being, used to working."]
+  ],
+  "formulas": [],
+  "facts": [
+    "Correlatives: hardly/scarcely … when; no sooner … than; not only … but also; both … and.",
+    "Latin comparatives (senior, junior, superior, inferior, prior, prefer) take 'to', not 'than'.",
+    "'Despite' takes no 'of'; 'in spite of' needs 'of'.",
+    "'The number of' + singular verb; 'a number of' + plural verb.",
+    "Uncountable nouns with singular verbs: news, information, advice, furniture, equipment, luggage.",
+    "Fixed prepositions: good at, fond of, accused of, charged with, comply with, insist on, divided into, absent from, prefer to.",
+    "Redundancies to avoid: revert back, return back, repeat again, cousin brother.",
+    "Narration: past reporting verb back-shifts tense (am → was, will → would); pronouns change.",
+    "Passive of present continuous: is/are being + past participle."
+  ],
+  "traps": [
+    "'One of those engineers who ARE' — the verb agrees with 'engineers'.",
+    "'An honest', 'an hour' (silent h); 'a university', 'a European' (y-sound).",
+    "Antonym questions sometimes include a synonym as a distractor — read the instruction."
+  ],
+  "examples": []
+}

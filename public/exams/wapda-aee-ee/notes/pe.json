@@ -1,0 +1,57 @@
+{
+  "topic": "pe",
+  "title": "Power Electronics",
+  "summary": "Device characteristics (SCR, TRIAC, GTO, IGBT, MOSFET), rectifier and converter output formulas, choppers, inverters, drives.",
+  "definitions": [
+    ["SCR", "PNPN, 3 junctions; turned on by gate pulse, latches, turns off when current < holding current."],
+    ["Latching current", "Minimum anode current to stay on just after triggering (> holding current)."],
+    ["Holding current", "Minimum anode current to keep conducting."],
+    ["TRIAC", "Two SCRs in anti-parallel with one gate; AC power control (dimmers, fan regulators); triggered by DIAC."],
+    ["GTO", "Thyristor that can be turned off by negative gate current."],
+    ["IGBT", "MOSFET-like voltage-controlled input with bipolar-like low conduction loss; inverters and drives."],
+    ["Chopper", "DC→DC converter controlling average output by duty cycle."],
+    ["Inverter", "DC→AC converter (VSI/CSI), output controlled by PWM."],
+    ["Cycloconverter", "AC→AC at a different (usually lower) frequency without a DC link."],
+    ["Free-wheeling diode", "Gives inductive load current a path, clamping output at zero and improving pf."]
+  ],
+  "formulas": [
+    ["Half-wave diode", "V_dc = V_m/π"],
+    ["Full-wave diode", "V_dc = 2V_m/π (= 0.9 V_rms)"],
+    ["Half-wave controlled (R load)", "V_dc = (V_m/2π)(1 + cos α)"],
+    ["1-φ full converter", "V_dc = (2V_m/π) cos α"],
+    ["1-φ semiconverter", "V_dc = (V_m/π)(1 + cos α)"],
+    ["3-φ bridge (diode)", "V_dc = 3√2 V_L/π = 1.35 V_L"],
+    ["3-φ full converter", "V_dc = 1.35 V_L cos α"],
+    ["Ripple frequency", "pulse number × f (6-pulse on 50 Hz → 300 Hz)"],
+    ["Buck", "V_o = D V_in"],
+    ["Boost", "V_o = V_in/(1 − D)"],
+    ["Buck–boost", "|V_o| = V_in D/(1 − D)"],
+    ["Duty cycle", "D = T_on/(T_on + T_off) = T_on × f"],
+    ["Square-wave inverter fundamental", "V1(rms) = 4V_dc/(π√2) = 0.9 V_dc"],
+    ["PIV", "Half-wave V_m; centre-tap 2V_m; bridge V_m"],
+    ["V/f drive", "V/f constant → constant air-gap flux"]
+  ],
+  "facts": [
+    "SCR turn-on methods: gate (normal), forward breakover, dv/dt, thermal, light. Gate triggering is the reliable one.",
+    "RC snubber protects against dv/dt; series inductor against di/dt.",
+    "MOSFET has the highest switching frequency (majority carrier); SCR slowest.",
+    "Ripple factor: half-wave 1.21, full-wave 0.482. Rectification efficiency: 40.6% and 81.2%.",
+    "Full converter acts as an inverter for α > 90° (HVDC inverter, regenerative braking).",
+    "Forced commutation is needed for SCRs on DC (choppers, inverters).",
+    "Single-phase full converter input pf ≈ 0.9 cos α (highly inductive load).",
+    "Schottky diode: low forward drop (~0.3 V), negligible reverse recovery.",
+    "Online UPS feeds the load from the inverter continuously (double conversion)."
+  ],
+  "traps": [
+    "Latching current > holding current (not the reverse).",
+    "Centre-tap rectifier PIV is 2V_m; bridge PIV is V_m.",
+    "Boost output is V_in/(1 − D) — at D = 0.5 output doubles.",
+    "3-phase bridge uses LINE voltage: 1.35 V_L."
+  ],
+  "examples": [
+    { "q": "1-φ full converter on 230 V, α = 60°. Average output?",
+      "steps": ["V_m = √2 × 230 = 325 V", "V_dc = (2 × 325/π) × cos 60° = 207 × 0.5", "= 103.5 V"], "answer": "103.5 V" },
+    { "q": "Chopper: V_in = 200 V, T_on = 3 ms, T_off = 1 ms. Output as buck and as ideal boost?",
+      "steps": ["D = 3/4 = 0.75", "Buck: 0.75 × 200 = 150 V", "Boost: 200/0.25 = 800 V"], "answer": "150 V; 800 V" }
+  ]
+}

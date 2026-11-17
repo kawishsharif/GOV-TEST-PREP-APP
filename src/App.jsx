@@ -14,6 +14,11 @@ const More = lazy(() => import('./views/More.jsx'));
 const Mock = lazy(() => import('./views/Mock.jsx'));
 const MockRun = lazy(() => import('./views/MockRun.jsx'));
 const Result = lazy(() => import('./views/Result.jsx'));
+const Notes = lazy(() => import('./views/Notes.jsx'));
+const Formulas = lazy(() => import('./views/Formulas.jsx'));
+const Flashcards = lazy(() => import('./views/Flashcards.jsx'));
+const Mistakes = lazy(() => import('./views/Mistakes.jsx'));
+const Strategy = lazy(() => import('./views/Strategy.jsx'));
 const Placeholder = lazy(() => import('./views/Placeholder.jsx'));
 
 const Loading = () => <main><p className="muted" style={{ textAlign: 'center', paddingTop: '30vh' }}>Loading…</p></main>;
@@ -79,6 +84,13 @@ export default function App() {
               <Route path="mock" element={<Mock />} />
               <Route path="mock/run" element={<MockRun />} />
               <Route path="result/:id" element={<Result />} />
+              <Route path="notes" element={<Notes />} />
+              <Route path="notes/:topic" element={<Notes />} />
+              <Route path="formulas" element={<Formulas />} />
+              <Route path="flashcards" element={<Flashcards />} />
+              <Route path="flashcards/:topic" element={<Flashcards />} />
+              <Route path="mistakes" element={<Mistakes />} />
+              <Route path="strategy" element={<Strategy />} />
               <Route path="*" element={<Placeholder />} />
             </Route>
             <Route path="*" element={<Navigate to="/" replace />} />

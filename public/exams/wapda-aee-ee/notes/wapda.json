@@ -1,0 +1,39 @@
+{
+  "topic": "wapda",
+  "title": "WAPDA & Pakistan Power Sector",
+  "summary": "Factual questions on WAPDA, dams and rivers, hydropower capacities, sector institutions, grid voltages. Learn the table of projects by heart.",
+  "definitions": [
+    ["WAPDA", "Water and Power Development Authority, created by the WAPDA Act 1958; HQ WAPDA House, Lahore. Now focused on water and hydropower."],
+    ["NEPRA", "National Electric Power Regulatory Authority (Act of 1997): licences, tariffs, performance standards."],
+    ["NTDC", "National Transmission & Despatch Company: 500 kV and 220 kV grid."],
+    ["DISCOs", "Distribution companies: LESCO, GEPCO, FESCO, IESCO, MEPCO, PESCO, HESCO, SEPCO, QESCO, TESCO; K-Electric serves Karachi."],
+    ["PPIB", "Private Power and Infrastructure Board: facilitates IPPs."],
+    ["IRSA", "Indus River System Authority (1992): implements the 1991 Water Apportionment Accord."]
+  ],
+  "formulas": [
+    ["Grid voltages", "500 kV, 220 kV (transmission) → 132, 66 kV (sub-transmission) → 11 kV (primary distribution) → 400/230 V"],
+    ["System frequency", "50 Hz"]
+  ],
+  "facts": [
+    "Tarbela — Indus (KP), completed 1976; largest hydropower station; 4,888 MW after T4 (1,410 MW), 6,418 MW with T5 (1,530 MW).",
+    "Mangla — Jhelum (Mirpur, AJK), completed 1967; ~1,000 MW, being upgraded to ~1,310 MW.",
+    "Ghazi Barotha — Indus, run-of-river, 1,450 MW (5 × 290 MW), ~52 km power channel.",
+    "Warsak — Kabul River, ~243 MW (≈1960).",
+    "Neelum–Jhelum — 969 MW (4 × 242.25 MW), completed 2018.",
+    "Dasu — Indus (Kohistan), 4,320 MW planned (Stage-I 2,160 MW).",
+    "Diamer-Bhasha — Indus, ~4,500 MW, RCC dam ~272 m high.",
+    "Mohmand — Swat River, 800 MW, concrete-faced rockfill dam.",
+    "Indus Waters Treaty 1960 (World Bank): Indus, Jhelum, Chenab to Pakistan; Ravi, Beas, Sutlej to India.",
+    "Matiari–Lahore ±660 kV, 4,000 MW HVDC (2021) — Pakistan's first HVDC line.",
+    "Nuclear: Chashma C-1…C-4, K-2/K-3 (PAEC). Coal: Thar (Sindh), Sahiwal, Port Qasim, Hub. Wind: Jhimpir–Gharo. Solar: Quaid-e-Azam Solar Park, Bahawalpur.",
+    "Rawal Dam — Kurang; Simly — Soan; Khanpur — Haro; Mirani — Dasht; Hub — Hub River; Satpara — Skardu; Gomal Zam — South Waziristan.",
+    "WAPDA works under the Ministry of Water Resources; DISCOs/NTDC under the Power Division."
+  ],
+  "traps": [
+    "Mangla is on the Jhelum, not the Indus.",
+    "Warsak is on the Kabul River; Mohmand Dam is on the Swat River.",
+    "Ghazi Barotha is run-of-river, not a storage dam.",
+    "T4 = 1,410 MW and T5 = 1,530 MW — don't swap them."
+  ],
+  "examples": []
+}

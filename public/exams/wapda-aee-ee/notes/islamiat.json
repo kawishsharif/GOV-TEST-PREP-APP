@@ -1,0 +1,28 @@
+{
+  "topic": "islamiat",
+  "title": "Islamic Studies",
+  "summary": "Quran basics, Seerah dates, Caliphs, pillars and their details.",
+  "definitions": [
+    ["Wahi", "Divine revelation, brought by Hazrat Jibrael (AS)."],
+    ["Nisab", "Minimum wealth for Zakat: gold 7.5 tolas, silver 52.5 tolas."]
+  ],
+  "formulas": [
+    ["Zakat", "2.5% of zakatable wealth held for one lunar year"],
+    ["Ushr", "10% (rain-fed land), 5% (irrigated land)"]
+  ],
+  "facts": [
+    "Quran: 114 Surahs, 30 Paras, 7 Manzils. Longest Surah Al-Baqarah, shortest Al-Kawthar; At-Tawbah has no Bismillah; Yaseen is the 'heart'.",
+    "First revelation in Cave Hira: 'Iqra' (Surah Al-Alaq).",
+    "Hijrah 622 CE. Badr 2 AH, Uhud 3 AH, Khandaq 5 AH, Hudaibiyah 6 AH, Conquest of Makkah 8 AH, Farewell Sermon 10 AH at Arafat.",
+    "Fasting made obligatory in 2 AH.",
+    "Caliphs: Abu Bakr, Umar, Usman, Ali (RA). Quran compiled under Abu Bakr (RA); standard copies under Usman (RA).",
+    "First mosque: Quba. First Muezzin: Bilal (RA). First to accept Islam: Khadijah (RA).",
+    "Books: Taurat — Musa, Zabur — Dawood, Injeel — Isa, Quran — Muhammad (PBUH). 25 Prophets named in the Quran.",
+    "Ayat-ul-Kursi: Al-Baqarah 255. Laylat-ul-Qadr is better than a thousand months."
+  ],
+  "traps": [
+    "Cave Hira = first revelation; Cave Thaur = Hijrah hiding place.",
+    "Zakat Nisab: gold 7.5 tolas, silver 52.5 tolas — don't swap."
+  ],
+  "examples": []
+}

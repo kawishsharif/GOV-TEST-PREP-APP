@@ -8,6 +8,8 @@
   --muted: #5a7080;
   --primary: #0b5675;
   --primary-ink: #ffffff;
+  --topbar: #0b5675;
+  --topbar-ink: #ffffff;
   --accent: #0e9488;
   --accent-soft: #d5f1ee;
   --good: #15803d;
@@ -27,7 +29,7 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #08141c; --surface: #0f1f2a; --surface-2: #152a37; --border: #21394a;
-    --text: #e4eef3; --muted: #92a9b8; --primary: #38a8d0; --primary-ink: #04121a;
+    --text: #e4eef3; --muted: #92a9b8; --primary: #38a8d0; --primary-ink: #04121a; --topbar: #0f2a38; --topbar-ink: #e4eef3;
     --accent: #2dd4bf; --accent-soft: #0f3a39; --good: #4ade80; --good-soft: #10331f;
     --bad: #fb8b5c; --bad-soft: #3a1d12; --warn: #facc15; --warn-soft: #332a0b; --flag: #b197fc;
     --shadow: 0 1px 2px rgba(0,0,0,.4); color-scheme: dark;
@@ -35,7 +37,7 @@
 }
 :root[data-theme="dark"] {
   --bg: #08141c; --surface: #0f1f2a; --surface-2: #152a37; --border: #21394a;
-  --text: #e4eef3; --muted: #92a9b8; --primary: #38a8d0; --primary-ink: #04121a;
+  --text: #e4eef3; --muted: #92a9b8; --primary: #38a8d0; --primary-ink: #04121a; --topbar: #0f2a38; --topbar-ink: #e4eef3;
   --accent: #2dd4bf; --accent-soft: #0f3a39; --good: #4ade80; --good-soft: #10331f;
   --bad: #fb8b5c; --bad-soft: #3a1d12; --warn: #facc15; --warn-soft: #332a0b; --flag: #b197fc;
   --shadow: 0 1px 2px rgba(0,0,0,.4); color-scheme: dark;
@@ -66,7 +68,7 @@ small, .muted { color: var(--muted); }
   position: sticky; top: 0; z-index: 20;
   display: flex; align-items: center; gap: .5rem;
   padding: calc(env(safe-area-inset-top) + .5rem) 16px .5rem;
-  background: var(--primary); color: var(--primary-ink);
+  background: var(--topbar); color: var(--topbar-ink);
 }
 .topbar .title { flex: 1; min-width: 0; }
 .topbar .title b { display: block; font-size: 1.02rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -336,3 +338,5 @@ table.simple { width: 100%; border-collapse: collapse; font-size: .92rem; }
 table.simple th, table.simple td { padding: 8px 6px; border-bottom: 1px solid var(--border); text-align: left; }
 table.simple th { font-size: .78rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
 table.simple td.num, table.simple th.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+.btn small { color: inherit; opacity: .85; }

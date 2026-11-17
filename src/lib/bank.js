@@ -23,10 +23,10 @@ export async function loadExam(id) {
   const base = BASE + entry.path;
   const cfg = await getJSON(base + 'exam.json');
   const files = cfg.files || {};
-  const [qsets, notes, flash] = await Promise.all([
+  const [qsets, notes, strategy] = await Promise.all([
     Promise.all((files.questions || []).map((f) => getJSON(`${base}questions/${f}.json`).catch(() => []))),
     Promise.all((files.notes || []).map((f) => getJSON(`${base}notes/${f}.json`).catch(() => null))),
-    files.flashcards ? getJSON(base + files.flashcards).catch(() => []) : [],
+    files.strategy ? getJSON(base + files.strategy).catch(() => null) : null,
   ]);
   const exam = {
     ...cfg,
@@ -34,7 +34,7 @@ export async function loadExam(id) {
     base,
     questions: qsets.flat(),
     notes: Object.fromEntries(notes.filter(Boolean).map((n) => [n.topic, n])),
-    flashcards: flash,
+    strategy,
   };
   exam.topicIndex = {};
   exam.sectionOfTopic = {};

@@ -1,0 +1,83 @@
+{
+  "title": "Top-scorer strategy",
+  "intro": "Merit = academics + written test (+ higher qualification). Your academics are already fixed, so the written test is where rank is decided. A pass (~50%) gets you on the list; the top ranks usually need 80%+. Everything below is aimed at that.",
+  "sections": [
+    {
+      "heading": "Target score sheet (aim: 85/100)",
+      "table": [
+        ["Section", "Qs", "Target"],
+        ["Electrical Engineering", "70", "59–62"],
+        ["English", "10", "9"],
+        ["GK & Current Affairs", "8", "6"],
+        ["Pakistan Studies", "5", "4–5"],
+        ["Islamic Studies / Ethics", "4", "4"],
+        ["Analytical & Math", "3", "3"]
+      ],
+      "items": [
+        "Non-technical sections (30 marks) are where toppers separate themselves: most candidates lose 8–12 marks there. Aim to drop no more than 4.",
+        "In Electrical, the gap between a pass and a top rank is roughly 15 questions — almost all of them classic, repeated concepts plus one-step numericals."
+      ]
+    },
+    {
+      "heading": "What to master first (by marks per hour of study)",
+      "items": [
+        "1. Power Systems (≈12 Qs): Ferranti, corona, skin effect, ACSR, SIL, insulators/string efficiency, per-unit, load/demand/diversity factor, HVDC, turbines, pf correction.",
+        "2. Electrical Machines (≈11 Qs): transformer OC/SC tests, losses, max efficiency, Buchholz/breather/conservator; slip, N_s, rotor frequency; DC series/shunt behaviour; synchronous V-curves and paralleling.",
+        "3. Protection & Switchgear (≈9 Qs): most common fault, symmetrical components, relay–application pairs, CT open-circuit rule, SF6/vacuum, arresters, earthing.",
+        "4. Circuits (≈9 Qs): Thevenin/max power, star–delta, 3-phase power, resonance, two-wattmeter.",
+        "5. WAPDA & power sector (≈6 Qs): pure memory — learn the dams table once and revise with flashcards. Cheapest marks in the paper.",
+        "6. Electronics & measurements, Power electronics, Control, EM (≈23 Qs combined): learn the formula sheet and the 'which instrument/device for what' pairs."
+      ]
+    },
+    {
+      "heading": "The 120-minute plan (72 s per question)",
+      "items": [
+        "Pass 1 (0–70 min): answer everything you know at sight. Any numerical that will take more than ~90 s → mark your best guess, FLAG it, move on.",
+        "Pass 2 (70–105 min): return to flagged numericals using the palette.",
+        "Pass 3 (105–115 min): every unanswered question gets an answer. With no negative marking a blank is a guaranteed zero; a guess is worth 0.25 marks on average.",
+        "Last 5 minutes: do not change answers unless you find a clear error — first instincts on recall questions are usually right.",
+        "If negative marking is announced (check the call letter), guess only when you can eliminate at least two options."
+      ]
+    },
+    {
+      "heading": "Numbers to know by heart (saves minutes)",
+      "items": [
+        "√2 = 1.414, √3 = 1.732, 1/√2 = 0.707, 1/√3 = 0.577, π = 3.1416, 2π × 50 = 314.",
+        "Synchronous speed at 50 Hz: 2-pole 3000, 4-pole 1500, 6-pole 1000, 8-pole 750, 10-pole 600, 12-pole 500 rpm.",
+        "tan φ for common pf: 0.6 → 1.333, 0.7 → 1.020, 0.8 → 0.750, 0.85 → 0.620, 0.866 → 0.577, 0.9 → 0.484, 0.95 → 0.329, 1 → 0.",
+        "Z_base = kV²/MVA; I_base = MVA/(√3 kV); fault MVA = base MVA / Z_pu.",
+        "Rectifiers: V_m/π (HW), 2V_m/π (FW), 1.35 V_L (3-φ bridge); ripple 1.21 / 0.482.",
+        "Second order: ζ = 0.5 → M_p ≈ 16%; ζ = 0.707 → M_p ≈ 4.3%; t_s(2%) = 4/(ζω_n)."
+      ]
+    },
+    {
+      "heading": "How examiners build options (and how to beat them)",
+      "items": [
+        "Numericals: the distractors are your likely slips — missing √3, using V instead of V², forgetting ½, mixing line/phase, factor-of-10 unit errors. If your answer matches an option instantly, re-check the √3 and the unit once.",
+        "Concept questions: two options are usually clearly wrong; the remaining two differ in one word (minimum/maximum, series/parallel, lagging/leading, HV/LV side). Read the stem's key word twice.",
+        "'Most', 'NOT', 'except' questions cause most careless errors — underline them mentally.",
+        "AI-written variants reword classics: e.g. 'Ferranti effect is due to…' becomes 'Receiving-end voltage rise on an unloaded line is mainly caused by…'. Learn the reason, not the sentence."
+      ]
+    },
+    {
+      "heading": "Daily routine that gets toppers there",
+      "items": [
+        "50 questions a day (the dashboard target), mixing one strong and one weak topic.",
+        "20 flashcard reviews — 10 minutes, every day, no exceptions (spaced repetition only works if daily).",
+        "Read one notes page before practising that topic.",
+        "Re-attempt the mistake notebook every 2–3 days; it is your personal list of exam questions.",
+        "One full timed mock every week, then two in the final week. Review every wrong answer the same day."
+      ]
+    },
+    {
+      "heading": "Final 7 days",
+      "items": [
+        "No new topics. Formula sheet every morning, flashcards every evening.",
+        "Mistake notebook to zero (or as close as possible).",
+        "Two full mocks at the same clock time as your actual test.",
+        "Re-check current affairs: Prime Minister, President, recent summits, sports winners, any new dams/projects in the news.",
+        "Day before: light revision only, sleep early. Carry the call letter, original CNIC and the exact items allowed by CTS."
+      ]
+    }
+  ]
+}

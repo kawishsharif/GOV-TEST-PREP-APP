@@ -1,0 +1,51 @@
+{
+  "topic": "electronics",
+  "title": "Electronics & Measurements",
+  "summary": "Semiconductor basics, diodes/Zener, BJT relations, op-amp gains, number systems and gates, instruments and bridges, meter range extension.",
+  "definitions": [
+    ["N-type", "Doped with pentavalent donors (P, As, Sb); majority carriers electrons."],
+    ["P-type", "Doped with trivalent acceptors (B, Ga, In, Al); majority carriers holes."],
+    ["Zener diode", "Operated in reverse breakdown as a voltage regulator."],
+    ["α and β", "α = I_C/I_E (< 1), β = I_C/I_B."],
+    ["Virtual ground", "Inverting input held ≈ 0 V by feedback in an inverting amplifier."],
+    ["Universal gates", "NAND and NOR — any logic function can be built from either alone."],
+    ["Megger", "Measures insulation resistance with high DC test voltage."],
+    ["Creeping", "Slow rotation of energy-meter disc at no load; stopped by holes in the disc."]
+  ],
+  "formulas": [
+    ["BJT currents", "I_E = I_B + I_C,  I_C = βI_B"],
+    ["α–β relation", "β = α/(1 − α),  α = β/(1 + β)"],
+    ["Zener regulator", "I_S = (V_in − V_Z)/R_S,  I_Z = I_S − I_L"],
+    ["Inverting amplifier", "A_v = −R_f/R_in"],
+    ["Non-inverting amplifier", "A_v = 1 + R_f/R_1"],
+    ["Ammeter shunt", "R_sh = I_m R_m/(I − I_m)"],
+    ["Voltmeter multiplier", "R_s = V/I_m − R_m"],
+    ["Voltmeter sensitivity", "Ω/V = 1/I_fs"],
+    ["Wheatstone balance", "P/Q = R/S"],
+    ["Energy meter", "Revolutions = meter constant (rev/kWh) × kWh"],
+    ["% error", "(measured − true)/true × 100"],
+    ["Counter flip-flops", "2ⁿ ≥ modulus"]
+  ],
+  "facts": [
+    "Barrier potential: Si 0.7 V, Ge 0.3 V.",
+    "Zener breakdown (heavy doping) < ~5 V; avalanche > ~6 V.",
+    "CE: voltage and current gain, 180° phase shift. CC (emitter follower): A_v ≈ 1, buffer. CB: low input impedance.",
+    "FET: voltage-controlled, very high input impedance, unipolar.",
+    "Ideal op-amp: infinite gain and Z_in, zero Z_out, infinite bandwidth.",
+    "PMMC: DC only, uniform scale. Moving iron: AC and DC, square-law scale. Induction energy meter: AC only. Electrodynamometer: wattmeter.",
+    "Bridges: Wheatstone (medium R), Kelvin double (low R < 1 Ω), Maxwell (medium-Q L), Hay (high-Q L), Schering (C and tan δ), Wien (frequency), Anderson (L).",
+    "Ammeter: series, very low resistance. Voltmeter: parallel, very high resistance.",
+    "Clamp meter measures current without breaking the circuit. Lissajous patterns give frequency ratio and phase."
+  ],
+  "traps": [
+    "Inverting gain is negative; non-inverting has the extra +1.",
+    "Kelvin double bridge is for LOW resistance; megger is for HIGH (insulation) resistance.",
+    "β = α/(1 − α): α = 0.98 → β = 49, not 50."
+  ],
+  "examples": [
+    { "q": "Convert a 1 mA, 100 Ω movement to (a) 1 A ammeter, (b) 100 V voltmeter.",
+      "steps": ["Shunt = 0.001 × 100/(1 − 0.001) ≈ 0.1 Ω", "Multiplier = 100/0.001 − 100 = 99.9 kΩ"], "answer": "0.1 Ω shunt; 99.9 kΩ series" },
+    { "q": "Zener regulator: V_in 20 V, V_Z 12 V, R_S 200 Ω, R_L 1 kΩ. Zener current?",
+      "steps": ["I_S = 8/200 = 40 mA", "I_L = 12/1000 = 12 mA", "I_Z = 28 mA"], "answer": "28 mA" }
+  ]
+}

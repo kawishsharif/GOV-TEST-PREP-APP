@@ -1,0 +1,57 @@
+{
+  "topic": "protection",
+  "title": "Protection & Switchgear",
+  "summary": "Fault types and symmetrical components, relay types and where they are used, CT/PT rules, breaker media, arresters and earthing. Numericals: fault current, fault MVA, PSM, breaking capacity.",
+  "definitions": [
+    ["Symmetrical components", "Any unbalanced 3-phase set = positive + negative + zero sequence sets (Fortescue)."],
+    ["Operator a", "a = 1∠120° = −0.5 + j0.866;  1 + a + a² = 0."],
+    ["PSM", "Plug setting multiplier = fault current in relay ÷ relay setting current."],
+    ["TMS", "Time multiplier setting; operating time scales linearly with TMS."],
+    ["IDMT relay", "Inverse definite minimum time: inverse at low multiples, definite minimum at high currents."],
+    ["Restriking voltage", "Transient voltage across breaker contacts just after current zero (RRRV = its rate of rise)."],
+    ["Recovery voltage", "Power-frequency voltage across contacts after final arc extinction."],
+    ["Fusing factor", "Minimum fusing current ÷ current rating (> 1)."],
+    ["Petersen coil", "Arc-suppression reactor between neutral and earth tuned to line capacitance."],
+    ["Isolator", "Off-load disconnecting switch for visible isolation; operated only after the breaker opens."]
+  ],
+  "formulas": [
+    ["L–G fault", "I_a1 = I_a2 = I_a0 = E/(Z1 + Z2 + Z0 + 3Z_f);  I_f = 3I_a0"],
+    ["L–L fault", "I_a1 = −I_a2 = E/(Z1 + Z2);  |I_f| = √3 E/(Z1 + Z2)"],
+    ["3-phase fault", "I_f = E/Z1"],
+    ["Fault MVA", "MVA_fault = MVA_base / Z_pu"],
+    ["Fault current", "I_f = MVA/(√3 kV)"],
+    ["PSM", "PSM = I_fault × (CT sec/CT pri) / (setting% × CT sec)"],
+    ["Breaking capacity", "MVA = √3 × kV × kA(break)"],
+    ["Making current", "I_make (peak) = 2.55 × I_break (rms)"],
+    ["CT burden", "VA = I²R"],
+    ["Petersen coil", "L = 1/(3ω²C)"]
+  ],
+  "facts": [
+    "Most common fault: single line-to-ground (≈70–80%). Most severe (usually): 3-phase symmetrical. Only 3-phase fault is symmetrical.",
+    "Zero-sequence current needs a ground path; it cannot flow in lines feeding a delta or an ungrounded star.",
+    "L–L fault: no zero sequence. L–G: sequence networks in series.",
+    "Distance relays protect lines: mho for long lines (inherently directional, least affected by power swing), reactance for short lines (immune to arc resistance), impedance for medium.",
+    "Differential (Merz–Price) protection for transformers, generators, busbars; percentage bias for CT mismatch; 2nd-harmonic restraint for inrush.",
+    "Directional overcurrent relays for ring mains and parallel feeders.",
+    "Never open-circuit a CT secondary under load (dangerous high voltage, core saturation). CT secondary 1 A or 5 A; VT secondary 110 V.",
+    "SF6: electronegative, 2–3× air dielectric strength, used at EHV. Vacuum CB: 11–33 kV, arc in metal vapour. Air-blast: older EHV.",
+    "AC arcs are interrupted at current zero.",
+    "Surge arresters: line to earth; modern ones are gapless metal-oxide (ZnO). Shield wire protects against direct strokes (≈30° shielding angle).",
+    "Arcing grounds occur in ungrounded systems; suppressed by Petersen coil.",
+    "Earth resistance target: ≈0.5 Ω power stations, ≈1 Ω large substations. 30 mA RCD protects persons.",
+    "Generator: reverse power relay (motoring), negative-sequence relay (unbalance heats rotor), loss-of-excitation relay.",
+    "About 80% of overhead-line faults are transient → auto-reclosing."
+  ],
+  "traps": [
+    "I_f for L–G is 3I_a0 — don't stop at I_a0.",
+    "PSM must include the relay percentage setting (125% of 5 A = 6.25 A).",
+    "Breaking MVA uses √3 × kV × kA — not 3 × kV × kA.",
+    "Mho relay is for LONG lines, reactance relay for SHORT lines."
+  ],
+  "examples": [
+    { "q": "E = 1 p.u., Z1 = Z2 = j0.2, Z0 = j0.1 (solidly grounded). Find L–G, L–L and 3-phase fault currents.",
+      "steps": ["L–G: I_a0 = 1/0.5 = 2 → I_f = 6 p.u.", "L–L: √3 × 1/0.4 = 4.33 p.u.", "3-phase: 1/0.2 = 5 p.u."], "answer": "6, 4.33, 5 p.u." },
+    { "q": "Relay at 125% on 400/5 CT; fault 4000 A. PSM?",
+      "steps": ["Setting = 1.25 × 5 = 6.25 A", "CT secondary = 4000 × 5/400 = 50 A", "PSM = 50/6.25 = 8"], "answer": "8" }
+  ]
+}

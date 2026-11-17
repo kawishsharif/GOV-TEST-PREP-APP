@@ -1,0 +1,54 @@
+{
+  "topic": "control",
+  "title": "Control Systems",
+  "summary": "Transfer functions, second-order response numbers (ζ, ω_n, overshoot, settling), steady-state error by system type, Routh–Hurwitz, Bode margins, root-locus rules, state space.",
+  "definitions": [
+    ["Transfer function", "Laplace output/input with zero initial conditions."],
+    ["Type", "Number of poles at the origin of G(s)H(s)."],
+    ["Order", "Highest power of s in the characteristic equation."],
+    ["Damping ratio ζ", "0 undamped, 0–1 underdamped, 1 critical, >1 overdamped."],
+    ["Gain margin", "1/|GH| at phase crossover (phase = −180°)."],
+    ["Phase margin", "180° + ∠GH at gain crossover (|GH| = 1)."],
+    ["Controllability", "Rank [B AB … A^(n−1)B] = n."],
+    ["Observability", "Rank [C; CA; …; CA^(n−1)] = n."]
+  ],
+  "formulas": [
+    ["Closed loop (negative FB)", "T = G/(1 + GH)"],
+    ["Standard 2nd order", "s² + 2ζω_n s + ω_n² = 0"],
+    ["Damped frequency", "ω_d = ω_n √(1 − ζ²)"],
+    ["Peak overshoot", "M_p = e^(−ζπ/√(1−ζ²))"],
+    ["Peak time", "t_p = π/ω_d"],
+    ["Settling time", "t_s ≈ 4/(ζω_n) (2%),  3/(ζω_n) (5%)"],
+    ["Step error", "e_ss = 1/(1 + K_p),  K_p = lim G(s)"],
+    ["Ramp error", "e_ss = 1/K_v,  K_v = lim sG(s)"],
+    ["Parabolic error", "e_ss = 1/K_a,  K_a = lim s²G(s)"],
+    ["Final value theorem", "f(∞) = lim(s→0) sF(s)"],
+    ["Root-locus centroid", "σ = (Σpoles − Σzeros)/(P − Z)"],
+    ["Asymptote angles", "(2k + 1)180°/(P − Z)"],
+    ["GM in dB to ratio", "ratio = 10^(dB/20) (6 dB ≈ 2)"],
+    ["State-space TF", "G(s) = C(sI − A)⁻¹B + D"],
+    ["Nyquist", "Z = N + P (stable if Z = 0)"]
+  ],
+  "facts": [
+    "Stable: all closed-loop poles in the left half-plane. Simple poles on jω axis → marginally stable.",
+    "Routh: number of sign changes in first column = number of RHP roots. Missing/negative coefficient → unstable.",
+    "Type 0: finite step error; Type 1: zero step error, finite ramp error; Type 2: zero ramp error.",
+    "Each pole: −20 dB/decade; each zero: +20 dB/decade.",
+    "Root locus starts at open-loop poles (K = 0), ends at zeros or infinity; symmetric about real axis; on real axis left of an odd count of poles+zeros.",
+    "Integral action removes steady-state error; derivative adds damping; lead improves transient/phase margin; lag improves steady state.",
+    "Negative feedback reduces gain, increases bandwidth, reduces sensitivity.",
+    "AC servomotor has high rotor resistance (linear, drooping torque–speed). Tachogenerator gives speed feedback; synchro pair is a position error detector."
+  ],
+  "traps": [
+    "ω_n is √(constant term), not the constant term itself.",
+    "Settling time 2% uses 4, not 3.",
+    "Gain margin is measured at the PHASE crossover frequency.",
+    "e_ss for a ramp uses K_v (multiply G by s first)."
+  ],
+  "examples": [
+    { "q": "s² + 4s + 16: find ω_n, ζ, M_p, t_s.",
+      "steps": ["ω_n = 4, 2ζω_n = 4 → ζ = 0.5", "M_p = e^(−0.5π/0.866) = 16.3%", "t_s = 4/(0.5 × 4) = 2 s"], "answer": "4 rad/s, 0.5, 16.3%, 2 s" },
+    { "q": "s³ + 2s² + 3s + K: range of K for stability.",
+      "steps": ["Routh: 1, 3 | 2, K | (6 − K)/2 | K", "Need 6 − K > 0 and K > 0"], "answer": "0 < K < 6" }
+  ]
+}
