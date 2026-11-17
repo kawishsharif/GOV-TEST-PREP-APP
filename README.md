@@ -40,7 +40,9 @@ On a phone, open the deployed URL and use **Add to Home screen**. It works offli
 
 ## Deploy
 
-`.github/workflows/deploy.yml` builds and publishes to GitHub Pages on every push to `main`. One-time setup: **Settings → Pages → Source: GitHub Actions**. The build uses relative paths, so it also works on Vercel, Netlify or any static host (`npm run build`, publish `dist/`).
+**Vercel (recommended):** go to vercel.com → **Add New → Project** → import `GOV-TEST-PREP-APP` → **Deploy**. Settings come from `vercel.json` (Vite, `npm run build`, output `dist`), so leave the defaults. Every push then redeploys automatically, and other branches get preview URLs.
+
+**GitHub Pages:** `.github/workflows/deploy.yml` builds and publishes to GitHub Pages on every push to `main`. One-time setup: **Settings → Pages → Source: GitHub Actions**. The build uses relative paths, so it also works on Vercel, Netlify or any static host (`npm run build`, publish `dist/`).
 
 ## Adding or editing questions
 
