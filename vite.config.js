@@ -6,8 +6,16 @@ import { VitePWA } from 'vite-plugin-pwa';
 // (Vercel, Netlify, GitHub Pages /repo-name/, or a plain folder).
 const artifact = process.env.VITE_TARGET === 'artifact'; // sandboxed preview build: no service worker
 
+// Version shown in the app (More screen): Vercel's commit SHA, else local git, plus build time.
+import { execSync } from 'node:child_process';
+const sha = (process.env.VERCEL_GIT_COMMIT_SHA || (() => { try { return execSync('git rev-parse HEAD').toString().trim(); } catch { return 'dev'; } })()).slice(0, 7);
+
 export default defineConfig({
   base: './',
+  define: {
+    __APP_VERSION__: JSON.stringify(sha),
+    __BUILD_TIME__: JSON.stringify(new Date().toISOString()),
+  },
   plugins: [
     react(),
     !artifact && VitePWA({
