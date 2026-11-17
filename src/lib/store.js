@@ -14,7 +14,7 @@ const safeSet = (k, v) => {
 };
 
 // ---------------- global (app-wide) ----------------
-const GLOBAL_DEFAULTS = { theme: 'system', lastExam: null, aiKey: '', aiModel: 'claude-sonnet-5-5', installedAt: Date.now() };
+const GLOBAL_DEFAULTS = { theme: 'system', lastExam: null, aiKey: '', aiModel: 'claude-opus-5-5', installedAt: Date.now() };
 export const global = Object.assign({}, GLOBAL_DEFAULTS, safeGet(GLOBAL_KEY) || {});
 export const saveGlobal = () => { safeSet(GLOBAL_KEY, global); notify(); };
 
@@ -128,6 +128,7 @@ export function recordAttempt(exam, q, ok, ms = 0, mode = 'p') {
   st.log.push({ t: now, q: q.id, ok: ok ? 1 : 0, ms: Math.round(ms), m: mode });
 
   let mistakeEvent = null;
+  if (q.source === 'template') { save(exam.id); return null; } // generated variants are one-off
   if (!ok) {
     const m = st.mistakes[q.id];
     st.mistakes[q.id] = { added: m?.added || now, wrong: (m?.wrong || 0) + 1, rights: [] };

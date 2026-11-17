@@ -19,7 +19,10 @@ const Formulas = lazy(() => import('./views/Formulas.jsx'));
 const Flashcards = lazy(() => import('./views/Flashcards.jsx'));
 const Mistakes = lazy(() => import('./views/Mistakes.jsx'));
 const Strategy = lazy(() => import('./views/Strategy.jsx'));
-const Placeholder = lazy(() => import('./views/Placeholder.jsx'));
+const Planner = lazy(() => import('./views/Planner.jsx'));
+const Progress = lazy(() => import('./views/Progress.jsx'));
+const AI = lazy(() => import('./views/AI.jsx'));
+const ImportQ = lazy(() => import('./views/ImportQ.jsx'));
 
 const Loading = () => <main><p className="muted" style={{ textAlign: 'center', paddingTop: '30vh' }}>Loading…</p></main>;
 
@@ -91,7 +94,11 @@ export default function App() {
               <Route path="flashcards/:topic" element={<Flashcards />} />
               <Route path="mistakes" element={<Mistakes />} />
               <Route path="strategy" element={<Strategy />} />
-              <Route path="*" element={<Placeholder />} />
+              <Route path="planner" element={<Planner />} />
+              <Route path="progress" element={<Progress />} />
+              <Route path="ai" element={<AI />} />
+              <Route path="import" element={<ImportQ />} />
+              <Route path="*" element={<Navigate to="dashboard" replace />} />
             </Route>
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
