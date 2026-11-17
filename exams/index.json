@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "exams": [
+    {
+      "id": "wapda-aee-ee",
+      "path": "exams/wapda-aee-ee/",
+      "title": "WAPDA AEE (Electrical)",
+      "subtitle": "Assistant Executive Engineer (Electrical), BPS-17",
+      "tag": "Advt 125 · 2026-27 · CTS",
+      "accent": "#0e7490"
+    }
+  ]
+}

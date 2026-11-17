@@ -1,0 +1,12 @@
+{
+  "name": "learn-and-lead",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Learn & Lead — mobile-first exam preparation web app (WAPDA AEE Electrical and more).",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build-bank.mjs",
+    "validate": "node tools/build-bank.mjs --check",
+    "serve": "node tools/serve.mjs"
+  }
+}
