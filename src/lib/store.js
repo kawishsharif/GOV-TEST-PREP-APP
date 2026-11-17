@@ -14,8 +14,10 @@ const safeSet = (k, v) => {
 };
 
 // ---------------- global (app-wide) ----------------
-const GLOBAL_DEFAULTS = { theme: 'system', lastExam: null, aiKey: '', aiModel: 'claude-opus-5-5', installedAt: Date.now() };
+const GLOBAL_DEFAULTS = { theme: 'system', lastExam: null, aiProvider: 'claude', aiKeys: {}, aiModels: {}, installedAt: Date.now() };
 export const global = Object.assign({}, GLOBAL_DEFAULTS, safeGet(GLOBAL_KEY) || {});
+// Migrate the single Claude key stored by earlier versions.
+if (global.aiKey) { global.aiKeys = { ...global.aiKeys, claude: global.aiKeys?.claude || global.aiKey }; delete global.aiKey; delete global.aiModel; }
 export const saveGlobal = () => { safeSet(GLOBAL_KEY, global); notify(); };
 
 // ---------------- per exam ----------------
@@ -145,7 +147,7 @@ export function recordAttempt(exam, q, ok, ms = 0, mode = 'p') {
 
 // ---------------- backup ----------------
 export function exportAll() {
-  const out = { app: 'learn-and-lead', format: 1, exportedAt: new Date().toISOString(), global: { ...global, aiKey: '' }, exams: {} };
+  const out = { app: 'learn-and-lead', format: 1, exportedAt: new Date().toISOString(), global: { ...global, aiKeys: {} }, exams: {} }; // API keys never leave the device
   for (let i = 0; i < localStorage.length; i++) {
     const k = localStorage.key(i);
     if (k.startsWith(PREFIX + 'exam:')) {
@@ -163,8 +165,9 @@ export function importAll(data) {
     safeSet(examKey(id), st);
   }
   if (data.global) {
-    const key = global.aiKey; // never overwrite a stored key with a blank one from a backup
-    Object.assign(global, data.global, { aiKey: data.global.aiKey || key });
+    const keys = global.aiKeys; // keys are never in backups; keep the ones on this device
+    const { aiKey: _old, ...rest } = data.global;
+    Object.assign(global, rest, { aiKeys: keys });
     saveGlobal();
   }
   notify();

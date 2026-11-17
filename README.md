@@ -18,7 +18,7 @@ The first exam card is **WAPDA Assistant Executive Engineer (Electrical), BPS-17
 | **Mistake notebook** | Every wrong answer saved; leaves only after two correct answers on different days. |
 | **Flashcards** | 293 spaced-repetition cards generated from the notes (Again / Hard / Good / Easy). |
 | **Planner & progress** | Day-by-day plan to your test date weighted to weak topics; progress chart of mocks and daily accuracy. |
-| **AI mode (optional)** | "Generate 10 new questions on a topic" using your own Anthropic API key (Claude Opus 5.5, structured output, labelled *AI-generated*). |
+| **AI mode (optional)** | "Generate 10 new questions on a topic" with **Claude** (Opus 5.5 / Sonnet 5.5) or **Gemini** (Flash / Pro), using your own API key. Switch providers any time; each key is stored only on your device and never included in backups. Output is schema-checked and labelled *AI-generated*. |
 | **Your data** | Saved on your device; export/import a JSON backup in Settings. Test pattern, negative marking and section weights are editable. |
 
 Questions are written in the style of WAPDA, PPSC, FPSC, NTS and CTS papers. None is claimed to come from a specific real past paper.
