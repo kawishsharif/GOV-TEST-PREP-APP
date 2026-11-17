@@ -1,0 +1,1066 @@
+[
+ {
+  "id": "ctl-001",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Transfer function of a system is defined as the ratio of Laplace transforms of output to input with:",
+  "options": [
+   "All initial conditions zero",
+   "All initial conditions maximum",
+   "Input equal to a unit step",
+   "Feedback removed"
+  ],
+  "answer": 0,
+  "explanation": "TF = C(s)/R(s) assuming zero initial conditions; it is a property of the system alone (LTI systems).",
+  "why": [
+   null,
+   "Initial conditions must be zero.",
+   "TF is independent of the input type.",
+   "TF can include feedback (closed-loop TF)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-002",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Closed-loop transfer function of a negative-feedback system with forward gain G(s) and feedback H(s) is:",
+  "options": [
+   "1/(1 + GH)",
+   "G/(1 − GH)",
+   "G/(1 + GH)",
+   "GH/(1 + G)"
+  ],
+  "answer": 2,
+  "explanation": "C/R = G/(1 + GH) for negative feedback; G/(1 − GH) for positive feedback.",
+  "why": [
+   "That is the sensitivity function (or error ratio with H = 1).",
+   "That is positive feedback.",
+   null,
+   "Not the standard form."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-003",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Negative feedback in a control system generally:",
+  "options": [
+   "Reduces gain, increases bandwidth and reduces sensitivity to parameter changes",
+   "Makes every system unstable",
+   "Has no effect on disturbances",
+   "Increases gain and reduces bandwidth"
+  ],
+  "answer": 0,
+  "explanation": "Trading gain for bandwidth, accuracy and disturbance rejection is the main purpose of negative feedback.",
+  "why": [
+   null,
+   "Excessive gain can destabilise, but feedback usually improves robustness.",
+   "It reduces the effect of disturbances.",
+   "Opposite."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-004",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A system is stable if all poles of its closed-loop transfer function lie:",
+  "options": [
+   "At the origin",
+   "In the right half of the s-plane",
+   "In the left half of the s-plane",
+   "On the imaginary axis"
+  ],
+  "answer": 2,
+  "explanation": "Poles with negative real parts give decaying responses. RHP poles → unstable; simple poles on the jω axis → marginally stable.",
+  "why": [
+   "A pole at origin gives a non-decaying (integrating) response.",
+   "RHP poles give growing responses.",
+   null,
+   "Gives sustained oscillation (marginal)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-005",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "The \"type\" of a control system refers to the number of:",
+  "options": [
+   "Poles at the origin of the open-loop transfer function G(s)H(s)",
+   "Poles of the closed-loop TF",
+   "Feedback loops",
+   "Zeros at the origin of G(s)H(s)"
+  ],
+  "answer": 0,
+  "explanation": "Type = number of integrators (poles at s = 0) in G(s)H(s). It decides steady-state error to step, ramp and parabolic inputs. Order = highest power of s in the characteristic equation.",
+  "why": [
+   null,
+   "That relates to order.",
+   "Not the definition.",
+   "Zeros do not define type."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-006",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A type-1 unity-feedback system has steady-state error to a unit step input equal to:",
+  "options": [
+   "1/K_{v}",
+   "Infinite",
+   "Zero",
+   "1/(1 + K_{p})"
+  ],
+  "answer": 2,
+  "explanation": "K_{p} = ∞ for type ≥ 1, so e_{ss} = 1/(1 + K_{p}) = 0. Its ramp error is finite = 1/K_{v}.",
+  "why": [
+   "That is the ramp error.",
+   "Infinite step error does not occur with feedback for a stable type-0 system.",
+   null,
+   "That is finite only for type 0."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-007",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Unity feedback with G(s) = 10/(s + 2). Steady-state error for a unit step input is about:",
+  "options": [
+   "0.167",
+   "0.2",
+   "0.5",
+   "0"
+  ],
+  "answer": 0,
+  "solution": [
+   "K_{p} = lim_{s→0} G(s) = 10/2 = 5",
+   "e_{ss} = 1/(1 + K_{p}) = 1/6",
+   "≈ 0.167"
+  ],
+  "explanation": "≈ 0.167",
+  "why": [
+   null,
+   "Uses 1/K_{p}.",
+   "3 times too large — a typical formula slip.",
+   "Type-0 system has finite step error."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-008",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Unity feedback with G(s) = 20/[s(s + 4)]. Steady-state error for a unit ramp input is:",
+  "options": [
+   "5",
+   "0",
+   "0.2",
+   "0.25"
+  ],
+  "answer": 2,
+  "solution": [
+   "K_{v} = lim_{s→0} sG(s) = 20/4 = 5",
+   "e_{ss} = 1/K_{v}",
+   "= 0.2"
+  ],
+  "explanation": "= 0.2",
+  "why": [
+   "That is K_{v} itself.",
+   "Type-1 has non-zero ramp error.",
+   null,
+   "Uses 1/4."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-009",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "For the characteristic equation s^{2} + 4s + 16 = 0, the natural frequency and damping ratio are:",
+  "options": [
+   "ω_{n} = 4 rad/s, ζ = 0.5",
+   "ω_{n} = 16 rad/s, ζ = 0.25",
+   "ω_{n} = 4 rad/s, ζ = 1",
+   "ω_{n} = 2 rad/s, ζ = 0.5"
+  ],
+  "answer": 0,
+  "solution": [
+   "Compare with s^{2} + 2ζω_{n}s + ω_{n}^{2}",
+   "ω_{n}^{2} = 16 → ω_{n} = 4",
+   "2ζω_{n} = 4 → ζ = 0.5"
+  ],
+  "explanation": "2ζω_{n} = 4 → ζ = 0.5",
+  "why": [
+   null,
+   "ω_{n}² taken as ω_{n}.",
+   "ζ = 1 would need middle term 8s.",
+   "ω_{n} wrong."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-010",
+  "topic": "control",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "For ζ = 0.5, the maximum percentage overshoot of a second-order system is about:",
+  "options": [
+   "25%",
+   "50%",
+   "5%",
+   "16.3%"
+  ],
+  "answer": 3,
+  "solution": [
+   "M_{p} = e^{−ζπ/√(1−ζ^{2})}",
+   "= e^{−0.5π/0.866} = e^{−1.814}",
+   "≈ 0.163 = 16.3%"
+  ],
+  "explanation": "≈ 0.163 = 16.3%",
+  "why": [
+   "53% higher than the correct result — does not follow from the correct working.",
+   "Uses ζ itself.",
+   "That is about ζ = 0.7.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-011",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A second-order system has ω_{n} = 4 rad/s and ζ = 0.5. Settling time (2% criterion) is about:",
+  "options": [
+   "1 s",
+   "2 s",
+   "4 s",
+   "0.5 s"
+  ],
+  "answer": 1,
+  "solution": [
+   "t_{s} ≈ 4/(ζω_{n})",
+   "= 4/(0.5 × 4)",
+   "= 2 s"
+  ],
+  "explanation": "= 2 s",
+  "why": [
+   "Uses 2/(ζω_{n}).",
+   null,
+   "Uses 4/(ζω_{n}) with ζω_{n} wrongly taken as 1.",
+   "Uses 1/(ζω_{n})."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-012",
+  "topic": "control",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "For ω_{n} = 4 rad/s and ζ = 0.5, the peak time is about:",
+  "options": [
+   "1.57 s",
+   "0.79 s",
+   "0.45 s",
+   "0.91 s"
+  ],
+  "answer": 3,
+  "solution": [
+   "ω_{d} = ω_{n}√(1 − ζ^{2}) = 4 × 0.866 = 3.464 rad/s",
+   "t_{p} = π/ω_{d}",
+   "= 3.1416/3.464 ≈ 0.91 s"
+  ],
+  "explanation": "= 3.1416/3.464 ≈ 0.91 s",
+  "why": [
+   "Uses π/2.",
+   "Uses π/ω_{n} (ignores damping).",
+   "Not π/ω_{d}; roughly half the correct value.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-013",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A second-order system with damping ratio ζ = 1 is:",
+  "options": [
+   "Underdamped",
+   "Critically damped",
+   "Overdamped",
+   "Undamped"
+  ],
+  "answer": 1,
+  "explanation": "ζ = 0: undamped (sustained oscillation); 0 < ζ < 1: underdamped; ζ = 1: critically damped (fastest without overshoot); ζ > 1: overdamped.",
+  "why": [
+   "0 < ζ < 1.",
+   null,
+   "ζ > 1.",
+   "ζ = 0."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-014",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Poles of a second-order system located on the imaginary axis (s = ±jω) give a step response that is:",
+  "options": [
+   "Exponentially growing",
+   "Overdamped",
+   "Critically damped",
+   "Sustained (undamped) oscillation"
+  ],
+  "answer": 3,
+  "explanation": "ζ = 0: purely imaginary poles produce constant-amplitude oscillation — marginal stability.",
+  "why": [
+   "Growth needs RHP poles.",
+   "Overdamped poles are real, distinct and negative.",
+   "Critically damped poles are real and equal.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-015",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A first-order system 1/(τs + 1) with τ = 2 s reaches about 63.2% of its final value after:",
+  "options": [
+   "1 s",
+   "2 s",
+   "4 s",
+   "10 s"
+  ],
+  "answer": 1,
+  "solution": [
+   "At t = τ, c(t) = 1 − e^{−1} = 0.632",
+   "τ = 2 s",
+   "so after 2 s"
+  ],
+  "explanation": "so after 2 s",
+  "why": [
+   "That is τ/2.",
+   null,
+   "That is 2τ (86.5%).",
+   "That is 5τ (99.3%)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-016",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "In the Routh array, the number of roots in the right half of the s-plane equals the number of:",
+  "options": [
+   "Rows",
+   "Negative coefficients in the last row",
+   "Zeros in the first column",
+   "Sign changes in the first column"
+  ],
+  "answer": 3,
+  "explanation": "Each sign change in the first column corresponds to one RHP root (Routh–Hurwitz criterion).",
+  "why": [
+   "Rows equal order + 1.",
+   "Not the criterion.",
+   "A zero needs special handling (ε method).",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-017",
+  "topic": "control",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "For the characteristic equation s^{3} + 2s^{2} + 3s + K = 0, the system is stable for:",
+  "options": [
+   "0 < K < 3",
+   "0 < K < 6",
+   "K > 6",
+   "All K > 0"
+  ],
+  "answer": 1,
+  "solution": [
+   "Routh: s^{3}: 1, 3; s^{2}: 2, K",
+   "s^{1}: (2×3 − K)/2 = (6 − K)/2; s^{0}: K",
+   "Need (6 − K) > 0 and K > 0 → 0 < K < 6"
+  ],
+  "explanation": "Need (6 − K) > 0 and K > 0 → 0 < K < 6",
+  "why": [
+   "Upper limit wrong.",
+   null,
+   "That is the unstable range.",
+   "Ignores the s¹ row."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-018",
+  "topic": "control",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "How many roots of s^{3} − 4s^{2} + s + 6 = 0 lie in the right half s-plane?",
+  "options": [
+   "3",
+   "0",
+   "1",
+   "2"
+  ],
+  "answer": 3,
+  "solution": [
+   "Routh first column: 1, −4, [(−4)(1) − (1)(6)]/(−4) = 2.5, 6",
+   "Signs: +, −, +, + → two sign changes",
+   "2 RHP roots (roots are −1, 2, 3)"
+  ],
+  "explanation": "2 RHP roots (roots are −1, 2, 3)",
+  "why": [
+   "One root (s = −1) is in the LHP.",
+   "A negative coefficient alone shows instability.",
+   "Count the sign changes again.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-019",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A necessary (but not sufficient) condition for stability is that all coefficients of the characteristic polynomial are:",
+  "options": [
+   "Zero",
+   "Of the same sign and non-zero",
+   "Imaginary",
+   "Equal"
+  ],
+  "answer": 1,
+  "explanation": "Any missing or sign-changed coefficient guarantees instability (or marginal stability); Routh test is still needed for third order and above.",
+  "why": [
+   "Then there is no equation.",
+   null,
+   "Coefficients are real.",
+   "Not required."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-020",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "In a Bode magnitude plot, each simple pole contributes an asymptotic slope of:",
+  "options": [
+   "−20 dB/decade",
+   "−40 dB/decade",
+   "−6 dB/decade",
+   "+20 dB/decade"
+  ],
+  "answer": 0,
+  "explanation": "A simple real pole adds −20 dB/decade (≈ −6 dB/octave) beyond its corner frequency; a simple zero adds +20 dB/decade; a double pole −40 dB/decade.",
+  "why": [
+   null,
+   "That is a double pole.",
+   "That is per octave, not per decade.",
+   "That is a zero."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-021",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Gain margin is measured at the frequency where:",
+  "options": [
+   "Magnitude is maximum",
+   "Magnitude is 0 dB",
+   "Phase angle is −180°",
+   "Phase angle is −90°"
+  ],
+  "answer": 2,
+  "explanation": "At the phase-crossover frequency, GM = 1/|G(jω)H(jω)| (or −20 log|GH| dB). Phase margin is measured at gain crossover (|GH| = 1).",
+  "why": [
+   "That is the resonant peak.",
+   "That is where phase margin is measured.",
+   null,
+   "Not a stability-margin frequency."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-022",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "For a stable minimum-phase system, gain margin and phase margin should both be:",
+  "options": [
+   "Positive",
+   "Zero",
+   "Infinite",
+   "Negative"
+  ],
+  "answer": 0,
+  "explanation": "Positive margins mean the Nyquist plot does not encircle −1. Typical design targets: GM ≥ 6 dB, PM ≈ 30°–60°.",
+  "why": [
+   null,
+   "Zero means marginal stability.",
+   "Not necessary.",
+   "Negative margins indicate instability."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-023",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A system has gain margin of 6 dB. The loop gain can be increased by a factor of about ___ before instability:",
+  "options": [
+   "4",
+   "1.5",
+   "2",
+   "6"
+  ],
+  "answer": 2,
+  "solution": [
+   "GM (ratio) = 10^{6/20}",
+   "= 10^{0.3}",
+   "≈ 2"
+  ],
+  "explanation": "≈ 2",
+  "why": [
+   "That is 12 dB.",
+   "25% lower than the correct result — does not follow from the correct working.",
+   null,
+   "dB is not a ratio."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-024",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Root locus branches start (K = 0) at the:",
+  "options": [
+   "Open-loop poles",
+   "Closed-loop zeros",
+   "Origin always",
+   "Open-loop zeros"
+  ],
+  "answer": 0,
+  "explanation": "Branches begin at open-loop poles and end at open-loop zeros (or at infinity along asymptotes) as K → ∞. The locus is symmetric about the real axis.",
+  "why": [
+   null,
+   "Not the standard statement.",
+   "Only if a pole is at the origin.",
+   "That is where they end."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-025",
+  "topic": "control",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "For G(s)H(s) = K/[s(s + 2)(s + 4)], the centroid of root-locus asymptotes is at:",
+  "options": [
+   "−6",
+   "−1",
+   "−2",
+   "−3"
+  ],
+  "answer": 2,
+  "solution": [
+   "σ = (Σ poles − Σ zeros)/(P − Z)",
+   "= (0 − 2 − 4 − 0)/(3 − 0)",
+   "= −2 (asymptote angles 60°, 180°, 300°)"
+  ],
+  "explanation": "= −2 (asymptote angles 60°, 180°, 300°)",
+  "why": [
+   "Forgets to divide by P − Z.",
+   "Divides by 6.",
+   null,
+   "Divides by 2."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-026",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "A point on the real axis lies on the root locus if the number of open-loop poles and zeros to its right is:",
+  "options": [
+   "Odd",
+   "Zero",
+   "Equal to the number to its left",
+   "Even"
+  ],
+  "answer": 0,
+  "explanation": "Angle condition: real-axis segments to the left of an odd count of real poles + zeros belong to the locus.",
+  "why": [
+   null,
+   "Zero is even.",
+   "Not the rule.",
+   "Even count gives angle 0°, not 180°."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-027",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "Laplace transform of a unit step function is:",
+  "options": [
+   "s",
+   "1",
+   "1/s",
+   "1/s^{2}"
+  ],
+  "answer": 2,
+  "explanation": "L{u(t)} = 1/s. Unit impulse → 1; unit ramp → 1/s^{2}.",
+  "why": [
+   "That is the derivative operator.",
+   "That is the impulse.",
+   null,
+   "That is the ramp."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-028",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Using the final value theorem, the final value of c(t) whose Laplace transform is C(s) = 5/[s(s + 2)] is:",
+  "options": [
+   "2.5",
+   "0",
+   "10",
+   "5"
+  ],
+  "answer": 0,
+  "solution": [
+   "c(∞) = lim_{s→0} sC(s)",
+   "= lim 5/(s + 2)",
+   "= 5/2 = 2.5"
+  ],
+  "explanation": "= 5/2 = 2.5",
+  "why": [
+   null,
+   "Final value is not zero (pole at origin).",
+   "Multiplies instead.",
+   "Forgets the (s + 2)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-029",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Integral action in a PID controller mainly:",
+  "options": [
+   "Reduces system type",
+   "Improves transient response speed",
+   "Eliminates steady-state error",
+   "Adds damping"
+  ],
+  "answer": 2,
+  "explanation": "An integrator adds a pole at the origin (raising type by one), driving steady-state error to zero for step inputs. Derivative action adds damping; proportional speeds response.",
+  "why": [
+   "It increases type.",
+   "Proportional/derivative mainly affect speed and damping.",
+   null,
+   "Derivative adds damping."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-030",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Derivative control action:",
+  "options": [
+   "Removes steady-state error",
+   "Anticipates error, adds damping and reduces overshoot",
+   "Is used alone in most controllers",
+   "Amplifies low-frequency signals only"
+  ],
+  "answer": 1,
+  "explanation": "Responds to rate of change of error; amplifies high-frequency noise so it is used with P/PI action, not alone.",
+  "why": [
+   "That is integral action.",
+   null,
+   "It is never used alone (no response to constant error).",
+   "It amplifies high frequencies."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-031",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A phase-lead compensator is used mainly to improve:",
+  "options": [
+   "DC gain only",
+   "Noise rejection at high frequency",
+   "Steady-state accuracy",
+   "Transient response and phase margin"
+  ],
+  "answer": 3,
+  "explanation": "Lead adds positive phase near crossover, increasing phase margin and bandwidth (faster response). Lag improves steady-state error.",
+  "why": [
+   "Lag raises low-frequency gain.",
+   "Lead increases high-frequency gain.",
+   "That is a lag compensator.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-032",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "In state-space form ẋ = Ax + Bu, the poles of the system are the:",
+  "options": [
+   "Elements of B",
+   "Eigenvalues of A",
+   "Rows of C",
+   "Elements of D"
+  ],
+  "answer": 1,
+  "explanation": "Characteristic equation |sI − A| = 0; its roots (eigenvalues of A) are the system poles.",
+  "why": [
+   "B is the input matrix.",
+   null,
+   "C maps states to output.",
+   "D is direct feed-through."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-033",
+  "topic": "control",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "For A = [[0, 1], [−2, −3]], the eigenvalues are:",
+  "options": [
+   "−1 and 2",
+   "0 and −3",
+   "1 and 2",
+   "−1 and −2"
+  ],
+  "answer": 3,
+  "solution": [
+   "|sI − A| = s(s + 3) + 2 = s^{2} + 3s + 2",
+   "= (s + 1)(s + 2)",
+   "eigenvalues −1, −2"
+  ],
+  "explanation": "eigenvalues −1, −2",
+  "why": [
+   "Sign error on one root.",
+   "Uses the diagonal only.",
+   "Sign error.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-034",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Transfer function from a state-space model is:",
+  "options": [
+   "A^{-1}B",
+   "C(sI − A)^{-1}B + D",
+   "B(sI − A)C + D",
+   "(sI − A)^{-1}"
+  ],
+  "answer": 1,
+  "explanation": "Taking Laplace transforms with zero initial state: X = (sI − A)^{-1}BU, Y = CX + DU.",
+  "why": [
+   "Not the transfer function.",
+   null,
+   "Wrong order and missing inverse.",
+   "Missing B, C, D."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-035",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A system is completely state controllable if the matrix [B  AB  A^{2}B … A^{n−1}B] has:",
+  "options": [
+   "Determinant equal to 1",
+   "All entries positive",
+   "Rank zero",
+   "Full rank n"
+  ],
+  "answer": 3,
+  "explanation": "Kalman controllability test. Observability uses [C; CA; …; CA^{n−1}] with full rank n.",
+  "why": [
+   "Determinant need only be non-zero (for single input).",
+   "Entries can be any sign.",
+   "Rank zero means no control at all.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-036",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Mason's gain formula is used with:",
+  "options": [
+   "Bode plots",
+   "Signal flow graphs",
+   "Nyquist plots",
+   "Routh arrays"
+  ],
+  "answer": 1,
+  "explanation": "T = Σ P_{k}Δ_{k}/Δ, finding overall gain of a signal flow graph without block reduction.",
+  "why": [
+   "Bode uses asymptotes.",
+   null,
+   "Nyquist uses encirclements.",
+   "Routh tests stability."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-037",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Two blocks with transfer functions G_{1} = 2/(s + 1) and G_{2} = 3 in cascade give an overall TF of:",
+  "options": [
+   "2/(s + 4)",
+   "6/(s + 3)",
+   "5/(s + 1)",
+   "6/(s + 1)"
+  ],
+  "answer": 3,
+  "solution": [
+   "Blocks in series multiply",
+   "G = G_{1}G_{2} = 2 × 3/(s + 1)",
+   "= 6/(s + 1)"
+  ],
+  "explanation": "= 6/(s + 1)",
+  "why": [
+   "3 times too small — a typical formula slip.",
+   "0% lower than the correct result — does not follow from the correct working.",
+   "Adds the gains (parallel blocks add their TFs, not gains).",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-038",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "According to the Nyquist criterion Z = N + P, Z represents the number of:",
+  "options": [
+   "Open-loop poles in the RHP",
+   "Closed-loop poles in the RHP",
+   "Encirclements of the origin",
+   "Zeros of G(s)"
+  ],
+  "answer": 1,
+  "explanation": "Z = closed-loop RHP poles (zeros of 1 + GH), N = clockwise encirclements of −1, P = open-loop RHP poles. Stability requires Z = 0.",
+  "why": [
+   "That is P.",
+   null,
+   "Encirclements of −1 are N.",
+   "Not the meaning."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-039",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "An AC servomotor (two-phase) is designed with high rotor resistance in order to:",
+  "options": [
+   "Increase speed",
+   "Reduce cost",
+   "Increase efficiency",
+   "Obtain a linear torque–speed characteristic with negative slope for stability"
+  ],
+  "answer": 3,
+  "explanation": "High R/X ratio gives maximum torque near standstill and a drooping, almost linear characteristic (inherent damping).",
+  "why": [
+   "Not the aim.",
+   "Not the aim.",
+   "Efficiency actually falls.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-040",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "A tachogenerator in a control system is used for:",
+  "options": [
+   "Torque measurement",
+   "Position sensing",
+   "Speed (velocity) feedback",
+   "Error amplification"
+  ],
+  "answer": 2,
+  "explanation": "Its output voltage is proportional to shaft speed, providing rate feedback that improves damping.",
+  "why": [
+   "Torque transducers do that.",
+   "Potentiometers/synchros sense position.",
+   null,
+   "Amplifiers do that."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-041",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A synchro transmitter–control transformer pair is commonly used as a(n):",
+  "options": [
+   "Error detector for angular position",
+   "Amplifier",
+   "Rectifier",
+   "Speed sensor"
+  ],
+  "answer": 0,
+  "explanation": "The control transformer output is proportional to sin of the angular difference between transmitter and receiver shafts.",
+  "why": [
+   null,
+   "Not an amplifier.",
+   "Not a rectifier.",
+   "Tachogenerators sense speed."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-042",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Unity-feedback system with G(s) = K/[s(s + 10)]. For damping ratio 0.5, K should be:",
+  "options": [
+   "25",
+   "50",
+   "100",
+   "400"
+  ],
+  "answer": 2,
+  "solution": [
+   "Characteristic eq: s^{2} + 10s + K = 0 → ω_{n} = √K, 2ζω_{n} = 10",
+   "ζ = 0.5 → ω_{n} = 10",
+   "K = ω_{n}^{2} = 100"
+  ],
+  "explanation": "K = ω_{n}^{2} = 100",
+  "why": [
+   "That gives ζ = 1.",
+   "Gives ζ ≈ 0.707.",
+   null,
+   "That gives ζ = 0.25."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ctl-043",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Increasing the gain K of a type-1 system generally:",
+  "options": [
+   "Reduces steady-state error but increases overshoot (lower damping)",
+   "Always improves stability",
+   "Has no effect on transient response",
+   "Increases steady-state ramp error"
+  ],
+  "answer": 0,
+  "explanation": "Higher K raises K_{v} (lower ramp error) but, for the same plant, increases ω_{n} and reduces ζ — more overshoot and eventually instability for higher-order plants.",
+  "why": [
+   null,
+   "Too much gain destabilises.",
+   "Transient response changes.",
+   "Ramp error = 1/K_{v} decreases."
+  ],
+  "source": "bank"
+ }
+]

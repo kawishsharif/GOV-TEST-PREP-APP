@@ -1,0 +1,1217 @@
+[
+ {
+  "id": "prt-001",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "The most frequently occurring fault in power systems is:",
+  "options": [
+   "Line-to-line fault",
+   "Double line-to-ground fault",
+   "Three-phase symmetrical fault",
+   "Single line-to-ground fault"
+  ],
+  "answer": 3,
+  "explanation": "Single line-to-ground faults make up about 70–80% of faults on overhead lines (insulator flashover, trees, birds). Three-phase faults are the rarest (~5%) but usually most severe.",
+  "why": [
+   "About 10–15%.",
+   "About 10%.",
+   "Rarest, though most severe in general.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-002",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "The most severe fault, generally used to rate circuit breakers, is the:",
+  "options": [
+   "Line-to-line fault",
+   "Three-phase symmetrical fault",
+   "Open-conductor fault",
+   "Single line-to-ground fault"
+  ],
+  "answer": 1,
+  "explanation": "A bolted 3-phase fault gives the highest fault current in most systems (an LG fault can exceed it only near solidly earthed generators with low Z_{0}).",
+  "why": [
+   "Less than three-phase (≈ 0.866 × 3φ current with Z_{1} = Z_{2}).",
+   null,
+   "Series faults draw less than load current.",
+   "Most common, usually less severe."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-003",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "Which fault is a symmetrical fault?",
+  "options": [
+   "L–G",
+   "L–L",
+   "L–L–G",
+   "L–L–L"
+  ],
+  "answer": 3,
+  "explanation": "Only the balanced three-phase (L–L–L or L–L–L–G) fault keeps the system symmetrical, so it can be solved on a per-phase basis with positive-sequence network alone.",
+  "why": [
+   "Unsymmetrical.",
+   "Unsymmetrical.",
+   "Unsymmetrical.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-004",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Zero-sequence currents cannot flow in:",
+  "options": [
+   "A solidly grounded star winding",
+   "A delta-connected line circuit (outside the delta)",
+   "The neutral of a grounded system",
+   "The earth return path"
+  ],
+  "answer": 1,
+  "explanation": "Zero-sequence currents are in phase in all three lines and need a return path (neutral/earth). They can circulate inside a delta but cannot appear in lines connected to it.",
+  "why": [
+   "Grounded star provides a path.",
+   null,
+   "The neutral carries 3I_{0}.",
+   "Earth is the return path for 3I_{0}."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-005",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Which sequence components are present in a line-to-line fault (no ground)?",
+  "options": [
+   "Positive, negative and zero",
+   "Zero only",
+   "Positive only",
+   "Positive and negative"
+  ],
+  "answer": 3,
+  "explanation": "No ground path means no zero sequence. I_{a1} = −I_{a2} = E/(Z_{1} + Z_{2}).",
+  "why": [
+   "Zero sequence needs a ground connection.",
+   "Not possible.",
+   "Only a balanced 3-phase fault has positive sequence alone.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-006",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "For a single line-to-ground fault, the sequence networks are connected in:",
+  "options": [
+   "Parallel",
+   "Series",
+   "Positive alone",
+   "Positive and negative in parallel only"
+  ],
+  "answer": 1,
+  "explanation": "I_{a1} = I_{a2} = I_{a0} = E/(Z_{1} + Z_{2} + Z_{0} + 3Z_{f}); fault current I_{f} = 3I_{a0}.",
+  "why": [
+   "Parallel connection is for the L–L–G fault (all three) or L–L (positive and negative).",
+   null,
+   "That is the 3-phase fault.",
+   "That is the L–L fault."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-007",
+  "topic": "protection",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "An unloaded generator has E = 1 p.u., Z_{1} = Z_{2} = j0.2 p.u., Z_{0} = j0.1 p.u., solidly grounded. Magnitude of the L–G fault current is:",
+  "options": [
+   "3.33 p.u.",
+   "2 p.u.",
+   "5 p.u.",
+   "6 p.u."
+  ],
+  "answer": 3,
+  "solution": [
+   "I_{a0} = E/(Z_{1} + Z_{2} + Z_{0}) = 1/0.5 = 2 p.u.",
+   "I_{f} = 3I_{a0}",
+   "= 6 p.u."
+  ],
+  "explanation": "= 6 p.u.",
+  "why": [
+   "44% lower than the correct result — does not follow from the correct working.",
+   "That is I_{a0}, not 3I_{a0}.",
+   "That is the 3-phase fault current E/Z_{1}.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-008",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "For the same generator (E = 1 p.u., Z_{1} = j0.2 p.u.), the three-phase fault current is:",
+  "options": [
+   "2 p.u.",
+   "5 p.u.",
+   "6 p.u.",
+   "0.2 p.u."
+  ],
+  "answer": 1,
+  "solution": [
+   "Symmetrical fault: I_{f} = E/Z_{1}",
+   "= 1/0.2",
+   "= 5 p.u."
+  ],
+  "explanation": "= 5 p.u.",
+  "why": [
+   "Uses Z_{1} + Z_{2} + Z_{0}.",
+   null,
+   "That is the L–G value here.",
+   "That is the impedance."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-009",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "The operator \"a\" in symmetrical components has the value:",
+  "options": [
+   "1∠180°",
+   "√3∠30°",
+   "1∠90°",
+   "1∠120°"
+  ],
+  "answer": 3,
+  "explanation": "a = 1∠120° = −0.5 + j0.866; a^{2} = 1∠240°; 1 + a + a^{2} = 0.",
+  "why": [
+   "That is −1.",
+   "That relates line and phase voltages.",
+   "That is the j operator.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-010",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Fault level at a bus is to be found. Base 100 MVA, Thevenin impedance to the fault = 0.1 p.u. Fault MVA is:",
+  "options": [
+   "10 MVA",
+   "100 MVA",
+   "1000 MVA",
+   "10,000 MVA"
+  ],
+  "answer": 2,
+  "solution": [
+   "Fault MVA = Base MVA / Z_{pu}",
+   "= 100/0.1",
+   "= 1000 MVA"
+  ],
+  "explanation": "= 1000 MVA",
+  "why": [
+   "Multiplies instead of divides.",
+   "Ignores impedance.",
+   null,
+   "Off by 10."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-011",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "An overcurrent relay set at 125% is connected through a 400/5 A CT. For a fault current of 4000 A the plug setting multiplier (PSM) is:",
+  "options": [
+   "8",
+   "10",
+   "12.5",
+   "6"
+  ],
+  "answer": 0,
+  "solution": [
+   "Relay setting current = 1.25 × 5 = 6.25 A",
+   "CT secondary current = 4000 × 5/400 = 50 A",
+   "PSM = 50/6.25 = 8"
+  ],
+  "explanation": "PSM = 50/6.25 = 8",
+  "why": [
+   null,
+   "Ignores the 125% setting (50/5).",
+   "Uses 125 ÷ 10.",
+   "25% lower than the correct result — does not follow from the correct working."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-012",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "An IDMT relay has a characteristic in which operating time:",
+  "options": [
+   "Is zero",
+   "Is constant at all currents",
+   "Is inversely related to current at low multiples and tends to a definite minimum at high currents",
+   "Increases with current"
+  ],
+  "answer": 2,
+  "explanation": "Inverse Definite Minimum Time: time ∝ 1/I near pick-up, flattening to a definite minimum because the magnetic circuit saturates.",
+  "why": [
+   "That is instantaneous.",
+   "That is a definite-time relay.",
+   null,
+   "Opposite of protective needs."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-013",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A directional overcurrent relay is required for:",
+  "options": [
+   "Ring mains and parallel feeders",
+   "Motors",
+   "Domestic wiring",
+   "Radial feeders fed from one end"
+  ],
+  "answer": 0,
+  "explanation": "When fault current can flow in either direction, relays must respond only to current flowing into the protected section.",
+  "why": [
+   null,
+   "Motors use thermal/overload.",
+   "MCBs/RCDs are used.",
+   "Non-directional relays suffice for radial feeders."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-014",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Distance relays are mainly used to protect:",
+  "options": [
+   "Bus bars",
+   "Transformers",
+   "Transmission lines",
+   "Generators"
+  ],
+  "answer": 2,
+  "explanation": "They measure V/I (impedance to fault) at the relay point and are standard for HV/EHV lines with zones (Zone 1 ≈ 80–90% of the line, Zone 2, Zone 3 back-up).",
+  "why": [
+   "Bus bars use differential.",
+   "Transformers use differential/Buchholz.",
+   null,
+   "Generators use differential and others."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-015",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Which distance relay is best suited for long EHV transmission lines?",
+  "options": [
+   "Mho (admittance) relay",
+   "Overcurrent relay",
+   "Reactance relay",
+   "Impedance relay"
+  ],
+  "answer": 0,
+  "explanation": "Mho relays are inherently directional and occupy the least R–X area, so they are least affected by power swings — preferred for long lines. Reactance relays suit short lines (unaffected by arc resistance).",
+  "why": [
+   null,
+   "Not a distance relay.",
+   "Best for short lines.",
+   "Suitable for medium lines; not inherently directional."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-016",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A reactance relay is preferred for short lines because it is:",
+  "options": [
+   "Cheapest",
+   "Inherently directional",
+   "Unaffected by arc resistance",
+   "Unaffected by load"
+  ],
+  "answer": 2,
+  "explanation": "It measures only X; arc resistance (significant relative to the small impedance of short lines) does not cause under-reach.",
+  "why": [
+   "Not the reason.",
+   "Reactance relays are not inherently directional; a mho starter is used.",
+   null,
+   "Heavy load can affect it."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-017",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "Differential protection is mainly used for:",
+  "options": [
+   "Transformers, generators and bus bars",
+   "Domestic circuits",
+   "Lightning protection",
+   "Transmission line distance protection"
+  ],
+  "answer": 0,
+  "explanation": "It compares currents entering and leaving a zone (Merz–Price principle); internal faults cause a difference that operates the relay.",
+  "why": [
+   null,
+   "Domestic uses MCB/RCD.",
+   "Arresters are used for lightning.",
+   "Lines use distance protection (pilot differential only for short lines)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-018",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Percentage (biased) differential relays are used to:",
+  "options": [
+   "Detect lightning",
+   "Increase sensitivity to external faults",
+   "Prevent mal-operation due to CT mismatch during heavy through-faults",
+   "Measure power factor"
+  ],
+  "answer": 2,
+  "explanation": "Restraint coils carrying through-current raise the operating threshold proportionally, avoiding trips from CT errors and tap changing.",
+  "why": [
+   "Not its function.",
+   "External faults should not cause operation.",
+   null,
+   "Not its function."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-019",
+  "topic": "protection",
+  "difficulty": "hard",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Transformer differential relays use second-harmonic restraint to avoid tripping on:",
+  "options": [
+   "Magnetising inrush current at energisation",
+   "Over-voltage",
+   "Overload",
+   "Internal winding faults"
+  ],
+  "answer": 0,
+  "explanation": "Inrush current is rich in second harmonic and appears on one side only; harmonic restraint blocks the relay during inrush.",
+  "why": [
+   null,
+   "Overfluxing is detected with 5th harmonic / V/f relays.",
+   "Overload is a thermal matter.",
+   "Internal faults must trip."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-020",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "The secondary of a current transformer should never be open-circuited while the primary is carrying current because:",
+  "options": [
+   "Primary current stops",
+   "Accuracy improves",
+   "Secondary current becomes very large",
+   "A very high voltage is induced and the core may saturate and overheat"
+  ],
+  "answer": 3,
+  "explanation": "Without secondary ampere-turns opposing the primary, all primary current magnetises the core: flux rises to saturation, inducing dangerous peak voltages and heating.",
+  "why": [
+   "Primary current is set by the line load.",
+   "It is dangerous.",
+   "Secondary current becomes zero when open.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-021",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Standard secondary current rating of protection CTs is:",
+  "options": [
+   "0.1 A",
+   "1 A or 5 A",
+   "10 A or 50 A",
+   "110 A"
+  ],
+  "answer": 1,
+  "explanation": "CT secondaries are 1 A or 5 A; PT (VT) secondaries are usually 110 V line-to-line.",
+  "why": [
+   "Not standard.",
+   null,
+   "Not standard.",
+   "Confuses with VT secondary voltage."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-022",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 600/5 A CT carries 450 A in its primary. Secondary current is:",
+  "options": [
+   "5 A",
+   "0.75 A",
+   "7.5 A",
+   "3.75 A"
+  ],
+  "answer": 3,
+  "solution": [
+   "I_{s} = I_{p} × 5/600",
+   "= 450/120",
+   "= 3.75 A"
+  ],
+  "explanation": "= 3.75 A",
+  "why": [
+   "That is at 600 A.",
+   "Off by 5.",
+   "Uses ratio 60.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-023",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "SF6 is used in circuit breakers because it:",
+  "options": [
+   "Is a good conductor",
+   "Is electronegative with excellent dielectric strength and arc-quenching ability",
+   "Is cheap and odourless only",
+   "Is flammable"
+  ],
+  "answer": 1,
+  "explanation": "SF6 captures free electrons forming heavy ions, giving fast recovery of dielectric strength; its dielectric strength is about 2–3 times that of air at the same pressure.",
+  "why": [
+   "It is an insulator.",
+   null,
+   "It is costly and a potent greenhouse gas.",
+   "It is non-flammable."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-024",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Vacuum circuit breakers are most widely used for:",
+  "options": [
+   "500 kV systems",
+   "HVDC",
+   "Low voltage only (below 1 kV)",
+   "Medium voltages (about 11–33 kV)"
+  ],
+  "answer": 3,
+  "explanation": "Vacuum interrupters dominate distribution voltages; very fast dielectric recovery and long contact life make them ideal up to ~33–36 kV. SF6 dominates EHV.",
+  "why": [
+   "SF6 is used at EHV.",
+   "HVDC breaking needs special schemes.",
+   "MCBs/ACBs are used at LV.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-025",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "In a vacuum circuit breaker the arc is sustained by:",
+  "options": [
+   "Ionised air",
+   "Metal vapour from the contacts",
+   "SF6 ions",
+   "Oil decomposition gases"
+  ],
+  "answer": 1,
+  "explanation": "There is no gas; the arc burns in metal vapour released from the contacts, which condenses rapidly at current zero.",
+  "why": [
+   "There is no air in the interrupter.",
+   null,
+   "That is an SF6 breaker.",
+   "That is an oil breaker."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-026",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Air-blast circuit breakers are mainly used for:",
+  "options": [
+   "Low-voltage motor control",
+   "DC traction only",
+   "Domestic installations",
+   "EHV systems requiring fast, repeated operation"
+  ],
+  "answer": 3,
+  "explanation": "High-pressure air blasts the arc for very fast interruption; historically used on EHV lines (now largely replaced by SF6).",
+  "why": [
+   "Contactors are used for motors.",
+   "Not their main use.",
+   "Not used domestically.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-027",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "In AC circuit breakers, the arc is interrupted mainly at:",
+  "options": [
+   "Peak current",
+   "Current zero",
+   "Any instant",
+   "Peak voltage"
+  ],
+  "answer": 1,
+  "explanation": "At natural current zero the arc extinguishes; the breaker must then build dielectric strength faster than the rate of rise of restriking voltage (RRRV).",
+  "why": [
+   "Interrupting at peak causes huge overvoltages (current chopping).",
+   null,
+   "Not controllable.",
+   "Not the interruption instant."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-028",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 3-phase breaker is rated 2000 A breaking current at 132 kV. Its symmetrical breaking capacity is about:",
+  "options": [
+   "792 MVA",
+   "152 MVA",
+   "264 MVA",
+   "457 MVA"
+  ],
+  "answer": 3,
+  "solution": [
+   "Breaking MVA = √3 × V_{L} × I_{break}",
+   "= 1.732 × 132 × 2 kA",
+   "≈ 457 MVA"
+  ],
+  "explanation": "≈ 457 MVA",
+  "why": [
+   "Uses 3 instead of √3.",
+   "Divides by √3.",
+   "Omits √3.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-029",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "If the symmetrical breaking current of a breaker is 20 kA, its making current (peak) is about:",
+  "options": [
+   "28.3 kA",
+   "51 kA",
+   "60 kA",
+   "20 kA"
+  ],
+  "answer": 1,
+  "solution": [
+   "Making current = 2.55 × symmetrical breaking current (rms)",
+   "= 2.55 × 20",
+   "= 51 kA peak"
+  ],
+  "explanation": "= 51 kA peak",
+  "why": [
+   "Only √2 (no DC offset).",
+   null,
+   "Uses factor 3.",
+   "Ignores the asymmetry/peak factor."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-030",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "An isolator (disconnector) is designed to be operated:",
+  "options": [
+   "Off load, after the circuit breaker has opened",
+   "Automatically by relays",
+   "On load",
+   "Under fault conditions"
+  ],
+  "answer": 0,
+  "explanation": "Isolators have no arc-quenching ability; they provide visible isolation for maintenance after the breaker interrupts current.",
+  "why": [
+   null,
+   "Normally manual or motorised on command, interlocked with the breaker.",
+   "It cannot interrupt load current.",
+   "Breakers interrupt faults."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-031",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Fusing factor of a fuse is defined as:",
+  "options": [
+   "Breaking capacity / rated current",
+   "Rated current / minimum fusing current",
+   "Minimum fusing current / current rating",
+   "Prospective current / rated current"
+  ],
+  "answer": 2,
+  "explanation": "Fusing factor = minimum fusing current ÷ current rating, always > 1 (HRC fuses ≈ 1.1–1.5).",
+  "why": [
+   "Not the definition.",
+   "Inverse.",
+   null,
+   "Not the definition."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-032",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "A lightning (surge) arrester is connected:",
+  "options": [
+   "Between line and earth",
+   "Between two phases only",
+   "In the neutral of the generator only",
+   "In series with the line"
+  ],
+  "answer": 0,
+  "explanation": "It presents high impedance at normal voltage and low impedance during a surge, diverting surge current to earth and limiting voltage on equipment.",
+  "why": [
+   null,
+   "It is phase-to-earth.",
+   "Not its location.",
+   "A series device would carry load current."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-033",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Modern surge arresters at substations are mostly of the:",
+  "options": [
+   "Rod-gap type",
+   "Expulsion type",
+   "Metal-oxide (ZnO) gapless type",
+   "Horn-gap type"
+  ],
+  "answer": 2,
+  "explanation": "ZnO blocks have highly non-linear V–I characteristics, so no series gap is needed and protection is fast and consistent.",
+  "why": [
+   "Crude back-up protection only.",
+   "Used on distribution lines; limited.",
+   null,
+   "Old type with erratic sparkover."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-034",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "The overhead earth (shield/ground) wire on transmission towers protects against:",
+  "options": [
+   "Direct lightning strokes on phase conductors",
+   "Corona",
+   "Ferranti effect",
+   "Switching surges"
+  ],
+  "answer": 0,
+  "explanation": "Placed above the phase conductors, it intercepts direct strokes and drains them through the tower footing; protective (shielding) angle is typically about 30°.",
+  "why": [
+   null,
+   "Unrelated.",
+   "Unrelated.",
+   "Switching surges originate inside the system."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-035",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "A Petersen coil (arc suppression coil) is connected between:",
+  "options": [
+   "Line and earth at each tower",
+   "Line and line",
+   "Neutral and earth",
+   "Two transformers"
+  ],
+  "answer": 2,
+  "explanation": "Its inductance is tuned to the system’s phase-to-earth capacitance (X_{L} = 1/(3ωC)), so the fault current at a single line-to-ground fault is neutralised and arcing grounds are suppressed.",
+  "why": [
+   "Not its connection.",
+   "Not its connection.",
+   null,
+   "Not its connection."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-036",
+  "topic": "protection",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "For resonant (Petersen coil) grounding of a system whose per-phase capacitance to earth is C, the coil inductance should be:",
+  "options": [
+   "L = 1/(3ω^{2}C)",
+   "L = 3/(ω^{2}C)",
+   "L = ω^{2}C/3",
+   "L = 1/(ω^{2}C)"
+  ],
+  "answer": 0,
+  "solution": [
+   "Coil current must equal capacitive fault current 3ωCV_{ph}",
+   "V_{ph}/(ωL) = 3ωCV_{ph}",
+   "L = 1/(3ω^{2}C)"
+  ],
+  "explanation": "L = 1/(3ω^{2}C)",
+  "why": [
+   null,
+   "Factor 3 on the wrong side.",
+   "Dimensionally wrong.",
+   "Ignores that all three phase capacitances feed the fault."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-037",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Arcing grounds are a problem in:",
+  "options": [
+   "Resistance-grounded systems",
+   "Solidly grounded systems",
+   "Ungrounded (isolated neutral) systems",
+   "DC systems"
+  ],
+  "answer": 2,
+  "explanation": "In an isolated neutral system an earth fault arc can extinguish and restrike repeatedly, building up dangerous overvoltages.",
+  "why": [
+   "Grounding resistance limits it.",
+   "Solid grounding prevents it.",
+   null,
+   "Not the classic case."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-038",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Earth resistance of a large power station/substation earthing system should be about:",
+  "options": [
+   "0.5–1 Ω",
+   "10–25 Ω",
+   "100 Ω",
+   "1 kΩ"
+  ],
+  "answer": 0,
+  "explanation": "Large stations target very low values (≈0.5 Ω for power stations, ≈1 Ω for large substations) so fault current is safely dissipated and step/touch voltages stay low.",
+  "why": [
+   null,
+   "Too high for stations; may be acceptable for small installations.",
+   "Far too high.",
+   "Far too high."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-039",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "A residual current device (RCCB/ELCB) for protection of persons against shock typically trips at:",
+  "options": [
+   "3 A",
+   "30 A",
+   "30 mA",
+   "300 mA"
+  ],
+  "answer": 2,
+  "explanation": "A 30 mA RCD limits shock duration so that current through the body stays below dangerous levels.",
+  "why": [
+   "Far too high for personal safety.",
+   "That is an MCB-range current.",
+   null,
+   "Used for fire protection, not personal protection."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-040",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A Buchholz relay operates on:",
+  "options": [
+   "Voltage",
+   "Gas/oil movement in the transformer",
+   "Temperature of windings directly",
+   "Current"
+  ],
+  "answer": 1,
+  "explanation": "It is a mechanical gas-actuated relay: gas accumulation tilts the upper float (alarm); an oil surge moves the lower float/flap (trip).",
+  "why": [
+   "Not voltage-operated.",
+   null,
+   "Winding temperature indicators do that.",
+   "Electrical relays measure current."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-041",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Reverse power relays are used to protect a generator against:",
+  "options": [
+   "Stator earth faults",
+   "Lightning",
+   "Overspeed",
+   "Motoring (prime mover failure)"
+  ],
+  "answer": 3,
+  "explanation": "If the prime mover fails, the alternator draws power from the grid and runs as a motor, which can damage the turbine; the relay detects reverse real power.",
+  "why": [
+   "Stator earth fault relays do that.",
+   "Arresters do that.",
+   "Overspeed devices are mechanical/governor based.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-042",
+  "topic": "protection",
+  "difficulty": "hard",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Negative-sequence protection of a generator guards against:",
+  "options": [
+   "Loss of excitation",
+   "Unbalanced loading that overheats the rotor",
+   "Overvoltage",
+   "Reverse power"
+  ],
+  "answer": 1,
+  "explanation": "Negative-sequence current produces a field rotating at twice synchronous speed relative to the rotor, inducing double-frequency currents and heating; limit is I_{2}^{2}t.",
+  "why": [
+   "Detected by impedance (mho offset) relays.",
+   null,
+   "Detected by overvoltage relays.",
+   "Detected by reverse power relays."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-043",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Auto-reclosing is used on overhead lines because:",
+  "options": [
+   "It reduces fault current",
+   "It is required on cables",
+   "Most faults are permanent",
+   "Most faults are transient (≈ 80%) and clear after the line is de-energised"
+  ],
+  "answer": 3,
+  "explanation": "Flashovers from lightning, birds or branches often clear once the arc is extinguished; reclosing restores supply quickly.",
+  "why": [
+   "It does not change fault current.",
+   "Cable faults are usually permanent; reclosing is avoided.",
+   "Most overhead-line faults are transient.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-044",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Recovery voltage in a circuit breaker is:",
+  "options": [
+   "The voltage across contacts just before opening",
+   "The normal-frequency rms voltage appearing across the contacts after final arc extinction",
+   "The surge voltage from lightning",
+   "The voltage across the arc"
+  ],
+  "answer": 1,
+  "explanation": "Restriking voltage is the transient immediately after current zero; recovery voltage is the power-frequency voltage that remains.",
+  "why": [
+   "Contacts are closed before opening (zero voltage).",
+   null,
+   "Lightning is external.",
+   "That is arc voltage."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-045",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Bus-bar protection is commonly provided by:",
+  "options": [
+   "Buchholz relays",
+   "Fuses",
+   "Distance relays",
+   "Differential (circulating current or high-impedance) protection"
+  ],
+  "answer": 3,
+  "explanation": "The sum of currents into a healthy bus is zero; high-impedance differential schemes are stable for through faults even with CT saturation.",
+  "why": [
+   "Buchholz is for transformers.",
+   "Fuses are not used at HV buses.",
+   "Distance relays only give slow back-up.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-046",
+  "topic": "protection",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "For E = 1 p.u. and Z_{1} = Z_{2} = j0.2 p.u., the magnitude of a line-to-line fault current is about:",
+  "options": [
+   "2.5 p.u.",
+   "4.33 p.u.",
+   "5 p.u.",
+   "8.66 p.u."
+  ],
+  "answer": 1,
+  "solution": [
+   "I_{a1} = E/(Z_{1} + Z_{2}) = 1/0.4 = 2.5 p.u.",
+   "I_{b} = −j√3 I_{a1} → |I_{f}| = √3 × 2.5",
+   "≈ 4.33 p.u. (= 0.866 × three-phase value)"
+  ],
+  "explanation": "≈ 4.33 p.u. (= 0.866 × three-phase value)",
+  "why": [
+   "That is only the positive-sequence current.",
+   null,
+   "That is the three-phase value.",
+   "Doubles the correct value."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-047",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A fault level of 1000 MVA at a 132 kV bus corresponds to a fault current of about:",
+  "options": [
+   "2.52 kA",
+   "13.1 kA",
+   "7.6 kA",
+   "4.37 kA"
+  ],
+  "answer": 3,
+  "solution": [
+   "I = MVA/(√3 × kV)",
+   "= 1000/(1.732 × 132)",
+   "≈ 4.37 kA"
+  ],
+  "explanation": "≈ 4.37 kA",
+  "why": [
+   "Divides by 3 × 132.",
+   "3 times too large — a typical formula slip.",
+   "Divides by 132 only (single-phase formula).",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-048",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "An IDMT relay operates in 3 s at a given PSM with TMS = 1. With TMS set to 0.4 it will operate in:",
+  "options": [
+   "0.4 s",
+   "1.2 s",
+   "3 s",
+   "7.5 s"
+  ],
+  "answer": 1,
+  "solution": [
+   "Operating time ∝ TMS",
+   "t = 3 × 0.4",
+   "= 1.2 s"
+  ],
+  "explanation": "= 1.2 s",
+  "why": [
+   "That is the TMS, not a time.",
+   null,
+   "TMS changes the time.",
+   "Divides by TMS instead of multiplying."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-049",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 5 A CT secondary circuit has a total burden resistance of 0.4 Ω. The burden in VA is:",
+  "options": [
+   "12.5 VA",
+   "25 VA",
+   "2 VA",
+   "10 VA"
+  ],
+  "answer": 3,
+  "solution": [
+   "Burden = I^{2}R",
+   "= 5^{2} × 0.4",
+   "= 10 VA"
+  ],
+  "explanation": "= 10 VA",
+  "why": [
+   "Uses I ÷ R.",
+   "Uses I² only.",
+   "Uses I × R.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "prt-050",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Symmetrical breaking capacity of a 33 kV breaker rated for 25 kA is about:",
+  "options": [
+   "476 MVA",
+   "825 MVA",
+   "1429 MVA",
+   "2475 MVA"
+  ],
+  "answer": 2,
+  "solution": [
+   "MVA = √3 × kV × kA",
+   "= 1.732 × 33 × 25",
+   "≈ 1429 MVA"
+  ],
+  "explanation": "≈ 1429 MVA",
+  "why": [
+   "Divides by √3.",
+   "Omits √3.",
+   null,
+   "Uses 3 instead of √3."
+  ],
+  "source": "bank"
+ }
+]

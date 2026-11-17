@@ -1,0 +1,1538 @@
+[
+ {
+  "id": "eng-001",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Choose the synonym of ABUNDANT:",
+  "options": [
+   "Meagre",
+   "Rare",
+   "Scarce",
+   "Plentiful"
+  ],
+  "answer": 3,
+  "explanation": "Abundant means existing in large quantities — plentiful.",
+  "why": [
+   "Antonym (too little).",
+   "Antonym.",
+   "Antonym.",
+   null
+  ],
+  "sub": "Synonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-002",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Choose the synonym of CANDID:",
+  "options": [
+   "Hesitant",
+   "Frank",
+   "Deceitful",
+   "Secretive"
+  ],
+  "answer": 1,
+  "explanation": "Candid = truthful and straightforward; frank.",
+  "why": [
+   "Unrelated.",
+   null,
+   "Opposite meaning.",
+   "Opposite meaning."
+  ],
+  "sub": "Synonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-003",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "Choose the synonym of EPHEMERAL:",
+  "options": [
+   "Ancient",
+   "Sturdy",
+   "Eternal",
+   "Short-lived"
+  ],
+  "answer": 3,
+  "explanation": "Ephemeral = lasting a very short time.",
+  "why": [
+   "Unrelated (old).",
+   "Unrelated (strong).",
+   "Antonym.",
+   null
+  ],
+  "sub": "Synonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-004",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Choose the synonym of METICULOUS:",
+  "options": [
+   "Hasty",
+   "Thorough",
+   "Lazy",
+   "Careless"
+  ],
+  "answer": 1,
+  "explanation": "Meticulous = showing great attention to detail; very careful and thorough.",
+  "why": [
+   "Opposite in spirit.",
+   null,
+   "Unrelated.",
+   "Antonym."
+  ],
+  "sub": "Synonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-005",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Choose the synonym of BENEVOLENT:",
+  "options": [
+   "Greedy",
+   "Indifferent",
+   "Cruel",
+   "Kind"
+  ],
+  "answer": 3,
+  "explanation": "Benevolent = well-meaning and kindly.",
+  "why": [
+   "Opposite trait.",
+   "Lacks the warmth implied.",
+   "Antonym.",
+   null
+  ],
+  "sub": "Synonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-006",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Choose the synonym of OBSOLETE:",
+  "options": [
+   "Modern",
+   "Outdated",
+   "Durable",
+   "Rare"
+  ],
+  "answer": 1,
+  "explanation": "Obsolete = no longer used; out of date.",
+  "why": [
+   "Antonym.",
+   null,
+   "Unrelated.",
+   "Unrelated."
+  ],
+  "sub": "Synonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-007",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Choose the synonym of LUCID:",
+  "options": [
+   "Dull",
+   "Lengthy",
+   "Confusing",
+   "Clear"
+  ],
+  "answer": 3,
+  "explanation": "Lucid = expressed clearly; easy to understand.",
+  "why": [
+   "Unrelated.",
+   "Unrelated.",
+   "Antonym.",
+   null
+  ],
+  "sub": "Synonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-008",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "Choose the synonym of MITIGATE:",
+  "options": [
+   "Aggravate",
+   "Alleviate",
+   "Ignore",
+   "Postpone"
+  ],
+  "answer": 1,
+  "explanation": "Mitigate = make less severe; alleviate.",
+  "why": [
+   "Antonym (make worse).",
+   null,
+   "Unrelated.",
+   "Unrelated."
+  ],
+  "sub": "Synonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-009",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Choose the synonym of PRAGMATIC:",
+  "options": [
+   "Stubborn",
+   "Idealistic",
+   "Theoretical",
+   "Practical"
+  ],
+  "answer": 3,
+  "explanation": "Pragmatic = dealing with things sensibly and realistically.",
+  "why": [
+   "Unrelated.",
+   "Near-antonym.",
+   "Near-antonym.",
+   null
+  ],
+  "sub": "Synonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-010",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "FPSC-style",
+  "q": "Choose the synonym of UBIQUITOUS:",
+  "options": [
+   "Hidden",
+   "Rare",
+   "Omnipresent",
+   "Unique"
+  ],
+  "answer": 2,
+  "explanation": "Ubiquitous = present or found everywhere.",
+  "why": [
+   "Opposite sense.",
+   "Antonym.",
+   null,
+   "Opposite sense (one of a kind)."
+  ],
+  "sub": "Synonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-011",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "Choose the synonym of DILIGENT:",
+  "options": [
+   "Industrious",
+   "Clever",
+   "Careless",
+   "Idle"
+  ],
+  "answer": 0,
+  "explanation": "Diligent = showing care and effort in work; industrious.",
+  "why": [
+   null,
+   "Intelligence, not effort.",
+   "Antonym.",
+   "Antonym."
+  ],
+  "sub": "Synonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-012",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Choose the antonym of ASCEND:",
+  "options": [
+   "Climb",
+   "Rise",
+   "Descend",
+   "Mount"
+  ],
+  "answer": 2,
+  "explanation": "Ascend = go up; antonym descend = go down.",
+  "why": [
+   "Synonym.",
+   "Synonym.",
+   null,
+   "Synonym."
+  ],
+  "sub": "Antonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-013",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "Choose the antonym of FRUGAL:",
+  "options": [
+   "Extravagant",
+   "Careful",
+   "Simple",
+   "Thrifty"
+  ],
+  "answer": 0,
+  "explanation": "Frugal = economical with money; opposite is extravagant (wasteful).",
+  "why": [
+   null,
+   "Near-synonym.",
+   "Unrelated.",
+   "Synonym."
+  ],
+  "sub": "Antonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-014",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Choose the antonym of HOSTILE:",
+  "options": [
+   "Aggressive",
+   "Unfriendly",
+   "Friendly",
+   "Angry"
+  ],
+  "answer": 2,
+  "explanation": "Hostile = unfriendly, antagonistic; opposite friendly.",
+  "why": [
+   "Synonym.",
+   "Synonym.",
+   null,
+   "Related, not opposite."
+  ],
+  "sub": "Antonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-015",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Choose the antonym of TRANSPARENT:",
+  "options": [
+   "Opaque",
+   "Translucent",
+   "Visible",
+   "Clear"
+  ],
+  "answer": 0,
+  "explanation": "Opaque = not allowing light to pass; opposite of transparent.",
+  "why": [
+   null,
+   "Partially transparent, not opposite.",
+   "Unrelated.",
+   "Synonym."
+  ],
+  "sub": "Antonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-016",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "Choose the antonym of AUGMENT:",
+  "options": [
+   "Expand",
+   "Increase",
+   "Diminish",
+   "Enlarge"
+  ],
+  "answer": 2,
+  "explanation": "Augment = increase; opposite diminish.",
+  "why": [
+   "Synonym.",
+   "Synonym.",
+   null,
+   "Synonym."
+  ],
+  "sub": "Antonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-017",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Choose the antonym of VERBOSE:",
+  "options": [
+   "Concise",
+   "Lengthy",
+   "Talkative",
+   "Wordy"
+  ],
+  "answer": 0,
+  "explanation": "Verbose = using more words than needed; opposite concise.",
+  "why": [
+   null,
+   "Synonym.",
+   "Synonym.",
+   "Synonym."
+  ],
+  "sub": "Antonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-018",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Choose the antonym of RELUCTANT:",
+  "options": [
+   "Doubtful",
+   "Unwilling",
+   "Eager",
+   "Hesitant"
+  ],
+  "answer": 2,
+  "explanation": "Reluctant = unwilling; opposite eager.",
+  "why": [
+   "Near-synonym.",
+   "Synonym.",
+   null,
+   "Synonym."
+  ],
+  "sub": "Antonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-019",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "FPSC-style",
+  "q": "Choose the antonym of OBSCURE:",
+  "options": [
+   "Evident",
+   "Hidden",
+   "Dim",
+   "Vague"
+  ],
+  "answer": 0,
+  "explanation": "Obscure = not clear or well known; opposite evident/clear.",
+  "why": [
+   null,
+   "Synonym.",
+   "Synonym.",
+   "Synonym."
+  ],
+  "sub": "Antonyms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-020",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "PPSC-style",
+  "q": "Neither the manager nor the engineers ___ present at the meeting.",
+  "options": [
+   "is",
+   "has been",
+   "was",
+   "were"
+  ],
+  "answer": 3,
+  "explanation": "With \"neither…nor\", the verb agrees with the nearer subject: \"engineers\" (plural) → were.",
+  "why": [
+   "Wrong tense and number.",
+   "Singular verb with plural nearer subject.",
+   "Agrees with the farther subject.",
+   null
+  ],
+  "sub": "Grammar",
+  "source": "bank"
+ },
+ {
+  "id": "eng-021",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Each of the students ___ a laptop.",
+  "options": [
+   "have",
+   "has",
+   "are having",
+   "were having"
+  ],
+  "answer": 1,
+  "explanation": "\"Each\" is singular, so the verb is singular: has.",
+  "why": [
+   "Plural verb.",
+   null,
+   "Plural and wrong aspect.",
+   "Plural and wrong tense."
+  ],
+  "sub": "Grammar",
+  "source": "bank"
+ },
+ {
+  "id": "eng-022",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "FPSC-style",
+  "q": "If I ___ you, I would accept the offer.",
+  "options": [
+   "will be",
+   "am",
+   "was",
+   "were"
+  ],
+  "answer": 3,
+  "explanation": "Second conditional / subjunctive mood uses \"were\" for all persons.",
+  "why": [
+   "Future tense is wrong in an if-clause here.",
+   "Present indicative, not hypothetical.",
+   "Informal; standard written English uses \"were\".",
+   null
+  ],
+  "sub": "Grammar",
+  "source": "bank"
+ },
+ {
+  "id": "eng-023",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "She has been working here ___ 2019.",
+  "options": [
+   "for",
+   "since",
+   "from",
+   "by"
+  ],
+  "answer": 1,
+  "explanation": "\"Since\" with a point in time; \"for\" with a period (for five years).",
+  "why": [
+   "Used with a duration.",
+   null,
+   "Not used with present perfect continuous this way.",
+   "Wrong meaning."
+  ],
+  "sub": "Prepositions",
+  "source": "bank"
+ },
+ {
+  "id": "eng-024",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Choose the correct sentence:",
+  "options": [
+   "The news were good.",
+   "The news have been good.",
+   "The news are good.",
+   "The news is good."
+  ],
+  "answer": 3,
+  "explanation": "\"News\" is an uncountable noun and takes a singular verb.",
+  "why": [
+   "Plural verb.",
+   "Plural verb.",
+   "Plural verb.",
+   null
+  ],
+  "sub": "Sentence correction",
+  "source": "bank"
+ },
+ {
+  "id": "eng-025",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "He did not come to the office yesterday, ___?",
+  "options": [
+   "didn’t he",
+   "did he",
+   "does he",
+   "wasn’t he"
+  ],
+  "answer": 1,
+  "explanation": "A negative statement takes a positive question tag with the same auxiliary: did he?",
+  "why": [
+   "Negative tag after a negative statement.",
+   null,
+   "Wrong tense.",
+   "Wrong auxiliary."
+  ],
+  "sub": "Grammar",
+  "source": "bank"
+ },
+ {
+  "id": "eng-026",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Change to passive voice: \"They are building a new grid station.\"",
+  "options": [
+   "A new grid station has been built by them.",
+   "A new grid station is built by them.",
+   "A new grid station was built by them.",
+   "A new grid station is being built by them."
+  ],
+  "answer": 3,
+  "explanation": "Present continuous active → \"is/are being + past participle\".",
+  "why": [
+   "Present perfect.",
+   "Simple present.",
+   "Simple past.",
+   null
+  ],
+  "sub": "Voice",
+  "source": "bank"
+ },
+ {
+  "id": "eng-027",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Change to indirect speech: He said, \"I am tired.\"",
+  "options": [
+   "He said that he is tired.",
+   "He said that he was tired.",
+   "He said that I was tired.",
+   "He told that he had been tired."
+  ],
+  "answer": 1,
+  "explanation": "Reporting verb in past → present \"am\" becomes \"was\"; pronoun changes I → he.",
+  "why": [
+   "Tense not back-shifted.",
+   null,
+   "Pronoun not changed.",
+   "\"Told\" needs an object; tense over-shifted."
+  ],
+  "sub": "Narration",
+  "source": "bank"
+ },
+ {
+  "id": "eng-028",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Choose the correct article: He is ___ honest engineer.",
+  "options": [
+   "the",
+   "no article",
+   "a",
+   "an"
+  ],
+  "answer": 3,
+  "explanation": "\"Honest\" begins with a vowel sound (silent h), so \"an\".",
+  "why": [
+   "Not specific here.",
+   "An article is needed with a singular countable noun.",
+   "Used before consonant sounds.",
+   null
+  ],
+  "sub": "Articles",
+  "source": "bank"
+ },
+ {
+  "id": "eng-029",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "PPSC-style",
+  "q": "Hardly had he reached the station ___ the train left.",
+  "options": [
+   "than",
+   "when",
+   "then",
+   "that"
+  ],
+  "answer": 1,
+  "explanation": "\"Hardly/Scarcely … when\"; \"No sooner … than\".",
+  "why": [
+   "Pairs with \"no sooner\".",
+   null,
+   "Adverb of time, not the correlative.",
+   "Not the correlative."
+  ],
+  "sub": "Grammar",
+  "source": "bank"
+ },
+ {
+  "id": "eng-030",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "PPSC-style",
+  "q": "No sooner did he switch on the breaker ___ the relay tripped.",
+  "options": [
+   "than",
+   "then",
+   "as",
+   "when"
+  ],
+  "answer": 0,
+  "explanation": "\"No sooner … than\" is the fixed correlative.",
+  "why": [
+   null,
+   "Not the correlative.",
+   "Not the correlative.",
+   "Pairs with \"hardly/scarcely\"."
+  ],
+  "sub": "Grammar",
+  "source": "bank"
+ },
+ {
+  "id": "eng-031",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "By next June, she ___ her engineering degree.",
+  "options": [
+   "completes",
+   "will complete",
+   "will have completed",
+   "has completed"
+  ],
+  "answer": 2,
+  "explanation": "An action finished before a future point → future perfect.",
+  "why": [
+   "Simple present.",
+   "Does not show completion before the time.",
+   null,
+   "Present perfect cannot refer to a future time."
+  ],
+  "sub": "Tenses",
+  "source": "bank"
+ },
+ {
+  "id": "eng-032",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "I look forward to ___ you at the interview.",
+  "options": [
+   "meeting",
+   "met",
+   "be meeting",
+   "meet"
+  ],
+  "answer": 0,
+  "explanation": "In \"look forward to\", \"to\" is a preposition, so it is followed by a gerund (-ing).",
+  "why": [
+   null,
+   "Past form.",
+   "Ungrammatical.",
+   "Infinitive form is wrong here."
+  ],
+  "sub": "Grammar",
+  "source": "bank"
+ },
+ {
+  "id": "eng-033",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The plural of \"criterion\" is:",
+  "options": [
+   "Criterium",
+   "Criterions",
+   "Criteria",
+   "Criterias"
+  ],
+  "answer": 2,
+  "explanation": "Greek origin: criterion → criteria (also phenomenon → phenomena).",
+  "why": [
+   "Not a plural.",
+   "Non-standard.",
+   null,
+   "Double plural."
+  ],
+  "sub": "Grammar",
+  "source": "bank"
+ },
+ {
+  "id": "eng-034",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Choose the correctly spelled word:",
+  "options": [
+   "Accommodate",
+   "Acomodate",
+   "Accomodate",
+   "Acommodate"
+  ],
+  "answer": 0,
+  "explanation": "Accommodate has double \"c\" and double \"m\".",
+  "why": [
+   null,
+   "Single c and single m.",
+   "Single m.",
+   "Single c."
+  ],
+  "sub": "Spelling",
+  "source": "bank"
+ },
+ {
+  "id": "eng-035",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Choose the correct sentence:",
+  "options": [
+   "He is senior from me.",
+   "He is senior than me.",
+   "He is senior to me.",
+   "He is more senior than me."
+  ],
+  "answer": 2,
+  "explanation": "Latin comparatives (senior, junior, superior, inferior, prior) take \"to\", not \"than\".",
+  "why": [
+   "Wrong preposition.",
+   "\"Than\" is wrong with senior.",
+   null,
+   "\"More\" is redundant here."
+  ],
+  "sub": "Sentence correction",
+  "source": "bank"
+ },
+ {
+  "id": "eng-036",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Choose the correct sentence:",
+  "options": [
+   "Despite the rain, the work continued.",
+   "In spite the rain, the work continued.",
+   "Despite of rain the work continued.",
+   "Despite of the rain, the work continued."
+  ],
+  "answer": 0,
+  "explanation": "\"Despite\" takes no \"of\"; \"in spite of\" needs \"of\".",
+  "why": [
+   null,
+   "\"In spite\" needs \"of\".",
+   "\"Despite of\" is incorrect.",
+   "\"Despite of\" is incorrect."
+  ],
+  "sub": "Sentence correction",
+  "source": "bank"
+ },
+ {
+  "id": "eng-037",
+  "topic": "english",
+  "difficulty": "hard",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Choose the correct sentence:",
+  "options": [
+   "The numbers of applicant has increased.",
+   "The number of applicants have increased.",
+   "The number of applicants has increased.",
+   "A number of applicants has applied."
+  ],
+  "answer": 2,
+  "explanation": "\"The number of\" is singular; \"a number of\" is plural (a number of applicants have applied).",
+  "why": [
+   "Ungrammatical.",
+   "Plural verb with \"the number\".",
+   null,
+   "\"A number of\" takes a plural verb."
+  ],
+  "sub": "Sentence correction",
+  "source": "bank"
+ },
+ {
+  "id": "eng-038",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Choose the correct sentence:",
+  "options": [
+   "Please reply at your earliest convenience.",
+   "Please revert back soon.",
+   "Please return back soon.",
+   "Please revert back at the earliest."
+  ],
+  "answer": 0,
+  "explanation": "\"Revert back\"/\"return back\" are redundant; \"revert\" means go back to a previous state, not \"reply\".",
+  "why": [
+   null,
+   "Redundant.",
+   "Redundant.",
+   "Redundant and misused."
+  ],
+  "sub": "Sentence correction",
+  "source": "bank"
+ },
+ {
+  "id": "eng-039",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The idiom \"to burn the midnight oil\" means:",
+  "options": [
+   "To be very angry",
+   "To waste fuel",
+   "To work or study late into the night",
+   "To start a fire"
+  ],
+  "answer": 2,
+  "explanation": "It means working late at night.",
+  "why": [
+   "Unrelated.",
+   "Literal reading.",
+   null,
+   "Literal reading."
+  ],
+  "sub": "Idioms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-040",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "\"A blessing in disguise\" means:",
+  "options": [
+   "A hidden curse",
+   "Something that seems bad at first but turns out good",
+   "A religious ceremony",
+   "A secret gift"
+  ],
+  "answer": 1,
+  "explanation": "Something apparently unfortunate that has good results.",
+  "why": [
+   "Opposite.",
+   null,
+   "Literal.",
+   "Literal."
+  ],
+  "sub": "Idioms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-041",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "\"Once in a blue moon\" means:",
+  "options": [
+   "At night",
+   "Never",
+   "Every month",
+   "Very rarely"
+  ],
+  "answer": 3,
+  "explanation": "Very rarely.",
+  "why": [
+   "Literal.",
+   "Too absolute.",
+   "Too frequent.",
+   null
+  ],
+  "sub": "Idioms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-042",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "\"To beat about the bush\" means:",
+  "options": [
+   "To clean the garden",
+   "To avoid coming to the main point",
+   "To work hard",
+   "To hunt"
+  ],
+  "answer": 1,
+  "explanation": "To talk around a subject without addressing it directly.",
+  "why": [
+   "Literal.",
+   null,
+   "Unrelated.",
+   "Literal."
+  ],
+  "sub": "Idioms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-043",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "\"To hit the nail on the head\" means:",
+  "options": [
+   "To build something",
+   "To make a mistake",
+   "To hurt oneself",
+   "To describe or do something exactly right"
+  ],
+  "answer": 3,
+  "explanation": "To be precisely correct.",
+  "why": [
+   "Literal.",
+   "Opposite.",
+   "Literal.",
+   null
+  ],
+  "sub": "Idioms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-044",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "\"To bite the bullet\" means:",
+  "options": [
+   "To be wounded",
+   "To face a difficult situation with courage",
+   "To eat quickly",
+   "To argue"
+  ],
+  "answer": 1,
+  "explanation": "To accept something unpleasant bravely.",
+  "why": [
+   "Literal.",
+   null,
+   "Literal.",
+   "Unrelated."
+  ],
+  "sub": "Idioms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-045",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "\"Under the weather\" means:",
+  "options": [
+   "Very happy",
+   "Outdoors",
+   "In the rain",
+   "Slightly unwell"
+  ],
+  "answer": 3,
+  "explanation": "Feeling ill.",
+  "why": [
+   "Opposite.",
+   "Literal.",
+   "Literal.",
+   null
+  ],
+  "sub": "Idioms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-046",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "\"To spill the beans\" means:",
+  "options": [
+   "To waste food",
+   "To reveal a secret",
+   "To be clumsy",
+   "To cook"
+  ],
+  "answer": 1,
+  "explanation": "To disclose secret information.",
+  "why": [
+   "Literal.",
+   null,
+   "Literal.",
+   "Literal."
+  ],
+  "sub": "Idioms",
+  "source": "bank"
+ },
+ {
+  "id": "eng-047",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "He is good ___ mathematics.",
+  "options": [
+   "on",
+   "with",
+   "in",
+   "at"
+  ],
+  "answer": 3,
+  "explanation": "\"Good at\" a subject or skill.",
+  "why": [
+   "Wrong preposition.",
+   "Wrong preposition.",
+   "Common error.",
+   null
+  ],
+  "sub": "Prepositions",
+  "source": "bank"
+ },
+ {
+  "id": "eng-048",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "She is fond ___ reading technical journals.",
+  "options": [
+   "in",
+   "of",
+   "for",
+   "with"
+  ],
+  "answer": 1,
+  "explanation": "\"Fond of\".",
+  "why": [
+   "Wrong preposition.",
+   null,
+   "Wrong preposition.",
+   "Wrong preposition."
+  ],
+  "sub": "Prepositions",
+  "source": "bank"
+ },
+ {
+  "id": "eng-049",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "The contractor was accused ___ negligence.",
+  "options": [
+   "about",
+   "for",
+   "with",
+   "of"
+  ],
+  "answer": 3,
+  "explanation": "\"Accused of\"; \"charged with\".",
+  "why": [
+   "Wrong.",
+   "Wrong.",
+   "Goes with \"charged\".",
+   null
+  ],
+  "sub": "Prepositions",
+  "source": "bank"
+ },
+ {
+  "id": "eng-050",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "The engineer insisted ___ checking the relay settings again.",
+  "options": [
+   "to",
+   "for",
+   "on",
+   "at"
+  ],
+  "answer": 2,
+  "explanation": "\"Insist on\".",
+  "why": [
+   "Wrong.",
+   "Wrong.",
+   null,
+   "Wrong."
+  ],
+  "sub": "Prepositions",
+  "source": "bank"
+ },
+ {
+  "id": "eng-051",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "All staff must comply ___ the safety rules.",
+  "options": [
+   "with",
+   "by",
+   "for",
+   "to"
+  ],
+  "answer": 0,
+  "explanation": "\"Comply with\".",
+  "why": [
+   null,
+   "Wrong.",
+   "Wrong.",
+   "Common error."
+  ],
+  "sub": "Prepositions",
+  "source": "bank"
+ },
+ {
+  "id": "eng-052",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "I prefer tea ___ coffee.",
+  "options": [
+   "than",
+   "over",
+   "to",
+   "from"
+  ],
+  "answer": 2,
+  "explanation": "\"Prefer X to Y\" is the standard construction.",
+  "why": [
+   "\"Than\" is wrong after prefer.",
+   "Informal; not the standard exam answer.",
+   null,
+   "Wrong."
+  ],
+  "sub": "Prepositions",
+  "source": "bank"
+ },
+ {
+  "id": "eng-053",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "AMMETER : CURRENT :: VOLTMETER : ?",
+  "options": [
+   "Voltage",
+   "Power",
+   "Energy",
+   "Resistance"
+  ],
+  "answer": 0,
+  "explanation": "An instrument and the quantity it measures.",
+  "why": [
+   null,
+   "Wattmeter.",
+   "Energy meter.",
+   "Ohmmeter."
+  ],
+  "sub": "Analogies",
+  "source": "bank"
+ },
+ {
+  "id": "eng-054",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "OHM : RESISTANCE :: FARAD : ?",
+  "options": [
+   "Conductance",
+   "Inductance",
+   "Capacitance",
+   "Charge"
+  ],
+  "answer": 2,
+  "explanation": "Unit and quantity.",
+  "why": [
+   "Siemens.",
+   "Henry.",
+   null,
+   "Coulomb."
+  ],
+  "sub": "Analogies",
+  "source": "bank"
+ },
+ {
+  "id": "eng-055",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "BIRD : FLOCK :: FISH : ?",
+  "options": [
+   "School",
+   "Pack",
+   "Swarm",
+   "Herd"
+  ],
+  "answer": 0,
+  "explanation": "Collective nouns: a flock of birds, a school (shoal) of fish.",
+  "why": [
+   null,
+   "Wolves.",
+   "Bees/insects.",
+   "Cattle."
+  ],
+  "sub": "Analogies",
+  "source": "bank"
+ },
+ {
+  "id": "eng-056",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "GENEROUS : MISERLY :: BRAVE : ?",
+  "options": [
+   "Fearless",
+   "Bold",
+   "Cowardly",
+   "Strong"
+  ],
+  "answer": 2,
+  "explanation": "Antonym pairs.",
+  "why": [
+   "Synonym.",
+   "Synonym.",
+   null,
+   "Unrelated."
+  ],
+  "sub": "Analogies",
+  "source": "bank"
+ },
+ {
+  "id": "eng-057",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "PEN : WRITE :: KNIFE : ?",
+  "options": [
+   "Cut",
+   "Steel",
+   "Kitchen",
+   "Sharp"
+  ],
+  "answer": 0,
+  "explanation": "Tool and its function.",
+  "why": [
+   null,
+   "Material.",
+   "Place.",
+   "Property."
+  ],
+  "sub": "Analogies",
+  "source": "bank"
+ },
+ {
+  "id": "eng-058",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "One who cannot be corrected is:",
+  "options": [
+   "Infallible",
+   "Inaudible",
+   "Incorrigible",
+   "Invincible"
+  ],
+  "answer": 2,
+  "explanation": "Incorrigible = cannot be reformed or corrected.",
+  "why": [
+   "Never makes mistakes.",
+   "Cannot be heard.",
+   null,
+   "Cannot be defeated."
+  ],
+  "sub": "One-word substitution",
+  "source": "bank"
+ },
+ {
+  "id": "eng-059",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "A speech delivered without preparation is:",
+  "options": [
+   "Extempore",
+   "Eulogy",
+   "Monologue",
+   "Soliloquy"
+  ],
+  "answer": 0,
+  "explanation": "Extempore = spoken without preparation.",
+  "why": [
+   null,
+   "Speech praising someone (often the dead).",
+   "Long speech by one person.",
+   "Speaking one’s thoughts aloud alone (drama)."
+  ],
+  "sub": "One-word substitution",
+  "source": "bank"
+ },
+ {
+  "id": "eng-060",
+  "topic": "english",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The life history of a person written by himself or herself is:",
+  "options": [
+   "Memoir of others",
+   "Chronicle",
+   "Biography",
+   "Autobiography"
+  ],
+  "answer": 3,
+  "explanation": "Autobiography is self-written; biography is written by someone else.",
+  "why": [
+   "Not the term.",
+   "Historical record of events.",
+   "Written by another person.",
+   null
+  ],
+  "sub": "One-word substitution",
+  "source": "bank"
+ },
+ {
+  "id": "eng-061",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "A person who is a newcomer or beginner in a field is a:",
+  "options": [
+   "Veteran",
+   "Novice",
+   "Connoisseur",
+   "Pioneer"
+  ],
+  "answer": 1,
+  "explanation": "Novice = beginner.",
+  "why": [
+   "Very experienced person.",
+   null,
+   "Expert judge (especially of art/food).",
+   "First to explore or develop something."
+  ],
+  "sub": "One-word substitution",
+  "source": "bank"
+ },
+ {
+  "id": "eng-062",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Passage: \"Hydropower is often called the backbone of a clean grid. Unlike solar and wind, a reservoir can store energy and release it within minutes when demand peaks. Yet large dams are not free of cost: they displace communities, trap sediment and alter river ecology. Planners must therefore weigh national benefit against local loss.\" According to the passage, an advantage of hydropower over solar and wind is that it:",
+  "options": [
+   "Does not affect rivers",
+   "Is cheaper to build",
+   "Is free of all costs",
+   "Can store energy and respond quickly to peak demand"
+  ],
+  "answer": 3,
+  "explanation": "The passage says a reservoir can store energy and release it within minutes when demand peaks.",
+  "why": [
+   "Passage says they alter river ecology.",
+   "Construction cost is not discussed.",
+   "Passage says dams are \"not free of cost\".",
+   null
+  ],
+  "sub": "Comprehension",
+  "source": "bank"
+ },
+ {
+  "id": "eng-063",
+  "topic": "english",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Passage: \"Hydropower is often called the backbone of a clean grid. Unlike solar and wind, a reservoir can store energy and release it within minutes when demand peaks. Yet large dams are not free of cost: they displace communities, trap sediment and alter river ecology. Planners must therefore weigh national benefit against local loss.\" The word \"displace\" in the passage most nearly means:",
+  "options": [
+   "Employ",
+   "Force to move from their home",
+   "Educate",
+   "Unite"
+  ],
+  "answer": 1,
+  "explanation": "Dams displace communities: force people to leave the land that will be flooded.",
+  "why": [
+   "Opposite context.",
+   null,
+   "Unrelated.",
+   "Unrelated."
+  ],
+  "sub": "Comprehension",
+  "source": "bank"
+ },
+ {
+  "id": "eng-064",
+  "topic": "english",
+  "difficulty": "hard",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Passage: \"Hydropower is often called the backbone of a clean grid. Unlike solar and wind, a reservoir can store energy and release it within minutes when demand peaks. Yet large dams are not free of cost: they displace communities, trap sediment and alter river ecology. Planners must therefore weigh national benefit against local loss.\" The author’s overall attitude towards large dams is best described as:",
+  "options": [
+   "Indifferent",
+   "Strongly opposed",
+   "Uncritically enthusiastic",
+   "Balanced — benefits must be weighed against costs"
+  ],
+  "answer": 3,
+  "explanation": "The final sentence says planners must weigh national benefit against local loss.",
+  "why": [
+   "The author clearly cares about the trade-off.",
+   "The author praises hydropower too.",
+   "The author lists real costs.",
+   null
+  ],
+  "sub": "Comprehension",
+  "source": "bank"
+ }
+]

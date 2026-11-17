@@ -1,0 +1,28 @@
+// Analytical reasoning & basic math.
+export default {
+  topic: 'analytical',
+  prefix: 'ana',
+  items: [
+    ['enN', 'Find the next number: 2, 6, 12, 20, 30, ?', ['40', '42', '44', '36'], 1, 'Pattern n(n + 1): 1×2, 2×3, 3×4, 4×5, 5×6 | next = 6 × 7 | = 42', ['Adds 10 again.', 'Adds 14.', 'Adds 6.']],
+    ['enN', 'Find the next number: 5, 11, 23, 47, ?', ['94', '95', '96', '71'], 1, 'Each term = previous × 2 + 1 | 47 × 2 + 1 | = 95', ['Only doubles.', 'Doubles and adds 2.', 'Adds 24.']],
+    ['enN', 'Find the next number: 3, 9, 27, 81, ?', ['162', '243', '324', '108'], 1, 'Multiply by 3 | 81 × 3 | = 243', ['Doubles.', 'Multiplies by 4.', 'Adds 27.']],
+    ['enN', 'A train 200 m long running at 72 km/h passes a pole in:', ['10 s', '20 s', '7.2 s', '2.8 s'], 0, '72 km/h = 72 × 5/18 = 20 m/s | t = 200/20 | = 10 s', ['Uses 10 m/s.', 'Uses km/h as m/s.', 'Divides wrongly.']],
+    ['enN', 'What is 15% of 240?', ['24', '36', '32', '40'], 1, '0.15 × 240 | = 36', ['10%.', 'No basis.', 'No basis.']],
+    ['enN', 'A price increases from Rs 80 to Rs 100. The percentage increase is:', ['20%', '25%', '80%', '125%'], 1, 'Increase = 20 | 20/80 × 100 | = 25%', ['Divides by new price.', 'Ratio of old to new.', 'Ratio of new to old.']],
+    ['enN', 'Rs 120 is divided in the ratio 3 : 5. The larger share is:', ['45', '75', '72', '80'], 1, 'Total parts = 8; one part = 15 | larger = 5 × 15 | = 75', ['Smaller share.', 'No basis.', 'No basis.']],
+    ['enN', 'Simple interest on Rs 10,000 at 10% per annum for 3 years is:', ['Rs 3,000', 'Rs 3,310', 'Rs 1,000', 'Rs 13,000'], 0, 'SI = PRT/100 | = 10000 × 10 × 3/100 | = Rs 3,000', ['Compound interest.', 'One year only.', 'That is the amount (P + SI).']],
+    ['mnN', 'A can finish a job in 10 days and B in 15 days. Working together they finish it in:', ['5 days', '6 days', '12.5 days', '25 days'], 1, 'Combined rate = 1/10 + 1/15 = 5/30 = 1/6 per day | Time = 6 days', ['No basis.', 'Average of the two.', 'Adds the days.']],
+    ['mnN', 'The angle between the hour and minute hands of a clock at 3:30 is:', ['90°', '75°', '60°', '105°'], 1, 'Minute hand at 180°; hour hand at 3 × 30 + 30 × 0.5 = 105° | Difference = 75°', ['That is 3:00.', 'No basis.', 'Hour hand angle, not the difference.']],
+    ['enN', 'Which number is the odd one out? 2, 3, 5, 9, 11', ['2', '5', '9', '11'], 2, 'All except 9 are prime numbers (9 = 3 × 3).', ['Prime (only even prime).', 'Prime.', 'Prime.']],
+    ['mnN', 'If CAT is coded as 24 (C = 3, A = 1, T = 20), then DOG is coded as:', ['24', '26', '27', '25'], 1, 'Sum of alphabet positions | D = 4, O = 15, G = 7 | 4 + 15 + 7 = 26', ['That is CAT.', 'No basis.', 'No basis.']],
+    ['mcN', 'Pointing to a man, Sara says: "His mother is the only daughter of my mother." How is Sara related to the man?', ['Sister', 'Mother', 'Aunt', 'Grandmother'], 1, 'The only daughter of Sara’s mother is Sara herself, so Sara is the man’s mother.', ['That would need a different relation.', 'Sara has no sister (only daughter).', 'One generation too high.']],
+    ['enN', 'A man walks 4 km north, then turns right and walks 3 km. How far is he from the starting point?', ['7 km', '5 km', '1 km', '12 km'], 1, 'Right-angled path: √(4^{2} + 3^{2}) | = √25 | = 5 km', ['Path length, not displacement.', 'Difference, not distance.', 'Product.']],
+    ['mcN', 'Statements: All engineers are graduates. Some graduates are managers. Which conclusion definitely follows?', ['All graduates are engineers', 'Some graduates are engineers', 'Some engineers are managers', 'No engineer is a manager'], 1, 'Since all engineers are graduates (and engineers exist), some graduates are engineers. Nothing definite follows about engineers and managers.', ['Converse of "all" is not valid.', 'Possible but not certain.', 'Possible but not certain.']],
+    ['hnN', 'A car goes from A to B at 60 km/h and returns at 40 km/h. Average speed for the whole journey is:', ['50 km/h', '48 km/h', '45 km/h', '52 km/h'], 1, 'Equal distances: average = 2v_{1}v_{2}/(v_{1} + v_{2}) | = 2 × 60 × 40/100 | = 48 km/h', ['Arithmetic mean — wrong for equal distances.', 'No basis.', 'No basis.']],
+    ['enN', 'An item bought for Rs 500 is sold for Rs 600. Profit percentage is:', ['16.7%', '20%', '10%', '25%'], 1, 'Profit = 100 | 100/500 × 100 | = 20%', ['Profit on selling price.', 'No basis.', 'No basis.']],
+    ['mnN', 'If today is Monday, what day will it be after 61 days?', ['Friday', 'Saturday', 'Sunday', 'Thursday'], 1, '61 = 8 × 7 + 5 | 5 days after Monday | = Saturday', ['4 days after.', '6 days after.', '3 days after.']],
+    ['enN', 'The LCM of 12 and 18 is:', ['6', '36', '72', '216'], 1, '12 = 2^{2}·3, 18 = 2·3^{2} | LCM = 2^{2}·3^{2} | = 36', ['That is the HCF.', 'A common multiple, not least.', 'Product.']],
+    ['mnN', 'A father is three times as old as his son. The sum of their ages is 48. The son’s age is:', ['12', '16', '36', '14'], 0, 'Son = x, father = 3x | 4x = 48 | x = 12 (father 36)', ['48/3.', 'Father’s age.', 'No basis.']],
+    ['enN', 'The square root of 1764 is:', ['38', '42', '44', '46'], 1, '42 × 42 = 1764', ['38² = 1444.', '44² = 1936.', '46² = 2116.']],
+  ],
+};

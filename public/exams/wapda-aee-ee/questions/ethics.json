@@ -1,0 +1,347 @@
+[
+ {
+  "id": "eth-001",
+  "topic": "ethics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Ethics is best defined as the study of:",
+  "options": [
+   "Religious rituals only",
+   "Laws of a country",
+   "Moral principles that govern right and wrong conduct",
+   "Economic behaviour"
+  ],
+  "answer": 2,
+  "explanation": "Ethics (moral philosophy) examines what is right, good and just in human conduct.",
+  "why": [
+   "Ethics is broader than ritual.",
+   "Law and ethics overlap but differ.",
+   null,
+   "That is economics."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "eth-002",
+  "topic": "ethics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "The \"Golden Rule\" in ethics states:",
+  "options": [
+   "Treat others as you would like to be treated",
+   "The end justifies the means",
+   "Obey all orders without question",
+   "Might is right"
+  ],
+  "answer": 0,
+  "explanation": "A principle found across many religions and cultures.",
+  "why": [
+   null,
+   "Rejected by most ethical theories.",
+   "Blind obedience is not ethical reasoning.",
+   "Opposite of ethical reasoning."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "eth-003",
+  "topic": "ethics",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Utilitarianism judges an action right if it:",
+  "options": [
+   "Is commanded by authority",
+   "Follows duty regardless of results",
+   "Produces the greatest good for the greatest number",
+   "Develops good character"
+  ],
+  "answer": 2,
+  "explanation": "Associated with Jeremy Bentham and John Stuart Mill; a consequentialist theory.",
+  "why": [
+   "That is divine-command or authority-based ethics.",
+   "That is deontology (Kant).",
+   null,
+   "That is virtue ethics (Aristotle)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "eth-004",
+  "topic": "ethics",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Deontological (duty-based) ethics is mainly associated with:",
+  "options": [
+   "Immanuel Kant",
+   "Jeremy Bentham",
+   "Machiavelli",
+   "Aristotle"
+  ],
+  "answer": 0,
+  "explanation": "Kant held that some actions are right or wrong in themselves (categorical imperative).",
+  "why": [
+   null,
+   "Utilitarianism.",
+   "Political realism.",
+   "Virtue ethics."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "eth-005",
+  "topic": "ethics",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Virtue ethics focuses on:",
+  "options": [
+   "Consequences of actions",
+   "Rules and duties",
+   "The character and virtues of the person acting",
+   "Legal compliance"
+  ],
+  "answer": 2,
+  "explanation": "Associated with Aristotle: courage, honesty, justice, temperance.",
+  "why": [
+   "Consequentialism.",
+   "Deontology.",
+   null,
+   "Law, not ethics."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "eth-006",
+  "topic": "ethics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "A conflict of interest arises when:",
+  "options": [
+   "A person’s private interests could improperly influence their official duties",
+   "A project runs over budget",
+   "A team has too many members",
+   "Two engineers disagree technically"
+  ],
+  "answer": 0,
+  "explanation": "Example: awarding a contract to a firm owned by a relative. It must be declared and the person should step aside.",
+  "why": [
+   null,
+   "Not a conflict of interest.",
+   "Not a conflict of interest.",
+   "Professional disagreement is normal."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "eth-007",
+  "topic": "ethics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Integrity means:",
+  "options": [
+   "Keeping all information secret",
+   "Following the majority",
+   "Being honest and having strong moral principles consistently",
+   "Maximising personal profit"
+  ],
+  "answer": 2,
+  "explanation": "Integrity is consistency between values, words and actions.",
+  "why": [
+   "Confidentiality is a separate duty.",
+   "Popularity is not integrity.",
+   null,
+   "Self-interest is not integrity."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "eth-008",
+  "topic": "ethics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "For a professional engineer, the paramount ethical duty is to:",
+  "options": [
+   "Public safety, health and welfare",
+   "Personal reputation",
+   "The lowest-cost design",
+   "The employer’s profit"
+  ],
+  "answer": 0,
+  "explanation": "Engineering codes of ethics place public safety first.",
+  "why": [
+   null,
+   "Secondary.",
+   "Cost never overrides safety.",
+   "Important but secondary to safety."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "eth-009",
+  "topic": "ethics",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Whistleblowing refers to:",
+  "options": [
+   "Spreading rumours",
+   "Refereeing a match",
+   "Reporting wrongdoing within an organisation to proper authorities",
+   "Leaking secrets for personal gain"
+  ],
+  "answer": 2,
+  "explanation": "Responsible whistleblowing exposes illegal or unsafe practices through proper channels and is protected in many systems.",
+  "why": [
+   "Rumour is not evidence-based reporting.",
+   "Literal meaning.",
+   null,
+   "Leaking for gain is not whistleblowing."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "eth-010",
+  "topic": "ethics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Accepting a gift from a contractor whose bills you approve is:",
+  "options": [
+   "Acceptable if the gift is valuable",
+   "An ethical violation (bribery/conflict of interest)",
+   "A normal business courtesy always",
+   "Required by law"
+  ],
+  "answer": 1,
+  "explanation": "It compromises impartiality; public servants must refuse or declare such gifts per rules.",
+  "why": [
+   "Value makes it worse.",
+   null,
+   "Not when you have authority over the giver.",
+   "No law requires it."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "eth-011",
+  "topic": "ethics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Plagiarism means:",
+  "options": [
+   "Writing original research",
+   "Peer review",
+   "Citing sources properly",
+   "Presenting someone else’s work or ideas as one’s own"
+  ],
+  "answer": 3,
+  "explanation": "It is academic and professional dishonesty.",
+  "why": [
+   "Opposite.",
+   "Unrelated.",
+   "That is good practice.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "eth-012",
+  "topic": "ethics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Accountability in public service means:",
+  "options": [
+   "Avoiding responsibility",
+   "Being answerable for one’s decisions and use of public resources",
+   "Keeping all records private",
+   "Following personal preferences"
+  ],
+  "answer": 1,
+  "explanation": "Officials must justify decisions and accept consequences.",
+  "why": [
+   "Opposite.",
+   null,
+   "Transparency is part of accountability.",
+   "Opposite."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "eth-013",
+  "topic": "ethics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Tolerance as a social value means:",
+  "options": [
+   "Ignoring injustice",
+   "Avoiding all discussion",
+   "Agreeing with everyone",
+   "Respecting the rights and beliefs of others even when different from one’s own"
+  ],
+  "answer": 3,
+  "explanation": "Tolerance supports peaceful coexistence in a diverse society.",
+  "why": [
+   "Tolerance is not indifference to injustice.",
+   "Dialogue is encouraged.",
+   "Not required.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "eth-014",
+  "topic": "ethics",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Confidentiality in professional ethics requires:",
+  "options": [
+   "Sharing client data freely",
+   "Protecting information entrusted to you unless disclosure is legally or ethically required",
+   "Hiding safety hazards",
+   "Never documenting anything"
+  ],
+  "answer": 1,
+  "explanation": "Confidentiality never justifies concealing dangers to the public.",
+  "why": [
+   "Violation.",
+   null,
+   "Safety overrides confidentiality.",
+   "Documentation is essential."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "eth-015",
+  "topic": "ethics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Treating all people equally regardless of religion, caste or gender reflects the value of:",
+  "options": [
+   "Favouritism",
+   "Patronage",
+   "Nepotism",
+   "Justice and equality"
+  ],
+  "answer": 3,
+  "explanation": "Equality before the law is also a constitutional right (Article 25, Constitution of Pakistan).",
+  "why": [
+   "Unfair preference.",
+   "Unfair preference.",
+   "Favouring relatives.",
+   null
+  ],
+  "source": "bank"
+ }
+]

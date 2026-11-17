@@ -1,0 +1,386 @@
+[
+ {
+  "id": "cur-001",
+  "topic": "current",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The FIFA World Cup 2026 is jointly hosted by:",
+  "options": [
+   "Qatar",
+   "USA, Canada and Mexico",
+   "Saudi Arabia",
+   "Spain, Portugal and Morocco"
+  ],
+  "answer": 1,
+  "explanation": "The 2026 World Cup (48 teams) is hosted by the United States, Canada and Mexico.",
+  "why": [
+   "Hosted 2022.",
+   null,
+   "Awarded 2034.",
+   "Awarded 2030 (with centenary matches in South America)."
+  ],
+  "asOf": "June 2026",
+  "source": "bank"
+ },
+ {
+  "id": "cur-002",
+  "topic": "current",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The 2028 Summer Olympic Games will be held in:",
+  "options": [
+   "Brisbane",
+   "Tokyo",
+   "Paris",
+   "Los Angeles"
+  ],
+  "answer": 3,
+  "explanation": "Los Angeles hosts 2028; Brisbane 2032. Paris hosted 2024.",
+  "why": [
+   "Hosts 2032.",
+   "Hosted 2020 (held 2021).",
+   "Hosted 2024.",
+   null
+  ],
+  "asOf": "June 2026",
+  "source": "bank"
+ },
+ {
+  "id": "cur-003",
+  "topic": "current",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The 2026 Winter Olympic Games were held in:",
+  "options": [
+   "Beijing",
+   "Milan–Cortina, Italy",
+   "Salt Lake City",
+   "Sochi"
+  ],
+  "answer": 1,
+  "explanation": "Milan–Cortina d’Ampezzo hosted the 2026 Winter Olympics in February 2026.",
+  "why": [
+   "Hosted 2022.",
+   null,
+   "Awarded 2034.",
+   "Hosted 2014."
+  ],
+  "asOf": "June 2026",
+  "source": "bank"
+ },
+ {
+  "id": "cur-004",
+  "topic": "current",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "COP30, the UN climate conference of November 2025, was held in:",
+  "options": [
+   "Sharm el-Sheikh",
+   "Dubai",
+   "Baku",
+   "Belém, Brazil"
+  ],
+  "answer": 3,
+  "explanation": "COP30 was hosted at Belém in the Amazon region of Brazil.",
+  "why": [
+   "COP27 (2022).",
+   "COP28 (2023).",
+   "COP29 (2024).",
+   null
+  ],
+  "asOf": "June 2026",
+  "source": "bank"
+ },
+ {
+  "id": "cur-005",
+  "topic": "current",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Which team won the ICC Champions Trophy 2025 (hosted by Pakistan)?",
+  "options": [
+   "Pakistan",
+   "India",
+   "New Zealand",
+   "Australia"
+  ],
+  "answer": 1,
+  "explanation": "India beat New Zealand in the final in Dubai (March 2025). Pakistan was the official host.",
+  "why": [
+   "Host, did not win.",
+   null,
+   "Runner-up.",
+   "Did not win."
+  ],
+  "asOf": "June 2026",
+  "source": "bank"
+ },
+ {
+  "id": "cur-006",
+  "topic": "current",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The Pope elected in May 2025, the first from the United States, took the name:",
+  "options": [
+   "Benedict XVII",
+   "John Paul III",
+   "Francis",
+   "Leo XIV"
+  ],
+  "answer": 3,
+  "explanation": "Cardinal Robert Francis Prevost was elected Pope Leo XIV on 8 May 2025.",
+  "why": [
+   "Not a reigning pope.",
+   "Not a reigning pope.",
+   "His predecessor (died April 2025).",
+   null
+  ],
+  "asOf": "June 2026",
+  "source": "bank"
+ },
+ {
+  "id": "cur-007",
+  "topic": "current",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Who became President of the United States in January 2025?",
+  "options": [
+   "Joe Biden",
+   "Donald Trump",
+   "Kamala Harris",
+   "Barack Obama"
+  ],
+  "answer": 1,
+  "explanation": "Donald Trump was inaugurated as the 47th President on 20 January 2025.",
+  "why": [
+   "46th President (2021–2025).",
+   null,
+   "Lost the 2024 election.",
+   "Former President (2009–2017)."
+  ],
+  "asOf": "June 2026",
+  "source": "bank"
+ },
+ {
+  "id": "cur-008",
+  "topic": "current",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Who has been Prime Minister of Pakistan since March 2024?",
+  "options": [
+   "Anwaar-ul-Haq Kakar",
+   "Nawaz Sharif",
+   "Imran Khan",
+   "Shehbaz Sharif"
+  ],
+  "answer": 3,
+  "explanation": "Shehbaz Sharif was elected PM by the National Assembly in March 2024 for his second term.",
+  "why": [
+   "Caretaker PM (2023–24).",
+   "Three-time former PM.",
+   "PM 2018–2022.",
+   null
+  ],
+  "asOf": "June 2026",
+  "source": "bank"
+ },
+ {
+  "id": "cur-009",
+  "topic": "current",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Who has been President of Pakistan since March 2024?",
+  "options": [
+   "Arif Alvi",
+   "Asif Ali Zardari",
+   "Mamnoon Hussain",
+   "Yousaf Raza Gillani"
+  ],
+  "answer": 1,
+  "explanation": "Asif Ali Zardari was elected President for a second term in March 2024.",
+  "why": [
+   "President 2018–2024.",
+   null,
+   "President 2013–2018.",
+   "Senate Chairman/former PM."
+  ],
+  "asOf": "June 2026",
+  "source": "bank"
+ },
+ {
+  "id": "cur-010",
+  "topic": "current",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Pakistan’s military response against India in May 2025 was officially named:",
+  "options": [
+   "Operation Bunyan-um-Marsoos",
+   "Operation Radd-ul-Fasaad",
+   "Operation Swift Retort",
+   "Operation Zarb-e-Azb"
+  ],
+  "answer": 0,
+  "explanation": "Operation Bunyan-um-Marsoos (May 2025).",
+  "why": [
+   null,
+   "2017 counter-terror operation.",
+   "February 2019 response.",
+   "2014 counter-terror operation."
+  ],
+  "asOf": "June 2026",
+  "source": "bank"
+ },
+ {
+  "id": "cur-011",
+  "topic": "current",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "In May 2025, General Syed Asim Munir was promoted to the rank of:",
+  "options": [
+   "Lieutenant General",
+   "Air Chief Marshal",
+   "Field Marshal",
+   "Admiral"
+  ],
+  "answer": 2,
+  "explanation": "He became the second Field Marshal in Pakistan’s history after Ayub Khan.",
+  "why": [
+   "Lower rank.",
+   "Air Force rank.",
+   null,
+   "Navy rank."
+  ],
+  "asOf": "June 2026",
+  "source": "bank"
+ },
+ {
+  "id": "cur-012",
+  "topic": "current",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Pakistan is serving as a non-permanent member of the UN Security Council for the term:",
+  "options": [
+   "2025–2026",
+   "2026–2027",
+   "2021–2022",
+   "2023–2024"
+  ],
+  "answer": 0,
+  "explanation": "Elected in June 2024 for 2025–2026 (its eighth term).",
+  "why": [
+   null,
+   "Not Pakistan’s term.",
+   "Not Pakistan’s term.",
+   "Not Pakistan’s term."
+  ],
+  "asOf": "June 2026",
+  "source": "bank"
+ },
+ {
+  "id": "cur-013",
+  "topic": "current",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Pakistan and Saudi Arabia signed a Strategic Mutual Defence Agreement in:",
+  "options": [
+   "March 2023",
+   "December 2025",
+   "September 2025",
+   "January 2024"
+  ],
+  "answer": 2,
+  "explanation": "Signed in Riyadh in September 2025; an attack on either is treated as an attack on both.",
+  "why": [
+   "Not the date.",
+   "Not the date.",
+   null,
+   "Not the date."
+  ],
+  "asOf": "June 2026",
+  "source": "bank"
+ },
+ {
+  "id": "cur-014",
+  "topic": "current",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "In April 2025 India announced that it was holding which agreement \"in abeyance\"?",
+  "options": [
+   "Indus Waters Treaty",
+   "Lahore Declaration",
+   "Tashkent Declaration",
+   "Simla Agreement"
+  ],
+  "answer": 0,
+  "explanation": "After the Pahalgam attack, India said it would hold the 1960 Indus Waters Treaty in abeyance; Pakistan said any attempt to stop its water would be treated as an act of war. The treaty has no provision for unilateral suspension.",
+  "why": [
+   null,
+   "Not the one India suspended.",
+   "Not the one India suspended.",
+   "Pakistan said it could hold this in abeyance in response."
+  ],
+  "asOf": "June 2026",
+  "source": "bank"
+ },
+ {
+  "id": "cur-015",
+  "topic": "current",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Pakistan’s 27th Constitutional Amendment (November 2025) created a new:",
+  "options": [
+   "Senate",
+   "Federal Shariat Court",
+   "Federal Constitutional Court",
+   "Election Commission"
+  ],
+  "answer": 2,
+  "explanation": "It established a Federal Constitutional Court to hear constitutional matters and also created the post of Chief of Defence Forces.",
+  "why": [
+   "Existed since 1973.",
+   "Existed since 1980.",
+   null,
+   "Existed long before."
+  ],
+  "asOf": "June 2026",
+  "source": "bank"
+ },
+ {
+  "id": "cur-016",
+  "topic": "current",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The UN Secretary-General whose second term runs until the end of 2026 is:",
+  "options": [
+   "António Guterres",
+   "Kofi Annan",
+   "Amina Mohammed",
+   "Ban Ki-moon"
+  ],
+  "answer": 0,
+  "explanation": "António Guterres (Portugal) has served since January 2017; his term ends on 31 December 2026, and a successor is chosen during 2026.",
+  "why": [
+   null,
+   "1997–2006.",
+   "Deputy Secretary-General.",
+   "Predecessor (2007–2016)."
+  ],
+  "asOf": "June 2026",
+  "source": "bank"
+ }
+]

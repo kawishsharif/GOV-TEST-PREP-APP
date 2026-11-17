@@ -1,0 +1,1076 @@
+[
+ {
+  "id": "em-001",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "The SI unit of magnetic flux is the:",
+  "options": [
+   "Henry",
+   "Ampere-turn",
+   "Tesla",
+   "Weber"
+  ],
+  "answer": 3,
+  "explanation": "Flux Φ: weber (Wb). Flux density B: tesla (Wb/m^{2}). Inductance: henry. MMF: ampere-turn.",
+  "why": [
+   "Unit of inductance.",
+   "Unit of MMF.",
+   "Unit of flux density.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-002",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "One tesla is equal to:",
+  "options": [
+   "1 Wb/m",
+   "1 Wb/m^{2}",
+   "1 A/m",
+   "1 H/m"
+  ],
+  "answer": 1,
+  "explanation": "B = Φ/A, so 1 T = 1 Wb/m^{2} (= 10^{4} gauss).",
+  "why": [
+   "Dimensionally wrong.",
+   null,
+   "Unit of H (magnetising force).",
+   "Unit of permeability."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-003",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Unit of magnetic field intensity H is:",
+  "options": [
+   "H/m",
+   "Wb",
+   "T",
+   "A/m (ampere-turns per metre)"
+  ],
+  "answer": 3,
+  "explanation": "H = NI/l, measured in A/m (AT/m).",
+  "why": [
+   "Permeability.",
+   "Flux.",
+   "Flux density.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-004",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Reluctance in a magnetic circuit is analogous to ___ in an electric circuit.",
+  "options": [
+   "EMF",
+   "Resistance",
+   "Conductance",
+   "Current"
+  ],
+  "answer": 1,
+  "explanation": "Φ = MMF/S is the magnetic analogue of I = V/R; MMF ↔ EMF, flux ↔ current, reluctance ↔ resistance, permeance ↔ conductance.",
+  "why": [
+   "MMF is the analogue of EMF.",
+   null,
+   "Permeance is the analogue of conductance.",
+   "Flux is the analogue of current."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-005",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Reluctance of a magnetic path of length l, area A and relative permeability μ_{r} is:",
+  "options": [
+   "μ_{0}l/A",
+   "A/(μ_{0}l)",
+   "μ_{0}μ_{r}A/l",
+   "l/(μ_{0}μ_{r}A)"
+  ],
+  "answer": 3,
+  "explanation": "S = l/(μA), unit AT/Wb (H^{-1}); like R = ρl/A with 1/μ in place of ρ.",
+  "why": [
+   "Missing μ_{r} and wrong form.",
+   "Inverted.",
+   "That is permeance.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-006",
+  "topic": "em",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Reluctance of an air gap 1 mm long with cross-section 10 cm^{2} is about:",
+  "options": [
+   "7.96 × 10^{8} AT/Wb",
+   "7.96 × 10^{5} AT/Wb",
+   "7.96 × 10^{3} AT/Wb",
+   "1.26 × 10^{-9} AT/Wb"
+  ],
+  "answer": 1,
+  "solution": [
+   "S = l/(μ_{0}A)",
+   "= 10^{-3}/(4π×10^{-7} × 10 ×10^{-4})",
+   "= 10^{-3}/1.257×10^{-9} ≈ 7.96 × 10^{5} AT/Wb"
+  ],
+  "explanation": "= 10^{-3}/1.257×10^{-9} ≈ 7.96 × 10^{5} AT/Wb",
+  "why": [
+   "Off by 1000.",
+   null,
+   "Off by 100 — area conversion error (10 cm² = 10^{-3} m²).",
+   "That is μ_{0}A, not l/(μ_{0}A)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-007",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Faraday's law of electromagnetic induction states that the induced EMF is proportional to:",
+  "options": [
+   "The current",
+   "The resistance of the coil",
+   "The flux",
+   "The rate of change of flux linkage"
+  ],
+  "answer": 3,
+  "explanation": "e = −N dΦ/dt. The negative sign (Lenz’s law) indicates the induced EMF opposes the change.",
+  "why": [
+   "Current is a result, not the cause.",
+   "Resistance does not set EMF.",
+   "Constant flux induces nothing.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-008",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Lenz's law is a consequence of the law of conservation of:",
+  "options": [
+   "Charge",
+   "Energy",
+   "Momentum",
+   "Mass"
+  ],
+  "answer": 1,
+  "explanation": "If the induced current aided the change, energy would be created from nothing; opposition ensures work is done.",
+  "why": [
+   "That is KCL.",
+   null,
+   "Not the basis.",
+   "Not the basis."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-009",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Fleming's right-hand rule is used to find the direction of:",
+  "options": [
+   "Magnetic field around a straight conductor",
+   "Electrostatic force",
+   "Force on a current-carrying conductor (motor)",
+   "Induced EMF/current in a generator"
+  ],
+  "answer": 3,
+  "explanation": "Right hand: generator (thuMb = Motion, First finger = Field, seCond finger = Current). Left hand: motor action.",
+  "why": [
+   "That uses the right-hand grip (corkscrew) rule.",
+   "Not applicable.",
+   "That is the left-hand rule.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-010",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A conductor 0.2 m long carries 10 A at right angles to a field of 0.5 T. Force on it is:",
+  "options": [
+   "25 N",
+   "0.1 N",
+   "1 N",
+   "10 N"
+  ],
+  "answer": 2,
+  "solution": [
+   "F = BIl",
+   "= 0.5 × 10 × 0.2",
+   "= 1 N"
+  ],
+  "explanation": "= 1 N",
+  "why": [
+   "Divides instead of multiplying.",
+   "Off by 10.",
+   null,
+   "Off by 10."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-011",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A conductor 0.5 m long moves at 10 m/s perpendicular to a 1 T field. Induced EMF is:",
+  "options": [
+   "5 V",
+   "20 V",
+   "50 V",
+   "0.5 V"
+  ],
+  "answer": 0,
+  "solution": [
+   "e = Blv",
+   "= 1 × 0.5 × 10",
+   "= 5 V"
+  ],
+  "explanation": "= 5 V",
+  "why": [
+   null,
+   "Divides v by l.",
+   "Off by 10.",
+   "Off by 10."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-012",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 200-turn coil experiences a flux change of 0.05 Wb in 0.1 s. Average induced EMF is:",
+  "options": [
+   "10 V",
+   "50 V",
+   "100 V",
+   "1000 V"
+  ],
+  "answer": 2,
+  "solution": [
+   "e = N ΔΦ/Δt",
+   "= 200 × 0.05/0.1",
+   "= 100 V"
+  ],
+  "explanation": "= 100 V",
+  "why": [
+   "Multiplies by Δt.",
+   "Ignores N partly.",
+   null,
+   "Off by 10."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-013",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 100-turn coil produces 0.01 Wb when carrying 2 A. Its self-inductance is:",
+  "options": [
+   "0.5 H",
+   "2 H",
+   "5 H",
+   "0.05 H"
+  ],
+  "answer": 0,
+  "solution": [
+   "L = NΦ/I",
+   "= 100 × 0.01/2",
+   "= 0.5 H"
+  ],
+  "explanation": "= 0.5 H",
+  "why": [
+   null,
+   "Uses I directly.",
+   "Off by 10.",
+   "Off by 10."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-014",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Two coils of 4 H and 9 H have coefficient of coupling 0.5. Mutual inductance is:",
+  "options": [
+   "6.5 H",
+   "1.5 H",
+   "3 H",
+   "6 H"
+  ],
+  "answer": 2,
+  "solution": [
+   "M = k√(L_{1}L_{2})",
+   "= 0.5 × √36",
+   "= 3 H"
+  ],
+  "explanation": "= 3 H",
+  "why": [
+   "That is k(L_{1} + L_{2}).",
+   "Takes √(L_{1}L_{2}) as 3 instead of 6.",
+   null,
+   "That is √(L_{1}L_{2}) with k = 1."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-015",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "The coils above (4 H, 9 H, M = 3 H) are connected in series aiding. Total inductance is:",
+  "options": [
+   "19 H",
+   "7 H",
+   "13 H",
+   "16 H"
+  ],
+  "answer": 0,
+  "solution": [
+   "L = L_{1} + L_{2} + 2M",
+   "= 4 + 9 + 6",
+   "= 19 H"
+  ],
+  "explanation": "= 19 H",
+  "why": [
+   null,
+   "That is series opposing (L_{1} + L_{2} − 2M).",
+   "Ignores mutual inductance.",
+   "Adds M only once."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-016",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Resistance of a conductor is given by R = :",
+  "options": [
+   "ρlA",
+   "ρA/l",
+   "ρl/A",
+   "l/(ρA)"
+  ],
+  "answer": 2,
+  "explanation": "R = ρl/A: proportional to length, inversely to area.",
+  "why": [
+   "Dimensionally wrong.",
+   "Inverted l and A.",
+   null,
+   "That is conductance-like."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-017",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A wire is stretched to double its length (volume constant). Its resistance becomes:",
+  "options": [
+   "4R",
+   "R/2",
+   "R",
+   "2R"
+  ],
+  "answer": 0,
+  "solution": [
+   "Length × 2 and area ÷ 2 (constant volume)",
+   "R ∝ l/A → 2/(1/2)",
+   "= 4R"
+  ],
+  "explanation": "= 4R",
+  "why": [
+   null,
+   "Opposite direction.",
+   "Resistance changes.",
+   "Ignores the area reduction."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-018",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A conductor has 10 Ω at 0 °C and temperature coefficient 0.004 /°C. Its resistance at 50 °C is:",
+  "options": [
+   "20 Ω",
+   "10.2 Ω",
+   "12 Ω",
+   "14 Ω"
+  ],
+  "answer": 2,
+  "solution": [
+   "R_{t} = R_{0}(1 + α_{0}t)",
+   "= 10(1 + 0.004 × 50)",
+   "= 10 × 1.2 = 12 Ω"
+  ],
+  "explanation": "= 10 × 1.2 = 12 Ω",
+  "why": [
+   "67% higher than the correct result — does not follow from the correct working.",
+   "Uses t = 5.",
+   null,
+   "Doubles the rise."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-019",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "The resistance of pure metals ___ with rise in temperature, while that of semiconductors ___.",
+  "options": [
+   "Increases, decreases",
+   "Increases, increases",
+   "Is constant, decreases",
+   "Decreases, increases"
+  ],
+  "answer": 0,
+  "explanation": "Metals have positive temperature coefficient (more lattice scattering); semiconductors have negative coefficient (more carriers generated). Alloys like manganin/constantan have nearly zero coefficient.",
+  "why": [
+   null,
+   "Semiconductors have negative coefficient.",
+   "Metals’ resistance changes.",
+   "Reversed."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-020",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Resistance of a 100 W, 220 V lamp (hot) is:",
+  "options": [
+   "22 kΩ",
+   "2.2 Ω",
+   "220 Ω",
+   "484 Ω"
+  ],
+  "answer": 3,
+  "solution": [
+   "R = V^{2}/P",
+   "= 220^{2}/100 = 48400/100",
+   "= 484 Ω"
+  ],
+  "explanation": "= 484 Ω",
+  "why": [
+   "Off by ~45.",
+   "Uses V/P.",
+   "55% lower than the correct result — does not follow from the correct working.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-021",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A 100 W and a 60 W lamp (both 220 V) are connected in series across 220 V. Which glows brighter?",
+  "options": [
+   "100 W lamp",
+   "60 W lamp",
+   "Both equally",
+   "Neither lights"
+  ],
+  "answer": 1,
+  "explanation": "R_{60} = 807 Ω > R_{100} = 484 Ω. In series the same current flows, so P = I^{2}R is larger in the 60 W lamp.",
+  "why": [
+   "In parallel the 100 W lamp is brighter, not in series.",
+   null,
+   "Resistances differ.",
+   "Both light, dimly."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-022",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 2 kW heater operates for 3 hours. Energy consumed is:",
+  "options": [
+   "6000 kWh",
+   "0.67 kWh",
+   "5 kWh",
+   "6 kWh"
+  ],
+  "answer": 3,
+  "solution": [
+   "E = P × t",
+   "= 2 kW × 3 h",
+   "= 6 kWh (6 units)"
+  ],
+  "explanation": "= 6 kWh (6 units)",
+  "why": [
+   "Uses watts with kWh.",
+   "Divides instead of multiplying.",
+   "Adds instead.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-023",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "One kilowatt-hour is equal to:",
+  "options": [
+   "3600 J",
+   "3.6 × 10^{6} J",
+   "1000 J",
+   "36 × 10^{6} J"
+  ],
+  "answer": 1,
+  "explanation": "1 kWh = 1000 W × 3600 s = 3.6 × 10^{6} J (3.6 MJ).",
+  "why": [
+   "That is 1 Wh.",
+   null,
+   "That is 1 kJ.",
+   "Off by 10."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-024",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "Charge on an electron is about:",
+  "options": [
+   "9.1 × 10^{-31} C",
+   "1.6 × 10^{19} C",
+   "6.25 × 10^{18} C",
+   "1.6 × 10^{-19} C"
+  ],
+  "answer": 3,
+  "explanation": "e = 1.602 × 10^{-19} C; 1 C ≈ 6.25 × 10^{18} electrons; electron mass 9.1 × 10^{-31} kg.",
+  "why": [
+   "That is the electron’s mass in kg.",
+   "Exponent sign wrong.",
+   "Number of electrons in 1 C.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-025",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Coulomb's law states that the force between two point charges is:",
+  "options": [
+   "Directly proportional to distance",
+   "Inversely proportional to the square of distance",
+   "Independent of the medium",
+   "Proportional to the sum of charges"
+  ],
+  "answer": 1,
+  "explanation": "F = q_{1}q_{2}/(4πε_{0}ε_{r}r^{2}); it depends on the medium through ε_{r} and on the product of charges.",
+  "why": [
+   "Inverse square, not direct.",
+   null,
+   "Depends on permittivity.",
+   "Depends on the product."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-026",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Capacitance of a parallel-plate capacitor increases when:",
+  "options": [
+   "Voltage increases",
+   "Charge decreases",
+   "Plate separation increases",
+   "Plate area increases or a dielectric of higher ε_{r} is inserted"
+  ],
+  "answer": 3,
+  "explanation": "C = ε_{0}ε_{r}A/d.",
+  "why": [
+   "C does not depend on V.",
+   "C does not depend on Q.",
+   "Larger d reduces C.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-027",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A parallel-plate capacitor has A = 0.1 m^{2}, d = 1 mm and air dielectric. Its capacitance is about:",
+  "options": [
+   "88.5 pF",
+   "885 pF",
+   "8.85 nF",
+   "8.85 pF"
+  ],
+  "answer": 1,
+  "solution": [
+   "C = ε_{0}A/d",
+   "= 8.854×10^{-12} × 0.1/10^{-3}",
+   "= 8.85 × 10^{-10} F ≈ 885 pF"
+  ],
+  "explanation": "= 8.85 × 10^{-10} F ≈ 885 pF",
+  "why": [
+   "Off by 10.",
+   null,
+   "Off by 10.",
+   "Off by 100."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-028",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Two 10 µF capacitors connected in series have an equivalent capacitance of:",
+  "options": [
+   "2.5 µF",
+   "20 µF",
+   "10 µF",
+   "5 µF"
+  ],
+  "answer": 3,
+  "solution": [
+   "1/C = 1/10 + 1/10",
+   "= 2/10",
+   "C = 5 µF"
+  ],
+  "explanation": "C = 5 µF",
+  "why": [
+   "2 times too small — a typical formula slip.",
+   "That is parallel.",
+   "2 times too large — a typical formula slip.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-029",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Permeability of free space μ_{0} is:",
+  "options": [
+   "8.854 × 10^{-12} F/m",
+   "4π × 10^{-7} H/m",
+   "9 × 10^{9} N·m^{2}/C^{2}",
+   "1 H/m"
+  ],
+  "answer": 1,
+  "explanation": "μ_{0} = 4π × 10^{-7} H/m ≈ 1.257 × 10^{-6} H/m. ε_{0} = 8.854 × 10^{-12} F/m; 1/(4πε_{0}) ≈ 9 × 10^{9}.",
+  "why": [
+   "That is ε_{0}.",
+   null,
+   "That is Coulomb’s constant.",
+   "4 times too small — a typical formula slip."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-030",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "The area of the hysteresis loop represents:",
+  "options": [
+   "Energy loss per cycle per unit volume",
+   "Retentivity only",
+   "Eddy current loss",
+   "Permeability"
+  ],
+  "answer": 0,
+  "explanation": "Work done in magnetising and demagnetising is lost as heat each cycle; it is proportional to loop area.",
+  "why": [
+   null,
+   "Retentivity is the intercept on the B axis.",
+   "Eddy loss is separate.",
+   "Slope relates to permeability."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-031",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Material for permanent magnets should have:",
+  "options": [
+   "μ_{r} < 1",
+   "Low retentivity and low coercivity",
+   "High retentivity and high coercivity (wide loop)",
+   "Narrow hysteresis loop"
+  ],
+  "answer": 2,
+  "explanation": "Hard magnetic materials (alnico, ferrites, NdFeB) keep their magnetism. Soft materials with narrow loops (silicon steel) suit transformer cores.",
+  "why": [
+   "That is diamagnetic.",
+   "That describes soft iron.",
+   null,
+   "Narrow loop = soft magnetic material."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-032",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "A material with relative permeability slightly less than 1 is:",
+  "options": [
+   "Diamagnetic",
+   "Ferrimagnetic",
+   "Ferromagnetic",
+   "Paramagnetic"
+  ],
+  "answer": 0,
+  "explanation": "Diamagnetic (bismuth, copper, water) μ_{r} < 1; paramagnetic (aluminium, platinum) slightly > 1; ferromagnetic (iron, nickel, cobalt) ≫ 1.",
+  "why": [
+   null,
+   "Ferrites have large μ_{r}.",
+   "μ_{r} ≫ 1.",
+   "Slightly greater than 1."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-033",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Above the Curie temperature a ferromagnetic material becomes:",
+  "options": [
+   "Ferroelectric",
+   "Diamagnetic",
+   "Paramagnetic",
+   "Superconducting"
+  ],
+  "answer": 2,
+  "explanation": "Thermal agitation destroys domain alignment. For iron the Curie point is about 770 °C.",
+  "why": [
+   "Unrelated.",
+   "Not the transition.",
+   null,
+   "Unrelated."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-034",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Ampère's circuital law relates:",
+  "options": [
+   "Line integral of H around a closed path to the current enclosed",
+   "Force between two charges",
+   "Induced EMF to flux change",
+   "Electric field to charge"
+  ],
+  "answer": 0,
+  "explanation": "∮H·dl = I_{enclosed}.",
+  "why": [
+   null,
+   "That is Coulomb's law.",
+   "That is Faraday's law.",
+   "That is Gauss's law."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-035",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Gauss's law states that total electric flux through a closed surface equals:",
+  "options": [
+   "The current enclosed",
+   "Zero always",
+   "The charge enclosed (in SI, D-flux = Q)",
+   "The surface area"
+  ],
+  "answer": 2,
+  "explanation": "∮D·dS = Q_{enclosed}, i.e. ∮E·dS = Q/ε_{0} in free space.",
+  "why": [
+   "That is Ampère's law.",
+   "Only if no charge is enclosed.",
+   null,
+   "Not the law."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-036",
+  "topic": "em",
+  "difficulty": "hard",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "The Maxwell equation ∇·B = 0 expresses that:",
+  "options": [
+   "Isolated magnetic poles (monopoles) do not exist",
+   "Changing B induces E",
+   "Current produces H",
+   "Electric charges exist"
+  ],
+  "answer": 0,
+  "explanation": "Magnetic flux lines are always closed; net magnetic flux out of any closed surface is zero.",
+  "why": [
+   null,
+   "That is Faraday's law ∇×E = −∂B/∂t.",
+   "That is Ampère's law.",
+   "That is ∇·D = ρ."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-037",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Magnetic flux density inside a long air-cored solenoid with 1000 turns/m carrying 2 A is about:",
+  "options": [
+   "2.51 T",
+   "0.25 mT",
+   "2.51 mT",
+   "25.1 mT"
+  ],
+  "answer": 2,
+  "solution": [
+   "B = μ_{0}nI",
+   "= 4π×10^{-7} × 1000 × 2",
+   "≈ 2.51 × 10^{-3} T"
+  ],
+  "explanation": "≈ 2.51 × 10^{-3} T",
+  "why": [
+   "Off by 1000.",
+   "Off by 10.",
+   null,
+   "Off by 10."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-038",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "An iron ring with MMF 500 AT has reluctance 2.5 × 10^{5} AT/Wb. Flux in the ring is:",
+  "options": [
+   "2 mWb",
+   "1.25 Wb",
+   "200 Wb",
+   "0.5 mWb"
+  ],
+  "answer": 0,
+  "solution": [
+   "Φ = MMF/S",
+   "= 500/2.5×10^{5}",
+   "= 2 × 10^{-3} Wb"
+  ],
+  "explanation": "= 2 × 10^{-3} Wb",
+  "why": [
+   null,
+   "Multiplies (wrong).",
+   "Inverted ratio.",
+   "Off by 4."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-039",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Superconductors exhibit:",
+  "options": [
+   "Ferromagnetism",
+   "Very high resistance at low temperature",
+   "Zero DC resistance below a critical temperature and expel magnetic fields (Meissner effect)",
+   "Negative resistance"
+  ],
+  "answer": 2,
+  "explanation": "Below T_{c}, resistance vanishes and the material becomes perfectly diamagnetic.",
+  "why": [
+   "They are diamagnetic.",
+   "Opposite.",
+   null,
+   "Not the property."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-040",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Cells are connected in series in order to:",
+  "options": [
+   "Increase the current capacity",
+   "Increase the terminal EMF",
+   "Decrease the EMF",
+   "Reduce internal resistance"
+  ],
+  "answer": 1,
+  "explanation": "Series cells add EMFs (and internal resistances). Parallel identical cells increase current capacity and reduce internal resistance.",
+  "why": [
+   "That is the parallel connection.",
+   null,
+   "Series increases EMF.",
+   "Internal resistances add in series."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-041",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A battery of EMF 12 V and internal resistance 0.5 Ω supplies a 5.5 Ω load. Terminal voltage is:",
+  "options": [
+   "10 V",
+   "6 V",
+   "12 V",
+   "11 V"
+  ],
+  "answer": 3,
+  "solution": [
+   "I = 12/(5.5 + 0.5) = 2 A",
+   "V = E − Ir = 12 − 2 × 0.5",
+   "= 11 V"
+  ],
+  "explanation": "= 11 V",
+  "why": [
+   "Uses 1 Ω internal drop doubled.",
+   "45% lower than the correct result — does not follow from the correct working.",
+   "That is the open-circuit EMF.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-042",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Eddy currents are minimised in magnetic cores by:",
+  "options": [
+   "Using solid iron",
+   "Using thin insulated laminations",
+   "Increasing frequency",
+   "Using copper cores"
+  ],
+  "answer": 1,
+  "explanation": "Eddy loss ∝ t^{2}f^{2}B^{2}; thin laminations (0.35–0.5 mm) or ferrites restrict circulating currents.",
+  "why": [
+   "Solid cores maximise eddy currents.",
+   null,
+   "Higher f increases eddy loss.",
+   "Copper is non-magnetic and conductive."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "em-043",
+  "topic": "em",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Energy stored per unit volume in a magnetic field of flux density 1 T in air is about:",
+  "options": [
+   "1 J/m^{3}",
+   "39.8 kJ/m^{3}",
+   "0.5 J/m^{3}",
+   "398 kJ/m^{3}"
+  ],
+  "answer": 3,
+  "solution": [
+   "w = B^{2}/(2μ_{0})",
+   "= 1/(2 × 4π×10^{-7})",
+   "≈ 3.98 × 10^{5} J/m^{3}"
+  ],
+  "explanation": "≈ 3.98 × 10^{5} J/m^{3}",
+  "why": [
+   "Ignores μ_{0}.",
+   "Off by 10.",
+   "Ignores μ_{0} and takes ½B².",
+   null
+  ],
+  "source": "bank"
+ }
+]

@@ -1,0 +1,692 @@
+[
+ {
+  "id": "gk-001",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The largest ocean in the world is the:",
+  "options": [
+   "Arctic",
+   "Atlantic",
+   "Indian",
+   "Pacific"
+  ],
+  "answer": 3,
+  "explanation": "The Pacific covers about a third of Earth’s surface.",
+  "why": [
+   "Smallest.",
+   "Second largest.",
+   "Third largest.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-002",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The United Nations was founded in:",
+  "options": [
+   "1919",
+   "1945",
+   "1948",
+   "1950"
+  ],
+  "answer": 1,
+  "explanation": "The UN Charter came into force on 24 October 1945 (UN Day).",
+  "why": [
+   "League of Nations era.",
+   null,
+   "UDHR adopted.",
+   "No."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-003",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Headquarters of the United Nations is in:",
+  "options": [
+   "Paris",
+   "Vienna",
+   "Geneva",
+   "New York"
+  ],
+  "answer": 3,
+  "explanation": "UN HQ is in New York; major offices in Geneva, Vienna and Nairobi.",
+  "why": [
+   "UNESCO HQ.",
+   "UN office (and IAEA HQ).",
+   "UN office, not HQ.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-004",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The smallest country in the world by area is:",
+  "options": [
+   "Monaco",
+   "Vatican City",
+   "Maldives",
+   "San Marino"
+  ],
+  "answer": 1,
+  "explanation": "Vatican City (about 0.44 km²).",
+  "why": [
+   "Second smallest.",
+   null,
+   "Smallest in Asia by area, but much larger.",
+   "Small, but larger than Vatican."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-005",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The second-highest mountain in the world, located in Pakistan, is:",
+  "options": [
+   "Rakaposhi",
+   "Tirich Mir",
+   "Nanga Parbat",
+   "K2"
+  ],
+  "answer": 3,
+  "explanation": "K2 (8,611 m) in the Karakoram, Gilgit-Baltistan. Everest (8,849 m) is the highest.",
+  "why": [
+   "Lower peak.",
+   "Highest of the Hindu Kush.",
+   "Ninth highest (8,126 m).",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-006",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The largest continent by area is:",
+  "options": [
+   "Africa",
+   "Asia",
+   "North America",
+   "Europe"
+  ],
+  "answer": 1,
+  "explanation": "Asia covers about 30% of Earth’s land area.",
+  "why": [
+   "Second largest.",
+   null,
+   "Third.",
+   "Second smallest."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-007",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Which planet is known as the Red Planet?",
+  "options": [
+   "Jupiter",
+   "Mercury",
+   "Venus",
+   "Mars"
+  ],
+  "answer": 3,
+  "explanation": "Iron oxide on the surface gives Mars its colour.",
+  "why": [
+   "Largest planet.",
+   "Closest to the Sun.",
+   "Hottest planet.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-008",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The largest planet in the solar system is:",
+  "options": [
+   "Saturn",
+   "Jupiter",
+   "Neptune",
+   "Earth"
+  ],
+  "answer": 1,
+  "explanation": "Jupiter is a gas giant over 300 times Earth’s mass.",
+  "why": [
+   "Second largest.",
+   null,
+   "Smaller ice giant.",
+   "Much smaller."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-009",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The telephone was invented by:",
+  "options": [
+   "Nikola Tesla",
+   "Guglielmo Marconi",
+   "Thomas Edison",
+   "Alexander Graham Bell"
+  ],
+  "answer": 3,
+  "explanation": "Bell received the telephone patent in 1876.",
+  "why": [
+   "AC induction motor, polyphase systems.",
+   "Radio telegraphy.",
+   "Phonograph, practical bulb.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-010",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The World Wide Web was invented by:",
+  "options": [
+   "Charles Babbage",
+   "Bill Gates",
+   "Tim Berners-Lee",
+   "Steve Jobs"
+  ],
+  "answer": 2,
+  "explanation": "Tim Berners-Lee proposed the WWW at CERN in 1989.",
+  "why": [
+   "Designed early mechanical computers.",
+   "Microsoft co-founder.",
+   null,
+   "Apple co-founder."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-011",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Headquarters of the Organisation of Islamic Cooperation (OIC) is in:",
+  "options": [
+   "Jeddah",
+   "Cairo",
+   "Islamabad",
+   "Riyadh"
+  ],
+  "answer": 0,
+  "explanation": "The OIC General Secretariat is in Jeddah, Saudi Arabia.",
+  "why": [
+   null,
+   "Arab League HQ.",
+   "Not OIC HQ.",
+   "Capital of Saudi Arabia, not OIC HQ."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-012",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "SAARC Secretariat is located in:",
+  "options": [
+   "Colombo",
+   "New Delhi",
+   "Kathmandu",
+   "Dhaka"
+  ],
+  "answer": 2,
+  "explanation": "SAARC (founded 1985) has its secretariat in Kathmandu, Nepal.",
+  "why": [
+   "Not the secretariat.",
+   "Not the secretariat.",
+   null,
+   "Not the secretariat."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-013",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Headquarters of the Economic Cooperation Organization (ECO) is in:",
+  "options": [
+   "Tehran",
+   "Islamabad",
+   "Tashkent",
+   "Ankara"
+  ],
+  "answer": 0,
+  "explanation": "ECO secretariat: Tehran. Founders: Pakistan, Iran and Turkey (1985, successor to RCD).",
+  "why": [
+   null,
+   "Not the HQ.",
+   "Not the HQ.",
+   "Not the HQ."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-014",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The World Trade Organization (WTO) was established in:",
+  "options": [
+   "1971",
+   "1945",
+   "1995",
+   "2001"
+  ],
+  "answer": 2,
+  "explanation": "WTO replaced GATT on 1 January 1995; HQ Geneva.",
+  "why": [
+   "No.",
+   "UN founding year.",
+   null,
+   "China joined WTO."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-015",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "NATO headquarters is in:",
+  "options": [
+   "Brussels",
+   "London",
+   "Washington",
+   "Paris"
+  ],
+  "answer": 0,
+  "explanation": "NATO HQ is in Brussels, Belgium.",
+  "why": [
+   null,
+   "Not NATO HQ.",
+   "NATO treaty signed there (1949), but HQ is Brussels.",
+   "OECD/UNESCO HQ."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-016",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The largest country in the world by area is:",
+  "options": [
+   "Canada",
+   "China",
+   "Russia",
+   "USA"
+  ],
+  "answer": 2,
+  "explanation": "Russia (about 17.1 million km²).",
+  "why": [
+   "Second largest.",
+   "Third/fourth.",
+   null,
+   "Third/fourth."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-017",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The hardest naturally occurring substance is:",
+  "options": [
+   "Diamond",
+   "Granite",
+   "Iron",
+   "Quartz"
+  ],
+  "answer": 0,
+  "explanation": "Diamond is 10 on the Mohs scale.",
+  "why": [
+   null,
+   "A rock, not the hardest.",
+   "Much softer metal.",
+   "Mohs 7."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-018",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The most abundant gas in Earth’s atmosphere is:",
+  "options": [
+   "Argon",
+   "Oxygen",
+   "Nitrogen",
+   "Carbon dioxide"
+  ],
+  "answer": 2,
+  "explanation": "Nitrogen ≈ 78%, oxygen ≈ 21%, argon ≈ 0.93%.",
+  "why": [
+   "About 0.93%.",
+   "About 21%.",
+   null,
+   "About 0.04%."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-019",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Which vitamin is produced in the skin by sunlight?",
+  "options": [
+   "Vitamin D",
+   "Vitamin K",
+   "Vitamin A",
+   "Vitamin C"
+  ],
+  "answer": 0,
+  "explanation": "UV-B light converts a cholesterol derivative in the skin into vitamin D.",
+  "why": [
+   null,
+   "From diet and gut bacteria.",
+   "From carotenes/diet.",
+   "From fruits."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-020",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The ozone layer is mainly found in the:",
+  "options": [
+   "Mesosphere",
+   "Ionosphere",
+   "Troposphere",
+   "Stratosphere"
+  ],
+  "answer": 3,
+  "explanation": "Most ozone lies in the stratosphere (about 15–35 km), absorbing UV radiation.",
+  "why": [
+   "Above stratosphere.",
+   "Ionised upper region.",
+   "Weather layer.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-021",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The Strait of Gibraltar connects the Atlantic Ocean with the:",
+  "options": [
+   "Red Sea",
+   "Mediterranean Sea",
+   "Black Sea",
+   "Arabian Sea"
+  ],
+  "answer": 1,
+  "explanation": "It separates Spain from Morocco.",
+  "why": [
+   "Connected via Bab-el-Mandeb/Suez.",
+   null,
+   "Connected via Bosphorus.",
+   "Part of Indian Ocean."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-022",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The capital of Australia is:",
+  "options": [
+   "Perth",
+   "Sydney",
+   "Melbourne",
+   "Canberra"
+  ],
+  "answer": 3,
+  "explanation": "Canberra is the planned capital.",
+  "why": [
+   "Western city.",
+   "Largest city.",
+   "Former temporary seat of government.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-023",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The capital of Turkey is:",
+  "options": [
+   "Istanbul",
+   "Ankara",
+   "Izmir",
+   "Bursa"
+  ],
+  "answer": 1,
+  "explanation": "Ankara has been the capital since 1923.",
+  "why": [
+   "Largest city.",
+   null,
+   "Port city.",
+   "Former Ottoman capital, not current."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-024",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The currency of Japan is the:",
+  "options": [
+   "Ringgit",
+   "Yuan",
+   "Won",
+   "Yen"
+  ],
+  "answer": 3,
+  "explanation": "Japanese yen.",
+  "why": [
+   "Malaysia.",
+   "China.",
+   "Korea.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-025",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "ASEAN Secretariat is located in:",
+  "options": [
+   "Bangkok",
+   "Jakarta",
+   "Manila",
+   "Kuala Lumpur"
+  ],
+  "answer": 1,
+  "explanation": "ASEAN (1967) is headquartered in Jakarta.",
+  "why": [
+   "ASEAN was founded there, but HQ is Jakarta.",
+   null,
+   "Not HQ.",
+   "Not HQ."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-026",
+  "topic": "gk",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "Pakistan became a full member of the Shanghai Cooperation Organisation (SCO) in:",
+  "options": [
+   "2020",
+   "2001",
+   "2005",
+   "2017"
+  ],
+  "answer": 3,
+  "explanation": "Pakistan and India became full members at the Astana summit in June 2017.",
+  "why": [
+   "No.",
+   "SCO founding year.",
+   "Pakistan became an observer.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-027",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The speed of light in vacuum is about:",
+  "options": [
+   "3 × 10^{5} m/s",
+   "3 × 10^{8} m/s",
+   "3 × 10^{10} m/s",
+   "340 m/s"
+  ],
+  "answer": 1,
+  "explanation": "c ≈ 299,792 km/s ≈ 3 × 10^{8} m/s.",
+  "why": [
+   "That is in km/s units mistaken.",
+   null,
+   "That is in cm/s.",
+   "Speed of sound in air."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-028",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The International Monetary Fund (IMF) is headquartered in:",
+  "options": [
+   "Geneva",
+   "London",
+   "New York",
+   "Washington, D.C."
+  ],
+  "answer": 3,
+  "explanation": "IMF and World Bank are both in Washington, D.C.",
+  "why": [
+   "WTO/WHO.",
+   "Not IMF.",
+   "UN HQ.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-029",
+  "topic": "gk",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The largest hot desert in the world is the:",
+  "options": [
+   "Gobi",
+   "Sahara",
+   "Thar",
+   "Kalahari"
+  ],
+  "answer": 1,
+  "explanation": "The Sahara in North Africa (Antarctica is the largest desert overall, a cold desert).",
+  "why": [
+   "Cold desert in Asia.",
+   null,
+   "Desert in Pakistan/India.",
+   "Southern Africa, smaller."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "gk-030",
+  "topic": "gk",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The Universal Declaration of Human Rights was adopted by the UN General Assembly in:",
+  "options": [
+   "1948",
+   "1966",
+   "1993",
+   "1945"
+  ],
+  "answer": 0,
+  "explanation": "Adopted on 10 December 1948 (Human Rights Day).",
+  "why": [
+   null,
+   "International Covenants adopted.",
+   "Vienna Declaration.",
+   "UN founded."
+  ],
+  "source": "bank"
+ }
+]

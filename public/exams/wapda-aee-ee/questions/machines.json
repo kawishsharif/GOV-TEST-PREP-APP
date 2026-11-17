@@ -1,0 +1,1403 @@
+[
+ {
+  "id": "mac-001",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "A transformer works on the principle of:",
+  "options": [
+   "Mutual induction",
+   "Electrostatic induction",
+   "Hall effect",
+   "Self induction"
+  ],
+  "answer": 0,
+  "explanation": "An alternating flux produced by the primary links the secondary and induces an EMF in it (Faraday’s law) — mutual induction.",
+  "why": [
+   null,
+   "Electrostatic induction is the capacitor principle.",
+   "Hall effect is used in sensors, not transformers.",
+   "Self induction alone cannot transfer energy to a second winding."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-002",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "The open-circuit (no-load) test on a transformer is used to determine:",
+  "options": [
+   "Voltage regulation directly",
+   "Copper losses",
+   "Core (iron) losses",
+   "Equivalent resistance"
+  ],
+  "answer": 2,
+  "explanation": "With the secondary open, current is only the small no-load current, so copper loss is negligible and the wattmeter reads core (iron) loss. It also gives R_{0} and X_{0} of the shunt branch.",
+  "why": [
+   "Regulation needs SC test data (R_{eq}, X_{eq}).",
+   "Copper loss is measured in the short-circuit test.",
+   null,
+   "Equivalent series resistance comes from the SC test."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-003",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "The short-circuit test on a transformer gives:",
+  "options": [
+   "Full-load copper loss",
+   "Hysteresis loss only",
+   "Eddy current loss only",
+   "Iron loss"
+  ],
+  "answer": 0,
+  "explanation": "At rated current the applied voltage is only 5–10% of rated, so the flux and iron loss are negligible: the wattmeter reads full-load copper loss. Also gives Z_{eq}, R_{eq}, X_{eq}.",
+  "why": [
+   null,
+   "Hysteresis is part of iron loss, negligible here.",
+   "Eddy loss is part of iron loss, negligible here.",
+   "Iron loss is negligible at the reduced SC voltage."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-004",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "The open-circuit test is normally performed on the ___ side and the short-circuit test on the ___ side.",
+  "options": [
+   "LV, LV",
+   "HV, LV",
+   "LV, HV",
+   "HV, HV"
+  ],
+  "answer": 2,
+  "explanation": "OC test needs rated voltage — easier to supply on the LV side. SC test needs rated current — smaller on the HV side, and only a small voltage is needed.",
+  "why": [
+   "SC on LV needs very large rated current.",
+   "Reversed: rated HV voltage for OC would need a costly HV source.",
+   null,
+   "SC on HV is right, but OC on HV is impractical."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-005",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "Buchholz relay is used to protect:",
+  "options": [
+   "Oil-immersed transformers",
+   "Transmission lines",
+   "Induction motors",
+   "Alternators"
+  ],
+  "answer": 0,
+  "explanation": "Buchholz is a gas-actuated relay for oil-immersed transformers (typically above ~500 kVA). Slow gas build-up from incipient faults sounds an alarm; a sudden oil surge trips the breaker.",
+  "why": [
+   null,
+   "Lines use distance and overcurrent relays.",
+   "Motors use thermal overload and other relays.",
+   "Alternators use differential, loss-of-excitation and similar relays."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-006",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Buchholz relay is installed:",
+  "options": [
+   "At the bottom of the tank",
+   "On the HV bushing",
+   "In the pipe between the main tank and the conservator",
+   "Inside the breather"
+  ],
+  "answer": 2,
+  "explanation": "It sits in the connecting pipe so that gas rising from the tank collects in it before reaching the conservator.",
+  "why": [
+   "Gas rises upward and would not collect at the bottom.",
+   "Bushings carry the conductors out of the tank.",
+   null,
+   "The breather dries air entering the conservator."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-007",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "The breather of a transformer contains:",
+  "options": [
+   "Silica gel",
+   "SF6 gas",
+   "Carbon granules",
+   "Transformer oil"
+  ],
+  "answer": 0,
+  "explanation": "Silica gel absorbs moisture from air drawn into the conservator as oil contracts. Typical silica gel turns from blue (dry) to pink (saturated) and must then be replaced or reactivated.",
+  "why": [
+   null,
+   "SF6 is used in breakers and GIS.",
+   "Carbon is not a desiccant here.",
+   "Oil is in the tank and conservator, not the breather."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-008",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "The main function of the conservator in a transformer is to:",
+  "options": [
+   "Reduce eddy current loss",
+   "Cool the windings",
+   "Allow for expansion and contraction of oil",
+   "Detect internal faults"
+  ],
+  "answer": 2,
+  "explanation": "The conservator keeps the main tank full of oil while oil volume changes with temperature and minimises oil surface exposed to air.",
+  "why": [
+   "Eddy loss is reduced by laminations.",
+   "Cooling is by radiators/fans.",
+   null,
+   "Fault detection is the Buchholz relay’s job."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-009",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "The core of a transformer is laminated mainly to reduce:",
+  "options": [
+   "Eddy current loss",
+   "Copper loss",
+   "Leakage reactance",
+   "Hysteresis loss"
+  ],
+  "answer": 0,
+  "explanation": "Thin insulated laminations break the path of circulating eddy currents (eddy loss ∝ t^{2}). Silicon content in steel reduces hysteresis loss.",
+  "why": [
+   null,
+   "Copper loss is in the windings.",
+   "Leakage reactance depends on winding arrangement.",
+   "Hysteresis loss is reduced by using silicon (CRGO) steel."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-010",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Hysteresis loss in a transformer core varies with frequency f and maximum flux density B_{m} as:",
+  "options": [
+   "f^{2} B_{m}^{2}",
+   "f^{2} B_{m}",
+   "Independent of f",
+   "f B_{m}^{1.6}"
+  ],
+  "answer": 3,
+  "explanation": "Steinmetz: P_{h} = η B_{m}^{1.6} f V. Eddy loss P_{e} ∝ B_{m}^{2} f^{2} t^{2}.",
+  "why": [
+   "That is the eddy-current loss relation.",
+   "Not a standard relation.",
+   "Hysteresis loss is proportional to frequency.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-011",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Transformer ratings are given in kVA rather than kW because:",
+  "options": [
+   "Transformers have no losses",
+   "Losses depend on voltage and current, not on load power factor",
+   "kW is not an SI unit",
+   "Transformers only supply reactive power"
+  ],
+  "answer": 1,
+  "explanation": "Iron loss depends on voltage, copper loss on current. Neither depends on the load pf, so the rating is in VA.",
+  "why": [
+   "Transformers do have losses.",
+   null,
+   "kW is an SI-derived unit.",
+   "They supply both real and reactive power."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-012",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A transformer has maximum efficiency when:",
+  "options": [
+   "Copper loss = 2 × iron loss",
+   "Iron loss is zero",
+   "Load is at unity pf and full load always",
+   "Copper loss = iron loss"
+  ],
+  "answer": 3,
+  "explanation": "Efficiency is maximum when variable (copper) loss equals constant (iron) loss.",
+  "why": [
+   "That is not the condition for dη/dI = 0.",
+   "Iron loss is never zero in operation.",
+   "Max efficiency load depends on the loss ratio, not always full load.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-013",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A transformer has 2200 V primary with 1000 turns. For a 220 V secondary the number of secondary turns is:",
+  "options": [
+   "10",
+   "100",
+   "1000",
+   "10000"
+  ],
+  "answer": 1,
+  "solution": [
+   "N_{2}/N_{1} = V_{2}/V_{1}",
+   "N_{2} = 1000 × 220/2200",
+   "= 100 turns"
+  ],
+  "explanation": "= 100 turns",
+  "why": [
+   "Ratio applied twice.",
+   null,
+   "Equal turns give equal voltage.",
+   "That would step up to 22 kV."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-014",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 10 kVA, 2000/200 V single-phase transformer. Full-load secondary current is:",
+  "options": [
+   "500 A",
+   "5 A",
+   "20 A",
+   "50 A"
+  ],
+  "answer": 3,
+  "solution": [
+   "I_{2} = S/V_{2}",
+   "= 10000/200",
+   "= 50 A (primary is 5 A)"
+  ],
+  "explanation": "= 50 A (primary is 5 A)",
+  "why": [
+   "Off by a factor of 10.",
+   "That is the primary current.",
+   "Not consistent with 10 kVA at 200 V.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-015",
+  "topic": "machines",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 20 kVA transformer has iron loss 200 W and full-load copper loss 500 W. Efficiency at full load, 0.8 pf is about:",
+  "options": [
+   "96.6%",
+   "95.8%",
+   "98.8%",
+   "97.0%"
+  ],
+  "answer": 1,
+  "solution": [
+   "Output = 20 × 0.8 = 16 kW",
+   "Losses = 200 + 500 = 700 W",
+   "η = 16000/(16000 + 700) = 95.8%"
+  ],
+  "explanation": "η = 16000/(16000 + 700) = 95.8%",
+  "why": [
+   "20000/20700 — assumes unity pf.",
+   null,
+   "16000/16200 — ignores copper loss.",
+   "16000/16500 — ignores iron loss."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-016",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Iron loss = 400 W and full-load copper loss = 900 W. Maximum efficiency occurs at what fraction of full load?",
+  "options": [
+   "75%",
+   "100%",
+   "44%",
+   "66.7%"
+  ],
+  "answer": 3,
+  "solution": [
+   "x = √(P_{i}/P_{cu,fl})",
+   "= √(400/900) = 2/3",
+   "≈ 66.7% of full load"
+  ],
+  "explanation": "≈ 66.7% of full load",
+  "why": [
+   "12% higher than the correct result — does not follow from the correct working.",
+   "Only if iron loss equals full-load copper loss.",
+   "400/900 without the square root.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-017",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Full-load copper loss of a transformer is 800 W. Copper loss at half load is:",
+  "options": [
+   "400 W",
+   "200 W",
+   "800 W",
+   "100 W"
+  ],
+  "answer": 1,
+  "solution": [
+   "P_{cu} ∝ I^{2}",
+   "at half load (½)^{2} = ¼",
+   "800/4 = 200 W"
+  ],
+  "explanation": "800/4 = 200 W",
+  "why": [
+   "Assumes copper loss ∝ I, not I².",
+   null,
+   "Copper loss changes with load.",
+   "That is ⅛ of full load."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-018",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Voltage regulation of a transformer can be negative when the load power factor is:",
+  "options": [
+   "Zero lagging",
+   "Unity",
+   "Lagging",
+   "Leading"
+  ],
+  "answer": 3,
+  "explanation": "With a sufficiently leading load, the capacitive current raises the secondary voltage above no-load value (Ferranti-like rise), giving negative regulation.",
+  "why": [
+   "Zero-lag pf gives maximum positive regulation.",
+   "At unity pf regulation is small but positive.",
+   "Lagging loads give the largest positive regulation.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-019",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A transformer secondary reads 240 V at no load and 230 V at full load. Percentage regulation (referred to full-load voltage) is about:",
+  "options": [
+   "4.17%",
+   "4.35%",
+   "10%",
+   "2.1%"
+  ],
+  "answer": 1,
+  "solution": [
+   "Regulation = (V_{NL} − V_{FL})/V_{FL} × 100",
+   "= 10/230 × 100",
+   "≈ 4.35%"
+  ],
+  "explanation": "≈ 4.35%",
+  "why": [
+   "10/240 — referred to no-load voltage.",
+   null,
+   "Volts, not percentage.",
+   "52% lower than the correct result — does not follow from the correct working."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-020",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "All-day efficiency is an important figure of merit for:",
+  "options": [
+   "Distribution transformers",
+   "Instrument transformers",
+   "Welding transformers",
+   "Power transformers at generating stations"
+  ],
+  "answer": 0,
+  "explanation": "Distribution transformers are energised 24 h but lightly loaded much of the time, so energy efficiency over a day (kWh out/kWh in) matters. They are designed for maximum efficiency at a lower load.",
+  "why": [
+   null,
+   "Accuracy matters for instrument transformers.",
+   "Welding transformers are intermittent duty; not the standard example.",
+   "Power transformers run near full load; ordinary efficiency suits them."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-021",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "If a transformer primary is connected to a DC supply of rated voltage:",
+  "options": [
+   "It works normally",
+   "Secondary voltage doubles",
+   "The primary draws very high current and may burn",
+   "It works as a rectifier"
+  ],
+  "answer": 2,
+  "explanation": "With DC there is no changing flux, so no back EMF; only the small winding resistance limits current, which becomes very large.",
+  "why": [
+   "No induced EMF with DC.",
+   "No EMF is induced in the secondary.",
+   null,
+   "A transformer cannot rectify."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-022",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "On-load tap changers are usually placed on the HV winding because:",
+  "options": [
+   "HV winding has more turns and lower current",
+   "HV winding is at the bottom",
+   "LV side has no taps",
+   "It reduces iron loss"
+  ],
+  "answer": 0,
+  "explanation": "Lower current reduces arcing and contact size; more turns give finer voltage steps.",
+  "why": [
+   null,
+   "Physical position is not the reason.",
+   "Taps can be provided on either side.",
+   "Taps do not affect iron loss meaningfully."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-023",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "An auto-transformer has a ratio 400/300 V. The saving of copper compared with a two-winding transformer of the same output is:",
+  "options": [
+   "25%",
+   "33%",
+   "75%",
+   "50%"
+  ],
+  "answer": 2,
+  "solution": [
+   "K = 300/400 = 0.75",
+   "Copper in auto = (1 − K) × copper in two-winding = 0.25",
+   "Saving = K = 75%"
+  ],
+  "explanation": "Saving = K = 75%",
+  "why": [
+   "25% is the copper still needed.",
+   "56% lower than the correct result — does not follow from the correct working.",
+   null,
+   "33% lower than the correct result — does not follow from the correct working."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-024",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Which condition is NOT essential for parallel operation of two single-phase transformers?",
+  "options": [
+   "Same kVA rating",
+   "Equal per-unit impedance (ideally)",
+   "Same polarity",
+   "Same voltage ratio"
+  ],
+  "answer": 0,
+  "explanation": "Transformers of different kVA ratings can share load in proportion to their ratings if their per-unit impedances are equal. Polarity and ratio must match.",
+  "why": [
+   null,
+   "Unequal p.u. impedance causes poor load sharing.",
+   "Wrong polarity gives a dead short circulating current.",
+   "Unequal ratios cause circulating currents at no load."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-025",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "In a DC generator, the commutator:",
+  "options": [
+   "Reduces armature reaction",
+   "Provides the field excitation",
+   "Converts the AC induced in the armature to DC at the brushes",
+   "Increases the generated voltage"
+  ],
+  "answer": 2,
+  "explanation": "EMF induced in armature conductors is alternating; the commutator with brushes acts as a mechanical rectifier.",
+  "why": [
+   "Interpoles/compensating windings reduce armature reaction effects.",
+   "The field winding provides excitation.",
+   null,
+   "Voltage depends on flux, speed and winding, not the commutator."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-026",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 4-pole lap-wound DC generator has 500 conductors, flux 0.02 Wb/pole and runs at 1200 rpm. Generated EMF is:",
+  "options": [
+   "200 V",
+   "400 V",
+   "800 V",
+   "100 V"
+  ],
+  "answer": 0,
+  "solution": [
+   "E = PφZN/(60A), lap: A = P = 4",
+   "E = 4 × 0.02 × 500 × 1200/(60 × 4)",
+   "= 48000/240 = 200 V"
+  ],
+  "explanation": "= 48000/240 = 200 V",
+  "why": [
+   null,
+   "Uses A = 2 (wave winding).",
+   "Ignores the parallel paths entirely.",
+   "Halves the correct value."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-027",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 220 V DC shunt motor has armature resistance 0.5 Ω and takes armature current 20 A. Back EMF is:",
+  "options": [
+   "200 V",
+   "220 V",
+   "210 V",
+   "230 V"
+  ],
+  "answer": 2,
+  "solution": [
+   "E_{b} = V − I_{a}R_{a}",
+   "= 220 − 20 × 0.5",
+   "= 210 V"
+  ],
+  "explanation": "= 210 V",
+  "why": [
+   "Uses a 1 Ω drop.",
+   "Ignores the armature drop.",
+   null,
+   "Adds the drop — that is a generator relation."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-028",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "A DC series motor should never be started at no load because:",
+  "options": [
+   "Its speed becomes dangerously high",
+   "It draws very low current",
+   "The field winding will short",
+   "It will not start"
+  ],
+  "answer": 0,
+  "explanation": "Speed ∝ 1/φ and φ ∝ I_{a}; at no load I_{a} and flux are tiny, so speed rises dangerously. Series motors are always coupled to the load (traction, cranes).",
+  "why": [
+   null,
+   "Starting current is high, not low.",
+   "No such effect.",
+   "It starts with very high torque."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-029",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Which DC motor is most suitable for electric traction?",
+  "options": [
+   "Differential compound",
+   "Shunt",
+   "Series",
+   "Separately excited"
+  ],
+  "answer": 2,
+  "explanation": "Series motors give very high starting torque (T ∝ I_{a}^{2} below saturation) and naturally slow down under heavy load.",
+  "why": [
+   "Differential compound is unstable and rarely used.",
+   "Shunt motors are near-constant speed with moderate starting torque.",
+   null,
+   "Used for wide speed control, not classic traction."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-030",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "A DC shunt motor is best described as a:",
+  "options": [
+   "Variable speed motor",
+   "Nearly constant speed motor",
+   "High starting torque motor",
+   "Universal motor"
+  ],
+  "answer": 1,
+  "explanation": "Flux is nearly constant (field across supply), so speed drops only slightly from no load to full load.",
+  "why": [
+   "Series motors vary speed widely with load.",
+   null,
+   "Series motors have the highest starting torque.",
+   "Universal motors are series motors that run on AC or DC."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-031",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A DC shunt motor runs at 1000 rpm. If the field flux is reduced by 10% with back EMF unchanged, the new speed is about:",
+  "options": [
+   "1100 rpm",
+   "900 rpm",
+   "1000 rpm",
+   "1111 rpm"
+  ],
+  "answer": 3,
+  "solution": [
+   "N ∝ E_{b}/φ",
+   "N_{2} = 1000 × (1/0.9)",
+   "≈ 1111 rpm"
+  ],
+  "explanation": "≈ 1111 rpm",
+  "why": [
+   "1100 assumes N ∝ (2 − φ); speed is inversely proportional.",
+   "Speed rises, not falls, when flux is weakened.",
+   "Flux change does change speed.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-032",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Swinburne's test cannot be performed on a DC series motor because:",
+  "options": [
+   "It has no field winding",
+   "Running a series motor at no load is unsafe",
+   "It requires two identical machines",
+   "Series motors have no losses"
+  ],
+  "answer": 1,
+  "explanation": "Swinburne's is a no-load test: a series motor at no load runs away. It is used for shunt and compound machines.",
+  "why": [
+   "A series motor has a series field winding.",
+   null,
+   "That is Hopkinson's (regenerative) test.",
+   "All motors have losses."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-033",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Interpoles in DC machines are provided to:",
+  "options": [
+   "Reduce hysteresis loss",
+   "Increase field flux",
+   "Increase the speed",
+   "Improve commutation"
+  ],
+  "answer": 3,
+  "explanation": "Interpoles (commutating poles), connected in series with the armature, neutralise reactance voltage and armature reaction in the commutating zone, reducing sparking.",
+  "why": [
+   "Hysteresis depends on core material.",
+   "They act locally in the commutating zone only.",
+   "They do not set speed.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-034",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "In a 3-point starter for a DC shunt motor, the no-volt release coil is connected:",
+  "options": [
+   "In series with the armature",
+   "In series with the shunt field",
+   "Across the starting resistance",
+   "In parallel with the armature only"
+  ],
+  "answer": 1,
+  "explanation": "The hold-on coil is in series with the field: if supply fails or the field opens, the arm returns to OFF, protecting against runaway on field loss.",
+  "why": [
+   "The overload release is in the line/armature circuit.",
+   null,
+   "Not its connection.",
+   "Not its connection."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-035",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Synchronous speed of a 4-pole induction motor on a 50 Hz supply is:",
+  "options": [
+   "3000 rpm",
+   "750 rpm",
+   "1000 rpm",
+   "1500 rpm"
+  ],
+  "answer": 3,
+  "solution": [
+   "N_{s} = 120f/P",
+   "= 120 × 50/4",
+   "= 1500 rpm"
+  ],
+  "explanation": "= 1500 rpm",
+  "why": [
+   "That is 2 poles.",
+   "That is 8 poles.",
+   "That is 6 poles.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-036",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 6-pole, 50 Hz induction motor runs at 960 rpm. Its slip is:",
+  "options": [
+   "2%",
+   "4%",
+   "6%",
+   "0.04%"
+  ],
+  "answer": 1,
+  "solution": [
+   "N_{s} = 120 × 50/6 = 1000 rpm",
+   "s = (1000 − 960)/1000",
+   "= 0.04 = 4%"
+  ],
+  "explanation": "= 0.04 = 4%",
+  "why": [
+   "Uses 980 rpm.",
+   null,
+   "50% higher than the correct result — does not follow from the correct working.",
+   "Mixes fraction and percentage."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-037",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "An induction motor on 50 Hz runs at 4% slip. Frequency of rotor currents is:",
+  "options": [
+   "0.04 Hz",
+   "50 Hz",
+   "48 Hz",
+   "2 Hz"
+  ],
+  "answer": 3,
+  "solution": [
+   "f_{r} = s × f",
+   "= 0.04 × 50",
+   "= 2 Hz"
+  ],
+  "explanation": "= 2 Hz",
+  "why": [
+   "Forgets to multiply by f.",
+   "That is the stator frequency (true only at standstill).",
+   "That is (1 − s)f.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-038",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 4-pole, 50 Hz induction motor operates at 3% slip. Rotor speed is:",
+  "options": [
+   "1470 rpm",
+   "1455 rpm",
+   "1500 rpm",
+   "1545 rpm"
+  ],
+  "answer": 1,
+  "solution": [
+   "N_{s} = 1500 rpm",
+   "N = N_{s}(1 − s) = 1500 × 0.97",
+   "= 1455 rpm"
+  ],
+  "explanation": "= 1455 rpm",
+  "why": [
+   "That is 2% slip.",
+   null,
+   "That is synchronous speed.",
+   "Adds the slip; motors run below N_{s}."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-039",
+  "topic": "machines",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Air-gap power of an induction motor is 10 kW at slip 0.04. Rotor copper loss is:",
+  "options": [
+   "960 W",
+   "9.6 kW",
+   "40 W",
+   "400 W"
+  ],
+  "answer": 3,
+  "solution": [
+   "Rotor Cu loss = s × P_{g}",
+   "= 0.04 × 10000",
+   "= 400 W (mechanical power developed = 9.6 kW)"
+  ],
+  "explanation": "= 400 W (mechanical power developed = 9.6 kW)",
+  "why": [
+   "140% higher than the correct result — does not follow from the correct working.",
+   "That is gross mechanical power (1 − s)P_{g}.",
+   "Off by 10.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-040",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "In a 3-phase induction motor, maximum torque is:",
+  "options": [
+   "Zero at standstill",
+   "Proportional to rotor resistance",
+   "Independent of rotor resistance",
+   "Proportional to slip"
+  ],
+  "answer": 2,
+  "explanation": "T_{max} ∝ V^{2}/(2X_{2}); rotor resistance only changes the slip at which it occurs (s_{m} = R_{2}/X_{2}).",
+  "why": [
+   "Starting torque is non-zero.",
+   "R_{2} shifts the slip at maximum torque, not its value.",
+   null,
+   "Torque is not linear with slip over the full range."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-041",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Starting torque of a slip-ring induction motor is maximum when rotor resistance per phase equals:",
+  "options": [
+   "Rotor standstill reactance",
+   "Stator resistance",
+   "Twice the rotor reactance",
+   "Zero"
+  ],
+  "answer": 0,
+  "explanation": "Maximum torque occurs at s = R_{2}/X_{2}; for it to occur at standstill (s = 1), R_{2} = X_{2}.",
+  "why": [
+   null,
+   "Stator resistance is not the controlling factor.",
+   "Beyond R_{2} = X_{2}, starting torque falls again.",
+   "Zero resistance gives low starting torque."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-042",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "With a star-delta starter, starting line current compared with direct-on-line starting is:",
+  "options": [
+   "Unchanged",
+   "1/√3",
+   "1/3",
+   "√3 times"
+  ],
+  "answer": 2,
+  "explanation": "Phase voltage falls to 1/√3, phase current to 1/√3, and line current in star equals phase current while in delta it is √3 × phase: overall ratio 1/3. Starting torque is also 1/3.",
+  "why": [
+   "The starter exists to reduce it.",
+   "That is the phase-voltage ratio.",
+   null,
+   "Current is reduced, not increased."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-043",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A motor draws 60 A when started direct-on-line. With a star-delta starter, starting line current is:",
+  "options": [
+   "20 A",
+   "34.6 A",
+   "60 A",
+   "180 A"
+  ],
+  "answer": 0,
+  "solution": [
+   "Star-delta reduces starting line current to 1/3 of DOL",
+   "60/3",
+   "= 20 A"
+  ],
+  "explanation": "= 20 A",
+  "why": [
+   null,
+   "Divides by √3 only.",
+   "No reduction.",
+   "Multiplies instead."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-044",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "If the supply voltage to an induction motor falls by 10%, its starting torque becomes about:",
+  "options": [
+   "100%",
+   "90%",
+   "81%",
+   "110%"
+  ],
+  "answer": 2,
+  "solution": [
+   "T ∝ V^{2}",
+   "(0.9)^{2} = 0.81",
+   "81% of original"
+  ],
+  "explanation": "81% of original",
+  "why": [
+   "Torque depends on voltage.",
+   "Assumes T ∝ V.",
+   null,
+   "Torque falls, not rises."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-045",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Rotor bars of a squirrel-cage motor are usually skewed to:",
+  "options": [
+   "Reduce noise and prevent cogging (magnetic locking)",
+   "Increase slip",
+   "Reduce copper loss",
+   "Increase starting current"
+  ],
+  "answer": 0,
+  "explanation": "Skewing reduces slot harmonics, giving quieter operation and avoiding cogging/locking of rotor and stator teeth.",
+  "why": [
+   null,
+   "Slip is set by load and rotor resistance.",
+   "Skewing slightly increases bar length.",
+   "Not a design aim."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-046",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Crawling of an induction motor (running stably at about 1/7 of synchronous speed) is caused by:",
+  "options": [
+   "High rotor resistance",
+   "Fifth harmonic",
+   "Seventh harmonic",
+   "Unbalanced supply"
+  ],
+  "answer": 2,
+  "explanation": "The 7th space harmonic rotates forward at N_{s}/7 and can produce a torque dip where the motor “crawls”.",
+  "why": [
+   "High rotor resistance increases starting torque.",
+   "The 5th harmonic rotates backward and causes a braking dip but not forward crawling at 1/7.",
+   null,
+   "Unbalance causes heating and negative-sequence torque."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-047",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A single-phase induction motor is not self-starting because:",
+  "options": [
+   "A single-phase winding produces a pulsating, not rotating, field",
+   "Rotor resistance is too high",
+   "Supply frequency is too low",
+   "It has no rotor"
+  ],
+  "answer": 0,
+  "explanation": "A pulsating field = two equal and opposite rotating fields; at standstill their torques cancel. An auxiliary winding with a capacitor creates a phase-shifted field to start it.",
+  "why": [
+   null,
+   "Not the cause.",
+   "Frequency is the normal 50 Hz.",
+   "It has a cage rotor."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-048",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "A synchronous motor is:",
+  "options": [
+   "Self-starting only on DC",
+   "Self-starting",
+   "Not self-starting",
+   "Self-starting only at no load"
+  ],
+  "answer": 2,
+  "explanation": "The rotor cannot lock instantly onto a field rotating at N_{s}; average torque is zero. It is started with damper (amortisseur) windings as an induction motor, or by a pony motor.",
+  "why": [
+   "It runs on AC.",
+   "Average torque at standstill is zero.",
+   null,
+   "Load has nothing to do with it."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-049",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "An over-excited synchronous motor running at no load and used for power factor correction is called a:",
+  "options": [
+   "Synchronous condenser",
+   "Induction generator",
+   "Phase advancer",
+   "Synchronous converter"
+  ],
+  "answer": 0,
+  "explanation": "Over-excitation makes it draw leading current, so it supplies reactive power like a capacitor bank but with smooth control.",
+  "why": [
+   null,
+   "An induction generator absorbs reactive power.",
+   "Phase advancers improve pf of induction motors by rotor injection.",
+   "A converter changes AC to DC."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-050",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "V-curves of a synchronous motor are plotted between:",
+  "options": [
+   "Power factor and speed",
+   "Torque and slip",
+   "Speed and load",
+   "Armature current and field current at constant load"
+  ],
+  "answer": 3,
+  "explanation": "Armature current is minimum at unity pf (normal excitation) and rises for under- (lagging) and over-excitation (leading), giving a V shape. Inverted V-curves plot pf against field current.",
+  "why": [
+   "Speed is constant.",
+   "Torque–slip curves belong to induction motors.",
+   "Speed of a synchronous motor is constant.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-051",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Increasing the field excitation of an alternator connected to an infinite bus mainly changes its:",
+  "options": [
+   "Real power output",
+   "Reactive power output",
+   "Frequency",
+   "Speed"
+  ],
+  "answer": 1,
+  "explanation": "Excitation controls internal EMF, which changes reactive power (and pf). Real power is changed through the prime-mover input (governor).",
+  "why": [
+   "Real power needs more turbine input.",
+   null,
+   "Frequency is fixed by the infinite bus.",
+   "Speed is locked to synchronous speed."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-052",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "Which condition is NOT required for paralleling an alternator with the bus bars?",
+  "options": [
+   "Equal voltage",
+   "Equal frequency",
+   "Same phase sequence",
+   "Equal kVA rating"
+  ],
+  "answer": 3,
+  "explanation": "Voltage, frequency, phase sequence and phase angle must match (checked by synchroscope or lamps). Machines of different ratings are routinely paralleled.",
+  "why": [
+   "Unequal voltage causes reactive circulating current.",
+   "Unequal frequency causes power swings.",
+   "Wrong sequence causes a short circuit.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-053",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Alternators for hydroelectric stations are generally:",
+  "options": [
+   "Cylindrical-rotor, 2-pole, high speed",
+   "Salient-pole, many poles, low speed",
+   "Salient-pole, 2-pole",
+   "Cylindrical-rotor, many poles, low speed"
+  ],
+  "answer": 1,
+  "explanation": "Water turbines run slowly, so many poles are needed for 50 Hz; salient-pole rotors of large diameter and short axial length suit this. Steam/gas turbo-alternators are cylindrical-rotor 2/4-pole machines.",
+  "why": [
+   "That describes turbo-alternators.",
+   null,
+   "2-pole would need 3000 rpm.",
+   "Cylindrical rotors suit high speeds."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-054",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A hydro-generator runs at 300 rpm on a 50 Hz system. Number of poles is:",
+  "options": [
+   "24",
+   "10",
+   "12",
+   "20"
+  ],
+  "answer": 3,
+  "solution": [
+   "P = 120f/N",
+   "= 120 × 50/300",
+   "= 20 poles"
+  ],
+  "explanation": "= 20 poles",
+  "why": [
+   "That would need 250 rpm.",
+   "That would need 600 rpm.",
+   "That would need 500 rpm.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-055",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "The most accurate method of finding the voltage regulation of an alternator is the:",
+  "options": [
+   "MMF (ampere-turn) method",
+   "Potier triangle (ZPF) method",
+   "Direct loading only for large machines",
+   "EMF (synchronous impedance) method"
+  ],
+  "answer": 1,
+  "explanation": "EMF method is pessimistic (over-estimates), MMF method optimistic; Potier/ZPF separates leakage reactance and armature reaction and is most accurate among indirect methods.",
+  "why": [
+   "Optimistic: gives a lower regulation.",
+   null,
+   "Direct loading is impractical for large machines.",
+   "Pessimistic: gives a higher regulation."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-056",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Damper windings in synchronous machines are used to:",
+  "options": [
+   "Improve power factor",
+   "Reduce copper loss",
+   "Increase output voltage",
+   "Reduce hunting and help starting"
+  ],
+  "answer": 3,
+  "explanation": "Damper (amortisseur) bars carry induced currents only when speed deviates from synchronous, damping oscillations (hunting); they also give induction-motor starting torque.",
+  "why": [
+   "Pf is controlled by excitation.",
+   "They add slight losses during transients.",
+   "They do not affect steady voltage.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "mac-057",
+  "topic": "machines",
+  "difficulty": "hard",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Short-circuit ratio (SCR) of a synchronous machine is approximately equal to:",
+  "options": [
+   "Synchronous reactance in p.u.",
+   "Reciprocal of saturated synchronous reactance in p.u.",
+   "Ratio of armature to field resistance",
+   "Leakage reactance in p.u."
+  ],
+  "answer": 1,
+  "explanation": "SCR = I_{f} for rated OC voltage / I_{f} for rated SC current ≈ 1/X_{s(pu)}. High SCR → smaller X_{s}, better stability and regulation but larger, costlier machine.",
+  "why": [
+   "It is the reciprocal.",
+   null,
+   "Resistances are not involved.",
+   "Leakage reactance is only part of X_{s}."
+  ],
+  "source": "bank"
+ }
+]

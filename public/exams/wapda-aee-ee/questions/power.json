@@ -1,0 +1,1378 @@
+[
+ {
+  "id": "pow-001",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Ferranti effect in a transmission line means:",
+  "options": [
+   "Corona loss rises in wet weather",
+   "Receiving-end voltage exceeds sending-end voltage at light or no load",
+   "Sending-end voltage exceeds receiving-end voltage at full load",
+   "Current increases with frequency"
+  ],
+  "answer": 1,
+  "explanation": "Line shunt capacitance draws a leading charging current; flowing through the series inductance it raises receiving-end voltage on long, lightly loaded lines.",
+  "why": [
+   "That is a corona characteristic.",
+   null,
+   "That is normal regulation under load, not Ferranti.",
+   "That is not the Ferranti effect."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-002",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "Ferranti effect is mainly due to the line’s:",
+  "options": [
+   "Leakage conductance",
+   "Skin effect",
+   "Resistance",
+   "Shunt capacitance (charging current)"
+  ],
+  "answer": 3,
+  "explanation": "Capacitive charging current through series inductive reactance produces a voltage rise. Shunt reactors are used to control it.",
+  "why": [
+   "Leakage conductance is negligible.",
+   "Skin effect only raises AC resistance.",
+   "Resistance causes a drop, not a rise.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-003",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Ferranti effect is most pronounced on:",
+  "options": [
+   "Short lines at full load",
+   "Long EHV lines at no load",
+   "DC lines",
+   "Low-voltage distribution feeders"
+  ],
+  "answer": 1,
+  "explanation": "Charging current grows with line length and voltage; at no load nothing offsets it. DC lines have no charging current in steady state.",
+  "why": [
+   "Short lines have negligible capacitance and full load masks it.",
+   null,
+   "No steady charging current on DC.",
+   "LV feeders have negligible capacitance."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-004",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Shunt reactors are installed at the receiving end of long EHV lines to:",
+  "options": [
+   "Reduce skin effect",
+   "Improve power factor of industrial loads",
+   "Increase power transfer",
+   "Absorb reactive power and limit voltage rise at light load"
+  ],
+  "answer": 3,
+  "explanation": "They compensate line charging (capacitive) VArs, limiting the Ferranti rise.",
+  "why": [
+   "Skin effect is a conductor property.",
+   "Industrial pf correction uses shunt capacitors.",
+   "Series capacitors increase power transfer.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-005",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Corona is the:",
+  "options": [
+   "Breakdown of the solid insulator",
+   "Ionisation of air around a conductor when the surface field exceeds the air’s breakdown strength",
+   "Heating of a conductor due to load current",
+   "Sag of a line in hot weather"
+  ],
+  "answer": 1,
+  "explanation": "Above the critical disruptive voltage (≈30 kV/cm peak, 21.1 kV/cm rms in normal air) air near the surface ionises, giving a violet glow, hissing, ozone and power loss.",
+  "why": [
+   "Insulator flashover/puncture is different.",
+   null,
+   "That is I²R heating.",
+   "Sag is mechanical."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-006",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Corona loss on a line can be reduced by:",
+  "options": [
+   "Reducing spacing between conductors",
+   "Increasing the operating voltage",
+   "Reducing conductor diameter",
+   "Increasing conductor diameter or using bundled conductors"
+  ],
+  "answer": 3,
+  "explanation": "Larger effective diameter lowers the surface electric field. Bundled conductors and hollow/ACSR conductors are used on EHV lines.",
+  "why": [
+   "Closer spacing increases stress.",
+   "Higher voltage increases corona.",
+   "Thinner conductors increase surface stress.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-007",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Which is an ADVANTAGE of corona?",
+  "options": [
+   "Ozone production",
+   "It reduces the steepness of travelling surge waves",
+   "Power loss",
+   "Radio interference"
+  ],
+  "answer": 1,
+  "explanation": "The extra (virtual) capacitance from the corona envelope attenuates and flattens the front of lightning/switching surges.",
+  "why": [
+   "Ozone corrodes conductors — disadvantage.",
+   null,
+   "Disadvantage.",
+   "Disadvantage."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-008",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Corona effect is greater in:",
+  "options": [
+   "Weather does not matter",
+   "Very low humidity only",
+   "Dry, clear weather",
+   "Foggy, rainy weather"
+  ],
+  "answer": 3,
+  "explanation": "Moisture and drops on the surface lower the critical disruptive voltage (lower irregularity and air density factors).",
+  "why": [
+   "Weather has a strong effect.",
+   "Dry air raises the breakdown threshold.",
+   "Fair weather gives the least corona.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-009",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Skin effect means:",
+  "options": [
+   "DC current flows on the surface",
+   "Alternating current tends to concentrate near the surface of the conductor",
+   "Current is uniform over the cross-section at all frequencies",
+   "Current flows in the insulation"
+  ],
+  "answer": 1,
+  "explanation": "Inner filaments link more flux and have higher reactance, so AC crowds to the outer layer, raising effective resistance.",
+  "why": [
+   "DC is uniformly distributed.",
+   null,
+   "True only for DC.",
+   "Insulation carries negligible current."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-010",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Skin effect increases with:",
+  "options": [
+   "Increase in frequency and conductor diameter",
+   "Use of stranded conductors",
+   "DC operation",
+   "Decrease in frequency"
+  ],
+  "answer": 0,
+  "explanation": "Skin depth δ = √(ρ/(πfμ)); higher f and larger diameter (or μ) increase the effect.",
+  "why": [
+   null,
+   "Stranding reduces it.",
+   "There is no skin effect on DC.",
+   "Lower frequency reduces it."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-011",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "Hollow or ACSR conductors are used in EHV lines mainly to:",
+  "options": [
+   "Increase inductance",
+   "Increase resistance",
+   "Reduce corona and skin effect",
+   "Reduce tensile strength"
+  ],
+  "answer": 2,
+  "explanation": "A larger diameter for the same material reduces surface stress (corona); since AC flows mainly in the outer part anyway, inner material is wasted — skin effect.",
+  "why": [
+   "Larger diameter slightly reduces inductance.",
+   "Resistance is not deliberately increased.",
+   null,
+   "Steel core in ACSR increases strength."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-012",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "In an ACSR conductor, the steel core provides:",
+  "options": [
+   "Tensile strength",
+   "Corrosion protection",
+   "Insulation",
+   "Conductivity"
+  ],
+  "answer": 0,
+  "explanation": "Aluminium strands carry current; the galvanised steel core carries the mechanical load allowing long spans.",
+  "why": [
+   null,
+   "Not its purpose.",
+   "Bare overhead conductors are not insulated.",
+   "Aluminium provides conductivity."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-013",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Surge impedance of a lossless transmission line is given by:",
+  "options": [
+   "L/C",
+   "√(LC)",
+   "√(L/C)",
+   "√(C/L)"
+  ],
+  "answer": 2,
+  "explanation": "Z_{c} = √(L/C); typically ≈ 400 Ω for single-circuit overhead lines and 40–60 Ω for cables.",
+  "why": [
+   "Units of Ω², not Ω.",
+   "That has units of time per length; related to propagation delay.",
+   null,
+   "Inverse — units of siemens."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-014",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Typical surge impedance of an overhead transmission line is about:",
+  "options": [
+   "400 Ω",
+   "4 kΩ",
+   "4 Ω",
+   "40 Ω"
+  ],
+  "answer": 0,
+  "explanation": "Overhead lines: 300–500 Ω (≈400 Ω); bundling reduces it. Underground cables: 30–60 Ω.",
+  "why": [
+   null,
+   "Too high.",
+   "Too low.",
+   "That is typical of cables."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-015",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Surge impedance loading of a 220 kV line with surge impedance 400 Ω is about:",
+  "options": [
+   "880 MW",
+   "55 MW",
+   "121 MW",
+   "550 MW"
+  ],
+  "answer": 2,
+  "solution": [
+   "SIL = V_{L}^{2}/Z_{c}",
+   "= (220 kV)^{2}/400 = 48400/400",
+   "= 121 MW"
+  ],
+  "explanation": "= 121 MW",
+  "why": [
+   "Equals 48400/55 — wrong impedance.",
+   "Equals 48400/880 — wrong impedance.",
+   null,
+   "Equals 48400/88 — wrong impedance."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-016",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "When a line is loaded exactly at its surge impedance loading:",
+  "options": [
+   "Reactive power generated by line capacitance equals reactive power absorbed by its inductance",
+   "The line draws no current",
+   "Receiving-end voltage is zero",
+   "Power factor is zero"
+  ],
+  "answer": 0,
+  "explanation": "At SIL, ½CV^{2} = ½LI^{2} per unit length: the line is reactively self-compensated and the voltage profile is flat.",
+  "why": [
+   null,
+   "Current is the SIL current.",
+   "Voltage is flat, not zero.",
+   "Load at SIL is resistive (Z_{c}), unity pf."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-017",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "Pin-type insulators are generally used up to:",
+  "options": [
+   "500 kV",
+   "3.3 kV",
+   "33 kV",
+   "132 kV"
+  ],
+  "answer": 2,
+  "explanation": "Beyond about 33 kV pin insulators become too large and costly; suspension (disc) strings are used for higher voltages.",
+  "why": [
+   "Long suspension strings are used at 500 kV.",
+   "They are used well above 3.3 kV.",
+   null,
+   "Suspension insulators are used at 132 kV."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-018",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Strain insulators are used:",
+  "options": [
+   "At dead ends, sharp corners and river crossings",
+   "Inside transformers",
+   "On LV service lines only",
+   "On straight runs only"
+  ],
+  "answer": 0,
+  "explanation": "They take the full mechanical tension of the conductor where the line terminates or changes direction sharply.",
+  "why": [
+   null,
+   "Not used inside transformers.",
+   "Shackle insulators are typical for LV.",
+   "Suspension strings are used on straight runs."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-019",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "In a string of suspension insulators, the voltage across the disc nearest to the line conductor is:",
+  "options": [
+   "Zero",
+   "Minimum",
+   "Maximum",
+   "Equal to others"
+  ],
+  "answer": 2,
+  "explanation": "Shunt (disc-to-tower) capacitance makes the bottom disc carry the most charging current, so it has the highest voltage. Guard (grading) rings and longer cross-arms improve distribution.",
+  "why": [
+   "Every disc has some voltage.",
+   "The disc nearest the cross-arm has the least voltage.",
+   null,
+   "Only if shunt capacitance were zero."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-020",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 4-disc string has 66 kV across it, and the disc nearest the conductor has 20 kV. String efficiency is:",
+  "options": [
+   "33%",
+   "82.5%",
+   "75%",
+   "90%"
+  ],
+  "answer": 1,
+  "solution": [
+   "η = V_{string}/(n × V_{bottom disc})",
+   "= 66/(4 × 20)",
+   "= 66/80 = 82.5%"
+  ],
+  "explanation": "= 66/80 = 82.5%",
+  "why": [
+   "Ratio of one disc’s voltage to the string voltage is not efficiency.",
+   null,
+   "Not the result of V/(nV_{1}).",
+   "Not the result of V/(nV_{1})."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-021",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "String efficiency can be improved by:",
+  "options": [
+   "Reducing the cross-arm length",
+   "Using fewer discs",
+   "Increasing shunt capacitance",
+   "Using a guard (grading) ring"
+  ],
+  "answer": 3,
+  "explanation": "A grading ring adds line-to-link capacitance that offsets the shunt capacitance currents, equalising voltage across discs.",
+  "why": [
+   "Longer cross-arms help (lower shunt capacitance), shorter ones hurt.",
+   "Fewer discs reduce insulation level.",
+   "Shunt capacitance is the cause of unequal distribution.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-022",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Base impedance in a per-unit system is given by:",
+  "options": [
+   "(MVA_{base})^{2}/kV_{base}",
+   "(kV_{base})^{2}/MVA_{base}",
+   "MVA_{base}/(kV_{base})^{2}",
+   "kV_{base}/MVA_{base}"
+  ],
+  "answer": 1,
+  "explanation": "Z_{base} = V_{base}^{2}/S_{base}; with kV and MVA the result is in ohms.",
+  "why": [
+   "Dimensionally wrong.",
+   null,
+   "That is base admittance.",
+   "Dimensionally wrong."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-023",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Base impedance for 132 kV and 100 MVA base is about:",
+  "options": [
+   "17.42 Ω",
+   "76 Ω",
+   "1.32 Ω",
+   "174.2 Ω"
+  ],
+  "answer": 3,
+  "solution": [
+   "Z_{base} = 132^{2}/100",
+   "= 17424/100",
+   "= 174.24 Ω"
+  ],
+  "explanation": "= 174.24 Ω",
+  "why": [
+   "Off by 10.",
+   "Equals 132/√3, a phase voltage, not an impedance.",
+   "That is kV/MVA.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-024",
+  "topic": "power",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A generator has X = 0.2 p.u. on its own rating of 50 MVA, 11 kV. Its reactance on a 100 MVA, 11 kV base is:",
+  "options": [
+   "0.2 p.u.",
+   "0.4 p.u.",
+   "0.8 p.u.",
+   "0.1 p.u."
+  ],
+  "answer": 1,
+  "solution": [
+   "Z_{new} = Z_{old} × (MVA_{new}/MVA_{old}) × (kV_{old}/kV_{new})^{2}",
+   "= 0.2 × (100/50) × 1",
+   "= 0.4 p.u."
+  ],
+  "explanation": "= 0.4 p.u.",
+  "why": [
+   "Ignores the change of MVA base.",
+   null,
+   "Squares the MVA ratio.",
+   "Inverts the MVA ratio."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-025",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "An advantage of the per-unit system is that:",
+  "options": [
+   "It eliminates all losses",
+   "It doubles accuracy of instruments",
+   "It removes the need for a base",
+   "Transformer impedances in p.u. are the same referred to either side"
+  ],
+  "answer": 3,
+  "explanation": "With bases chosen in the ratio of transformer voltages, p.u. impedance does not depend on the side; values of similar machines fall in narrow ranges.",
+  "why": [
+   "Losses are physical.",
+   "Unrelated to instruments.",
+   "Bases are fundamental to p.u.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-026",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Load factor is defined as:",
+  "options": [
+   "Maximum demand / connected load",
+   "Average load / maximum demand",
+   "Sum of individual maximum demands / maximum demand of the group",
+   "Average load / plant capacity"
+  ],
+  "answer": 1,
+  "explanation": "Load factor = average demand ÷ maximum demand over a period (always ≤ 1). Higher load factor means better plant utilisation and lower cost per kWh.",
+  "why": [
+   "That is demand factor.",
+   null,
+   "That is diversity factor.",
+   "That is plant capacity factor."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-027",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Diversity factor is:",
+  "options": [
+   "Equal to load factor",
+   "Always zero",
+   "Always less than 1",
+   "Always greater than or equal to 1"
+  ],
+  "answer": 3,
+  "explanation": "Diversity factor = sum of individual maximum demands / maximum demand of the whole system ≥ 1, because consumers do not peak simultaneously.",
+  "why": [
+   "Different definitions.",
+   "Not meaningful.",
+   "Demand factor is ≤ 1, not diversity factor.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-028",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Demand factor is defined as:",
+  "options": [
+   "Units generated / plant capacity",
+   "Maximum demand / connected load",
+   "Connected load / maximum demand",
+   "Average load / maximum demand"
+  ],
+  "answer": 1,
+  "explanation": "Demand factor = maximum demand ÷ connected load; usually less than 1.",
+  "why": [
+   "Related to capacity factor.",
+   null,
+   "Inverse.",
+   "That is load factor."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-029",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A consumer uses 876,000 kWh in a year with a maximum demand of 200 kW. Annual load factor is:",
+  "options": [
+   "75%",
+   "100%",
+   "25%",
+   "50%"
+  ],
+  "answer": 3,
+  "solution": [
+   "Average load = 876000/8760 = 100 kW",
+   "LF = 100/200",
+   "= 50%"
+  ],
+  "explanation": "= 50%",
+  "why": [
+   "50% higher than the correct result — does not follow from the correct working.",
+   "Would need average = maximum.",
+   "2 times too small — a typical formula slip.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-030",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 100 MW plant generates 438 GWh in a year. Plant capacity factor is:",
+  "options": [
+   "25%",
+   "43.8%",
+   "50%",
+   "60%"
+  ],
+  "answer": 2,
+  "solution": [
+   "Average output = 438000 MWh/8760 h = 50 MW",
+   "CF = 50/100",
+   "= 50%"
+  ],
+  "explanation": "= 50%",
+  "why": [
+   "2 times too small — a typical formula slip.",
+   "Uses GWh directly as a percentage.",
+   null,
+   "20% higher than the correct result — does not follow from the correct working."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-031",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Four consumers have maximum demands of 20, 30, 25 and 25 kW. The group maximum demand is 80 kW. Diversity factor is:",
+  "options": [
+   "1.25",
+   "1.0",
+   "2.0",
+   "0.8"
+  ],
+  "answer": 0,
+  "solution": [
+   "Sum of individual maxima = 100 kW",
+   "DF = 100/80",
+   "= 1.25"
+  ],
+  "explanation": "= 1.25",
+  "why": [
+   null,
+   "Only if all peaked together.",
+   "60% higher than the correct result — does not follow from the correct working.",
+   "Inverted."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-032",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "For the same power, power factor and line losses (%), the weight of conductor material required varies with transmission voltage V as:",
+  "options": [
+   "V",
+   "1/V",
+   "1/V^{2}",
+   "V^{2}"
+  ],
+  "answer": 2,
+  "explanation": "I ∝ 1/V; for the same % loss, R must scale as V^{2}, so area ∝ 1/V^{2}: higher transmission voltage saves conductor.",
+  "why": [
+   "Opposite of reality.",
+   "Should be 1/V².",
+   null,
+   "Opposite."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-033",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "If transmission voltage is doubled for the same power and power factor (same conductor), line losses become:",
+  "options": [
+   "One quarter",
+   "Double",
+   "Unchanged",
+   "Half"
+  ],
+  "answer": 0,
+  "solution": [
+   "I ∝ 1/V, so I halves",
+   "Loss = I^{2}R ∝ 1/V^{2}",
+   "(½)^{2} = ¼"
+  ],
+  "explanation": "(½)^{2} = ¼",
+  "why": [
+   null,
+   "Losses fall with higher voltage.",
+   "Current changes, so losses change.",
+   "Losses depend on I², not I."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-034",
+  "topic": "power",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 3-phase line delivers 10 MW at 132 kV, 0.9 pf. Each conductor has 5 Ω resistance. Total line loss is about:",
+  "options": [
+   "106 kW",
+   "11.8 kW",
+   "35.4 kW",
+   "48.6 kW"
+  ],
+  "answer": 2,
+  "solution": [
+   "I = P/(√3 V cos φ) = 10×10^{6}/(1.732 × 132000 × 0.9) ≈ 48.6 A",
+   "Loss = 3I^{2}R = 3 × 48.6^{2} × 5",
+   "≈ 35.4 kW"
+  ],
+  "explanation": "≈ 35.4 kW",
+  "why": [
+   "Uses I without dividing by √3.",
+   "That is per-phase loss.",
+   null,
+   "Confuses current (A) with loss (kW)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-035",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A transmission line up to about 80 km length is classified as a:",
+  "options": [
+   "Short line",
+   "Medium line",
+   "Long line",
+   "Cable line"
+  ],
+  "answer": 0,
+  "explanation": "Short (< ~80 km): capacitance neglected. Medium (~80–250 km): nominal-T or π. Long (> ~250 km): distributed parameters.",
+  "why": [
+   null,
+   "Medium lines are ~80–250 km.",
+   "Long lines exceed ~250 km.",
+   "Not a length classification."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-036",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Transposition of overhead line conductors is done to:",
+  "options": [
+   "Increase power transfer",
+   "Reduce corona",
+   "Balance the inductance and capacitance of the three phases",
+   "Reduce sag"
+  ],
+  "answer": 2,
+  "explanation": "Each conductor occupies each position for one-third of the length, making the phase impedances equal and reducing interference with nearby communication lines.",
+  "why": [
+   "Not its purpose.",
+   "Corona depends on diameter and spacing.",
+   null,
+   "Sag depends on tension and weight."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-037",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Inductance of a line decreases when:",
+  "options": [
+   "Conductor radius increases",
+   "Line length increases",
+   "Frequency increases",
+   "Spacing between conductors increases"
+  ],
+  "answer": 0,
+  "explanation": "L = 2×10^{-7} ln(D/r′) H/m: larger radius (r′ = 0.7788r) lowers L; larger spacing D raises it.",
+  "why": [
+   null,
+   "Total inductance grows with length.",
+   "Inductance does not depend on frequency (reactance does).",
+   "Larger D increases L."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-038",
+  "topic": "power",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A line conductor weighs 6 N/m, span 200 m, tension 12 kN, supports at equal level. Sag is:",
+  "options": [
+   "10 m",
+   "1.25 m",
+   "2.5 m",
+   "5 m"
+  ],
+  "answer": 2,
+  "solution": [
+   "S = wl^{2}/(8T)",
+   "= 6 × 200^{2}/(8 × 12000) = 240000/96000",
+   "= 2.5 m"
+  ],
+  "explanation": "= 2.5 m",
+  "why": [
+   "Uses 2T.",
+   "Uses 16T in the denominator.",
+   null,
+   "Uses 4T."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-039",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Power available from a hydro plant is given by P = :",
+  "options": [
+   "ρgQH η",
+   "ρQH/η",
+   "gQ/Hη",
+   "ρgH/Q"
+  ],
+  "answer": 0,
+  "explanation": "P = ρ g Q H η watts (Q in m^{3}/s, H in m). In kW: P ≈ 9.81 Q H η.",
+  "why": [
+   null,
+   "η must multiply, and g is missing.",
+   "Dimensionally wrong.",
+   "Q must multiply."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-040",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A hydro plant has discharge 100 m^{3}/s, net head 100 m and overall efficiency 90%. Power output is about:",
+  "options": [
+   "98.1 MW",
+   "883 MW",
+   "8.8 MW",
+   "88.3 MW"
+  ],
+  "answer": 3,
+  "solution": [
+   "P = 9.81 × Q × H × η kW",
+   "= 9.81 × 100 × 100 × 0.9",
+   "≈ 88,290 kW ≈ 88.3 MW"
+  ],
+  "explanation": "≈ 88,290 kW ≈ 88.3 MW",
+  "why": [
+   "Ignores efficiency.",
+   "Off by 10.",
+   "Off by 10.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-041",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "Pelton wheel turbines are used for:",
+  "options": [
+   "Low head and large discharge",
+   "High head and small discharge",
+   "Medium head",
+   "Tidal plants only"
+  ],
+  "answer": 1,
+  "explanation": "Pelton is an impulse turbine for high heads (roughly > 250–300 m). Francis (reaction) suits medium heads; Kaplan (propeller) low heads.",
+  "why": [
+   "That is the Kaplan range.",
+   null,
+   "That is the Francis range.",
+   "Bulb/Kaplan units are used in tidal plants."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-042",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Kaplan turbines are most suitable for:",
+  "options": [
+   "Steam plants",
+   "Only pumped storage",
+   "Very high heads",
+   "Low heads with large discharge"
+  ],
+  "answer": 3,
+  "explanation": "Kaplan is an axial-flow reaction turbine with adjustable blades, efficient at low heads and large, variable discharge.",
+  "why": [
+   "Steam plants use steam turbines.",
+   "Reversible Francis pump-turbines are usual in pumped storage.",
+   "Pelton suits high heads.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-043",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "The purpose of a surge tank in a hydro plant is to:",
+  "options": [
+   "Store water for irrigation",
+   "Protect the penstock/tunnel against water hammer",
+   "Increase the head",
+   "Remove silt"
+  ],
+  "answer": 1,
+  "explanation": "It absorbs pressure rise when turbine gates close suddenly and supplies water when they open, protecting the conduit.",
+  "why": [
+   "Reservoir stores water.",
+   null,
+   "Head is set by geography and dam height.",
+   "Desilting basins/sluices remove silt."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-044",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "HVDC transmission is preferred over HVAC mainly for:",
+  "options": [
+   "Low power distribution",
+   "Rural electrification",
+   "Short distances",
+   "Long-distance bulk power and asynchronous interconnection"
+  ],
+  "answer": 3,
+  "explanation": "Beyond the break-even distance (~600–800 km overhead, much less for submarine cable) HVDC is cheaper; it has no charging current, no stability limit and links grids of different frequency.",
+  "why": [
+   "HVDC is for bulk power.",
+   "Distribution is AC.",
+   "Converter costs make HVDC uneconomic for short lines.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-045",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Which is a disadvantage of HVDC transmission?",
+  "options": [
+   "No charging current",
+   "Costly converter stations and harmonic filters",
+   "No skin effect",
+   "Fewer conductors needed"
+  ],
+  "answer": 1,
+  "explanation": "Converter transformers, valves and filters are expensive and generate harmonics; DC circuit breaking is also difficult.",
+  "why": [
+   "Advantage.",
+   null,
+   "Advantage.",
+   "Advantage."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-046",
+  "topic": "power",
+  "difficulty": "hard",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "For an underground cable, the dielectric stress is maximum:",
+  "options": [
+   "Midway in the insulation",
+   "Uniform everywhere",
+   "At the outer sheath",
+   "At the surface of the conductor"
+  ],
+  "answer": 3,
+  "explanation": "g = V/(x ln(R/r)) is largest at x = r. Grading (capacitance or intersheath) equalises stress. Most economical core size when ln(R/r) = 1, i.e. R/r = e.",
+  "why": [
+   "Stress falls monotonically from conductor outward.",
+   "Only with graded insulation is it more uniform.",
+   "Stress is minimum at the sheath.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-047",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Compared with an overhead line of the same voltage, an underground cable has:",
+  "options": [
+   "Lower capacitance",
+   "Much higher capacitance and charging current",
+   "Higher surge impedance",
+   "No dielectric loss"
+  ],
+  "answer": 1,
+  "explanation": "Conductor-to-sheath spacing is small and permittivity of insulation is high, so capacitance is large; surge impedance is low (~40–60 Ω).",
+  "why": [
+   "Opposite.",
+   null,
+   "Cable surge impedance is lower.",
+   "Cables have dielectric loss."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-048",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "In a ring main distribution system:",
+  "options": [
+   "There is no feeder",
+   "Voltage regulation is always poorer than radial",
+   "Each consumer is fed from one end only",
+   "Supply can reach consumers from either side, improving reliability"
+  ],
+  "answer": 3,
+  "explanation": "A fault on one section can be isolated and supply maintained from the other side; voltage fluctuations are also less than in long radial feeders.",
+  "why": [
+   "Feeders form the ring.",
+   "Regulation is usually better than radial.",
+   "That is a radial system.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-049",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Kelvin's law is used to find the:",
+  "options": [
+   "Sag of a line",
+   "Most economical size of conductor",
+   "Most economical power factor",
+   "Most economical transmission voltage only"
+  ],
+  "answer": 1,
+  "explanation": "Most economical conductor area is when annual interest and depreciation on capital cost of conductor equals annual cost of energy lost.",
+  "why": [
+   "Sag uses the catenary/parabola formula.",
+   null,
+   "Economical pf uses a different method (cost of kVAR vs kVA).",
+   "Voltage selection uses empirical/economic studies."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-050",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "In load-flow studies, a generator bus with specified real power and voltage magnitude is called a:",
+  "options": [
+   "PV bus",
+   "PQ bus",
+   "Infinite bus",
+   "Slack bus"
+  ],
+  "answer": 0,
+  "explanation": "PV (voltage-controlled) bus: P and |V| specified. PQ (load) bus: P and Q specified. Slack (swing) bus: |V| and δ specified, supplies the losses.",
+  "why": [
+   null,
+   "PQ bus is a load bus.",
+   "Not a load-flow bus category.",
+   "Slack bus specifies V and δ."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-051",
+  "topic": "power",
+  "difficulty": "hard",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Compared with Gauss–Seidel, the Newton–Raphson load-flow method:",
+  "options": [
+   "Does not use the Jacobian",
+   "Needs more iterations",
+   "Has quadratic convergence and needs fewer iterations",
+   "Cannot handle PV buses"
+  ],
+  "answer": 2,
+  "explanation": "N–R uses the Jacobian and converges quadratically in 3–5 iterations, almost independent of system size, though each iteration is heavier.",
+  "why": [
+   "The Jacobian is the core of N–R.",
+   "Opposite.",
+   null,
+   "It handles PV buses."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-052",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "For a lossless line with V_{s} = V_{r} = 1 p.u. and X = 0.5 p.u., the maximum (steady-state) power transfer is:",
+  "options": [
+   "2 p.u.",
+   "4 p.u.",
+   "0.5 p.u.",
+   "1 p.u."
+  ],
+  "answer": 0,
+  "solution": [
+   "P = (V_{s}V_{r}/X) sin δ",
+   "P_{max} at δ = 90° = 1 × 1/0.5",
+   "= 2 p.u."
+  ],
+  "explanation": "= 2 p.u.",
+  "why": [
+   null,
+   "Divides by X².",
+   "Multiplies by X.",
+   "Ignores X."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-053",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Series capacitors are used in long transmission lines primarily to:",
+  "options": [
+   "Provide earthing",
+   "Reduce line charging",
+   "Increase power transfer capability by reducing net series reactance",
+   "Reduce corona"
+  ],
+  "answer": 2,
+  "explanation": "Since P_{max} = V_{s}V_{r}/X, reducing X via series compensation raises transfer and stability limits.",
+  "why": [
+   "Not an earthing device.",
+   "Shunt reactors handle charging.",
+   null,
+   "No effect on corona."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-054",
+  "topic": "power",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 100 kW load at 0.6 pf lagging is to be improved to 0.9 pf lagging. Required capacitor kVAR is about:",
+  "options": [
+   "84.9 kVAR",
+   "133 kVAR",
+   "100 kVAR",
+   "48.4 kVAR"
+  ],
+  "answer": 0,
+  "solution": [
+   "tan φ_{1} = tan(cos^{-1}0.6) = 1.333; tan φ_{2} = tan(cos^{-1}0.9) = 0.484",
+   "Q_{c} = P(tan φ_{1} − tan φ_{2}) = 100 × (1.333 − 0.484)",
+   "≈ 84.9 kVAR"
+  ],
+  "explanation": "≈ 84.9 kVAR",
+  "why": [
+   null,
+   "That is the original kVAR, not the correction.",
+   "18% higher than the correct result — does not follow from the correct working.",
+   "Only the final tan φ_{2} × P."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-055",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "For economic load dispatch among thermal units (losses neglected), units should operate at:",
+  "options": [
+   "Maximum capacity",
+   "Equal outputs",
+   "Equal incremental fuel costs",
+   "Equal efficiencies"
+  ],
+  "answer": 2,
+  "explanation": "Minimum total cost occurs when dC_{1}/dP_{1} = dC_{2}/dP_{2} = … = λ.",
+  "why": [
+   "That ignores costs and demand.",
+   "Different units have different costs.",
+   null,
+   "Efficiency is not the criterion."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-056",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "In an AC network, reactive power mainly flows:",
+  "options": [
+   "From the bus of higher voltage magnitude to the bus of lower voltage magnitude",
+   "From the leading-angle bus to the lagging-angle bus",
+   "Only from generators to motors",
+   "Not at all in transmission lines"
+  ],
+  "answer": 0,
+  "explanation": "Q ≈ V(V_{s} − V_{r})/X depends on voltage magnitude difference; real power depends on angle difference.",
+  "why": [
+   null,
+   "That governs real power flow.",
+   "Reactive power can flow both ways.",
+   "Lines both generate and absorb reactive power."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pow-057",
+  "topic": "power",
+  "difficulty": "hard",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Equal area criterion is used to determine:",
+  "options": [
+   "Fault current",
+   "Steady-state stability of a multi-machine system",
+   "Transient stability of a single machine connected to an infinite bus",
+   "Voltage regulation"
+  ],
+  "answer": 2,
+  "explanation": "It compares accelerating and decelerating areas on the P–δ curve to find the critical clearing angle for a one-machine infinite-bus system.",
+  "why": [
+   "Fault studies use impedances.",
+   "Multi-machine studies need numerical solution of swing equations.",
+   null,
+   "Not related."
+  ],
+  "source": "bank"
+ }
+]

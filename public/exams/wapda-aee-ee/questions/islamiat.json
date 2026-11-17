@@ -1,0 +1,577 @@
+[
+ {
+  "id": "isl-001",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "The first revelation was received by the Holy Prophet (PBUH) in:",
+  "options": [
+   "Masjid-e-Nabawi",
+   "Taif",
+   "Cave Thaur",
+   "Cave Hira"
+  ],
+  "answer": 3,
+  "explanation": "In Cave Hira (Jabal al-Noor) near Makkah; the first verses were from Surah Al-Alaq (\"Iqra\").",
+  "why": [
+   "Built after Hijrah.",
+   "Visited for preaching.",
+   "Hiding place during Hijrah.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-002",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "The first word of the first revelation was:",
+  "options": [
+   "Bismillah",
+   "Iqra",
+   "Qul",
+   "Alhamdulillah"
+  ],
+  "answer": 1,
+  "explanation": "\"Iqra\" (Read) — Surah Al-Alaq 96:1.",
+  "why": [
+   "Not the first word revealed.",
+   null,
+   "Not the first.",
+   "Opening of Al-Fatiha, not first revealed."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-003",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The Holy Quran contains how many Surahs?",
+  "options": [
+   "120",
+   "99",
+   "110",
+   "114"
+  ],
+  "answer": 3,
+  "explanation": "114 Surahs and 30 Paras (Juz).",
+  "why": [
+   "Not the count.",
+   "Number of Asma-ul-Husna (names of Allah).",
+   "Not the count.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-004",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "The longest Surah of the Holy Quran is:",
+  "options": [
+   "Al-Imran",
+   "Al-Baqarah",
+   "An-Nisa",
+   "Yaseen"
+  ],
+  "answer": 1,
+  "explanation": "Al-Baqarah (286 verses). The shortest is Al-Kawthar (3 verses).",
+  "why": [
+   "Third Surah, 200 verses.",
+   null,
+   "Fourth Surah, 176 verses.",
+   "83 verses."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-005",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "Which Surah does not begin with Bismillah?",
+  "options": [
+   "Al-Ikhlas",
+   "Al-Mulk",
+   "Al-Fatiha",
+   "At-Tawbah"
+  ],
+  "answer": 3,
+  "explanation": "Surah At-Tawbah (Bara’ah), the 9th Surah.",
+  "why": [
+   "Begins with Bismillah.",
+   "Begins with Bismillah.",
+   "Begins with Bismillah.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-006",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "Which Surah is called the \"Heart of the Quran\"?",
+  "options": [
+   "Al-Fatiha",
+   "Yaseen",
+   "Ar-Rahman",
+   "Al-Ikhlas"
+  ],
+  "answer": 1,
+  "explanation": "Surah Yaseen is described as the heart of the Quran in hadith.",
+  "why": [
+   "Called Umm-ul-Kitab.",
+   null,
+   "Called Uroos-ul-Quran.",
+   "Equal to one-third of the Quran in reward."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-007",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "The rate of Zakat on savings (gold, silver, cash) is:",
+  "options": [
+   "5%",
+   "10%",
+   "2%",
+   "2.5%"
+  ],
+  "answer": 3,
+  "explanation": "2.5% annually on wealth above Nisab held for one lunar year.",
+  "why": [
+   "Ushr rate on irrigated land.",
+   "Ushr rate on rain-fed land.",
+   "Not the rate.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-008",
+  "topic": "islamiat",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "The Nisab of Zakat for gold is:",
+  "options": [
+   "5 tolas",
+   "7.5 tolas",
+   "52.5 tolas",
+   "10 tolas"
+  ],
+  "answer": 1,
+  "explanation": "Gold: 7.5 tolas (≈ 87.48 g); silver: 52.5 tolas (≈ 612.36 g).",
+  "why": [
+   "Not the Nisab.",
+   null,
+   "That is silver.",
+   "Not the Nisab."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-009",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "The Hijrah (migration to Madinah) took place in:",
+  "options": [
+   "630 CE",
+   "632 CE",
+   "610 CE",
+   "622 CE"
+  ],
+  "answer": 3,
+  "explanation": "The Islamic calendar starts from the Hijrah year, 622 CE.",
+  "why": [
+   "Conquest of Makkah.",
+   "Demise of the Prophet (PBUH).",
+   "First revelation.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-010",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "The Battle of Badr was fought in:",
+  "options": [
+   "5 AH",
+   "1 AH",
+   "2 AH",
+   "3 AH"
+  ],
+  "answer": 2,
+  "explanation": "Badr: 2 AH (17 Ramadan). Uhud: 3 AH. Khandaq (Trench): 5 AH.",
+  "why": [
+   "Khandaq.",
+   "Too early.",
+   null,
+   "Uhud."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-011",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "The Treaty of Hudaibiyah was signed in:",
+  "options": [
+   "6 AH",
+   "8 AH",
+   "10 AH",
+   "4 AH"
+  ],
+  "answer": 0,
+  "explanation": "Signed in 6 AH; the Quran calls it a \"clear victory\" (Surah Al-Fath). Makkah was conquered in 8 AH.",
+  "why": [
+   null,
+   "Conquest of Makkah.",
+   "Farewell Hajj.",
+   "Not the year."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-012",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "The first Caliph of Islam was:",
+  "options": [
+   "Hazrat Ali (RA)",
+   "Hazrat Umar (RA)",
+   "Hazrat Abu Bakr Siddique (RA)",
+   "Hazrat Usman (RA)"
+  ],
+  "answer": 2,
+  "explanation": "Hazrat Abu Bakr (RA), 632–634 CE.",
+  "why": [
+   "Fourth Caliph.",
+   "Second Caliph.",
+   null,
+   "Third Caliph."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-013",
+  "topic": "islamiat",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "The Holy Quran was compiled in book form for the first time during the caliphate of:",
+  "options": [
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Umar (RA)",
+   "Hazrat Usman (RA)",
+   "Hazrat Ali (RA)"
+  ],
+  "answer": 0,
+  "explanation": "Compiled under Abu Bakr (RA) by Zaid bin Thabit (RA) after the Battle of Yamama; Usman (RA) later standardised copies and sent them to provinces.",
+  "why": [
+   null,
+   "He urged the compilation but it was done under Abu Bakr.",
+   "Standardised the copies (Jami-ul-Quran).",
+   "Not the first compilation."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-014",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "The first Muezzin of Islam was:",
+  "options": [
+   "Hazrat Abu Hurairah (RA)",
+   "Hazrat Ammar (RA)",
+   "Hazrat Bilal (RA)",
+   "Hazrat Zaid (RA)"
+  ],
+  "answer": 2,
+  "explanation": "Hazrat Bilal bin Rabah (RA).",
+  "why": [
+   "Famous narrator of hadith.",
+   "Not the first muezzin.",
+   null,
+   "Not the first muezzin."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-015",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "The first mosque built in Islam was:",
+  "options": [
+   "Masjid Quba",
+   "Masjid al-Aqsa",
+   "Masjid al-Haram",
+   "Masjid-e-Nabawi"
+  ],
+  "answer": 0,
+  "explanation": "Masjid Quba was built on arrival near Madinah during the Hijrah.",
+  "why": [
+   null,
+   "Not built by the Prophet (PBUH).",
+   "Kaaba existed before; not the first mosque built in Islam.",
+   "Built shortly after Quba."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-016",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "How many Prophets are mentioned by name in the Holy Quran?",
+  "options": [
+   "124,000",
+   "20",
+   "25",
+   "30"
+  ],
+  "answer": 2,
+  "explanation": "25 Prophets are named; a hadith mentions about 124,000 Prophets in all.",
+  "why": [
+   "Total Prophets according to hadith, not those named.",
+   "Not the count.",
+   null,
+   "Not the count."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-017",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "The Zabur was revealed to:",
+  "options": [
+   "Hazrat Dawood (AS)",
+   "Hazrat Isa (AS)",
+   "Hazrat Ibrahim (AS)",
+   "Hazrat Musa (AS)"
+  ],
+  "answer": 0,
+  "explanation": "Taurat → Musa (AS); Zabur → Dawood (AS); Injeel → Isa (AS); Quran → Muhammad (PBUH).",
+  "why": [
+   null,
+   "Injeel.",
+   "Received Suhuf (scrolls).",
+   "Taurat."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-018",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "Fasting in Ramadan was made obligatory in:",
+  "options": [
+   "9 AH",
+   "1 AH",
+   "2 AH",
+   "5 AH"
+  ],
+  "answer": 2,
+  "explanation": "Prescribed in 2 AH (Surah Al-Baqarah 2:183).",
+  "why": [
+   "Hajj was made obligatory around 9 AH.",
+   "Too early.",
+   null,
+   "Not the year."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-019",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "The Last Sermon (Khutbah Hajjat-ul-Wida) was delivered at:",
+  "options": [
+   "Arafat",
+   "Muzdalifah",
+   "Madinah",
+   "Mina"
+  ],
+  "answer": 0,
+  "explanation": "Delivered on the plain of Arafat (Jabal-ur-Rahmah) in 10 AH.",
+  "why": [
+   null,
+   "Not the place.",
+   "Not the place.",
+   "Not the place."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-020",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "The first wife of the Holy Prophet (PBUH) and first person to accept Islam was:",
+  "options": [
+   "Hazrat Hafsa (RA)",
+   "Hazrat Zainab (RA)",
+   "Hazrat Aisha (RA)",
+   "Hazrat Khadijah (RA)"
+  ],
+  "answer": 3,
+  "explanation": "Hazrat Khadijah (RA) was the first to accept Islam.",
+  "why": [
+   "Married later.",
+   "Married later.",
+   "Married later.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-021",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "According to Surah Al-Qadr, Laylat-ul-Qadr is better than:",
+  "options": [
+   "A hundred nights",
+   "A thousand months",
+   "A thousand years",
+   "Seventy nights"
+  ],
+  "answer": 1,
+  "explanation": "\"The Night of Decree is better than a thousand months\" (97:3).",
+  "why": [
+   "Not the verse.",
+   null,
+   "Verse says months.",
+   "Not the verse."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-022",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "Ayat-ul-Kursi is part of:",
+  "options": [
+   "Surah Yaseen",
+   "Surah Al-Mulk",
+   "Surah Al-Imran",
+   "Surah Al-Baqarah"
+  ],
+  "answer": 3,
+  "explanation": "Al-Baqarah, verse 255.",
+  "why": [
+   "Not there.",
+   "Not there.",
+   "Not there.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-023",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "NTS-style",
+  "q": "How many Paras (Juz) does the Holy Quran have?",
+  "options": [
+   "7",
+   "30",
+   "40",
+   "114"
+  ],
+  "answer": 1,
+  "explanation": "30 Paras; 114 Surahs; 7 Manzils.",
+  "why": [
+   "Number of Manzils.",
+   null,
+   "Not the count.",
+   "Number of Surahs."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-024",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "The Kaaba was rebuilt by:",
+  "options": [
+   "Hazrat Musa (AS) and Hazrat Haroon (AS)",
+   "Hazrat Dawood (AS) and Hazrat Suleman (AS)",
+   "Hazrat Nuh (AS) and Hazrat Sam (AS)",
+   "Hazrat Ibrahim (AS) and Hazrat Ismail (AS)"
+  ],
+  "answer": 3,
+  "explanation": "Surah Al-Baqarah 2:127 describes Ibrahim and Ismail (AS) raising its foundations.",
+  "why": [
+   "Not mentioned for this.",
+   "Associated with Bait-ul-Muqaddas.",
+   "Not mentioned for this.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "isl-025",
+  "topic": "islamiat",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "PPSC-style",
+  "q": "The angel who brought revelation to the Prophets was:",
+  "options": [
+   "Hazrat Mikael (AS)",
+   "Hazrat Jibrael (AS)",
+   "Hazrat Israfeel (AS)",
+   "Hazrat Izraeel (AS)"
+  ],
+  "answer": 1,
+  "explanation": "Jibrael (AS) — Ruh-ul-Amin.",
+  "why": [
+   "Provision and rain.",
+   null,
+   "Will blow the trumpet.",
+   "Angel of death."
+  ],
+  "source": "bank"
+ }
+]

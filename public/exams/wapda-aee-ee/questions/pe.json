@@ -1,0 +1,1066 @@
+[
+ {
+  "id": "pe-001",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "An SCR (thyristor) has:",
+  "options": [
+   "Four layers (PNPN) and three junctions",
+   "Four layers and four junctions",
+   "Two layers and one junction",
+   "Three layers and two junctions"
+  ],
+  "answer": 0,
+  "explanation": "SCR is a PNPN device with junctions J1, J2, J3 and terminals anode, cathode and gate.",
+  "why": [
+   null,
+   "Four layers give three junctions.",
+   "That is a diode.",
+   "That is a BJT."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-002",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "The most common and reliable method of turning on an SCR is:",
+  "options": [
+   "Thermal triggering",
+   "Forward breakover voltage",
+   "Gate triggering",
+   "dv/dt triggering"
+  ],
+  "answer": 2,
+  "explanation": "A positive gate pulse with the anode forward-biased is controlled and reliable. Breakover, dv/dt and thermal turn-on are undesirable/uncontrolled.",
+  "why": [
+   "Uncontrolled.",
+   "Destructive and uncontrolled.",
+   null,
+   "Spurious turn-on; prevented by snubbers."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-003",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Once an SCR is conducting, the gate:",
+  "options": [
+   "Loses control; the SCR stays on until current falls below holding current",
+   "Can turn it off with negative current",
+   "Controls the anode current",
+   "Must keep a continuous signal"
+  ],
+  "answer": 0,
+  "explanation": "The SCR latches. It turns off only when anode current drops below the holding current (natural or forced commutation).",
+  "why": [
+   null,
+   "That is a GTO.",
+   "Anode current is set by the external circuit.",
+   "A pulse is enough once latching current is reached."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-004",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "For an SCR, latching current is:",
+  "options": [
+   "Zero",
+   "Less than holding current",
+   "Greater than holding current",
+   "Equal to holding current"
+  ],
+  "answer": 2,
+  "explanation": "Latching current (minimum anode current to stay on just after turn-on, gate removed) is typically 2–3 times the holding current.",
+  "why": [
+   "It is a finite value.",
+   "Opposite.",
+   null,
+   "They are different."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-005",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "An RC snubber connected across an SCR protects it against:",
+  "options": [
+   "High dv/dt",
+   "Over-current",
+   "Gate over-voltage",
+   "High di/dt"
+  ],
+  "answer": 0,
+  "explanation": "The snubber limits the rate of rise of forward voltage that could falsely trigger the SCR via junction capacitance. A series inductor limits di/dt.",
+  "why": [
+   null,
+   "Fuses/breakers handle over-current.",
+   "Gate is protected by zener/resistor.",
+   "Series inductance limits di/dt."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-006",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "A TRIAC is equivalent to:",
+  "options": [
+   "A BJT and a MOSFET",
+   "Two SCRs in series",
+   "Two SCRs in anti-parallel with a common gate",
+   "A diode and an SCR in series"
+  ],
+  "answer": 2,
+  "explanation": "TRIAC conducts in both directions and is used for AC power control (fan regulators, light dimmers), often triggered by a DIAC.",
+  "why": [
+   "That loosely describes an IGBT.",
+   "Series SCRs do not conduct in reverse.",
+   null,
+   "That is an asymmetric arrangement."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-007",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A DIAC is commonly used to:",
+  "options": [
+   "Trigger a TRIAC",
+   "Store energy",
+   "Amplify signals",
+   "Rectify high power"
+  ],
+  "answer": 0,
+  "explanation": "A DIAC is a bidirectional breakover device that gives a sharp trigger pulse to the TRIAC gate.",
+  "why": [
+   null,
+   "Not an energy storage device.",
+   "Not an amplifier.",
+   "Not a power rectifier."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-008",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "A GTO thyristor differs from a conventional SCR because it:",
+  "options": [
+   "Is a voltage-controlled device",
+   "Has no gate",
+   "Can be turned off by a negative gate current",
+   "Conducts in both directions"
+  ],
+  "answer": 2,
+  "explanation": "Gate Turn-Off thyristors can be switched off by a large negative gate pulse, removing the need for forced commutation circuits.",
+  "why": [
+   "It is current-controlled.",
+   "It has a gate.",
+   null,
+   "That is a TRIAC."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-009",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "An IGBT combines:",
+  "options": [
+   "MOSFET input (voltage-controlled) and BJT-like output (low conduction loss)",
+   "Two SCRs",
+   "Diode and capacitor",
+   "BJT input and MOSFET output"
+  ],
+  "answer": 0,
+  "explanation": "IGBT has the high input impedance and easy gate drive of a MOSFET with the low on-state voltage of a bipolar device; used in inverters and motor drives.",
+  "why": [
+   null,
+   "Not its structure.",
+   "Not its structure.",
+   "Reversed."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-010",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Which power device has the highest switching frequency capability?",
+  "options": [
+   "Power diode (line-frequency)",
+   "SCR",
+   "GTO",
+   "Power MOSFET"
+  ],
+  "answer": 3,
+  "explanation": "MOSFETs are majority-carrier devices with no stored charge, so they switch in tens to hundreds of nanoseconds — ideal for SMPS at high frequency.",
+  "why": [
+   "Line-frequency diodes are slow-recovery.",
+   "SCRs are slow (line commutated).",
+   "GTOs are slow (a few hundred Hz to ~1 kHz).",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-011",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A power MOSFET is a:",
+  "options": [
+   "Current-controlled bipolar device",
+   "Voltage-controlled majority-carrier device",
+   "Four-layer latching device",
+   "Passive device"
+  ],
+  "answer": 1,
+  "explanation": "Gate-source voltage controls the channel; only majority carriers conduct, giving fast switching and a positive temperature coefficient of R_{DS(on)}.",
+  "why": [
+   "That is a BJT.",
+   null,
+   "That is a thyristor.",
+   "It is an active switch."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-012",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "A Schottky diode is preferred in low-voltage SMPS because it has:",
+  "options": [
+   "High forward drop",
+   "Very slow switching",
+   "Very high reverse voltage rating",
+   "Low forward voltage drop and negligible reverse recovery"
+  ],
+  "answer": 3,
+  "explanation": "Metal–semiconductor junction: ≈0.3 V forward drop and no minority-carrier storage, so it is fast and efficient at low voltages.",
+  "why": [
+   "Opposite.",
+   "They are fast.",
+   "Schottky diodes have limited reverse ratings.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-013",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Average output voltage of a single-phase half-wave diode rectifier with peak input 100 V is about:",
+  "options": [
+   "63.7 V",
+   "31.8 V",
+   "50 V",
+   "70.7 V"
+  ],
+  "answer": 1,
+  "solution": [
+   "V_{dc} = V_{m}/π",
+   "= 100/3.1416",
+   "≈ 31.8 V"
+  ],
+  "explanation": "≈ 31.8 V",
+  "why": [
+   "That is full-wave.",
+   null,
+   "57% higher than the correct result — does not follow from the correct working.",
+   "That is the rms of the input."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-014",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Average output of a single-phase full-wave (bridge) diode rectifier with V_{m} = 100 V is about:",
+  "options": [
+   "70.7 V",
+   "90 V",
+   "31.8 V",
+   "63.7 V"
+  ],
+  "answer": 3,
+  "solution": [
+   "V_{dc} = 2V_{m}/π",
+   "= 200/3.1416",
+   "≈ 63.7 V"
+  ],
+  "explanation": "≈ 63.7 V",
+  "why": [
+   "That is the rms input.",
+   "That is 0.9 × V_{rms} with V_{rms} wrongly taken as 100 V.",
+   "That is half-wave.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-015",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Ripple factor of a single-phase full-wave rectifier (resistive load) is about:",
+  "options": [
+   "1.21",
+   "0.482",
+   "0.04",
+   "1.11"
+  ],
+  "answer": 1,
+  "explanation": "Half-wave: 1.21; full-wave: 0.482; three-phase bridge: ≈ 0.04.",
+  "why": [
+   "That is half-wave.",
+   null,
+   "That is 3-phase bridge.",
+   "That is the form factor of a sine wave."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-016",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Peak inverse voltage across each diode of a centre-tapped full-wave rectifier is:",
+  "options": [
+   "V_{m}/2",
+   "√2V_{m}",
+   "V_{m}",
+   "2V_{m}"
+  ],
+  "answer": 3,
+  "explanation": "When one diode conducts, the non-conducting diode sees both halves of the secondary: 2V_{m}. In a bridge rectifier PIV = V_{m}.",
+  "why": [
+   "0% lower than the correct result — does not follow from the correct working.",
+   "0% lower than the correct result — does not follow from the correct working.",
+   "That is the bridge rectifier value.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-017",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A centre-tapped full-wave rectifier has 170 V peak across each half of the secondary. Required diode PIV rating is at least:",
+  "options": [
+   "240 V",
+   "340 V",
+   "120 V",
+   "170 V"
+  ],
+  "answer": 1,
+  "solution": [
+   "PIV = 2V_{m}",
+   "= 2 × 170",
+   "= 340 V"
+  ],
+  "explanation": "= 340 V",
+  "why": [
+   "That is √2 × 170 — no basis.",
+   null,
+   "That is the rms value.",
+   "That is bridge PIV."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-018",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A single-phase fully controlled bridge converter is fed from 230 V (rms) and fired at α = 60°. Average output voltage (continuous current) is about:",
+  "options": [
+   "51.8 V",
+   "207 V",
+   "155 V",
+   "103.5 V"
+  ],
+  "answer": 3,
+  "solution": [
+   "V_{m} = √2 × 230 ≈ 325 V",
+   "V_{dc} = (2V_{m}/π) cos α = 207 × 0.5",
+   "≈ 103.5 V"
+  ],
+  "explanation": "≈ 103.5 V",
+  "why": [
+   "Halves twice.",
+   "That is with α = 0°.",
+   "Uses (1 + cos α)/2 of 207 — semiconverter value.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-019",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Single-phase half-wave controlled rectifier with V_{m} = 200 V, resistive load, α = 90°. Average output is about:",
+  "options": [
+   "0 V",
+   "31.8 V",
+   "63.7 V",
+   "15.9 V"
+  ],
+  "answer": 1,
+  "solution": [
+   "V_{dc} = (V_{m}/2π)(1 + cos α)",
+   "= (200/6.283)(1 + 0)",
+   "≈ 31.8 V"
+  ],
+  "explanation": "≈ 31.8 V",
+  "why": [
+   "Only a full converter with continuous current gives 0 V at 90°.",
+   null,
+   "Uses 2V_{m}/π × ... full-wave value.",
+   "Halves again."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-020",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Average output of a three-phase full-bridge diode rectifier fed from 400 V (line, rms) is about:",
+  "options": [
+   "540 V",
+   "565 V",
+   "360 V",
+   "466 V"
+  ],
+  "answer": 0,
+  "solution": [
+   "V_{dc} = 3√2V_{L}/π = 1.35V_{L}",
+   "= 1.35 × 400",
+   "= 540 V"
+  ],
+  "explanation": "= 540 V",
+  "why": [
+   null,
+   "That is the peak line voltage √2 × 400.",
+   "Uses 0.9 (single-phase factor).",
+   "14% lower than the correct result — does not follow from the correct working."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-021",
+  "topic": "pe",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A three-phase fully controlled bridge on 400 V line is fired at α = 30°. Average output is about:",
+  "options": [
+   "382 V",
+   "270 V",
+   "468 V",
+   "540 V"
+  ],
+  "answer": 2,
+  "solution": [
+   "V_{dc} = 1.35 V_{L} cos α",
+   "= 540 × 0.866",
+   "≈ 468 V"
+  ],
+  "explanation": "≈ 468 V",
+  "why": [
+   "Uses cos 45°.",
+   "Uses cos 60°.",
+   null,
+   "That is α = 0°."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-022",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Ripple frequency at the output of a three-phase full-wave (6-pulse) rectifier on a 50 Hz supply is:",
+  "options": [
+   "300 Hz",
+   "50 Hz",
+   "100 Hz",
+   "150 Hz"
+  ],
+  "answer": 0,
+  "solution": [
+   "Ripple frequency = pulse number × supply frequency",
+   "= 6 × 50",
+   "= 300 Hz"
+  ],
+  "explanation": "= 300 Hz",
+  "why": [
+   null,
+   "That is the supply frequency.",
+   "That is single-phase full-wave.",
+   "That is three-phase half-wave (3-pulse)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-023",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A fully controlled converter operates as a line-commutated inverter when the firing angle is:",
+  "options": [
+   "Negative",
+   "0° to 90°",
+   "Greater than 90° (up to ~180°)",
+   "Exactly 0°"
+  ],
+  "answer": 2,
+  "explanation": "For α > 90°, average DC voltage reverses (with current direction unchanged) and power flows from DC side to AC side — used in HVDC inverter stations and regenerative braking.",
+  "why": [
+   "Not a valid firing range.",
+   "That is rectification.",
+   null,
+   "That is maximum rectification."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-024",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A free-wheeling diode across an inductive load of a controlled rectifier:",
+  "options": [
+   "Prevents negative output voltage and improves input power factor",
+   "Reduces output voltage",
+   "Turns the SCR on",
+   "Increases harmonics"
+  ],
+  "answer": 0,
+  "explanation": "It provides a path for load current when the supply reverses, so the output is clamped at zero instead of going negative.",
+  "why": [
+   null,
+   "It removes the negative portions, raising the average.",
+   "It plays no part in triggering.",
+   "It improves the waveform."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-025",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "A chopper is a:",
+  "options": [
+   "AC-to-AC frequency changer",
+   "DC-to-AC converter",
+   "DC-to-DC converter",
+   "AC-to-DC converter"
+  ],
+  "answer": 2,
+  "explanation": "A chopper switches a DC source on and off to produce a variable average DC output.",
+  "why": [
+   "That is a cycloconverter.",
+   "That is an inverter.",
+   null,
+   "That is a rectifier."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-026",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A step-down (buck) chopper has input 200 V and duty cycle 0.6. Average output is:",
+  "options": [
+   "120 V",
+   "200 V",
+   "333 V",
+   "80 V"
+  ],
+  "answer": 0,
+  "solution": [
+   "V_{o} = D × V_{in}",
+   "= 0.6 × 200",
+   "= 120 V"
+  ],
+  "explanation": "= 120 V",
+  "why": [
+   null,
+   "That is D = 1.",
+   "That is the boost formula.",
+   "That is (1 − D)V_{in}."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-027",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A boost converter has input 24 V and duty cycle 0.5 (ideal, continuous conduction). Output is:",
+  "options": [
+   "12 V",
+   "24 V",
+   "48 V",
+   "72 V"
+  ],
+  "answer": 2,
+  "solution": [
+   "V_{o} = V_{in}/(1 − D)",
+   "= 24/0.5",
+   "= 48 V"
+  ],
+  "explanation": "= 48 V",
+  "why": [
+   "That is buck.",
+   "No boost.",
+   null,
+   "50% higher than the correct result — does not follow from the correct working."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-028",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A chopper with T_{on} = 3 ms and T_{off} = 1 ms is fed from 100 V. Average load voltage is:",
+  "options": [
+   "75 V",
+   "100 V",
+   "25 V",
+   "33.3 V"
+  ],
+  "answer": 0,
+  "solution": [
+   "D = T_{on}/(T_{on} + T_{off}) = 3/4",
+   "V_{o} = 0.75 × 100",
+   "= 75 V"
+  ],
+  "explanation": "= 75 V",
+  "why": [
+   null,
+   "Ignores the off time.",
+   "Uses T_{off}/T.",
+   "Uses T_{off}/T_{on}."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-029",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A buck–boost converter (ideal) with input 12 V and duty cycle 0.75 gives an output of magnitude:",
+  "options": [
+   "16 V",
+   "9 V",
+   "36 V",
+   "48 V"
+  ],
+  "answer": 2,
+  "solution": [
+   "|V_{o}| = V_{in} × D/(1 − D)",
+   "= 12 × 0.75/0.25",
+   "= 36 V (inverted polarity)"
+  ],
+  "explanation": "= 36 V (inverted polarity)",
+  "why": [
+   "56% lower than the correct result — does not follow from the correct working.",
+   "That is buck: D × V_{in}.",
+   null,
+   "That is boost: V_{in}/(1 − D)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-030",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "An inverter converts:",
+  "options": [
+   "AC to DC",
+   "DC to AC",
+   "DC to DC",
+   "AC of one frequency directly to another"
+  ],
+  "answer": 1,
+  "explanation": "Inverters (VSI/CSI) produce AC from a DC source; used in UPS, motor drives, solar PV and HVDC.",
+  "why": [
+   "That is a rectifier.",
+   null,
+   "That is a chopper.",
+   "That is a cycloconverter."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-031",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Pulse-width modulation (PWM) in inverters is used to:",
+  "options": [
+   "Change DC to DC",
+   "Increase switching losses deliberately",
+   "Increase the DC link voltage",
+   "Control output voltage and reduce lower-order harmonics"
+  ],
+  "answer": 3,
+  "explanation": "Varying pulse widths controls the fundamental output and pushes harmonics to higher frequencies where they are easily filtered.",
+  "why": [
+   "That is a chopper function.",
+   "Switching losses are an unwanted side-effect.",
+   "DC link voltage is set by the rectifier/source.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-032",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A single-phase full-bridge square-wave inverter has V_{dc} = 220 V. RMS value of the fundamental output voltage is about:",
+  "options": [
+   "220 V",
+   "198 V",
+   "155 V",
+   "280 V"
+  ],
+  "answer": 1,
+  "solution": [
+   "V_{1(rms)} = 4V_{dc}/(π√2) = 0.9V_{dc}",
+   "= 0.9 × 220",
+   "≈ 198 V"
+  ],
+  "explanation": "≈ 198 V",
+  "why": [
+   "That is the rms of the full square wave (all harmonics).",
+   null,
+   "That is 220/√2 — sine rms with peak 220.",
+   "That is the fundamental peak 4V_{dc}/π."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-033",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A cycloconverter converts:",
+  "options": [
+   "AC to DC",
+   "DC to DC",
+   "DC to AC",
+   "AC at one frequency directly to AC at another (usually lower) frequency"
+  ],
+  "answer": 3,
+  "explanation": "No DC link: it synthesises a lower-frequency output from segments of the input; used for large low-speed drives (cement mills, ship propulsion).",
+  "why": [
+   "That is a rectifier.",
+   "That is a chopper.",
+   "That is an inverter.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-034",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "An AC voltage controller (e.g. fan regulator using a TRIAC) changes:",
+  "options": [
+   "Frequency only",
+   "RMS voltage at the same frequency",
+   "AC to DC",
+   "Number of phases"
+  ],
+  "answer": 1,
+  "explanation": "Phase-angle control chops part of each half-cycle, reducing rms voltage while the frequency stays at supply frequency.",
+  "why": [
+   "That is a cycloconverter or inverter.",
+   null,
+   "That is a rectifier.",
+   "Not possible with a voltage controller."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-035",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "In variable-frequency induction motor drives, V/f is kept constant to:",
+  "options": [
+   "Reduce frequency",
+   "Increase slip",
+   "Keep speed constant",
+   "Keep air-gap flux constant"
+  ],
+  "answer": 3,
+  "explanation": "Air-gap flux ∝ V/f; constant flux avoids saturation at low frequency and maintains torque capability.",
+  "why": [
+   "Frequency is the control variable.",
+   "Slip stays small.",
+   "Speed changes with frequency — that is the aim.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-036",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A 400 V, 50 Hz induction motor is run by a constant V/f drive at 25 Hz. Supply voltage should be about:",
+  "options": [
+   "100 V",
+   "200 V",
+   "400 V",
+   "800 V"
+  ],
+  "answer": 1,
+  "solution": [
+   "V/f = 400/50 = 8 V/Hz",
+   "V = 8 × 25",
+   "= 200 V"
+  ],
+  "explanation": "= 200 V",
+  "why": [
+   "Uses (f ratio)².",
+   null,
+   "Keeping 400 V would over-flux the motor.",
+   "Doubles instead of halving."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-037",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "A UPS of the online (double-conversion) type:",
+  "options": [
+   "Has no battery",
+   "Uses a motor-generator only",
+   "Feeds load directly from mains and switches to battery on failure",
+   "Continuously converts AC→DC→AC so the load is always fed by the inverter"
+  ],
+  "answer": 3,
+  "explanation": "Load is always on the inverter, giving zero transfer time and isolation from mains disturbances.",
+  "why": [
+   "A UPS stores energy, usually in batteries.",
+   "Rotary UPS is a different technology.",
+   "That is an offline/standby UPS.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-038",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Compared with a linear power supply, an SMPS:",
+  "options": [
+   "Is heavier and less efficient",
+   "Is smaller, lighter and more efficient because of high-frequency switching",
+   "Has no switching noise",
+   "Cannot regulate output"
+  ],
+  "answer": 1,
+  "explanation": "Switching at tens–hundreds of kHz shrinks magnetics and capacitors; efficiency is typically 80–95%.",
+  "why": [
+   "Opposite.",
+   null,
+   "SMPS produces EMI.",
+   "It regulates via duty cycle."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-039",
+  "topic": "pe",
+  "difficulty": "hard",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "In a single-phase fully controlled converter with highly inductive load, the input (supply) power factor is approximately:",
+  "options": [
+   "(1 + cos α)/2",
+   "Always unity",
+   "cos α",
+   "0.9 cos α"
+  ],
+  "answer": 3,
+  "explanation": "Input current is a square wave: displacement factor = cos α and distortion factor = 2√2/π ≈ 0.9, so pf ≈ 0.9 cos α.",
+  "why": [
+   "Not for a full converter.",
+   "Phase control lowers pf.",
+   "That is only the displacement factor.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-040",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Which device is turned ON by a gate pulse but can be turned OFF only by reducing anode current (natural/forced commutation)?",
+  "options": [
+   "MOSFET",
+   "IGBT",
+   "SCR",
+   "GTO"
+  ],
+  "answer": 2,
+  "explanation": "SCR is a semi-controlled switch. MOSFET, IGBT and GTO are fully controlled (turn-on and turn-off by gate).",
+  "why": [
+   "Fully controlled.",
+   "Fully controlled.",
+   null,
+   "Turned off by negative gate current."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-041",
+  "topic": "pe",
+  "difficulty": "hard",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Forced commutation of SCRs is mainly needed in:",
+  "options": [
+   "DC choppers and inverters fed from a DC source",
+   "Line-commutated HVDC converters",
+   "Diode rectifiers",
+   "AC phase-controlled rectifiers"
+  ],
+  "answer": 0,
+  "explanation": "On DC there is no natural current zero, so an auxiliary circuit must reverse-bias the SCR (or fully controlled devices are used).",
+  "why": [
+   null,
+   "Line commutation is used there.",
+   "Diodes have no gate.",
+   "AC supply reversal turns them off naturally."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-042",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A chopper operates at 1 kHz with T_{on} = 0.4 ms. Duty cycle is:",
+  "options": [
+   "2.5",
+   "0.25",
+   "0.4",
+   "0.6"
+  ],
+  "answer": 2,
+  "solution": [
+   "T = 1/f = 1 ms",
+   "D = T_{on}/T = 0.4/1",
+   "= 0.4"
+  ],
+  "explanation": "= 0.4",
+  "why": [
+   "That is T/T_{on}.",
+   "38% lower than the correct result — does not follow from the correct working.",
+   null,
+   "That is T_{off}/T."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "pe-043",
+  "topic": "pe",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "With the anode positive with respect to the cathode, no gate signal and voltage below breakover, an SCR is in the:",
+  "options": [
+   "Forward blocking mode",
+   "Reverse blocking mode",
+   "Reverse conducting mode",
+   "Forward conducting mode"
+  ],
+  "answer": 0,
+  "explanation": "With anode positive and no adequate gate trigger, J2 is reverse-biased and only leakage flows: forward blocking.",
+  "why": [
+   null,
+   "Reverse blocking needs the anode negative.",
+   "A normal SCR does not conduct in reverse.",
+   "Needs triggering."
+  ],
+  "source": "bank"
+ }
+]

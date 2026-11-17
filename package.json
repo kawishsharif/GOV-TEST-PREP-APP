@@ -5,8 +5,20 @@
   "description": "Learn & Lead — mobile-first exam preparation web app (WAPDA AEE Electrical and more).",
   "type": "module",
   "scripts": {
-    "build": "node tools/build-bank.mjs",
+    "build": "node tools/build-bank.mjs && vite build",
     "validate": "node tools/build-bank.mjs --check",
-    "serve": "node tools/serve.mjs"
+    "dev": "vite",
+    "preview": "vite preview",
+    "bank": "node tools/build-bank.mjs"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.3.0",
+    "vite": "^8.3.8",
+    "vite-plugin-pwa": "^2.0.0"
   }
 }

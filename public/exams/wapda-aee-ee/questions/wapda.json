@@ -1,0 +1,1060 @@
+[
+ {
+  "id": "wap-001",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "WAPDA (Water and Power Development Authority) was established in:",
+  "options": [
+   "1965",
+   "1976",
+   "1947",
+   "1958"
+  ],
+  "answer": 3,
+  "explanation": "WAPDA was created under the Pakistan Water and Power Development Authority Act, 1958, to develop water and power resources in a unified way.",
+  "why": [
+   "Year of the war with India.",
+   "Tarbela Dam was completed in 1976.",
+   "Year of independence.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-002",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "WAPDA headquarters (WAPDA House) is located in:",
+  "options": [
+   "Karachi",
+   "Lahore",
+   "Peshawar",
+   "Islamabad"
+  ],
+  "answer": 1,
+  "explanation": "WAPDA House is a landmark on The Mall, Lahore.",
+  "why": [
+   "K-Electric is based in Karachi.",
+   null,
+   "PESCO is based in Peshawar.",
+   "Federal capital, but not WAPDA HQ."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-003",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "After the restructuring of the power sector (WAPDA bifurcation, 2007), WAPDA’s core responsibility is:",
+  "options": [
+   "Tariff determination",
+   "Thermal power generation only",
+   "Electricity distribution to consumers",
+   "Development of water resources and hydropower"
+  ],
+  "answer": 3,
+  "explanation": "Distribution moved to DISCOs, transmission to NTDC and tariff regulation to NEPRA; WAPDA retained water and hydropower development and operation.",
+  "why": [
+   "Done by NEPRA.",
+   "Thermal GENCOs were separated from WAPDA.",
+   "Done by the DISCOs.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-004",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Tarbela Dam is built on the river:",
+  "options": [
+   "Jhelum",
+   "Indus",
+   "Chenab",
+   "Kabul"
+  ],
+  "answer": 1,
+  "explanation": "Tarbela on the Indus (Khyber Pakhtunkhwa) is one of the largest earth- and rock-filled dams in the world and Pakistan’s largest hydropower station.",
+  "why": [
+   "Mangla is on the Jhelum.",
+   null,
+   "No major WAPDA storage dam on the Chenab.",
+   "Warsak is on the Kabul River."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-005",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Mangla Dam is located on the river:",
+  "options": [
+   "Swat",
+   "Ravi",
+   "Indus",
+   "Jhelum"
+  ],
+  "answer": 3,
+  "explanation": "Mangla Dam (Mirpur, AJK) on the Jhelum was completed in 1967 under the Indus Basin Project.",
+  "why": [
+   "Mohmand Dam is on the Swat River.",
+   "Ravi is an eastern river allocated to India.",
+   "Tarbela is on the Indus.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-006",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Pakistan’s largest hydropower station by installed capacity is:",
+  "options": [
+   "Ghazi Barotha",
+   "Tarbela",
+   "Warsak",
+   "Mangla"
+  ],
+  "answer": 1,
+  "explanation": "Tarbela’s installed capacity is 4,888 MW after the 4th extension (1,410 MW), and it rises to 6,418 MW with the 5th extension (1,530 MW).",
+  "why": [
+   "1,450 MW.",
+   null,
+   "243 MW.",
+   "About 1,000 MW (being upgraded)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-007",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "The Tarbela 4th Extension Hydropower Project added an installed capacity of:",
+  "options": [
+   "1,530 MW",
+   "4,320 MW",
+   "969 MW",
+   "1,410 MW"
+  ],
+  "answer": 3,
+  "explanation": "T4 has 3 units of 470 MW = 1,410 MW, built on tunnel 4. T5 (3 × 510 MW = 1,530 MW) is on tunnel 5.",
+  "why": [
+   "Tarbela 5th Extension.",
+   "Dasu full capacity.",
+   "Neelum–Jhelum capacity.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-008",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Ghazi Barotha Hydropower Project, a run-of-river plant on the Indus, has an installed capacity of:",
+  "options": [
+   "969 MW",
+   "1,450 MW",
+   "4,500 MW",
+   "243 MW"
+  ],
+  "answer": 1,
+  "explanation": "Five units of 290 MW = 1,450 MW. Water is diverted at Ghazi barrage through a ~52 km power channel to the powerhouse at Barotha.",
+  "why": [
+   "Neelum–Jhelum.",
+   null,
+   "Diamer-Bhasha (planned).",
+   "Warsak."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-009",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Warsak Dam and hydropower station is on the:",
+  "options": [
+   "Kunhar River",
+   "Jhelum River",
+   "Swat River",
+   "Kabul River"
+  ],
+  "answer": 3,
+  "explanation": "Warsak (near Peshawar) on the Kabul River was completed around 1960; installed capacity about 243 MW.",
+  "why": [
+   "Kunhar hosts smaller projects (e.g. Suki Kinari, Patrind on its confluence).",
+   "Mangla is on the Jhelum.",
+   "Mohmand Dam is on the Swat River.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-010",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Neelum–Jhelum Hydropower Project has an installed capacity of:",
+  "options": [
+   "720 MW",
+   "147 MW",
+   "969 MW",
+   "1,410 MW"
+  ],
+  "answer": 2,
+  "explanation": "Four units of 242.25 MW = 969 MW; Neelum water is diverted through a long headrace tunnel to a powerhouse near Muzaffarabad. Completed in 2018.",
+  "why": [
+   "Karot (on the Jhelum) capacity.",
+   "Not this project.",
+   null,
+   "Tarbela 4th Extension."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-011",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Dasu Hydropower Project is located on the:",
+  "options": [
+   "Indus",
+   "Swat",
+   "Neelum",
+   "Jhelum"
+  ],
+  "answer": 0,
+  "explanation": "Dasu (Upper Kohistan, KP) is a run-of-river project on the Indus with planned capacity of 4,320 MW (Stage-I 2,160 MW).",
+  "why": [
+   null,
+   "Mohmand is on the Swat.",
+   "Neelum–Jhelum uses the Neelum.",
+   "Mangla and Karot are on the Jhelum."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-012",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Planned installed capacity of Diamer-Bhasha Dam is about:",
+  "options": [
+   "800 MW",
+   "2,160 MW",
+   "4,500 MW",
+   "6,418 MW"
+  ],
+  "answer": 2,
+  "explanation": "Diamer-Bhasha on the Indus is planned for about 4,500 MW, with a roller-compacted concrete (RCC) dam about 272 m high.",
+  "why": [
+   "Mohmand Dam.",
+   "Dasu Stage-I.",
+   null,
+   "Tarbela after T5."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-013",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Mohmand Dam is being built on the:",
+  "options": [
+   "Swat River",
+   "Kabul River",
+   "Indus River",
+   "Kurram River"
+  ],
+  "answer": 0,
+  "explanation": "Mohmand Dam (Mohmand district, KP) on the Swat River: concrete-faced rockfill dam with about 800 MW hydropower, plus flood control, irrigation and water supply to Peshawar.",
+  "why": [
+   null,
+   "Warsak is on the Kabul River.",
+   "Tarbela/Dasu/Bhasha are on the Indus.",
+   "Kurram Tangi is on the Kurram."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-014",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Which of the following is a run-of-river project rather than a large storage reservoir?",
+  "options": [
+   "Tarbela",
+   "Mangla",
+   "Ghazi Barotha",
+   "Diamer-Bhasha"
+  ],
+  "answer": 2,
+  "explanation": "Ghazi Barotha uses the flow released from Tarbela via a pondage and power channel; it has no large seasonal storage.",
+  "why": [
+   "Large storage reservoir.",
+   "Large storage reservoir.",
+   null,
+   "Planned large storage reservoir."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-015",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "The Indus Waters Treaty between Pakistan and India was signed in:",
+  "options": [
+   "1960",
+   "1972",
+   "1991",
+   "1948"
+  ],
+  "answer": 0,
+  "explanation": "Signed in Karachi in September 1960 with the World Bank as broker (and signatory for certain provisions).",
+  "why": [
+   null,
+   "Simla Agreement year.",
+   "Water Apportionment Accord among provinces.",
+   "Year of the inter-dominion water dispute/standstill."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-016",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Under the Indus Waters Treaty, the western rivers allocated to Pakistan are:",
+  "options": [
+   "Jhelum, Sutlej, Kabul",
+   "Ravi, Beas, Sutlej",
+   "Indus, Jhelum, Chenab",
+   "Indus, Ravi, Chenab"
+  ],
+  "answer": 2,
+  "explanation": "Western rivers (Indus, Jhelum, Chenab) to Pakistan; eastern rivers (Ravi, Beas, Sutlej) to India.",
+  "why": [
+   "Sutlej is eastern; the Kabul is not covered as a treaty river.",
+   "These are the eastern rivers (India).",
+   null,
+   "Ravi is an eastern river."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-017",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Which institution brokered the Indus Waters Treaty?",
+  "options": [
+   "World Bank",
+   "Asian Development Bank",
+   "IMF",
+   "United Nations"
+  ],
+  "answer": 0,
+  "explanation": "The World Bank (then IBRD) brokered the treaty and helped finance the Indus Basin Project (Mangla, Tarbela, link canals).",
+  "why": [
+   null,
+   "ADB was founded in 1966.",
+   "Not involved.",
+   "Not the broker."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-018",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "NEPRA was established under an Act passed in:",
+  "options": [
+   "2015",
+   "1958",
+   "1997",
+   "2007"
+  ],
+  "answer": 2,
+  "explanation": "National Electric Power Regulatory Authority — Regulation of Generation, Transmission and Distribution of Electric Power Act, 1997.",
+  "why": [
+   "Not the year.",
+   "WAPDA’s founding year.",
+   null,
+   "WAPDA bifurcation year."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-019",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "The main function of NEPRA is to:",
+  "options": [
+   "Regulate the power sector: licences, tariffs and performance standards",
+   "Distribute electricity in Lahore",
+   "Generate nuclear power",
+   "Build dams"
+  ],
+  "answer": 0,
+  "explanation": "NEPRA grants licences for generation, transmission and distribution, determines tariffs and enforces performance standards.",
+  "why": [
+   null,
+   "LESCO does that.",
+   "PAEC operates nuclear plants.",
+   "WAPDA builds dams."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-020",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "In Pakistan, the 500 kV and 220 kV transmission network is operated by:",
+  "options": [
+   "NEPRA",
+   "PPIB",
+   "DISCOs",
+   "NTDC (National Transmission & Despatch Company)"
+  ],
+  "answer": 3,
+  "explanation": "NTDC owns and operates the primary 500/220 kV grid and grid stations, and national dispatch has historically been with its National Power Control Centre. DISCOs operate 132 kV and below.",
+  "why": [
+   "Regulator, not operator.",
+   "PPIB facilitates private power projects.",
+   "DISCOs operate 132 kV and below.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-021",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "The voltage level normally used for primary distribution feeders by DISCOs in Pakistan is:",
+  "options": [
+   "400 V",
+   "11 kV",
+   "132 kV",
+   "500 kV"
+  ],
+  "answer": 1,
+  "explanation": "11 kV feeders from grid stations supply distribution transformers (11 kV/400 V). 132 kV and 66 kV are sub-transmission; 500/220 kV are transmission.",
+  "why": [
+   "That is LV supply to consumers.",
+   null,
+   "Sub-transmission.",
+   "Primary transmission."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-022",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Standard system frequency in Pakistan is:",
+  "options": [
+   "60 Hz",
+   "25 Hz",
+   "400 Hz",
+   "50 Hz"
+  ],
+  "answer": 3,
+  "explanation": "Pakistan uses 50 Hz (like most of Asia and Europe). 60 Hz is used in North America and parts of other regions.",
+  "why": [
+   "Used in the USA and Saudi Arabia.",
+   "Historic low frequency.",
+   "Used in aircraft systems.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-023",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Low-voltage supply to consumers in Pakistan is nominally:",
+  "options": [
+   "110/190 V",
+   "230/400 V",
+   "11 kV",
+   "440/760 V"
+  ],
+  "answer": 1,
+  "explanation": "Single-phase 230 V (often quoted as 220 V) and three-phase 400 V line-to-line (from 11 kV/0.4 kV transformers).",
+  "why": [
+   "That is the North American style.",
+   null,
+   "Primary distribution.",
+   "Not used for consumers."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-024",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Pakistan’s first HVDC transmission line (CPEC) connects:",
+  "options": [
+   "Karachi–Quetta",
+   "Mangla–Rawat",
+   "Tarbela–Islamabad",
+   "Matiari–Lahore"
+  ],
+  "answer": 3,
+  "explanation": "The ±660 kV, 4,000 MW Matiari (Sindh) to Lahore HVDC line (about 880 km) was commissioned in 2021 to carry power from southern coal plants to the north.",
+  "why": [
+   "Not an HVDC link.",
+   "Not an HVDC link.",
+   "Not an HVDC link.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-025",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "The operating voltage of the Matiari–Lahore HVDC line is:",
+  "options": [
+   "±500 kV",
+   "±660 kV",
+   "765 kV AC",
+   "±800 kV"
+  ],
+  "answer": 1,
+  "explanation": "It is a ±660 kV bipole rated 4,000 MW.",
+  "why": [
+   "A common HVDC level elsewhere.",
+   null,
+   "An AC level, not this line.",
+   "UHVDC level used in China."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-026",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "K-Electric supplies electricity mainly to:",
+  "options": [
+   "Quetta",
+   "Faisalabad",
+   "Lahore",
+   "Karachi"
+  ],
+  "answer": 3,
+  "explanation": "K-Electric (formerly KESC, privatised in 2005) is a vertically integrated utility serving Karachi and adjoining areas.",
+  "why": [
+   "QESCO.",
+   "FESCO.",
+   "LESCO.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-027",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "LESCO, GEPCO, FESCO, IESCO and MEPCO are examples of:",
+  "options": [
+   "Generation companies",
+   "Distribution companies (DISCOs)",
+   "Regulators",
+   "Transmission companies"
+  ],
+  "answer": 1,
+  "explanation": "DISCOs distribute electricity in their regions: Lahore, Gujranwala, Faisalabad, Islamabad, Multan (and PESCO, HESCO, SEPCO, QESCO, TESCO).",
+  "why": [
+   "GENCOs are thermal generation companies.",
+   null,
+   "NEPRA is the regulator.",
+   "NTDC handles transmission."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-028",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "The company serving Multan region as a DISCO is:",
+  "options": [
+   "FESCO",
+   "HESCO",
+   "SEPCO",
+   "MEPCO"
+  ],
+  "answer": 3,
+  "explanation": "MEPCO = Multan Electric Power Company.",
+  "why": [
+   "Faisalabad.",
+   "Hyderabad.",
+   "Sukkur.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-029",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "The Private Power and Infrastructure Board (PPIB) mainly:",
+  "options": [
+   "Regulates tariffs",
+   "Facilitates private (IPP) power project investment",
+   "Distributes power",
+   "Builds transmission lines"
+  ],
+  "answer": 1,
+  "explanation": "PPIB acts as a one-window facilitator for independent power producers.",
+  "why": [
+   "NEPRA regulates tariffs.",
+   null,
+   "DISCOs distribute.",
+   "NTDC builds the grid."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-030",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Chashma and K-2/K-3 are examples of Pakistan’s:",
+  "options": [
+   "Nuclear power plants",
+   "Wind farms",
+   "Hydropower stations",
+   "Coal power plants"
+  ],
+  "answer": 0,
+  "explanation": "Chashma (C-1 to C-4) in Punjab and K-2/K-3 (Hualong One units of about 1,100 MW each) near Karachi are operated by the Pakistan Atomic Energy Commission (PAEC). Chashma also has a separate low-head hydropower station.",
+  "why": [
+   null,
+   "Wind farms are in the Jhimpir–Gharo corridor.",
+   "Chashma does have a hydel plant, but C-1…C-4 and K-2/K-3 are nuclear.",
+   "Coal plants include Sahiwal, Port Qasim, Hub and Thar."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-031",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Thar coalfield, used for mine-mouth power generation, is located in:",
+  "options": [
+   "Khyber Pakhtunkhwa",
+   "Balochistan",
+   "Sindh",
+   "Punjab"
+  ],
+  "answer": 2,
+  "explanation": "Thar (Tharparkar district, Sindh) holds very large lignite reserves; several mine-mouth plants operate there.",
+  "why": [
+   "Not the location.",
+   "Balochistan has smaller coal fields (e.g. Duki).",
+   null,
+   "Punjab has the Salt Range coal."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-032",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "The Jhimpir–Gharo wind corridor is located in:",
+  "options": [
+   "Sindh",
+   "Gilgit-Baltistan",
+   "Balochistan",
+   "Punjab"
+  ],
+  "answer": 0,
+  "explanation": "Wind farms in Thatta district, Sindh, benefit from strong coastal winds.",
+  "why": [
+   null,
+   "Not the corridor.",
+   "Not the corridor.",
+   "Not the corridor."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-033",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "The Quaid-e-Azam Solar Park is located near:",
+  "options": [
+   "Gwadar",
+   "Sialkot",
+   "Bahawalpur",
+   "Hyderabad"
+  ],
+  "answer": 2,
+  "explanation": "It is in the Cholistan desert near Bahawalpur, Punjab.",
+  "why": [
+   "Not the location.",
+   "Not the location.",
+   null,
+   "Not the location."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-034",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "The Indus River originates in:",
+  "options": [
+   "Tibet (near Lake Mansarovar)",
+   "The Hindu Kush in Chitral",
+   "The Karakoram in Hunza",
+   "Kashmir valley"
+  ],
+  "answer": 0,
+  "explanation": "The Indus rises in Tibet near Mount Kailash/Lake Mansarovar and flows through Ladakh and Gilgit-Baltistan into Pakistan.",
+  "why": [
+   null,
+   "The Chitral/Kunar river rises there.",
+   "Hunza is a tributary.",
+   "The Jhelum rises in the Kashmir valley (Verinag)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-035",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "The Water Apportionment Accord distributing Indus waters among the provinces was signed in:",
+  "options": [
+   "1960",
+   "1973",
+   "1991",
+   "2001"
+  ],
+  "answer": 2,
+  "explanation": "The 1991 Accord apportioned water among Punjab, Sindh, KP and Balochistan; IRSA was set up in 1992 to implement it.",
+  "why": [
+   "Indus Waters Treaty (with India).",
+   "Constitution year.",
+   null,
+   "Not the year."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-036",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Water distribution among the provinces according to the 1991 Accord is regulated by:",
+  "options": [
+   "IRSA (Indus River System Authority)",
+   "NEPRA",
+   "NTDC",
+   "WAPDA"
+  ],
+  "answer": 0,
+  "explanation": "IRSA, established by an Act of 1992, regulates and monitors distribution of Indus waters among provinces.",
+  "why": [
+   null,
+   "Power regulator.",
+   "Power transmission.",
+   "WAPDA develops and operates projects."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-037",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Rawal Dam, supplying water to Rawalpindi/Islamabad, is on the:",
+  "options": [
+   "Swat River",
+   "Soan River",
+   "Kurang River",
+   "Haro River"
+  ],
+  "answer": 2,
+  "explanation": "Rawal Dam: Kurang River. Simly Dam: Soan River. Khanpur Dam: Haro River.",
+  "why": [
+   "Mohmand Dam.",
+   "Simly Dam.",
+   null,
+   "Khanpur Dam."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-038",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Mirani Dam in Balochistan is on the:",
+  "options": [
+   "Dasht River",
+   "Zhob River",
+   "Bolan River",
+   "Hub River"
+  ],
+  "answer": 0,
+  "explanation": "Mirani Dam (Kech district, near Turbat) on the Dasht River supplies irrigation water. Hub Dam is on the Hub River.",
+  "why": [
+   null,
+   "Not Mirani.",
+   "Not Mirani.",
+   "Hub Dam."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-039",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Tarbela and Mangla are called multipurpose projects because they provide:",
+  "options": [
+   "Only navigation",
+   "Only electricity",
+   "Irrigation storage, hydropower and flood mitigation",
+   "Only drinking water"
+  ],
+  "answer": 2,
+  "explanation": "Their primary purpose is storage for irrigation; hydropower and flood moderation are additional benefits.",
+  "why": [
+   "Navigation is not a purpose.",
+   "Power is one of several purposes.",
+   null,
+   "Drinking water is a minor use."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-040",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Most large hydropower units in Pakistan (e.g. at Tarbela and Mangla) use:",
+  "options": [
+   "Pelton turbines",
+   "Francis turbines",
+   "Kaplan turbines",
+   "Steam turbines"
+  ],
+  "answer": 1,
+  "explanation": "Medium-head storage dams typically use Francis (reaction) turbines; Pelton suits very high heads and Kaplan low heads.",
+  "why": [
+   "For very high heads.",
+   null,
+   "For low heads (e.g. some barrage/canal plants).",
+   "Used in thermal plants."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-041",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "A major operational problem for Pakistan’s reservoirs such as Tarbela is:",
+  "options": [
+   "Excess salinity of the Indus",
+   "Tidal effects",
+   "Freezing of water",
+   "Sedimentation reducing live storage"
+  ],
+  "answer": 3,
+  "explanation": "The Indus carries a heavy silt load; sedimentation steadily reduces live storage and threatens intakes, which is why new storage (Bhasha, Mohmand) is prioritised.",
+  "why": [
+   "Not the major problem.",
+   "Inland dams are not tidal.",
+   "Not a concern at these dams.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-042",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "The Ministry under which WAPDA currently functions is the:",
+  "options": [
+   "Ministry of Energy (Power Division)",
+   "Ministry of Water Resources",
+   "Ministry of Science and Technology",
+   "Ministry of Planning"
+  ],
+  "answer": 1,
+  "explanation": "Since the creation of the Ministry of Water Resources (2018), WAPDA functions under it; DISCOs and NTDC are under the Power Division.",
+  "why": [
+   "That oversees DISCOs, NTDC, GENCOs.",
+   null,
+   "Not WAPDA.",
+   "Not WAPDA."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-043",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Satpara Dam, providing water and power to Skardu, is in:",
+  "options": [
+   "Azad Kashmir",
+   "Chitral",
+   "Swat",
+   "Gilgit-Baltistan"
+  ],
+  "answer": 3,
+  "explanation": "Satpara Dam lies near Skardu, Gilgit-Baltistan.",
+  "why": [
+   "Not the location.",
+   "Not the location.",
+   "Not the location.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-044",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "factual",
+  "style": "WAPDA-style",
+  "q": "Gomal Zam Dam is located in:",
+  "options": [
+   "Jhelum, Punjab",
+   "South Waziristan, KP",
+   "Thatta, Sindh",
+   "Gwadar, Balochistan"
+  ],
+  "answer": 1,
+  "explanation": "Gomal Zam on the Gomal River (South Waziristan) provides irrigation and a small hydropower station.",
+  "why": [
+   "Not the location.",
+   null,
+   "Not the location.",
+   "Not the location."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-045",
+  "topic": "wapda",
+  "difficulty": "hard",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Why is reactive power support (capacitor banks/SVCs) important on long 11 kV rural feeders in Pakistan?",
+  "options": [
+   "To store energy for night",
+   "To reduce the number of consumers",
+   "To raise frequency",
+   "To reduce voltage drop and line losses caused by low power factor loads"
+  ],
+  "answer": 3,
+  "explanation": "Low-pf loads (motors, tube-wells) draw extra current; shunt compensation reduces current, voltage drop and I^{2}R losses on long feeders.",
+  "why": [
+   "Capacitors do not store energy for hours.",
+   "Not related.",
+   "Frequency is set by generation–load balance on the grid.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "wap-046",
+  "topic": "wapda",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Which DISCO serves the Hyderabad region of Sindh?",
+  "options": [
+   "SEPCO",
+   "HESCO",
+   "QESCO",
+   "PESCO"
+  ],
+  "answer": 1,
+  "explanation": "HESCO = Hyderabad Electric Supply Company; SEPCO = Sukkur; QESCO = Quetta; PESCO = Peshawar.",
+  "why": [
+   "Sukkur.",
+   null,
+   "Quetta.",
+   "Peshawar."
+  ],
+  "source": "bank"
+ }
+]

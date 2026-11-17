@@ -1,0 +1,567 @@
+[
+ {
+  "id": "ana-001",
+  "topic": "analytical",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "Find the next number: 2, 6, 12, 20, 30, ?",
+  "options": [
+   "40",
+   "42",
+   "44",
+   "36"
+  ],
+  "answer": 1,
+  "solution": [
+   "Pattern n(n + 1): 1×2, 2×3, 3×4, 4×5, 5×6",
+   "next = 6 × 7",
+   "= 42"
+  ],
+  "explanation": "= 42",
+  "why": [
+   "Adds 10 again.",
+   null,
+   "Adds 14.",
+   "Adds 6."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-002",
+  "topic": "analytical",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "Find the next number: 5, 11, 23, 47, ?",
+  "options": [
+   "96",
+   "71",
+   "94",
+   "95"
+  ],
+  "answer": 3,
+  "solution": [
+   "Each term = previous × 2 + 1",
+   "47 × 2 + 1",
+   "= 95"
+  ],
+  "explanation": "= 95",
+  "why": [
+   "Doubles and adds 2.",
+   "Adds 24.",
+   "Only doubles.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-003",
+  "topic": "analytical",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "Find the next number: 3, 9, 27, 81, ?",
+  "options": [
+   "162",
+   "243",
+   "324",
+   "108"
+  ],
+  "answer": 1,
+  "solution": [
+   "Multiply by 3",
+   "81 × 3",
+   "= 243"
+  ],
+  "explanation": "= 243",
+  "why": [
+   "Doubles.",
+   null,
+   "Multiplies by 4.",
+   "Adds 27."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-004",
+  "topic": "analytical",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "A train 200 m long running at 72 km/h passes a pole in:",
+  "options": [
+   "20 s",
+   "7.2 s",
+   "2.8 s",
+   "10 s"
+  ],
+  "answer": 3,
+  "solution": [
+   "72 km/h = 72 × 5/18 = 20 m/s",
+   "t = 200/20",
+   "= 10 s"
+  ],
+  "explanation": "= 10 s",
+  "why": [
+   "Uses 10 m/s.",
+   "Uses km/h as m/s.",
+   "Divides wrongly.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-005",
+  "topic": "analytical",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "What is 15% of 240?",
+  "options": [
+   "24",
+   "36",
+   "32",
+   "40"
+  ],
+  "answer": 1,
+  "solution": [
+   "0.15 × 240",
+   "= 36"
+  ],
+  "explanation": "= 36",
+  "why": [
+   "10%.",
+   null,
+   "11% lower than the correct result — does not follow from the correct working.",
+   "11% higher than the correct result — does not follow from the correct working."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-006",
+  "topic": "analytical",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "A price increases from Rs 80 to Rs 100. The percentage increase is:",
+  "options": [
+   "80%",
+   "125%",
+   "20%",
+   "25%"
+  ],
+  "answer": 3,
+  "solution": [
+   "Increase = 20",
+   "20/80 × 100",
+   "= 25%"
+  ],
+  "explanation": "= 25%",
+  "why": [
+   "Ratio of old to new.",
+   "Ratio of new to old.",
+   "Divides by new price.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-007",
+  "topic": "analytical",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "Rs 120 is divided in the ratio 3 : 5. The larger share is:",
+  "options": [
+   "45",
+   "75",
+   "72",
+   "80"
+  ],
+  "answer": 1,
+  "solution": [
+   "Total parts = 8; one part = 15",
+   "larger = 5 × 15",
+   "= 75"
+  ],
+  "explanation": "= 75",
+  "why": [
+   "Smaller share.",
+   null,
+   "4% lower than the correct result — does not follow from the correct working.",
+   "7% higher than the correct result — does not follow from the correct working."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-008",
+  "topic": "analytical",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "Simple interest on Rs 10,000 at 10% per annum for 3 years is:",
+  "options": [
+   "Rs 3,310",
+   "Rs 1,000",
+   "Rs 13,000",
+   "Rs 3,000"
+  ],
+  "answer": 3,
+  "solution": [
+   "SI = PRT/100",
+   "= 10000 × 10 × 3/100",
+   "= Rs 3,000"
+  ],
+  "explanation": "= Rs 3,000",
+  "why": [
+   "Compound interest.",
+   "One year only.",
+   "That is the amount (P + SI).",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-009",
+  "topic": "analytical",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "A can finish a job in 10 days and B in 15 days. Working together they finish it in:",
+  "options": [
+   "5 days",
+   "6 days",
+   "12.5 days",
+   "25 days"
+  ],
+  "answer": 1,
+  "solution": [
+   "Combined rate = 1/10 + 1/15 = 5/30 = 1/6 per day",
+   "Time = 6 days"
+  ],
+  "explanation": "Time = 6 days",
+  "why": [
+   "17% lower than the correct result — does not follow from the correct working.",
+   null,
+   "Average of the two.",
+   "Adds the days."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-010",
+  "topic": "analytical",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "The angle between the hour and minute hands of a clock at 3:30 is:",
+  "options": [
+   "75°",
+   "60°",
+   "105°",
+   "90°"
+  ],
+  "answer": 0,
+  "solution": [
+   "Minute hand at 180°; hour hand at 3 × 30 + 30 × 0.5 = 105°",
+   "Difference = 75°"
+  ],
+  "explanation": "Difference = 75°",
+  "why": [
+   null,
+   "20% lower than the correct result — does not follow from the correct working.",
+   "Hour hand angle, not the difference.",
+   "That is 3:00."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-011",
+  "topic": "analytical",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "Which number is the odd one out? 2, 3, 5, 9, 11",
+  "options": [
+   "2",
+   "5",
+   "9",
+   "11"
+  ],
+  "answer": 2,
+  "explanation": "All except 9 are prime numbers (9 = 3 × 3).",
+  "why": [
+   "Prime (only even prime).",
+   "Prime.",
+   null,
+   "Prime."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-012",
+  "topic": "analytical",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "If CAT is coded as 24 (C = 3, A = 1, T = 20), then DOG is coded as:",
+  "options": [
+   "26",
+   "27",
+   "25",
+   "24"
+  ],
+  "answer": 0,
+  "solution": [
+   "Sum of alphabet positions",
+   "D = 4, O = 15, G = 7",
+   "4 + 15 + 7 = 26"
+  ],
+  "explanation": "4 + 15 + 7 = 26",
+  "why": [
+   null,
+   "4% higher than the correct result — does not follow from the correct working.",
+   "4% lower than the correct result — does not follow from the correct working.",
+   "That is CAT."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-013",
+  "topic": "analytical",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Pointing to a man, Sara says: \"His mother is the only daughter of my mother.\" How is Sara related to the man?",
+  "options": [
+   "Grandmother",
+   "Sister",
+   "Mother",
+   "Aunt"
+  ],
+  "answer": 2,
+  "explanation": "The only daughter of Sara’s mother is Sara herself, so Sara is the man’s mother.",
+  "why": [
+   "One generation too high.",
+   "That would need a different relation.",
+   null,
+   "Sara has no sister (only daughter)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-014",
+  "topic": "analytical",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "A man walks 4 km north, then turns right and walks 3 km. How far is he from the starting point?",
+  "options": [
+   "5 km",
+   "1 km",
+   "12 km",
+   "7 km"
+  ],
+  "answer": 0,
+  "solution": [
+   "Right-angled path: √(4^{2} + 3^{2})",
+   "= √25",
+   "= 5 km"
+  ],
+  "explanation": "= 5 km",
+  "why": [
+   null,
+   "Difference, not distance.",
+   "Product.",
+   "Path length, not displacement."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-015",
+  "topic": "analytical",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "NTS-style",
+  "q": "Statements: All engineers are graduates. Some graduates are managers. Which conclusion definitely follows?",
+  "options": [
+   "No engineer is a manager",
+   "All graduates are engineers",
+   "Some graduates are engineers",
+   "Some engineers are managers"
+  ],
+  "answer": 2,
+  "explanation": "Since all engineers are graduates (and engineers exist), some graduates are engineers. Nothing definite follows about engineers and managers.",
+  "why": [
+   "Possible but not certain.",
+   "Converse of \"all\" is not valid.",
+   null,
+   "Possible but not certain."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-016",
+  "topic": "analytical",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "A car goes from A to B at 60 km/h and returns at 40 km/h. Average speed for the whole journey is:",
+  "options": [
+   "48 km/h",
+   "45 km/h",
+   "52 km/h",
+   "50 km/h"
+  ],
+  "answer": 0,
+  "solution": [
+   "Equal distances: average = 2v_{1}v_{2}/(v_{1} + v_{2})",
+   "= 2 × 60 × 40/100",
+   "= 48 km/h"
+  ],
+  "explanation": "= 48 km/h",
+  "why": [
+   null,
+   "6% lower than the correct result — does not follow from the correct working.",
+   "8% higher than the correct result — does not follow from the correct working.",
+   "Arithmetic mean — wrong for equal distances."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-017",
+  "topic": "analytical",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "An item bought for Rs 500 is sold for Rs 600. Profit percentage is:",
+  "options": [
+   "25%",
+   "16.7%",
+   "20%",
+   "10%"
+  ],
+  "answer": 2,
+  "solution": [
+   "Profit = 100",
+   "100/500 × 100",
+   "= 20%"
+  ],
+  "explanation": "= 20%",
+  "why": [
+   "25% higher than the correct result — does not follow from the correct working.",
+   "Profit on selling price.",
+   null,
+   "2 times too small — a typical formula slip."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-018",
+  "topic": "analytical",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "If today is Monday, what day will it be after 61 days?",
+  "options": [
+   "Saturday",
+   "Sunday",
+   "Thursday",
+   "Friday"
+  ],
+  "answer": 0,
+  "solution": [
+   "61 = 8 × 7 + 5",
+   "5 days after Monday",
+   "= Saturday"
+  ],
+  "explanation": "= Saturday",
+  "why": [
+   null,
+   "6 days after.",
+   "3 days after.",
+   "4 days after."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-019",
+  "topic": "analytical",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "The LCM of 12 and 18 is:",
+  "options": [
+   "216",
+   "6",
+   "36",
+   "72"
+  ],
+  "answer": 2,
+  "solution": [
+   "12 = 2^{2}·3, 18 = 2·3^{2}",
+   "LCM = 2^{2}·3^{2}",
+   "= 36"
+  ],
+  "explanation": "= 36",
+  "why": [
+   "Product.",
+   "That is the HCF.",
+   null,
+   "A common multiple, not least."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-020",
+  "topic": "analytical",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "A father is three times as old as his son. The sum of their ages is 48. The son’s age is:",
+  "options": [
+   "14",
+   "12",
+   "16",
+   "36"
+  ],
+  "answer": 1,
+  "solution": [
+   "Son = x, father = 3x",
+   "4x = 48",
+   "x = 12 (father 36)"
+  ],
+  "explanation": "x = 12 (father 36)",
+  "why": [
+   "17% higher than the correct result — does not follow from the correct working.",
+   null,
+   "48/3.",
+   "Father’s age."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ana-021",
+  "topic": "analytical",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "NTS-style",
+  "q": "The square root of 1764 is:",
+  "options": [
+   "44",
+   "46",
+   "38",
+   "42"
+  ],
+  "answer": 3,
+  "explanation": "42 × 42 = 1764",
+  "why": [
+   "44² = 1936.",
+   "46² = 2116.",
+   "38² = 1444.",
+   null
+  ],
+  "source": "bank"
+ }
+]

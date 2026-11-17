@@ -1,0 +1,1089 @@
+[
+ {
+  "id": "ele-001",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "NTS-style",
+  "q": "The barrier potential of a silicon PN junction at room temperature is about:",
+  "options": [
+   "1.1 V",
+   "1.7 V",
+   "0.3 V",
+   "0.7 V"
+  ],
+  "answer": 3,
+  "explanation": "Silicon ≈ 0.7 V, germanium ≈ 0.3 V. (1.1 eV is the band-gap energy of silicon, not the barrier voltage.)",
+  "why": [
+   "That is silicon’s band gap in eV.",
+   "Typical of a red LED forward drop.",
+   "That is germanium.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-002",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "An N-type semiconductor is obtained by doping silicon with:",
+  "options": [
+   "Gallium",
+   "Phosphorus",
+   "Indium",
+   "Boron"
+  ],
+  "answer": 1,
+  "explanation": "Pentavalent donors (phosphorus, arsenic, antimony) give free electrons. Trivalent acceptors (boron, gallium, indium, aluminium) give P-type.",
+  "why": [
+   "Trivalent — P-type.",
+   null,
+   "Trivalent — P-type.",
+   "Trivalent — P-type."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-003",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Majority carriers in a P-type semiconductor are:",
+  "options": [
+   "Positive ions",
+   "Neutrons",
+   "Electrons",
+   "Holes"
+  ],
+  "answer": 3,
+  "explanation": "Acceptor atoms create holes, which are the majority carriers; electrons are minority carriers.",
+  "why": [
+   "Ions are fixed in the lattice and do not conduct.",
+   "Not charge carriers.",
+   "Majority in N-type.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-004",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "A PN junction diode is forward biased when:",
+  "options": [
+   "P side is connected to the negative terminal",
+   "P side is connected to the positive terminal",
+   "Both sides are at the same potential",
+   "N side is connected to positive"
+  ],
+  "answer": 1,
+  "explanation": "Positive to the anode (P) reduces barrier width and allows large current once the cut-in voltage is exceeded.",
+  "why": [
+   "That is reverse bias.",
+   null,
+   "No bias.",
+   "That is reverse bias."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-005",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "A Zener diode is normally used as a voltage regulator in:",
+  "options": [
+   "Zero bias",
+   "Saturation",
+   "Forward bias",
+   "Reverse bias (breakdown region)"
+  ],
+  "answer": 3,
+  "explanation": "In reverse breakdown the voltage across a Zener stays nearly constant over a wide current range.",
+  "why": [
+   "No regulation at zero bias.",
+   "Saturation is a transistor term.",
+   "Forward bias behaves like an ordinary diode.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-006",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Zener breakdown (as opposed to avalanche breakdown) occurs in:",
+  "options": [
+   "Lightly doped junctions at high voltage",
+   "Heavily doped junctions at low voltage (below about 5 V)",
+   "Only forward-biased diodes",
+   "Only germanium"
+  ],
+  "answer": 1,
+  "explanation": "Heavy doping gives a very thin depletion layer and an intense field that pulls electrons from covalent bonds (tunnelling). Above ~6 V avalanche multiplication dominates.",
+  "why": [
+   "That is avalanche breakdown.",
+   null,
+   "Breakdown is a reverse-bias effect.",
+   "Occurs in silicon too."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-007",
+  "topic": "electronics",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A Zener regulator: input 20 V, V_{Z} = 12 V, series resistor 200 Ω, load 1 kΩ. Zener current is:",
+  "options": [
+   "52 mA",
+   "40 mA",
+   "12 mA",
+   "28 mA"
+  ],
+  "answer": 3,
+  "solution": [
+   "I_{S} = (20 − 12)/200 = 40 mA",
+   "I_{L} = 12/1000 = 12 mA",
+   "I_{Z} = I_{S} − I_{L} = 28 mA"
+  ],
+  "explanation": "I_{Z} = I_{S} − I_{L} = 28 mA",
+  "why": [
+   "Adds instead of subtracting.",
+   "That is the series current.",
+   "That is load current.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-008",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "In a BJT, the emitter current is:",
+  "options": [
+   "I_{B} − I_{C}",
+   "I_{B} + I_{C}",
+   "I_{C} − I_{B}",
+   "I_{C} × I_{B}"
+  ],
+  "answer": 1,
+  "explanation": "KCL on the transistor: I_{E} = I_{B} + I_{C}.",
+  "why": [
+   "Sign error.",
+   null,
+   "That is not KCL.",
+   "Not a valid relation."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-009",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A transistor has α = 0.98. Its β is:",
+  "options": [
+   "50",
+   "98",
+   "0.98",
+   "49"
+  ],
+  "answer": 3,
+  "solution": [
+   "β = α/(1 − α)",
+   "= 0.98/0.02",
+   "= 49"
+  ],
+  "explanation": "= 49",
+  "why": [
+   "Uses 1/0.02.",
+   "Uses 100α.",
+   "That is α.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-010",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A BJT with β = 100 has base current 20 µA (active region). Collector current is:",
+  "options": [
+   "2.02 mA",
+   "0.2 mA",
+   "2 mA",
+   "20 mA"
+  ],
+  "answer": 2,
+  "solution": [
+   "I_{C} = βI_{B}",
+   "= 100 × 20 µA",
+   "= 2 mA (I_{E} = 2.02 mA)"
+  ],
+  "explanation": "= 2 mA (I_{E} = 2.02 mA)",
+  "why": [
+   "That is emitter current.",
+   "Off by 10.",
+   null,
+   "Off by 10."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-011",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "The common-emitter configuration is most widely used for amplifiers because it gives:",
+  "options": [
+   "Both current and voltage gain (highest power gain)",
+   "No phase shift",
+   "Very low input impedance",
+   "Voltage gain less than 1"
+  ],
+  "answer": 0,
+  "explanation": "CE gives good current and voltage gain with a 180° phase reversal. CC (emitter follower) has A_{v} ≈ 1; CB has low input impedance.",
+  "why": [
+   null,
+   "CE inverts by 180°.",
+   "That is common-base.",
+   "That is common-collector."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-012",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "An emitter follower (common-collector) is mainly used as a:",
+  "options": [
+   "Rectifier",
+   "High voltage-gain amplifier",
+   "Buffer (impedance matching) stage",
+   "Oscillator"
+  ],
+  "answer": 2,
+  "explanation": "High input impedance, low output impedance and voltage gain ≈ 1 make it ideal for buffering.",
+  "why": [
+   "Not a rectifier.",
+   "Its voltage gain is about 1.",
+   null,
+   "Not by itself."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-013",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Compared with a BJT, a FET:",
+  "options": [
+   "Is voltage-controlled with very high input impedance",
+   "Uses both carriers",
+   "Has no gate",
+   "Is current-controlled with low input impedance"
+  ],
+  "answer": 0,
+  "explanation": "FETs are unipolar, voltage-controlled devices with very high input impedance; BJTs are bipolar and current-controlled.",
+  "why": [
+   null,
+   "That describes a BJT (bipolar).",
+   "FETs have a gate.",
+   "That describes a BJT."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-014",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "An ideal operational amplifier has:",
+  "options": [
+   "Finite bandwidth of 1 MHz",
+   "Zero input impedance and infinite output impedance",
+   "Infinite open-loop gain, infinite input impedance and zero output impedance",
+   "Unity gain"
+  ],
+  "answer": 2,
+  "explanation": "Ideal op-amp: A_{OL} = ∞, Z_{in} = ∞, Z_{out} = 0, infinite bandwidth and CMRR, zero offset.",
+  "why": [
+   "Ideal bandwidth is infinite.",
+   "Opposite of ideal.",
+   null,
+   "That is a voltage follower configuration."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-015",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "An inverting op-amp amplifier has R_{f} = 100 kΩ and R_{in} = 10 kΩ. Its voltage gain is:",
+  "options": [
+   "−10",
+   "+11",
+   "−11",
+   "+10"
+  ],
+  "answer": 0,
+  "solution": [
+   "A_{v} = −R_{f}/R_{in}",
+   "= −100/10",
+   "= −10"
+  ],
+  "explanation": "= −10",
+  "why": [
+   null,
+   "That is the non-inverting gain.",
+   "Mixes the two formulas.",
+   "Inverting amplifiers have negative gain."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-016",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A non-inverting amplifier uses R_{f} = 100 kΩ and R_{1} = 10 kΩ. Its gain is:",
+  "options": [
+   "1",
+   "10",
+   "11",
+   "−10"
+  ],
+  "answer": 2,
+  "solution": [
+   "A_{v} = 1 + R_{f}/R_{1}",
+   "= 1 + 10",
+   "= 11"
+  ],
+  "explanation": "= 11",
+  "why": [
+   "That is a voltage follower.",
+   "Forgets the 1.",
+   null,
+   "That is inverting."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-017",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "In an inverting amplifier with negative feedback, the inverting input is at \"virtual ground\" because:",
+  "options": [
+   "Very high open-loop gain forces the differential input voltage to almost zero",
+   "The input current is very large",
+   "The output is zero",
+   "It is physically connected to ground"
+  ],
+  "answer": 0,
+  "explanation": "With A_{OL} → ∞ and finite output, v_{+} − v_{−} → 0; v_{+} is grounded so v_{−} ≈ 0 V, yet draws no current.",
+  "why": [
+   null,
+   "Input current is ideally zero.",
+   "Output is not zero.",
+   "It is not physically grounded."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-018",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Which logic gates are called universal gates?",
+  "options": [
+   "NOT and buffer",
+   "AND and OR",
+   "NAND and NOR",
+   "XOR and XNOR"
+  ],
+  "answer": 2,
+  "explanation": "Any Boolean function can be built using only NAND gates or only NOR gates.",
+  "why": [
+   "Single-input gates only.",
+   "Need NOT as well.",
+   null,
+   "Cannot build all functions alone."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-019",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "The decimal equivalent of binary 1011 is:",
+  "options": [
+   "11",
+   "13",
+   "15",
+   "9"
+  ],
+  "answer": 0,
+  "solution": [
+   "1×8 + 0×4 + 1×2 + 1×1",
+   "= 8 + 2 + 1",
+   "= 11"
+  ],
+  "explanation": "= 11",
+  "why": [
+   null,
+   "That is 1101.",
+   "That is 1111.",
+   "That is 1001."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-020",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "The binary equivalent of decimal 25 is:",
+  "options": [
+   "11010",
+   "10101",
+   "10011",
+   "11001"
+  ],
+  "answer": 3,
+  "solution": [
+   "25 = 16 + 8 + 1",
+   "= 1×16 + 1×8 + 0×4 + 0×2 + 1×1",
+   "= 11001"
+  ],
+  "explanation": "= 11001",
+  "why": [
+   "That is 26.",
+   "That is 21.",
+   "That is 19.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-021",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "An XOR gate gives a HIGH output when:",
+  "options": [
+   "Both inputs are HIGH",
+   "Inputs are different",
+   "Both inputs are LOW",
+   "Any input is HIGH"
+  ],
+  "answer": 1,
+  "explanation": "XOR = AB′ + A′B: output is 1 only when inputs differ; used in adders and parity checkers.",
+  "why": [
+   "XOR(1,1) = 0.",
+   null,
+   "XOR(0,0) = 0.",
+   "That is OR."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-022",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "According to De Morgan's theorem, (A·B)′ equals:",
+  "options": [
+   "A + B",
+   "(A + B)′",
+   "A′·B′",
+   "A′ + B′"
+  ],
+  "answer": 3,
+  "explanation": "(AB)′ = A′ + B′ and (A + B)′ = A′B′.",
+  "why": [
+   "No complement.",
+   "That equals A′B′.",
+   "That equals (A + B)′.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-023",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Minimum number of flip-flops needed for a mod-10 (decade) counter is:",
+  "options": [
+   "3",
+   "4",
+   "5",
+   "10"
+  ],
+  "answer": 1,
+  "solution": [
+   "Need 2^{n} ≥ 10",
+   "2^{3} = 8 < 10, 2^{4} = 16 ≥ 10",
+   "n = 4"
+  ],
+  "explanation": "n = 4",
+  "why": [
+   "Only 8 states.",
+   null,
+   "More than needed.",
+   "Ring counters use 10 but are not minimal."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-024",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "A PMMC (permanent magnet moving coil) instrument can measure:",
+  "options": [
+   "Both AC and DC",
+   "Only power",
+   "AC only",
+   "DC only"
+  ],
+  "answer": 3,
+  "explanation": "Deflecting torque ∝ instantaneous current; with AC the average torque is zero. It has a linear scale and high accuracy. Moving-iron instruments work on both AC and DC.",
+  "why": [
+   "That is moving iron.",
+   "Wattmeters measure power.",
+   "Gives zero on AC (without rectifier).",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-025",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Moving-iron instruments:",
+  "options": [
+   "Work only on DC",
+   "Work on both AC and DC with a non-uniform scale",
+   "Have a perfectly uniform scale",
+   "Are used only for power measurement"
+  ],
+  "answer": 1,
+  "explanation": "Torque ∝ I^{2}, so direction is unaffected by current reversal; scale is crowded at the low end.",
+  "why": [
+   "They work on AC too.",
+   null,
+   "Scale is non-uniform (square law).",
+   "They measure current/voltage."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-026",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "A megger is used to measure:",
+  "options": [
+   "Earth fault current",
+   "Power factor",
+   "Very low resistance",
+   "Insulation resistance"
+  ],
+  "answer": 3,
+  "explanation": "A megger applies a high DC test voltage (500 V–5 kV) and reads in megohms. Earth resistance is measured with an earth tester.",
+  "why": [
+   "Not its function.",
+   "Pf meters measure that.",
+   "Kelvin double bridge measures low resistance.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-027",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "PPSC-style",
+  "q": "Kelvin double bridge is used to measure:",
+  "options": [
+   "Medium resistance",
+   "Low resistance (below about 1 Ω)",
+   "Capacitance",
+   "High resistance"
+  ],
+  "answer": 1,
+  "explanation": "It eliminates the effect of lead and contact resistances. Wheatstone bridge: medium resistance; megger/loss-of-charge: high resistance.",
+  "why": [
+   "Wheatstone bridge.",
+   null,
+   "Schering bridge.",
+   "Megger or loss-of-charge method."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-028",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "Schering bridge is used to measure:",
+  "options": [
+   "Frequency",
+   "Low resistance",
+   "Inductance",
+   "Capacitance and dielectric loss (tan δ)"
+  ],
+  "answer": 3,
+  "explanation": "Schering bridge measures capacitance and dissipation factor of insulation (cables, bushings) at high voltage.",
+  "why": [
+   "Wien bridge measures frequency.",
+   "Kelvin double bridge.",
+   "Maxwell, Hay and Anderson bridges measure inductance.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-029",
+  "topic": "electronics",
+  "difficulty": "hard",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Hay's bridge is preferred over Maxwell's bridge for measuring inductance of coils with:",
+  "options": [
+   "Low Q (< 1)",
+   "High Q (> 10)",
+   "Zero resistance",
+   "Negative inductance"
+  ],
+  "answer": 1,
+  "explanation": "Maxwell's inductance–capacitance bridge suits medium Q (1–10); Hay's bridge suits high-Q coils.",
+  "why": [
+   "Maxwell's bridge is used for medium Q.",
+   null,
+   "Real coils have resistance.",
+   "Not physical."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-030",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Wien bridge is commonly used for:",
+  "options": [
+   "Measuring frequency and in RC oscillators",
+   "Measuring high voltage",
+   "Measuring energy",
+   "Measuring insulation resistance"
+  ],
+  "answer": 0,
+  "explanation": "Balance depends on frequency (f = 1/(2πRC) for equal arms); the same network sets frequency in Wien-bridge oscillators.",
+  "why": [
+   null,
+   "Potential dividers/electrostatic voltmeters.",
+   "Energy meters.",
+   "Megger."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-031",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "In a balanced Wheatstone bridge P = 1000 Ω, Q = 100 Ω and S = 47 Ω. Unknown R is:",
+  "options": [
+   "4.7 Ω",
+   "47 Ω",
+   "470 Ω",
+   "4700 Ω"
+  ],
+  "answer": 2,
+  "solution": [
+   "Balance: P/Q = R/S",
+   "R = S × P/Q = 47 × 10",
+   "= 470 Ω"
+  ],
+  "explanation": "= 470 Ω",
+  "why": [
+   "Divides by 10 instead.",
+   "Ignores the ratio arms.",
+   null,
+   "Uses ratio 100."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-032",
+  "topic": "electronics",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A meter with internal resistance 100 Ω and full-scale current 1 mA is to read 1 A full scale. Shunt resistance is about:",
+  "options": [
+   "0.1 Ω",
+   "1 Ω",
+   "10 Ω",
+   "0.01 Ω"
+  ],
+  "answer": 0,
+  "solution": [
+   "R_{sh} = I_{m}R_{m}/(I − I_{m})",
+   "= (0.001 × 100)/(1 − 0.001)",
+   "= 0.1/0.999 ≈ 0.1 Ω"
+  ],
+  "explanation": "= 0.1/0.999 ≈ 0.1 Ω",
+  "why": [
+   null,
+   "Off by 10.",
+   "Off by 100.",
+   "Off by 10."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-033",
+  "topic": "electronics",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "The same 1 mA, 100 Ω movement is to be used as a 100 V voltmeter. Series multiplier resistance is:",
+  "options": [
+   "1 MΩ",
+   "100 kΩ",
+   "99.9 kΩ",
+   "99.9 Ω"
+  ],
+  "answer": 2,
+  "solution": [
+   "Total R = V/I_{m} = 100/0.001 = 100 kΩ",
+   "R_{s} = 100 kΩ − 100 Ω",
+   "= 99.9 kΩ"
+  ],
+  "explanation": "= 99.9 kΩ",
+  "why": [
+   "Off by 10.",
+   "That is total resistance including the meter.",
+   null,
+   "Off by 1000."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-034",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A voltmeter movement has full-scale current 50 µA. Its sensitivity is:",
+  "options": [
+   "20 kΩ/V",
+   "50 kΩ/V",
+   "200 kΩ/V",
+   "2 kΩ/V"
+  ],
+  "answer": 0,
+  "solution": [
+   "Sensitivity = 1/I_{fs}",
+   "= 1/(50×10^{-6})",
+   "= 20,000 Ω/V"
+  ],
+  "explanation": "= 20,000 Ω/V",
+  "why": [
+   null,
+   "Confuses with current value.",
+   "Off by 10.",
+   "Off by 10."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-035",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "An ammeter is connected in ___ and should have ___ resistance.",
+  "options": [
+   "Parallel, very low",
+   "Parallel, high",
+   "Series, very low",
+   "Series, very high"
+  ],
+  "answer": 2,
+  "explanation": "Series connection measures the circuit current; low resistance avoids altering it. A voltmeter is in parallel with very high resistance.",
+  "why": [
+   "A low-resistance meter in parallel shorts the circuit.",
+   "That describes a voltmeter.",
+   null,
+   "High series resistance would reduce the current."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-036",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "WAPDA-style",
+  "q": "A single-phase induction-type energy meter can be used on:",
+  "options": [
+   "AC only",
+   "Both AC and DC",
+   "Only three-phase",
+   "DC only"
+  ],
+  "answer": 0,
+  "explanation": "It relies on eddy currents induced in an aluminium disc by alternating fluxes of the shunt and series magnets.",
+  "why": [
+   null,
+   "DC would induce no eddy currents.",
+   "Single-phase meters are common.",
+   "Needs alternating flux."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-037",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "An energy meter has constant 1200 rev/kWh. A 2 kW load runs for 30 minutes. Number of disc revolutions is:",
+  "options": [
+   "3600",
+   "600",
+   "1200",
+   "2400"
+  ],
+  "answer": 2,
+  "solution": [
+   "Energy = 2 kW × 0.5 h = 1 kWh",
+   "Revolutions = 1200 × 1",
+   "= 1200"
+  ],
+  "explanation": "= 1200",
+  "why": [
+   "3 times too large — a typical formula slip.",
+   "Uses 0.5 kWh.",
+   null,
+   "Uses 2 kWh (ignores time)."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-038",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "\"Creeping\" in an induction-type energy meter is:",
+  "options": [
+   "Rotation of the disc at no load",
+   "Fast rotation at full load",
+   "Wear of the bearings",
+   "Error due to temperature"
+  ],
+  "answer": 0,
+  "explanation": "Over-compensation for friction can make the disc rotate slowly with only the pressure coil energised; two diametrically opposite holes in the disc prevent it.",
+  "why": [
+   null,
+   "That is normal operation.",
+   "Not the term.",
+   "Temperature error is different."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-039",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "A clamp-on (tong) tester is used to measure:",
+  "options": [
+   "Earth resistance",
+   "Insulation resistance",
+   "Current without breaking the circuit",
+   "Frequency"
+  ],
+  "answer": 2,
+  "explanation": "Its jaws form a CT core around the conductor (or use a Hall sensor for DC).",
+  "why": [
+   "Earth tester.",
+   "Megger.",
+   null,
+   "Frequency meter."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-040",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Lissajous patterns on a CRO are used to determine:",
+  "options": [
+   "Voltage only",
+   "Frequency ratio and phase difference of two signals",
+   "Resistance",
+   "Power"
+  ],
+  "answer": 1,
+  "explanation": "Applying signals to X and Y plates gives figures whose shape gives frequency ratio (tangency counts) and phase (ellipse).",
+  "why": [
+   "Voltage is read from the graticule directly.",
+   null,
+   "Not used for resistance.",
+   "Not used for power."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-041",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "A meter reads 98 V when the true value is 100 V. Percentage error is:",
+  "options": [
+   "−2.04%",
+   "+2.04%",
+   "+2%",
+   "−2%"
+  ],
+  "answer": 3,
+  "solution": [
+   "Error = (measured − true)/true × 100",
+   "= (98 − 100)/100 × 100",
+   "= −2%"
+  ],
+  "explanation": "= −2%",
+  "why": [
+   "Divides by measured value.",
+   "Wrong sign and base.",
+   "Sign is negative (reads low).",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-042",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "conceptual",
+  "style": "WAPDA-style",
+  "q": "The electrodynamometer instrument is most commonly used as a:",
+  "options": [
+   "Ohmmeter",
+   "Wattmeter",
+   "Megger",
+   "Frequency meter only"
+  ],
+  "answer": 1,
+  "explanation": "Fixed current coil and moving pressure coil give torque ∝ VI cos φ; works on AC and DC.",
+  "why": [
+   "Not its main use.",
+   null,
+   "Megger is a separate instrument.",
+   "Not its main use."
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-043",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "conceptual",
+  "style": "Concept variant",
+  "q": "Loading effect in voltage measurement is minimised by using a voltmeter of:",
+  "options": [
+   "Low internal resistance",
+   "Moving-iron type always",
+   "Low sensitivity (Ω/V)",
+   "High sensitivity (high Ω/V)"
+  ],
+  "answer": 3,
+  "explanation": "A high-resistance voltmeter draws little current and disturbs the circuit less.",
+  "why": [
+   "Low resistance increases loading.",
+   "MI voltmeters usually have low Ω/V.",
+   "Low sensitivity increases loading.",
+   null
+  ],
+  "source": "bank"
+ },
+ {
+  "id": "ele-044",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "CTS-style",
+  "q": "Hexadecimal 2F equals decimal:",
+  "options": [
+   "32",
+   "47",
+   "45",
+   "215"
+  ],
+  "answer": 1,
+  "solution": [
+   "2F = 2 × 16 + 15",
+   "= 32 + 15",
+   "= 47"
+  ],
+  "explanation": "= 47",
+  "why": [
+   "Ignores F.",
+   null,
+   "Uses F = 13.",
+   "Reads it as decimal digits."
+  ],
+  "source": "bank"
+ }
+]
