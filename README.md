@@ -23,7 +23,7 @@ Questions are written in the style of WAPDA, PPSC, FPSC, NTS and CTS papers. Non
 
 ## Run it
 
-Needs Node.js 20.19+ (22 LTS recommended).
+Needs Node.js 22 (LTS).
 
 ```bash
 ./start.sh           # development mode with live reload → http://localhost:5173
