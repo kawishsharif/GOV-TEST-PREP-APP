@@ -23,12 +23,18 @@ Questions are written in the style of WAPDA, PPSC, FPSC, NTS and CTS papers. Non
 
 ## Run it
 
+Needs Node.js 20.19+ (22 LTS recommended).
+
 ```bash
-npm install
-npm run dev        # http://localhost:5173
-npm run build      # validates the question bank, then builds to dist/
-npm run preview
+./start.sh           # development mode with live reload → http://localhost:5173
+./start.sh --prod    # production build + preview (what gets deployed) → http://localhost:4173
+./stop.sh            # stop the server (your study progress is kept in the browser)
+./stop.sh --clean    # also remove logs and build output
 ```
+
+`start.sh` installs dependencies on first run, validates and compiles the question bank, starts the server in the background, and prints a **Phone** address you can open on your phone over the same Wi-Fi. Logs are in `.run/server.log`. Use `PORT=3000 ./start.sh` for another port.
+
+The npm scripts still work directly: `npm run dev`, `npm run build`, `npm run preview`, `npm run validate`.
 
 On a phone, open the deployed URL and use **Add to Home screen**. It works offline after the first visit.
 

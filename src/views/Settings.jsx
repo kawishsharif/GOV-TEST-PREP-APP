@@ -7,9 +7,17 @@ import { dayKey, download, pickFile } from '../lib/util.js';
 import { global, saveGlobal, save, saveNow, defaultSettings, exportAll, importAll, resetExam } from '../lib/store.js';
 
 function Num({ label, value, onCommit, min = 0, max = 1000, step = 1, inline }) {
+  const [text, setText] = useState(String(value));
+  const commit = () => {
+    const v = Number(text);
+    if (text.trim() === '' || !Number.isFinite(v)) { setText(String(value)); return; }
+    const c = Math.min(max, Math.max(min, v));
+    setText(String(c));
+    if (c !== value) onCommit(c);
+  };
   const input = (
-    <input type="number" inputMode="decimal" min={min} max={max} step={step} defaultValue={value} style={inline ? { width: 90 } : undefined}
-      onChange={(e) => { const v = Number(e.target.value); if (e.target.value !== '' && Number.isFinite(v)) onCommit(Math.min(max, Math.max(min, v))); }} />
+    <input type="number" inputMode="decimal" min={min} max={max} step={step} value={text} style={inline ? { width: 90 } : undefined}
+      onChange={(e) => setText(e.target.value)} onBlur={commit} onKeyDown={(e) => e.key === 'Enter' && e.currentTarget.blur()} />
   );
   if (inline) return <label className="field row" style={{ marginBottom: 8 }}><span style={{ flex: 1, margin: 0, fontSize: '.95rem', color: 'var(--text)' }}>{label}</span>{input}</label>;
   return <label className="field"><span>{label}</span>{input}</label>;

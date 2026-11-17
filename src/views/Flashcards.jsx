@@ -1,7 +1,7 @@
 // Spaced-repetition flashcards: Again / Hard / Good / Easy.
 import { useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Page, useExam, Rich, Chips } from '../components/ui.jsx';
+import { Page, useExam, Rich } from '../components/ui.jsx';
 import { Icon } from '../components/Icon.jsx';
 import { studyQueue, schedule, intervalLabel } from '../lib/srs.js';
 import { activeTopics } from '../lib/bank.js';
@@ -28,9 +28,12 @@ export default function Flashcards() {
 
   return (
     <Page title="Flashcards" sub={`${q.learned}/${q.total} cards started`} back={base + 'more'} base={base}>
-      <div style={{ marginBottom: 12 }}>
-        <Chips value={topic} onChange={(v) => { setTopic(v); setFlipped(false); }} items={[['', 'All topics'], ...topics.map((t) => [t.id, t.name])]} />
-      </div>
+      <label className="field" style={{ marginBottom: 12 }}><span>Topic</span>
+        <select id="flash-topic" value={topic} onChange={(e) => { setTopic(e.target.value); setFlipped(false); }}>
+          <option value="">All topics</option>
+          {topics.map((t) => <option key={t.id} value={t.id}>{t.name}</option>)}
+        </select>
+      </label>
       <div className="grid3" style={{ marginBottom: 14 }}>
         <div className="stat"><b>{q.due.length}</b><span>due reviews</span></div>
         <div className="stat"><b>{q.fresh.length}</b><span>new today</span></div>
@@ -38,11 +41,11 @@ export default function Flashcards() {
       </div>
       {card ? (
         <>
-          <section className="card flash" onClick={() => setFlipped(true)} role="button" tabIndex={0} onKeyDown={(e) => (e.key === ' ' || e.key === 'Enter') && setFlipped(true)}>
+          <button type="button" className="card flash" onClick={() => setFlipped(true)}>
             <small className="muted">{card.kind} · {exam.topicIndex[card.topic]?.name}{!st.srs[card.id] && ' · new'}</small>
             <div style={{ fontWeight: 700, marginTop: 8 }}><Rich text={card.front} /></div>
             {flipped ? <div className="back"><Rich text={card.back} /></div> : <small className="muted" style={{ marginTop: 16 }}>Recall the answer, then tap to reveal</small>}
-          </section>
+          </button>
           {flipped ? (
             <div className="rate">
               {['Again', 'Hard', 'Good', 'Easy'].map((l, i) => (

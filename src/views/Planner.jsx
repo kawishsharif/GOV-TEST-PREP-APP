@@ -47,9 +47,9 @@ export default function Planner() {
             <div key={day.d} className={`day ${isToday ? 'today' : ''} ${done[day.d] ? 'done' : ''}`}>
               <div className="date"><b>{fmtDay(day.d, { day: 'numeric' })}</b>{fmtDay(day.d, { month: 'short' })}</div>
               <div className="tasks">
-                {day.tasks.map((t, i) => <div key={i}>{LINK[t.k] ? <Link to={base + LINK[t.k](t.topic)} style={{ color: 'inherit' }}>{t.text}</Link> : t.text}</div>)}
+                {day.tasks.map((t, i) => <div key={i}>{LINK[t.k] ? <Link to={base + LINK[t.k](t.topic)} style={{ color: 'inherit' }}>{t.text}</Link> : <span className="task">{t.text}</span>}</div>)}
               </div>
-              <label className="switch" style={{ minHeight: 0 }} aria-label={`Mark ${day.d} done`}>
+              <label className="switch toggle" aria-label={`Mark ${fmtDay(day.d, { day: 'numeric', month: 'long' })} done`}>
                 <input type="checkbox" checked={!!done[day.d]} onChange={(e) => { done[day.d] = e.target.checked; save(exam.id); }} />
               </label>
             </div>

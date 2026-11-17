@@ -12,11 +12,11 @@
   --series-1: #1279a6;
   --series-2: #d0581f;
   --topbar-ink: #ffffff;
-  --accent: #0e9488;
+  --accent: #0f766e;
   --accent-soft: #d5f1ee;
   --good: #15803d;
   --good-soft: #dcf5e4;
-  --bad: #c2410c;
+  --bad: #a8360b;
   --bad-soft: #fde7dc;
   --warn: #a16207;
   --warn-soft: #fdf3d4;
@@ -73,7 +73,7 @@ small, .muted { color: var(--muted); }
   background: var(--topbar); color: var(--topbar-ink);
 }
 .topbar .title { flex: 1; min-width: 0; }
-.topbar .title b { display: block; font-size: 1.02rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.topbar .title h1 { margin: 0; font-weight: 700; display: block; font-size: 1.02rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .topbar .title span { display: block; font-size: .78rem; opacity: .85; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .topbar .iconbtn { color: inherit; }
 .iconbtn {
@@ -234,7 +234,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--primary); box-sh
 .opt .why { display: block; font-size: .86rem; font-weight: 400; color: var(--muted); margin-top: 4px; }
 .opt.right .why, .opt.wrong .why { color: var(--text); }
 .explain { margin-top: 14px; padding: 14px; border-radius: 14px; background: var(--surface-2); }
-.explain h3 { font-size: .92rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.explain h2 { font-size: .92rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
 .explain ol { margin: 0; padding-left: 1.3rem; }
 .explain ol li { margin-bottom: 4px; }
 .verdict { font-weight: 800; font-size: 1.05rem; }
@@ -352,3 +352,18 @@ table.simple td.num, table.simple th.num { text-align: right; font-variant-numer
 .legend-row i { display: inline-block; width: 18px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
 .day .tasks a { text-decoration: none; } .day .tasks a:hover { text-decoration: underline; }
 .day .tasks div::before { content: '• '; color: var(--muted); }
+
+/* ---------- QA: accessibility & touch ---------- */
+.chip-count { margin-left: 6px; font-weight: 500; color: inherit; }
+:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; border-radius: 6px; }
+.topbar :focus-visible { outline-color: var(--topbar-ink); }
+.opt:focus-visible, .btn:focus-visible, .chip:focus-visible { outline-offset: 3px; }
+.metric-row a.topic-link { display: inline-flex; align-items: center; min-height: 44px; color: inherit; text-decoration: none; }
+.day .tasks a, .day .tasks span.task { display: flex; align-items: center; min-height: 40px; }
+.day .tasks div::before { content: none; }
+.day .tasks a::before, .day .tasks span.task::before { content: '•'; color: var(--muted); margin-right: 8px; }
+.day .toggle { display: grid; place-items: center; min-width: 48px; min-height: 48px; cursor: pointer; }
+.flash { border: 1px solid var(--border); width: 100%; font: inherit; color: inherit; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}

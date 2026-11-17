@@ -50,7 +50,7 @@ export function Page({ title, sub, back, right, tabs = true, full = false, base,
         {back
           ? <Link className="iconbtn" to={back} aria-label="Back"><Icon name="back" /></Link>
           : <span className="iconbtn" aria-hidden="true"><Icon name="wave" /></span>}
-        <div className="title"><b>{title}</b>{sub && <span>{sub}</span>}</div>
+        <div className="title"><h1>{title}</h1>{sub && <span>{sub}</span>}</div>
         {right}
       </header>
       <main className={full ? 'full' : ''}>{children}</main>
@@ -148,7 +148,7 @@ export function Chips({ items, value, onChange, multi = false }) {
         const on = multi ? value.includes(k) : value === k;
         return (
           <button key={k} type="button" className={`chip ${on ? 'on' : ''}`} aria-pressed={on} onClick={() => onChange(k)}>
-            {label}{extra != null && <small style={{ opacity: 0.7, marginLeft: 6 }}>{extra}</small>}
+            {label}{extra != null && <small className="chip-count">{extra}</small>}
           </button>
         );
       })}

@@ -81,7 +81,7 @@ export default function Dashboard() {
       <section className="card">
         {topics.map((t) => (
           <div className="metric-row" key={t.id}>
-            <div><Link to={`${base}quiz/topic/${t.id}`} style={{ color: 'inherit', textDecoration: 'none' }}><b>{t.name}</b></Link><br /><small className="muted">{t.seen}/{t.bank} seen · {t.mastered} mastered</small></div>
+            <div><Link className="topic-link" to={`${base}quiz/topic/${t.id}`}><b>{t.name}</b></Link><br /><small className="muted">{t.seen}/{t.bank} seen · {t.mastered} mastered</small></div>
             <Acc t={t} />
             <Bar value={t.acc == null ? 0 : t.acc * 100} />
           </div>

@@ -111,7 +111,7 @@ export default function MockRun() {
     <>
       <header className="topbar">
         <button className="iconbtn" onClick={() => setPalette(true)} aria-label="Question palette"><Icon name="grid" /></button>
-        <div className="title"><b>Mock test</b><span>{answered}/{m.qids.length} answered</span></div>
+        <div className="title"><h1>Mock test</h1><span>{answered}/{m.qids.length} answered</span></div>
         <Timer deadline={m.deadline} onExpire={expire} />
         <button className="btn sm" style={{ marginLeft: 8, background: 'transparent', color: 'inherit', borderColor: 'rgba(255,255,255,.5)' }} onClick={askSubmit}>Submit</button>
       </header>
@@ -145,6 +145,7 @@ export default function MockRun() {
           ))}
         </div>
         <button className="btn danger block" style={{ marginTop: 16 }} onClick={askSubmit}>Submit test</button>
+        <button className="btn ghost block" style={{ marginTop: 8 }} onClick={() => { bank(); saveNow(exam.id); nav(base + 'dashboard'); }}>Leave for now (timer keeps running)</button>
       </Sheet>
     </>
   );

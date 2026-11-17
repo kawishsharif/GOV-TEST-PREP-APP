@@ -56,8 +56,8 @@ export function QuestionCard({ q, exam, order, chosen = null, reveal = false, on
           {chosen == null ? <div className="verdict bad">Not answered</div> : ok ? <div className="verdict good">Correct</div> : <div className="verdict bad">Incorrect</div>}
           <p style={{ margin: '.4rem 0 .6rem' }}>Answer: <b>{KEYS[order.indexOf(q.answer)]}. <Rich text={q.options[q.answer]} /></b></p>
           {q.solution
-            ? <><h3>Worked solution</h3><ol>{q.solution.map((s, i) => <li key={i}><Rich text={s} /></li>)}</ol></>
-            : <><h3>Explanation</h3><p style={{ margin: 0 }}><Rich text={q.explanation} /></p></>}
+            ? <><h2>Worked solution</h2><ol>{q.solution.map((s, i) => <li key={i}><Rich text={s} /></li>)}</ol></>
+            : <><h2>Explanation</h2><p style={{ margin: 0 }}><Rich text={q.explanation} /></p></>}
         </div>
       )}
     </article>
