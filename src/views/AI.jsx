@@ -85,7 +85,7 @@ export default function AI() {
       {result?.valid && (
         <section className="card">
           <h2>{result.valid.length} questions added</h2>
-          {result.rejected.length > 0 && <p className="muted" style={{ fontSize: '.85rem' }}>{result.rejected.length} rejected by the format check.</p>}
+          <p className="muted" style={{ fontSize: '.85rem', marginTop: 0 }}>Made with {result.model}.{result.note ? ` ${result.note}` : ''}{result.rejected.length > 0 ? ` ${result.rejected.length} rejected by the format check.` : ''}</p>
           <button className="btn primary block" disabled={!result.valid.length} onClick={() => practise(result.valid)}><Icon name="bolt" /> Practise them now</button>
         </section>
       )}

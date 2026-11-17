@@ -18,7 +18,9 @@ export const PROVIDERS = {
     keyHint: 'AIza… or AQ.…',
     keyHelp: 'Create a key at aistudio.google.com → Get API key.',
     // "-latest" aliases follow Google's current model, so they keep working when a version is retired.
-    models: [['gemini-flash-latest', 'Gemini Flash (works on the free tier)'], ['gemini-pro-latest', 'Gemini Pro (needs billing on your Google account)']],
+    models: [['gemini-flash-latest', 'Gemini Flash (free, recommended)'], ['gemini-flash-lite-latest', 'Gemini Flash-Lite (free, fastest)'], ['gemini-pro-latest', 'Gemini Pro (needs billing on your Google account)']],
+    // Free models tried in order when the chosen one is overloaded or not free on this key.
+    fallbacks: ['gemini-flash-latest', 'gemini-flash-lite-latest', 'gemini-3.1-flash-lite', 'gemini-3.5-flash'],
     defaultModel: 'gemini-flash-latest',
   },
 };
@@ -94,6 +96,7 @@ function geminiError(status, rawMsg, model) {
   if (status === 429 && /limit:\s*0\b/.test(msg)) {
     return `"${model}" is not included in your Gemini free tier (Google allows 0 requests for it). Choose Gemini Flash, or set up billing for this key in Google AI Studio.`;
   }
+  if (status === 503) return `Gemini is overloaded right now (Google says: high demand). Try again in a minute.`;
   if (status === 429) return `Gemini usage limit reached for now. Wait a minute (or until tomorrow for daily limits) and try again. Google says: ${short}`;
   if (status === 400 && /api key not valid|api_key_invalid/i.test(msg)) return `Google says this API key is not valid. Copy it again from Google AI Studio (no spaces). Google says: ${short}`;
   if (status === 401 || status === 403) return `Google refused this key for this request. Google says: ${short}`;
@@ -124,7 +127,12 @@ async function callGemini({ apiKey, model, prompt }) {
     clearTimeout(timer);
   }
   const data = await res.json().catch(() => ({}));
-  if (!res.ok) throw new Error(geminiError(res.status, data?.error?.message || res.statusText, model));
+  if (!res.ok) {
+    const err = new Error(geminiError(res.status, data?.error?.message || res.statusText, model));
+    err.status = res.status;
+    err.notFree = res.status === 429 && /limit:\s*0\b/.test(data?.error?.message || '');
+    throw err;
+  }
   const cand = data.candidates?.[0];
   if (!cand) throw new Error(`Gemini returned no answer${data.promptFeedback?.blockReason ? ` (blocked: ${data.promptFeedback.blockReason})` : ''}.`);
   if (cand.finishReason === 'MAX_TOKENS') throw new Error('The response was cut off. Try again.');
@@ -135,12 +143,39 @@ async function callGemini({ apiKey, model, prompt }) {
   return { questions: parsed.questions || [], model: data.modelVersion || model };
 }
 
+/** Try the chosen Gemini model, then free fallbacks when it is overloaded, unavailable or not free on this key. */
+async function callGeminiWithFallback({ apiKey, model, prompt }) {
+  const chain = [model, ...PROVIDERS.gemini.fallbacks.filter((m) => m !== model)];
+  const skipped = new Set();
+  let lastErr;
+  // Two rounds: Google's "high demand" (503) spikes usually pass within seconds.
+  for (let round = 0; round < 2; round++) {
+    if (round) await new Promise((r) => setTimeout(r, 5000));
+    for (const m of chain) {
+      try {
+        const r = await callGemini({ apiKey, model: m, prompt });
+        skipped.delete(m);
+        const list = [...skipped];
+        return { ...r, note: list.length ? `${list.join(', ')} ${list.length > 1 ? 'were' : 'was'} busy or not free on your key, so ${m} was used.` : '' };
+      } catch (e) {
+        lastErr = e;
+        const retryable = e.status === 503 || e.status === 404 || e.status === 500 || e.notFree || e.status === 429;
+        if (!retryable) throw e;
+        skipped.add(m);
+        if (e.notFree || e.status === 404) chain.splice(chain.indexOf(m), 1); // never retry those in round 2
+      }
+    }
+    if (!chain.length) break;
+  }
+  throw lastErr;
+}
+
 export async function generateAIQuestions({ provider = 'claude', exam, topicId, count = 10, difficulty = 'mixed', apiKey, model, notes }) {
   const topic = exam.topicIndex[topicId];
   const prompt = buildPrompt({ exam, topic, count, difficulty, notes });
   const p = PROVIDERS[provider] ? provider : 'claude';
-  const call = p === 'gemini' ? callGemini : callClaude;
-  const { questions, model: usedModel } = await call({ apiKey, model: model || PROVIDERS[p].defaultModel, prompt });
+  const call = p === 'gemini' ? callGeminiWithFallback : callClaude;
+  const { questions, model: usedModel, note } = await call({ apiKey, model: model || PROVIDERS[p].defaultModel, prompt });
 
   const now = new Date().toISOString().slice(0, 10);
   const valid = [], rejected = [];
@@ -155,5 +190,5 @@ export async function generateAIQuestions({ provider = 'claude', exam, topicId, 
     const err = validateQuestion(q, exam);
     (err ? rejected : valid).push(err ? `${String(g.q).slice(0, 60)}… — ${err}` : q);
   }
-  return { valid, rejected };
+  return { valid, rejected, note, model: usedModel };
 }
