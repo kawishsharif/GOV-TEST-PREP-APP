@@ -18,7 +18,7 @@ export const PROVIDERS = {
     keyHint: 'AIza… or AQ.…',
     keyHelp: 'Create a key at aistudio.google.com → Get API key.',
     // "-latest" aliases follow Google's current model, so they keep working when a version is retired.
-    models: [['gemini-flash-latest', 'Gemini Flash (fast, free tier)'], ['gemini-pro-latest', 'Gemini Pro (best quality)']],
+    models: [['gemini-flash-latest', 'Gemini Flash (works on the free tier)'], ['gemini-pro-latest', 'Gemini Pro (needs billing on your Google account)']],
     defaultModel: 'gemini-flash-latest',
   },
 };
@@ -87,30 +87,44 @@ async function callClaude({ apiKey, model, prompt }) {
   return { questions: response.parsed_output?.questions || [], model: response.model };
 }
 
+/** Turn a Google API error into a message that names the real cause and what to do. */
+function geminiError(status, rawMsg, model) {
+  const msg = String(rawMsg || '').trim();
+  const short = msg.split('\n')[0].slice(0, 220);
+  if (status === 429 && /limit:\s*0\b/.test(msg)) {
+    return `"${model}" is not included in your Gemini free tier (Google allows 0 requests for it). Choose Gemini Flash, or set up billing for this key in Google AI Studio.`;
+  }
+  if (status === 429) return `Gemini usage limit reached for now. Wait a minute (or until tomorrow for daily limits) and try again. Google says: ${short}`;
+  if (status === 400 && /api key not valid|api_key_invalid/i.test(msg)) return `Google says this API key is not valid. Copy it again from Google AI Studio (no spaces). Google says: ${short}`;
+  if (status === 401 || status === 403) return `Google refused this key for this request. Google says: ${short}`;
+  if (status === 404) return `Model "${model}" is not available for this key. Pick another model. Google says: ${short}`;
+  return `Gemini error ${status}. Google says: ${short || 'no details'}`;
+}
+
 async function callGemini({ apiKey, model, prompt }) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`;
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), 180000);
   let res;
   try {
     res = await fetch(url, {
       method: 'POST',
+      signal: ctrl.signal,
       headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
       body: JSON.stringify({
         contents: [{ role: 'user', parts: [{ text: prompt }] }],
         generationConfig: { responseMimeType: 'application/json', responseJsonSchema: BATCH_SCHEMA, maxOutputTokens: 32000 },
       }),
     });
-  } catch {
-    throw new Error('Could not reach Gemini. Check your connection.');
+  } catch (e) {
+    throw new Error(e?.name === 'AbortError'
+      ? 'Gemini did not answer within 3 minutes. Try again, or choose fewer/easier questions.'
+      : 'Could not reach Gemini. Check your internet connection.');
+  } finally {
+    clearTimeout(timer);
   }
   const data = await res.json().catch(() => ({}));
-  if (!res.ok) {
-    const msg = data?.error?.message || res.statusText;
-    if (res.status === 400 && /api key/i.test(msg)) throw new Error('Gemini rejected the API key. Check it in the key field.');
-    if (res.status === 403) throw new Error(`Gemini refused the request: ${msg}`);
-    if (res.status === 404) throw new Error(`Model "${model}" is not available for this key. Pick another model.`);
-    if (res.status === 429) throw new Error('Gemini quota or rate limit reached — wait a minute and try again.');
-    throw new Error(`Gemini error ${res.status}: ${msg}`);
-  }
+  if (!res.ok) throw new Error(geminiError(res.status, data?.error?.message || res.statusText, model));
   const cand = data.candidates?.[0];
   if (!cand) throw new Error(`Gemini returned no answer${data.promptFeedback?.blockReason ? ` (blocked: ${data.promptFeedback.blockReason})` : ''}.`);
   if (cand.finishReason === 'MAX_TOKENS') throw new Error('The response was cut off. Try again.');
