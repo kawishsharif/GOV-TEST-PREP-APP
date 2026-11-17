@@ -11,6 +11,9 @@ const Settings = lazy(() => import('./views/Settings.jsx'));
 const Practice = lazy(() => import('./views/Practice.jsx'));
 const Quiz = lazy(() => import('./views/Quiz.jsx'));
 const More = lazy(() => import('./views/More.jsx'));
+const Mock = lazy(() => import('./views/Mock.jsx'));
+const MockRun = lazy(() => import('./views/MockRun.jsx'));
+const Result = lazy(() => import('./views/Result.jsx'));
 const Placeholder = lazy(() => import('./views/Placeholder.jsx'));
 
 const Loading = () => <main><p className="muted" style={{ textAlign: 'center', paddingTop: '30vh' }}>Loading…</p></main>;
@@ -73,6 +76,9 @@ export default function App() {
               <Route path="practice" element={<Practice />} />
               <Route path="quiz/*" element={<Quiz />} />
               <Route path="more" element={<More />} />
+              <Route path="mock" element={<Mock />} />
+              <Route path="mock/run" element={<MockRun />} />
+              <Route path="result/:id" element={<Result />} />
               <Route path="*" element={<Placeholder />} />
             </Route>
             <Route path="*" element={<Navigate to="/" replace />} />

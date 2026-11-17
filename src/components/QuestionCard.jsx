@@ -24,7 +24,7 @@ export function QuestionTags({ q, exam }) {
  * props: q, exam, order (display→original index), chosen (original index | null),
  *        reveal (show answer), onChoose(originalIndex), num, total, flagged
  */
-export function QuestionCard({ q, exam, order, chosen = null, reveal = false, onChoose, num, total, flagged }) {
+export function QuestionCard({ q, exam, order, chosen = null, reveal = false, onChoose, num, total, flagged, hideTags = false }) {
   const ok = chosen === q.answer;
   return (
     <article className="card">
@@ -34,7 +34,7 @@ export function QuestionCard({ q, exam, order, chosen = null, reveal = false, on
           {flagged && <span style={{ color: 'var(--flag)', fontWeight: 700 }}>⚑ Flagged</span>}
         </div>
       )}
-      <QuestionTags q={q} exam={exam} />
+      {!hideTags && <QuestionTags q={q} exam={exam} />}
       <div className="qtext"><Rich text={q.q} /></div>
       <div className="opts">
         {order.map((orig, i) => {
