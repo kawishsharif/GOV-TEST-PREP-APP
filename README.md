@@ -1,5 +1,7 @@
 # Learn & Lead
 
+**Live app: https://learn-and-lead-liart.vercel.app**
+
 A mobile-first, installable web app for preparing for Pakistani government recruitment tests, built to help you reach the **top of the merit list, not just pass**.
 
 The first exam card is **WAPDA Assistant Executive Engineer (Electrical), BPS-17, Advertisement 125 (2026-27)**, conducted by CTS. More exams can be added as separate cards (see *Adding another exam* below).
