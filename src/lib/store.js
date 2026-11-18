@@ -100,8 +100,24 @@ const flushNow = () => {
   pending.clear();
 };
 const flushSoon = debounce(flushNow, 250);
-export function save(examId) { pending.add(examId); flushSoon(); notify(); }
-export function saveNow(examId) { pending.add(examId); flushNow(); notify(); }
+// Sync hook: the cloud sync module listens here to upload changes (see sync.js).
+export const savedListeners = new Set();
+const touched = (examId) => { const st = cache.get(examId); if (st) st.updatedAt = Date.now(); savedListeners.forEach((f) => f(examId)); };
+export function save(examId) { pending.add(examId); flushSoon(); notify(); touched(examId); }
+export function saveNow(examId) { pending.add(examId); flushNow(); notify(); touched(examId); }
+
+/** Ids of exams whose state is loaded in memory. */
+export const loadedExamIds = () => [...cache.keys()];
+export const getLoadedState = (examId) => cache.get(examId);
+
+/** Replace a loaded exam's state in place (keeps object identity for open screens), persist and re-render. */
+export function applyState(examId, next) {
+  const st = cache.get(examId);
+  if (!st) return;
+  for (const k of Object.keys(st)) if (!(k in next)) delete st[k];
+  Object.assign(st, next);
+  pending.add(examId); flushNow(); notify();
+}
 addEventListener('pagehide', flushNow);
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') flushNow(); });
 

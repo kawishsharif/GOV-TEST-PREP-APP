@@ -45,6 +45,7 @@ function ExamShell() {
         if (!live) return;
         if (global.lastExam !== exam.id) { global.lastExam = exam.id; saveGlobal(); }
         setState({ exam, error: null });
+        import('./lib/sync.js').then((m) => m.examOpened()).catch(() => {});
       })
       .catch((error) => live && setState({ exam: null, error }));
     return () => { live = false; };
@@ -67,6 +68,12 @@ const Router = import.meta.env.VITE_TARGET === 'artifact' ? MemoryRouter : HashR
 
 export default function App() {
   useStoreVersion();
+  useEffect(() => {
+    if (import.meta.env.VITE_TARGET !== 'artifact') {
+      const start = () => import('./lib/sync.js').then((m) => m.initSync()).catch(() => {});
+      'requestIdleCallback' in window ? requestIdleCallback(start) : setTimeout(start, 500);
+    }
+  }, []);
   useEffect(() => {
     applyTheme();
     const mq = matchMedia('(prefers-color-scheme: dark)');

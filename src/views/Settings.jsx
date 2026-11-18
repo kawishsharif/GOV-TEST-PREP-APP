@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Page, useExam, useToast, useConfirm, Chips } from '../components/ui.jsx';
 import { Icon } from '../components/Icon.jsx';
+import { AccountCard } from '../components/Account.jsx';
 import { dayKey, download, pickFile } from '../lib/util.js';
 import { global, saveGlobal, save, saveNow, defaultSettings, exportAll, importAll, resetExam } from '../lib/store.js';
 
@@ -54,6 +55,7 @@ export default function Settings() {
   return (
     <Page title="Settings" sub={exam.title} back={base + 'more'} base={base}>
       {dialog}
+      <AccountCard />
       <div key={rev}>
         <section className="card">
           <h2><Icon name="calendar" /> Test</h2>

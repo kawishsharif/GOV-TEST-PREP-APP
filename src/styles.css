@@ -367,3 +367,8 @@ table.simple td.num, table.simple th.num { text-align: right; font-variant-numer
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }
+/* account */
+.btn.google { background: #fff; color: #1f1f1f; border-color: #dadce0; }
+.btn.google:hover { background: #f8f9fa; }
+.avatar { width: 44px; height: 44px; border-radius: 50%; flex: none; display: grid; place-items: center; background: var(--surface-2); font-weight: 700; object-fit: cover; }
+.topbar .avatar { width: 32px; height: 32px; }

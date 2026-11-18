@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Page } from '../components/ui.jsx';
 import { Icon } from '../components/Icon.jsx';
+import { AccountCard } from '../components/Account.jsx';
 import { loadRegistry, loadExam } from '../lib/bank.js';
 import { examState } from '../lib/store.js';
 import { topicReport, readiness, daysLeft } from '../lib/stats.js';
@@ -25,6 +26,7 @@ export default function Home() {
         <h1>Learn &amp; Lead</h1>
         <p>Aim for the top of the merit list, not just a pass.</p>
       </section>
+      <AccountCard />
       <div className="sec-title">Your exams</div>
       {!cards && <p className="muted">Loading…</p>}
       {cards?.map(({ e, n, ready, left, broken }) => (

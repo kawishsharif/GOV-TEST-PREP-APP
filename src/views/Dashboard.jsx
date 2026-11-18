@@ -2,6 +2,9 @@
 import { Link } from 'react-router-dom';
 import { Page, Ring, Bar, useExam } from '../components/ui.jsx';
 import { Icon } from '../components/Icon.jsx';
+import { useState } from 'react';
+import { AccountCard, useSync } from '../components/Account.jsx';
+import { global, saveGlobal } from '../lib/store.js';
 import { dayKey, pct, fmtDay } from '../lib/util.js';
 import { topicReport, sectionReport, readiness, streak, weakest, daysLeft } from '../lib/stats.js';
 
@@ -19,6 +22,8 @@ export default function Dashboard() {
   const mistakes = Object.keys(st.mistakes).length;
   const lastMock = st.mocks[st.mocks.length - 1];
   const active = st.activeMock && !st.activeMock.submitted;
+  const sync = useSync();
+  const [hidePrompt, setHidePrompt] = useState(!!global.hideSignInPrompt);
   return (
     <Page title={exam.title} sub="Learn & Lead" back="/exams" base={base}
       right={<Link className="iconbtn" to={base + 'settings'} aria-label="Settings"><Icon name="settings" /></Link>}>
@@ -26,6 +31,9 @@ export default function Dashboard() {
         <Link className="card row" to={base + 'mock/run'} style={{ textDecoration: 'none', color: 'inherit', borderColor: 'var(--warn)' }}>
           <Icon name="mock" /><div style={{ flex: 1 }}><b>Mock test in progress</b><br /><small className="muted">Tap to resume — the timer keeps running.</small></div><Icon name="chev" className="chev" />
         </Link>
+      )}
+      {sync.status === 'signedOut' && !hidePrompt && (
+        <AccountCard compact onDismiss={() => { global.hideSignInPrompt = true; saveGlobal(); setHidePrompt(true); }} />
       )}
       <section className="card">
         <div className="row">
