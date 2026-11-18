@@ -60,7 +60,10 @@ export default function More() {
           <Button variant="ghost" onClick={reloadLatest}>Reload latest version</Button>
         </div>
       </Card>
-      <p className="px-2 text-center text-xs text-muted-foreground">Learn &amp; Lead is an independent study tool, not affiliated with WAPDA or CTS. Questions are practice items written in the style of past papers; none is claimed to be from a specific real paper unless it says so.</p>
+      <footer className="space-y-1 px-2 pt-2 text-center text-xs text-muted-foreground">
+        <p className="m-0">Learn &amp; Lead is an independent study tool, not affiliated with WAPDA or CTS. Questions are practice items written in the style of past papers; none is claimed to be from a specific real paper unless it says so.</p>
+        <p className="m-0">Designed &amp; developed by <span className="font-semibold text-foreground">Engr. M. Kawish Sharif</span></p>
+      </footer>
     </Page>
   );
 }

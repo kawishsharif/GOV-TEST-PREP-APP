@@ -1,7 +1,7 @@
 // Home: one card per exam pack. Add an exam by dropping a folder in public/exams and listing it in exams/index.json.
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Page, Hero, SectionTitle, LoadingCards } from '../components/ui.jsx';
+import { Page, BrandLogo, SectionTitle, LoadingCards } from '../components/ui.jsx';
 import { Icon } from '../components/Icon.jsx';
 import { AccountCard } from '../components/Account.jsx';
 import { Badge } from '@/components/ui/badge';
@@ -22,7 +22,13 @@ export default function Home() {
   }, []);
   return (
     <Page title="Learn & Lead" sub="Prepare. Practise. Lead the merit list." tabs={false}>
-      <Hero text="Aim for the top of the merit list, not just a pass." />
+      <section className="mb-4 flex flex-col items-center gap-4 rounded-2xl border bg-card p-5 text-center shadow-card sm:flex-row sm:text-left">
+        <BrandLogo className="w-full max-w-[15rem] shrink-0 p-3 shadow-none" />
+        <div className="min-w-0">
+          <h2 className="mb-1 text-xl font-bold tracking-tight text-balance">Prepare with purpose. Finish at the top.</h2>
+          <p className="m-0 text-sm text-muted-foreground">Choose an exam to continue your preparation.</p>
+        </div>
+      </section>
       <AccountCard />
       <SectionTitle>Your exams</SectionTitle>
       {!cards && <LoadingCards count={1} />}

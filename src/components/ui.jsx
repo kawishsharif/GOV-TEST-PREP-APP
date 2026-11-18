@@ -107,10 +107,19 @@ export const SectionTitle = ({ children, className }) => (
   <h2 className={cn('mx-1 mt-6 mb-2 text-xs font-bold tracking-wider text-muted-foreground uppercase', className)}>{children}</h2>
 );
 
-/** Brand banner (home + sign-in). */
+/** The Learn & Lead logo, always on its white panel (both themes). */
+export function BrandLogo({ className }) {
+  return (
+    <div className={cn('rounded-2xl border border-[#e3ebf1] bg-white p-4 shadow-card sm:p-5', className)}>
+      <img src="brand/logo.webp" alt="Learn & Lead" width="900" height="573" className="block h-auto w-full" decoding="async" />
+    </div>
+  );
+}
+
+/** Brand banner. */
 export function Hero({ title = 'Learn & Lead', text, center = false, children }) {
   return (
-    <section className={cn('relative mb-4 overflow-hidden rounded-2xl bg-gradient-to-br from-[#0b5675] via-[#0e7490] to-[#0e9488] p-5 text-white sm:p-6', center && 'text-center')}>
+    <section className={cn('relative mb-4 overflow-hidden rounded-2xl bg-gradient-to-br from-[#0c3a63] via-[#0e5f7f] to-[#0e8a86] p-5 text-white sm:p-6', center && 'text-center')}>
       <Icon name="wave" className="pointer-events-none absolute -right-5 -bottom-2.5 size-44 opacity-20" />
       {children}
       <h1 className="relative mb-1 text-2xl font-bold tracking-tight sm:text-3xl">{title}</h1>

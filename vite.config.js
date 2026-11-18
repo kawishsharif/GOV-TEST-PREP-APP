@@ -33,11 +33,11 @@ export default defineConfig({
         scope: './',
         display: 'standalone',
         background_color: '#f3f7fa',
-        theme_color: '#0b5675',
+        theme_color: '#0c3a63',
         icons: [{ src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any maskable' }],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,json,webmanifest}'],
+        globPatterns: ['**/*.{js,css,html,svg,json,webmanifest,woff2,webp}'],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
       },
     }),
