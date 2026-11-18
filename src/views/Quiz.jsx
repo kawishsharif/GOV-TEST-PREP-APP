@@ -5,7 +5,10 @@
 //   quiz/mistakes[/topic]   re-attempt the mistake notebook
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { Page, useExam, useToast, Empty, Bar } from '../components/ui.jsx';
+import { Page, useExam, useToast, Empty, Bar, ActionBar, Kbd, KeyHints, List, LoadingCards } from '../components/ui.jsx';
+import { Button } from '@/components/ui/button';
+import { Card, CardTitle } from '@/components/ui/card';
+import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table';
 import { QuestionCard } from '../components/QuestionCard.jsx';
 import { Icon } from '../components/Icon.jsx';
 import { questionById, activeTopics } from '../lib/bank.js';
@@ -42,7 +45,7 @@ function Starter({ mode, arg }) {
       nav(base + 'quiz/session', { replace: true });
     })();
   }, [mode, arg]); // eslint-disable-line react-hooks/exhaustive-deps
-  return <Page title="Practice" sub={exam.title} base={base}>{msg ? <Empty>{msg}</Empty> : <p className="muted">Preparing…</p>}</Page>;
+  return <Page title="Practice" sub={exam.title} base={base}>{msg ? <Empty>{msg}</Empty> : <LoadingCards count={1} />}</Page>;
 }
 
 export default function Quiz() {
@@ -119,16 +122,16 @@ function Session() {
 
   return (
     <Page title={s.label} sub="Practice · instant feedback" back={base + (s.mode === 'r' ? 'mistakes' : 'practice')} tabs={false} full>
-      <div className="row between" style={{ marginBottom: 8 }}>
-        <span className="muted" style={{ fontSize: '.85rem' }}>{nAns} answered · {nOk} correct</span>
-        <span className="hide-mobile muted" style={{ fontSize: '.8rem' }}><span className="kbd">1</span>–<span className="kbd">4</span> answer · <span className="kbd">N</span> next · <span className="kbd">P</span> previous</span>
+      <div className="mb-2 flex items-center justify-between gap-3">
+        <span className="text-sm text-muted-foreground">{nAns} answered · {nOk} correct</span>
+        <KeyHints className="m-0"><Kbd>1</Kbd>–<Kbd>4</Kbd> answer · <Kbd>N</Kbd> next · <Kbd>P</Kbd> previous</KeyHints>
       </div>
-      <div style={{ marginBottom: 14 }}><Bar value={pct(s.i, ids.length)} tone="" /></div>
+      <Bar className="mb-4" value={pct(s.i, ids.length)} tone="" />
       <QuestionCard key={q.id} q={q} exam={exam} order={order} chosen={answered ? chosen : null} reveal={answered} onChoose={answer} num={s.i + 1} total={ids.length} />
-      <div className="actionbar"><div className="inner">
-        <button className="btn sq" aria-label="Previous question" disabled={s.i === 0} onClick={prev}><Icon name="prev" /></button>
-        <button className={`btn ${answered ? 'primary' : ''}`} onClick={next}>{answered ? (s.i + 1 === ids.length ? 'Finish' : 'Next') : 'Skip'} <Icon name="next" /></button>
-      </div></div>
+      <ActionBar>
+        <Button size="icon" className="flex-none" aria-label="Previous question" disabled={s.i === 0} onClick={prev}><Icon name="prev" /></Button>
+        <Button variant={answered ? 'default' : 'outline'} onClick={next}>{answered ? (s.i + 1 === ids.length ? 'Finish' : 'Next') : 'Skip'} <Icon name="next" /></Button>
+      </ActionBar>
     </Page>
   );
 }
@@ -150,24 +153,24 @@ function Summary({ d, onAgain }) {
   };
   return (
     <Page title="Session complete" sub={d.label} back={base + 'practice'} base={base}>
-      <section className="card" style={{ textAlign: 'center' }}>
-        <div style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1 }}>{pct(right.length, answered.length)}%</div>
-        <p className="muted">{right.length} of {answered.length} correct · {d.qs.length - answered.length} skipped · {fmtDuration(time)} ({answered.length ? Math.round(time / answered.length / 1000) : 0}s per question)</p>
-      </section>
-      <section className="card"><h2>By topic</h2>
-        <table className="simple"><tbody>{Object.entries(byTopic).map(([t, v]) => (
-          <tr key={t}><td>{exam.topicIndex[t]?.name || t}</td><td className="num">{v.c}/{v.n}</td><td className="num"><b>{pct(v.c, v.n)}%</b></td></tr>
-        ))}</tbody></table>
-      </section>
+      <Card className="items-center text-center">
+        <div className="text-5xl leading-none font-extrabold tabular-nums">{pct(right.length, answered.length)}%</div>
+        <p className="m-0 text-muted-foreground">{right.length} of {answered.length} correct · {d.qs.length - answered.length} skipped · {fmtDuration(time)} ({answered.length ? Math.round(time / answered.length / 1000) : 0}s per question)</p>
+      </Card>
+      <Card><CardTitle>By topic</CardTitle>
+        <Table><TableBody>{Object.entries(byTopic).map(([t, v]) => (
+          <TableRow key={t}><TableCell>{exam.topicIndex[t]?.name || t}</TableCell><TableCell className="text-right tabular-nums">{v.c}/{v.n}</TableCell><TableCell className="text-right tabular-nums"><b>{pct(v.c, v.n)}%</b></TableCell></TableRow>
+        ))}</TableBody></Table>
+      </Card>
       {wrong.length > 0 && (
-        <section className="card"><h2>Missed ({wrong.length}) — saved to your mistake notebook</h2>
-          <ul className="list">{wrong.map((q) => <li key={q.id} style={{ padding: '10px 0' }}><b>{q.q}</b><br /><small className="muted">Answer: {q.options[q.answer]}</small></li>)}</ul>
-        </section>
+        <Card><CardTitle>Missed ({wrong.length}) — saved to your mistake notebook</CardTitle>
+          <List>{wrong.map((q) => <li key={q.id} className="py-2.5 break-words"><b>{q.q}</b><small className="block text-sm text-muted-foreground">Answer: {q.options[q.answer]}</small></li>)}</List>
+        </Card>
       )}
-      <div className="stack">
-        <button className="btn primary block" onClick={again}><Icon name="repeat" /> New session, same topics</button>
-        {wrong.length > 0 && <Link className="btn block" to={base + 'quiz/mistakes'}>Re-attempt mistakes</Link>}
-        <Link className="btn block" to={base + 'dashboard'}>Back to dashboard</Link>
+      <div className="space-y-3">
+        <Button variant="default" className="w-full" onClick={again}><Icon name="repeat" /> New session, same topics</Button>
+        {wrong.length > 0 && <Button asChild className="w-full"><Link to={base + 'quiz/mistakes'}>Re-attempt mistakes</Link></Button>}
+        <Button asChild className="w-full"><Link to={base + 'dashboard'}>Back to dashboard</Link></Button>
       </div>
     </Page>
   );

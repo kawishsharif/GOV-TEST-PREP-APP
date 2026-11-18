@@ -1,5 +1,8 @@
 // Exam-specific strategy guide (from the exam pack's strategy.json).
 import { Page, useExam, Rich, Empty } from '../components/ui.jsx';
+import { Card, CardTitle } from '@/components/ui/card';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { cn } from '@/lib/utils';
 
 export default function Strategy() {
   const { exam, base } = useExam();
@@ -7,18 +10,20 @@ export default function Strategy() {
   if (!s) return <Page title="Strategy" base={base} back={base + 'notes'}><Empty>No strategy guide in this exam pack.</Empty></Page>;
   return (
     <Page title={s.title} sub={exam.title} back={base + 'notes'} base={base}>
-      <section className="card"><p style={{ margin: 0 }}>{s.intro}</p></section>
+      <Card><p className="m-0">{s.intro}</p></Card>
       {s.sections.map((sec) => (
-        <section className="card notes" key={sec.heading}>
-          <h2>{sec.heading}</h2>
+        <Card className="notes" key={sec.heading}>
+          <CardTitle>{sec.heading}</CardTitle>
           {sec.table && (
-            <table className="simple" style={{ marginBottom: 10 }}>
-              <thead><tr>{sec.table[0].map((h, i) => <th key={h} className={i ? 'num' : ''}>{h}</th>)}</tr></thead>
-              <tbody>{sec.table.slice(1).map((r) => <tr key={r[0]}>{r.map((c, i) => <td key={i} className={i ? 'num' : ''}>{i === 2 ? <b>{c}</b> : c}</td>)}</tr>)}</tbody>
-            </table>
+            <Table>
+              <TableHeader><TableRow>{sec.table[0].map((h, i) => <TableHead key={h} className={cn(i && 'text-right')}>{h}</TableHead>)}</TableRow></TableHeader>
+              <TableBody>{sec.table.slice(1).map((r) => (
+                <TableRow key={r[0]}>{r.map((c, i) => <TableCell key={i} className={cn(i && 'text-right tabular-nums')}>{i === 2 ? <b>{c}</b> : c}</TableCell>)}</TableRow>
+              ))}</TableBody>
+            </Table>
           )}
-          <ul>{sec.items.map((it, i) => <li key={i}><Rich text={it} /></li>)}</ul>
-        </section>
+          <ul className="m-0">{sec.items.map((it, i) => <li key={i}><Rich text={it} /></li>)}</ul>
+        </Card>
       ))}
     </Page>
   );

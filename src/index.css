@@ -1,0 +1,158 @@
+/* Learn & Lead — Tailwind CSS v4 + shadcn/ui theme.
+   Brand: deep water blues and teals. All colours are semantic tokens; dark mode = `.dark` on <html>
+   (set from the theme setting / system preference in App.jsx and index.html). */
+@import "tailwindcss";
+@import "tw-animate-css";
+/* Bespoke widgets (question options, rings, palette, printable sheet…) sit in the components layer,
+   so Tailwind utilities always win over them. */
+@import "./styles.css" layer(components);
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --radius: 0.875rem;
+  --background: #f3f7fa;
+  --foreground: #0f2230;
+  --card: #ffffff;
+  --card-foreground: #0f2230;
+  --popover: #ffffff;
+  --popover-foreground: #0f2230;
+  --primary: #0b5675;
+  --primary-foreground: #ffffff;
+  --secondary: #eaf2f6;
+  --secondary-foreground: #0f2230;
+  --muted: #eaf2f6;
+  --muted-foreground: #5a7080;
+  --accent: #e2eef4;
+  --accent-foreground: #0f2230;
+  --destructive: #a8360b;
+  --destructive-soft: #fde7dc;
+  --border: #d6e3ea;
+  --input: #c9d9e2;
+  --ring: #0b5675;
+  /* brand extras */
+  --brand: #0f766e;
+  --brand-foreground: #ffffff;
+  --brand-soft: #d5f1ee;
+  --success: #166534;
+  --success-soft: #dcf5e4;
+  --warning: #a16207;
+  --warning-soft: #fdf3d4;
+  --flag: #7c3aed;
+  --ai: #5b21b6;
+  --ai-soft: #ede4ff;
+  --topbar: #0b5675;
+  --topbar-foreground: #ffffff;
+  --series-1: #1279a6;
+  --series-2: #d0581f;
+  --shadow: 0 1px 2px rgba(15, 34, 48, .06), 0 4px 14px rgba(15, 34, 48, .06);
+  --tap: 48px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Ubuntu, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+
+.dark {
+  --background: #08141c;
+  --foreground: #e4eef3;
+  --card: #0f1f2a;
+  --card-foreground: #e4eef3;
+  --popover: #0f1f2a;
+  --popover-foreground: #e4eef3;
+  --primary: #38a8d0;
+  --primary-foreground: #04121a;
+  --secondary: #152a37;
+  --secondary-foreground: #e4eef3;
+  --muted: #152a37;
+  --muted-foreground: #92a9b8;
+  --accent: #1a3343;
+  --accent-foreground: #e4eef3;
+  --destructive: #fb8b5c;
+  --destructive-soft: #3a1d12;
+  --border: #21394a;
+  --input: #2a4558;
+  --ring: #38a8d0;
+  --brand: #2dd4bf;
+  --brand-foreground: #04121a;
+  --brand-soft: #0f3a39;
+  --success: #4ade80;
+  --success-soft: #10331f;
+  --warning: #facc15;
+  --warning-soft: #332a0b;
+  --flag: #b197fc;
+  --ai: #c9b5ff;
+  --ai-soft: #2b1d4d;
+  --topbar: #0f2a38;
+  --topbar-foreground: #e4eef3;
+  --series-1: #2b93bd;
+  --series-2: #e0662c;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --font-sans: var(--font);
+  --font-mono: var(--mono);
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-lg: calc(var(--radius) - 2px);
+  --radius-xl: var(--radius);
+  --radius-2xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-soft: var(--destructive-soft);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-brand-soft: var(--brand-soft);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-flag: var(--flag);
+  --color-ai: var(--ai);
+  --color-ai-soft: var(--ai-soft);
+  --color-topbar: var(--topbar);
+  --color-topbar-foreground: var(--topbar-foreground);
+  --shadow-card: var(--shadow);
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-size: 17px;
+    line-height: 1.55;
+    overflow-x: hidden;
+  }
+  a { color: var(--primary); }
+  /* links inside running text stay underlined (not distinguishable by colour alone) */
+  :where(p, li, small, td) > a { text-decoration: underline; text-underline-offset: 2px; }
+  h1, h2, h3 { line-height: 1.25; margin: 0 0 .5rem; font-weight: 700; }
+  h1 { font-size: 1.45rem; }
+  h2 { font-size: 1.15rem; }
+  h3 { font-size: 1.02rem; }
+  p { margin: 0 0 .75rem; }
+  sup, sub { font-size: .7em; }
+  :focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}

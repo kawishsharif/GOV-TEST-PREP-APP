@@ -5,6 +5,9 @@ import { loadExam } from './lib/bank.js';
 import { global, saveGlobal } from './lib/store.js';
 import { ExamContext, ToastProvider, useStoreVersion } from './components/ui.jsx';
 import { AuthGate } from './components/AuthGate.jsx';
+import { Icon } from './components/Icon.jsx';
+import { Button } from '@/components/ui/button';
+import { Card, CardTitle, CardDescription } from '@/components/ui/card';
 
 const Home = lazy(() => import('./views/Home.jsx'));
 const Admin = lazy(() => import('./views/Admin.jsx'));
@@ -26,13 +29,18 @@ const Progress = lazy(() => import('./views/Progress.jsx'));
 const AI = lazy(() => import('./views/AI.jsx'));
 const ImportQ = lazy(() => import('./views/ImportQ.jsx'));
 
-const Loading = () => <main><p className="muted" style={{ textAlign: 'center', paddingTop: '30vh' }}>Loading…</p></main>;
+const Loading = () => (
+  <main className="mx-auto w-full max-w-3xl px-4 pt-[30vh]" aria-busy="true">
+    <p className="flex items-center justify-center gap-2 text-muted-foreground"><Icon name="loader" /> Loading…</p>
+  </main>
+);
 
 function applyTheme() {
   const t = global.theme;
   if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
   else delete document.documentElement.dataset.theme;
   const dark = t === 'dark' || (t !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+  document.documentElement.classList.toggle('dark', dark);
   document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#0f1f2a' : '#0b5675');
 }
 
@@ -52,7 +60,17 @@ function ExamShell() {
       .catch((error) => live && setState({ exam: null, error }));
     return () => { live = false; };
   }, [examId]);
-  if (state.error) return <main><div className="card"><h2>Could not load this exam pack</h2><p className="muted">{state.error.message}</p><a className="btn" href="#/">Back to exams</a></div></main>;
+  if (state.error) {
+    return (
+      <main className="mx-auto w-full max-w-3xl px-4 pt-8">
+        <Card className="border-destructive">
+          <CardTitle><Icon name="alert" className="text-destructive" /> Could not load this exam pack</CardTitle>
+          <CardDescription className="break-words">{state.error.message}</CardDescription>
+          <Button asChild className="self-start"><a href="#/">Back to exams</a></Button>
+        </Card>
+      </main>
+    );
+  }
   if (!state.exam) return <Loading />;
   return (
     <ExamContext.Provider value={{ exam: state.exam, base: `/x/${state.exam.id}/` }}>

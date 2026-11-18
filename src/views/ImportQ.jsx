@@ -2,6 +2,11 @@
 import { useState } from 'react';
 import { Page, useExam, useToast, useConfirm } from '../components/ui.jsx';
 import { Icon } from '../components/Icon.jsx';
+import { Button } from '@/components/ui/button';
+import { Card, CardDescription } from '@/components/ui/card';
+import { Textarea } from '@/components/ui/textarea';
+import { Field } from '@/components/ui/label';
+import { cn } from '@/lib/utils';
 import { validateQuestion } from '../lib/bank.js';
 import { save } from '../lib/store.js';
 import { download, pickFile } from '../lib/util.js';
@@ -52,31 +57,32 @@ export default function ImportQ() {
   return (
     <Page title="Import questions" sub={`${st.custom.length} imported so far`} back={base + 'more'} base={base}>
       {dialog}
-      <section className="card">
-        <p style={{ marginTop: 0 }}>Add your own questions (e.g. from notes or a teacher). Each needs exactly 4 options, one correct <code>answer</code> (0–3), an explanation, a <code>topic</code> id, <code>difficulty</code> (easy/medium/hard) and <code>type</code> (conceptual/numerical/factual/past-paper-style). Optional: <code>solution</code> steps, <code>why</code> (4 entries, null for the correct one), <code>sub</code>, <code>style</code>, <code>asOf</code>. Re-importing the same <code>id</code> updates it.</p>
-        <p className="muted" style={{ fontSize: '.85rem' }}>Topic ids: {exam.sections.flatMap((s) => s.topics.map((t) => t.id)).join(', ')}</p>
-        <div className="row wrap">
-          <button className="btn" onClick={() => download('learn-and-lead-sample-questions.json', JSON.stringify(SAMPLE, null, 2))}><Icon name="download" /> Sample file</button>
-          <button className="btn primary" onClick={async () => { const t = await pickFile(); if (t) run(t); }}><Icon name="upload" /> Choose JSON file</button>
+      <Card>
+        <p className="m-0 [&_code]:rounded [&_code]:bg-secondary [&_code]:px-1 [&_code]:font-mono [&_code]:text-sm">Add your own questions (e.g. from notes or a teacher). Each needs exactly 4 options, one correct <code>answer</code> (0–3), an explanation, a <code>topic</code> id, <code>difficulty</code> (easy/medium/hard) and <code>type</code> (conceptual/numerical/factual/past-paper-style). Optional: <code>solution</code> steps, <code>why</code> (4 entries, null for the correct one), <code>sub</code>, <code>style</code>, <code>asOf</code>. Re-importing the same <code>id</code> updates it.</p>
+        <CardDescription className="break-words">Topic ids: {exam.sections.flatMap((s) => s.topics.map((t) => t.id)).join(', ')}</CardDescription>
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <Button onClick={() => download('learn-and-lead-sample-questions.json', JSON.stringify(SAMPLE, null, 2))}><Icon name="download" /> Sample file</Button>
+          <Button variant="default" onClick={async () => { const t = await pickFile(); if (t) run(t); }}><Icon name="upload" /> Choose JSON file</Button>
         </div>
-      </section>
-      <section className="card">
-        <label className="field"><span>…or paste JSON here</span>
-          <textarea value={text} onChange={(e) => setText(e.target.value)} placeholder={JSON.stringify(SAMPLE.slice(0, 1), null, 2)} /></label>
-        <button className="btn block" disabled={!text.trim()} onClick={() => run(text)}>Validate &amp; import</button>
-      </section>
+      </Card>
+      <Card>
+        <Field label="…or paste JSON here" className="mb-0">
+          <Textarea value={text} onChange={(e) => setText(e.target.value)} placeholder={JSON.stringify(SAMPLE.slice(0, 1), null, 2)} />
+        </Field>
+        <Button className="w-full" disabled={!text.trim()} onClick={() => run(text)}>Validate &amp; import</Button>
+      </Card>
       {report && (
-        <section className="card" style={{ borderColor: report.error || report.bad?.length ? 'var(--warn)' : 'var(--good)' }}>
-          {report.error ? <p style={{ margin: 0 }}>{report.error}</p> : <>
+        <Card className={cn(report.error || report.bad?.length ? 'border-warning' : 'border-success')} role="status">
+          {report.error ? <p className="m-0 break-words">{report.error}</p> : <div>
             <b>{report.ok} imported</b>{report.bad.length > 0 && <>, {report.bad.length} skipped:</>}
-            {report.bad.length > 0 && <ul style={{ fontSize: '.85rem' }}>{report.bad.slice(0, 30).map((b) => <li key={b}>{b}</li>)}</ul>}
-          </>}
-        </section>
+            {report.bad.length > 0 && <ul className="mt-2 mb-0 text-sm break-words">{report.bad.slice(0, 30).map((b) => <li key={b}>{b}</li>)}</ul>}
+          </div>}
+        </Card>
       )}
       {st.custom.length > 0 && (
-        <button className="btn danger block" onClick={async () => {
+        <Button variant="destructive" className="w-full" onClick={async () => {
           if (await confirm({ title: 'Remove imported questions?', body: `All ${st.custom.length} imported questions will be removed. Built-in and AI questions stay.`, ok: 'Remove', danger: true })) { st.custom = []; save(exam.id); toast('Removed'); }
-        }}>Remove all imported questions</button>
+        }}>Remove all imported questions</Button>
       )}
     </Page>
   );

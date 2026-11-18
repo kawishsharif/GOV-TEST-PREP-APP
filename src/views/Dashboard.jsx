@@ -1,12 +1,24 @@
 // Dashboard: days left, readiness, today's target, streak, accuracy by section/topic, weakest topics.
 import { Link } from 'react-router-dom';
-import { Page, Ring, Bar, useExam } from '../components/ui.jsx';
+import { Page, Ring, Bar, useExam, TopbarButton, LinkCard, SectionTitle, Stat, List, ListRow } from '../components/ui.jsx';
 import { Icon } from '../components/Icon.jsx';
-
+import { Button } from '@/components/ui/button';
+import { Card, CardTitle } from '@/components/ui/card';
 import { dayKey, pct, fmtDay } from '../lib/util.js';
 import { topicReport, sectionReport, readiness, streak, weakest, daysLeft } from '../lib/stats.js';
 
-const Acc = ({ t }) => (t.acc == null ? <small className="muted">not started</small> : <span><b>{Math.round(t.acc * 100)}%</b> <small className="muted">· {t.n}</small></span>);
+const Acc = ({ t }) => (t.acc == null
+  ? <small className="text-sm text-muted-foreground">not started</small>
+  : <span className="whitespace-nowrap"><b className="tabular-nums">{Math.round(t.acc * 100)}%</b> <small className="text-muted-foreground">· {t.n}</small></span>);
+
+/** Name + accuracy, with a full-width bar underneath. */
+const MetricRow = ({ title, sub, t }) => (
+  <div className="grid grid-cols-[1fr_auto] items-center gap-x-3 gap-y-1 py-2">
+    <div className="min-w-0">{title}{sub}</div>
+    <Acc t={t} />
+    <Bar className="col-span-2 h-2" value={t.acc == null ? 0 : t.acc * 100} />
+  </div>
+);
 
 export default function Dashboard() {
   const { exam, st, base } = useExam();
@@ -23,72 +35,65 @@ export default function Dashboard() {
 
   return (
     <Page title={exam.title} sub="Learn & Lead" back="/exams" base={base}
-      right={<Link className="iconbtn" to={base + 'settings'} aria-label="Settings"><Icon name="settings" /></Link>}>
-      {active && (
-        <Link className="card row" to={base + 'mock/run'} style={{ textDecoration: 'none', color: 'inherit', borderColor: 'var(--warn)' }}>
-          <Icon name="mock" /><div style={{ flex: 1 }}><b>Mock test in progress</b><br /><small className="muted">Tap to resume — the timer keeps running.</small></div><Icon name="chev" className="chev" />
-        </Link>
-      )}
-      <section className="card">
-        <div className="row">
+      right={<TopbarButton to={base + 'settings'} label="Settings" icon="settings" />}>
+      {active && <LinkCard to={base + 'mock/run'} icon="mock" tone="warning" title="Mock test in progress" sub="Tap to resume — the timer keeps running." />}
+      <Card>
+        <div className="flex items-center gap-4">
           <Ring value={ready} label="ready" />
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <div className="muted" style={{ fontSize: '.85rem' }}>Test date · {fmtDay(st.settings.testDate, { day: 'numeric', month: 'short', year: 'numeric' })}</div>
-            <div style={{ fontSize: '2rem', fontWeight: 800, lineHeight: 1.1 }}>{Math.max(0, dl)}<span className="muted" style={{ fontSize: '1rem', fontWeight: 600 }}> days left</span></div>
-            <div className="row" style={{ marginTop: 6, gap: 6 }}><Icon name="fire" /><b>{streak(st)}</b><span className="muted">day streak</span></div>
+          <div className="min-w-0 flex-1 space-y-1">
+            <div className="text-sm text-muted-foreground">Test date · {fmtDay(st.settings.testDate, { day: 'numeric', month: 'short', year: 'numeric' })}</div>
+            <div className="text-3xl leading-tight font-extrabold tabular-nums">{Math.max(0, dl)}<span className="text-base font-semibold text-muted-foreground"> days left</span></div>
+            <div className="flex items-center gap-1.5"><Icon name="fire" className="text-warning" /><b>{streak(st)}</b><span className="text-muted-foreground">day streak</span></div>
           </div>
         </div>
-        <p className="muted" style={{ fontSize: '.8rem', margin: '10px 0 0' }}>Readiness = share of each topic's core questions you currently answer correctly, weighted by exam weight.</p>
-      </section>
+        <p className="m-0 text-xs text-muted-foreground">Readiness = share of each topic's core questions you currently answer correctly, weighted by exam weight.</p>
+      </Card>
 
-      <section className="card">
-        <div className="row between"><h2 style={{ margin: 0 }}>Today</h2><span className="muted">{today.n} / {target} questions</span></div>
-        <div style={{ margin: '10px 0 12px' }}><Bar value={pct(today.n, target)} tone="" /></div>
-        <div className="grid3">
-          <div className="stat"><b>{today.n ? pct(today.c, today.n) + '%' : '—'}</b><span>accuracy today</span></div>
-          <Link className="stat" to={base + 'mistakes'} style={{ color: 'inherit', textDecoration: 'none' }}><b>{mistakes}</b><span>in mistake book</span></Link>
-          <div className="stat"><b>{lastMock ? lastMock.pct + '%' : '—'}</b><span>last mock</span></div>
+      <Card>
+        <div className="flex items-center justify-between gap-4">
+          <CardTitle>Today</CardTitle>
+          <span className="text-sm text-muted-foreground tabular-nums">{today.n} / {target} questions</span>
         </div>
-        <div className="row" style={{ marginTop: 12 }}>
-          <Link className="btn primary block" to={base + 'practice'}><Icon name="practice" /> Practise</Link>
-          <Link className="btn block" to={base + 'mock'}><Icon name="mock" /> Mock test</Link>
+        <Bar value={pct(today.n, target)} tone="" />
+        <div className="grid grid-cols-3 gap-2.5">
+          <Stat value={today.n ? pct(today.c, today.n) + '%' : '—'} label="accuracy today" />
+          <Stat value={mistakes} label="in mistake book" to={base + 'mistakes'} />
+          <Stat value={lastMock ? lastMock.pct + '%' : '—'} label="last mock" />
         </div>
-      </section>
+        <div className="grid grid-cols-2 gap-3">
+          <Button asChild variant="default"><Link to={base + 'practice'}><Icon name="practice" /> Practise</Link></Button>
+          <Button asChild><Link to={base + 'mock'}><Icon name="mock" /> Mock test</Link></Button>
+        </div>
+      </Card>
 
-      <section className="card">
-        <h2><Icon name="target" /> Weakest topics</h2>
+      <Card>
+        <CardTitle><Icon name="target" /> Weakest topics</CardTitle>
         {weak.length ? (
-          <ul className="list">
+          <List>
             {weak.map((t) => (
-              <li key={t.id}><div className="list-link">
-                <div className="grow"><b>{t.name}</b><small className="muted">{t.n >= 5 ? `${Math.round(t.acc * 100)}% accuracy over ${t.n} attempts` : 'Not practised enough yet — high exam weight'}</small></div>
-                <Link className="btn sm accent" to={`${base}quiz/topic/${t.id}`}>Practise</Link>
-              </div></li>
+              <ListRow key={t.id} title={t.name}
+                sub={t.n >= 5 ? `${Math.round(t.acc * 100)}% accuracy over ${t.n} attempts` : 'Not practised enough yet — high exam weight'}
+                right={<Button asChild variant="brand" size="sm"><Link to={`${base}quiz/topic/${t.id}`}>Practise</Link></Button>} />
             ))}
-          </ul>
-        ) : <p className="empty">No questions loaded yet.</p>}
-      </section>
+          </List>
+        ) : <p className="m-0 py-6 text-center text-muted-foreground">No questions loaded yet.</p>}
+      </Card>
 
-      <div className="sec-title">Accuracy by section</div>
-      <section className="card">
+      <SectionTitle>Accuracy by section</SectionTitle>
+      <Card className="gap-0 divide-y py-2">
         {sections.map((s) => (
-          <div className="metric-row" key={s.id}>
-            <div><b>{s.name}</b> <small className="muted">· {s.weight}%</small></div><Acc t={s} />
-            <Bar value={s.acc == null ? 0 : s.acc * 100} />
-          </div>
+          <MetricRow key={s.id} t={s} title={<b>{s.name}</b>} sub={<small className="text-muted-foreground"> · {s.weight}%</small>} />
         ))}
-      </section>
+      </Card>
 
-      <div className="sec-title">Accuracy by topic</div>
-      <section className="card">
+      <SectionTitle>Accuracy by topic</SectionTitle>
+      <Card className="gap-0 divide-y py-2">
         {topics.map((t) => (
-          <div className="metric-row" key={t.id}>
-            <div><Link className="topic-link" to={`${base}quiz/topic/${t.id}`}><b>{t.name}</b></Link><br /><small className="muted">{t.seen}/{t.bank} seen · {t.mastered} mastered</small></div>
-            <Acc t={t} />
-            <Bar value={t.acc == null ? 0 : t.acc * 100} />
-          </div>
+          <MetricRow key={t.id} t={t}
+            title={<Link className="flex min-h-11 items-center font-bold text-inherit no-underline hover:underline" to={`${base}quiz/topic/${t.id}`}>{t.name}</Link>}
+            sub={<small className="block text-sm text-muted-foreground">{t.seen}/{t.bank} seen · {t.mastered} mastered</small>} />
         ))}
-      </section>
+      </Card>
     </Page>
   );
 }

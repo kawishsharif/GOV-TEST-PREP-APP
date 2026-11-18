@@ -1,11 +1,17 @@
 // Spaced-repetition flashcards: Again / Hard / Good / Easy.
 import { useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Page, useExam, Rich } from '../components/ui.jsx';
+import { Page, useExam, Rich, Stat } from '../components/ui.jsx';
 import { Icon } from '../components/Icon.jsx';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+import { Field } from '@/components/ui/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { studyQueue, schedule, intervalLabel } from '../lib/srs.js';
 import { activeTopics } from '../lib/bank.js';
 import { save } from '../lib/store.js';
+
+const ALL = '__all'; // Select items cannot use an empty value
 
 export default function Flashcards() {
   const { exam, st, base } = useExam();
@@ -28,38 +34,47 @@ export default function Flashcards() {
 
   return (
     <Page title="Flashcards" sub={`${q.learned}/${q.total} cards started`} back={base + 'more'} base={base}>
-      <label className="field" style={{ marginBottom: 12 }}><span>Topic</span>
-        <select id="flash-topic" value={topic} onChange={(e) => { setTopic(e.target.value); setFlipped(false); }}>
-          <option value="">All topics</option>
-          {topics.map((t) => <option key={t.id} value={t.id}>{t.name}</option>)}
-        </select>
-      </label>
-      <div className="grid3" style={{ marginBottom: 14 }}>
-        <div className="stat"><b>{q.due.length}</b><span>due reviews</span></div>
-        <div className="stat"><b>{q.fresh.length}</b><span>new today</span></div>
-        <div className="stat"><b>{done}</b><span>done this session</span></div>
+      <Field label="Topic">
+        <Select value={topic || ALL} onValueChange={(v) => { setTopic(v === ALL ? '' : v); setFlipped(false); }}>
+          <SelectTrigger id="flash-topic" aria-label="Topic"><SelectValue /></SelectTrigger>
+          <SelectContent>
+            <SelectItem value={ALL}>All topics</SelectItem>
+            {topics.map((t) => <SelectItem key={t.id} value={t.id}>{t.name}</SelectItem>)}
+          </SelectContent>
+        </Select>
+      </Field>
+      <div className="mb-4 grid grid-cols-3 gap-2.5">
+        <Stat value={q.due.length} label="due reviews" />
+        <Stat value={q.fresh.length} label="new today" />
+        <Stat value={done} label="done this session" />
       </div>
       {card ? (
-        <>
-          <button type="button" className="card flash" onClick={() => setFlipped(true)}>
-            <small className="muted">{card.kind} · {exam.topicIndex[card.topic]?.name}{!st.srs[card.id] && ' · new'}</small>
-            <div style={{ fontWeight: 700, marginTop: 8 }}><Rich text={card.front} /></div>
-            {flipped ? <div className="back"><Rich text={card.back} /></div> : <small className="muted" style={{ marginTop: 16 }}>Recall the answer, then tap to reveal</small>}
+        <div className="space-y-3">
+          <button type="button" onClick={() => setFlipped(true)}
+            className="flex min-h-60 w-full cursor-pointer flex-col justify-center rounded-xl border bg-card p-5 text-center text-lg shadow-card transition-colors hover:bg-accent/30">
+            <small className="text-sm text-muted-foreground">{card.kind} · {exam.topicIndex[card.topic]?.name}{!st.srs[card.id] && ' · new'}</small>
+            <div className="mt-2 font-bold break-words"><Rich text={card.front} /></div>
+            {flipped
+              ? <div className="mt-4 border-t border-dashed pt-4 font-semibold break-words whitespace-pre-wrap"><Rich text={card.back} /></div>
+              : <small className="mt-4 text-sm text-muted-foreground">Recall the answer, then tap to reveal</small>}
           </button>
           {flipped ? (
-            <div className="rate">
+            <div className="grid grid-cols-4 gap-2">
               {['Again', 'Hard', 'Good', 'Easy'].map((l, i) => (
-                <button key={l} className={`btn ${i === 2 ? 'primary' : ''}`} onClick={() => rate(i)}>{l}<small>{intervalLabel(st.srs[card.id], i)}</small></button>
+                <Button key={l} variant={i === 2 ? 'default' : 'outline'} className="min-h-14 flex-col gap-0 px-1 text-sm" onClick={() => rate(i)}>
+                  {l}<small className="text-xs font-medium opacity-85">{intervalLabel(st.srs[card.id], i)}</small>
+                </Button>
               ))}
             </div>
-          ) : <button className="btn primary block" onClick={() => setFlipped(true)}>Show answer</button>}
-        </>
+          ) : <Button variant="default" className="w-full" onClick={() => setFlipped(true)}>Show answer</Button>}
+        </div>
       ) : (
-        <section className="card empty">
-          <p><b>All caught up.</b></p>
-          <p>No cards are due{topic ? ' in this topic' : ''}. New cards are limited to 20 per day so reviews stay manageable.</p>
-          <Link className="btn" to={base + 'practice'}><Icon name="practice" /> Practise questions instead</Link>
-        </section>
+        <Card className="items-center text-center">
+          <Icon name="ok" className="size-8 text-success" />
+          <b>All caught up.</b>
+          <p className="m-0 text-muted-foreground">No cards are due{topic ? ' in this topic' : ''}. New cards are limited to 20 per day so reviews stay manageable.</p>
+          <Button asChild><Link to={base + 'practice'}><Icon name="practice" /> Practise questions instead</Link></Button>
+        </Card>
       )}
     </Page>
   );

@@ -1,8 +1,10 @@
 // Topic practice setup: section → topics → difficulty → type → count → order.
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { Page, useExam, Chips } from '../components/ui.jsx';
+import { useNavigate } from 'react-router-dom';
+import { Page, useExam, Chips, LinkCard, ActionBar } from '../components/ui.jsx';
 import { Icon } from '../components/Icon.jsx';
+import { Button } from '@/components/ui/button';
+import { Card, CardTitle } from '@/components/ui/card';
 import { activeSections, questionsForTopic, DIFF, TYPE } from '../lib/bank.js';
 import { pickQuestions, filterPool } from '../lib/quizcore.js';
 import { save } from '../lib/store.js';
@@ -40,37 +42,31 @@ export default function Practice() {
 
   return (
     <Page title="Topic practice" sub={exam.title} base={base} full>
-      {resume && (
-        <Link className="card row" to={base + 'quiz/session'} style={{ textDecoration: 'none', color: 'inherit' }}>
-          <Icon name="practice" />
-          <div style={{ flex: 1 }}><b>Resume: {ap.label}</b><br /><small className="muted">Question {ap.i + 1} of {ap.ids.length}</small></div>
-          <Icon name="chev" className="chev" />
-        </Link>
-      )}
-      <section className="card">
-        <h2>1 · Section</h2>
+      {resume && <LinkCard to={base + 'quiz/session'} icon="practice" title={`Resume: ${ap.label}`} sub={`Question ${ap.i + 1} of ${ap.ids.length}`} />}
+      <Card>
+        <CardTitle>1 · Section</CardTitle>
         <Chips value={sec.id} onChange={(v) => update({ section: v, topics: [] })} items={sections.map((s) => [s.id, s.name])} />
-      </section>
-      <section className="card">
-        <h2>2 · Topic</h2>
+      </Card>
+      <Card>
+        <CardTitle>2 · Topic</CardTitle>
         <Chips multi value={f.topics.length ? f.topics : ['*']}
           onChange={(v) => update({ topics: v === '*' ? [] : f.topics.includes(v) ? f.topics.filter((t) => t !== v) : [...f.topics, v] })}
           items={[['*', 'All topics'], ...sec.topics.map((t) => [t.id, t.name, questionsForTopic(exam, st, t.id).length])]} />
-      </section>
-      <section className="card">
-        <h2>3 · Difficulty &amp; type</h2>
-        <div style={{ marginBottom: 10 }}><Chips value={f.difficulty} onChange={(v) => update({ difficulty: v })} items={[['any', 'Any'], ...Object.entries(DIFF)]} /></div>
+      </Card>
+      <Card>
+        <CardTitle>3 · Difficulty &amp; type</CardTitle>
+        <Chips value={f.difficulty} onChange={(v) => update({ difficulty: v })} items={[['any', 'Any'], ...Object.entries(DIFF)]} />
         <Chips value={f.type} onChange={(v) => update({ type: v })} items={[['any', 'Any type'], ...Object.entries(TYPE)]} />
-      </section>
-      <section className="card">
-        <h2>4 · How many</h2>
-        <div style={{ marginBottom: 10 }}><Chips value={f.count} onChange={(v) => update({ count: v })} items={COUNTS.map((n) => [n, String(n)])} /></div>
+      </Card>
+      <Card>
+        <CardTitle>4 · How many</CardTitle>
+        <Chips value={f.count} onChange={(v) => update({ count: v })} items={COUNTS.map((n) => [n, String(n)])} />
         <Chips value={f.order} onChange={(v) => update({ order: v })} items={[['smart', 'New & weak first'], ['random', 'Random']]} />
-        <p className="muted" style={{ margin: '12px 0 0' }}>{pool.length} questions match · {unseen} not yet attempted</p>
-      </section>
-      <div className="actionbar" style={{ bottom: 'calc(60px + env(safe-area-inset-bottom))' }}><div className="inner">
-        <button className="btn primary" disabled={!pool.length} onClick={start}><Icon name="bolt" /> Start {Math.min(f.count, pool.length)} questions</button>
-      </div></div>
+        <p className="m-0 text-sm text-muted-foreground">{pool.length} questions match · {unseen} not yet attempted</p>
+      </Card>
+      <ActionBar aboveTabs>
+        <Button variant="default" disabled={!pool.length} onClick={start}><Icon name="bolt" /> Start {Math.min(f.count, pool.length)} questions</Button>
+      </ActionBar>
     </Page>
   );
 }

@@ -24,16 +24,16 @@ export function LineChart({ series, refLine, refLabel, height = 220 }) {
   const hv = hover && series.map((s) => ({ s, p: s.points.find((p) => p.d === hover) })).filter((z) => z.p);
 
   return (
-    <div className="chart" ref={wrap} onPointerMove={onMove} onPointerLeave={() => setHover(null)}>
+    <div className="chart relative min-w-0 touch-pan-y" ref={wrap} onPointerMove={onMove} onPointerLeave={() => setHover(null)}>
       <div className="legend-row">{series.map((s) => (
         <span key={s.name}><i style={{ background: s.color, ...(s.dashed ? { background: `repeating-linear-gradient(90deg, ${s.color} 0 5px, transparent 5px 8px)` } : {}) }} />{s.name}</span>
       ))}</div>
       <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={series.map((s) => `${s.name}: ${s.points.map((p) => `${p.d} ${p.v}%`).join(', ')}`).join('; ')}>
-        <g className="grid">{ticks.map((t) => <line key={t} x1={L} x2={W - R} y1={y(t)} y2={y(t)} />)}</g>
+        <g className="gridlines">{ticks.map((t) => <line key={t} x1={L} x2={W - R} y1={y(t)} y2={y(t)} />)}</g>
         {ticks.map((t) => <text key={t} x={L - 10} y={y(t) + 7} textAnchor="end">{t}%</text>)}
         {xt.map((d) => <text key={d} x={x(d)} y={H - 8} textAnchor="middle">{fmtDay(d)}</text>)}
         {refLine != null && <>
-          <line x1={L} x2={W - R} y1={y(refLine)} y2={y(refLine)} stroke="var(--muted)" strokeDasharray="4 4" strokeWidth="1" />
+          <line x1={L} x2={W - R} y1={y(refLine)} y2={y(refLine)} stroke="var(--muted-foreground)" strokeDasharray="4 4" strokeWidth="1" />
           <text x={W - R + 4} y={y(refLine) + 4} >{refLabel}</text>
         </>}
         {series.map((s) => {
@@ -43,12 +43,12 @@ export function LineChart({ series, refLine, refLabel, height = 220 }) {
           return (
             <g key={s.name}>
               <path d={path} fill="none" stroke={s.color} strokeWidth="3.5" strokeDasharray={s.dashed ? '10 7' : undefined} strokeLinejoin="round" strokeLinecap="round" />
-              {!s.dashed && pts.map((p) => <circle key={p.d} cx={x(p.d)} cy={y(p.v)} r="7" fill={s.color} stroke="var(--surface)" strokeWidth="3" />)}
-              {last && <text x={x(last.d) + 12} y={y(last.v) + 7} style={{ fill: 'var(--text)', fontWeight: 600 }}>{last.v}%</text>}
+              {!s.dashed && pts.map((p) => <circle key={p.d} cx={x(p.d)} cy={y(p.v)} r="7" fill={s.color} stroke="var(--card)" strokeWidth="3" />)}
+              {last && <text x={x(last.d) + 12} y={y(last.v) + 7} style={{ fill: 'var(--foreground)', fontWeight: 600 }}>{last.v}%</text>}
             </g>
           );
         })}
-        {hover && <line x1={x(hover)} x2={x(hover)} y1={T} y2={H - B} stroke="var(--muted)" strokeWidth="1" />}
+        {hover && <line x1={x(hover)} x2={x(hover)} y1={T} y2={H - B} stroke="var(--muted-foreground)" strokeWidth="1" />}
       </svg>
       {hover && hv.length > 0 && (
         <div className="tip" style={{ left: `${(x(hover) / W) * 100}%`, top: `${(Math.min(...hv.map((z) => y(z.p.v))) / H) * 100}%` }}>

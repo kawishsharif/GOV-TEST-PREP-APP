@@ -1,6 +1,8 @@
 // Progress history: mock scores and daily practice accuracy over time, plus a table view.
-import { Page, useExam, Empty } from '../components/ui.jsx';
+import { Page, useExam, Empty, Stat } from '../components/ui.jsx';
 import { LineChart } from '../components/LineChart.jsx';
+import { Card, CardTitle } from '@/components/ui/card';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { history } from '../lib/stats.js';
 import { fmtDay } from '../lib/util.js';
 
@@ -18,25 +20,32 @@ export default function Progress() {
     <Page title="Progress history" sub={exam.title} back={base + 'more'} base={base}>
       {series.length ? (
         <>
-          <section className="card">
-            <h2>Scores over time</h2>
+          <Card>
+            <CardTitle>Scores over time</CardTitle>
             <LineChart series={series} refLine={st.settings.passPercent} refLabel="pass" />
-          </section>
-          <div className="grid3" style={{ marginBottom: 14 }}>
-            <div className="stat"><b>{totalQs}</b><span>questions answered</span></div>
-            <div className="stat"><b>{h.practice.length}</b><span>study days</span></div>
-            <div className="stat"><b>{h.mocks.length ? Math.max(...h.mocks.map((m) => m.pct)) + '%' : '—'}</b><span>best mock</span></div>
+          </Card>
+          <div className="mb-4 grid grid-cols-3 gap-2.5">
+            <Stat value={totalQs} label="questions answered" />
+            <Stat value={h.practice.length} label="study days" />
+            <Stat value={h.mocks.length ? Math.max(...h.mocks.map((m) => m.pct)) + '%' : '—'} label="best mock" />
           </div>
-          <section className="card">
-            <h2>Table view</h2>
-            <table className="simple">
-              <thead><tr><th>Date</th><th className="num">Questions</th><th className="num">Practice</th><th className="num">Mock</th></tr></thead>
-              <tbody>{[...new Set([...h.practice.map((p) => p.d), ...Object.keys(mockByDay)])].sort().reverse().map((d) => {
+          <Card>
+            <CardTitle>Table view</CardTitle>
+            <Table>
+              <TableHeader><TableRow><TableHead>Date</TableHead><TableHead className="text-right">Questions</TableHead><TableHead className="text-right">Practice</TableHead><TableHead className="text-right">Mock</TableHead></TableRow></TableHeader>
+              <TableBody>{[...new Set([...h.practice.map((p) => p.d), ...Object.keys(mockByDay)])].sort().reverse().map((d) => {
                 const p = h.practice.find((x) => x.d === d);
-                return <tr key={d}><td>{fmtDay(d, { day: 'numeric', month: 'short' })}</td><td className="num">{p?.n ?? '—'}</td><td className="num">{p ? p.pct + '%' : '—'}</td><td className="num">{mockByDay[d] != null ? <b>{mockByDay[d]}%</b> : '—'}</td></tr>;
-              })}</tbody>
-            </table>
-          </section>
+                return (
+                  <TableRow key={d}>
+                    <TableCell className="whitespace-nowrap">{fmtDay(d, { day: 'numeric', month: 'short' })}</TableCell>
+                    <TableCell className="text-right tabular-nums">{p?.n ?? '—'}</TableCell>
+                    <TableCell className="text-right tabular-nums">{p ? p.pct + '%' : '—'}</TableCell>
+                    <TableCell className="text-right tabular-nums">{mockByDay[d] != null ? <b>{mockByDay[d]}%</b> : '—'}</TableCell>
+                  </TableRow>
+                );
+              })}</TableBody>
+            </Table>
+          </Card>
         </>
       ) : <Empty>No history yet. Practise or take a mock and your progress will appear here.</Empty>}
     </Page>

@@ -1,5 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
+import { fileURLToPath } from 'node:url';
 import { VitePWA } from 'vite-plugin-pwa';
 
 // base './' keeps every URL relative, so the build runs from any host or sub-path
@@ -12,12 +14,14 @@ const sha = (process.env.VERCEL_GIT_COMMIT_SHA || (() => { try { return execSync
 
 export default defineConfig({
   base: './',
+  resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) } },
   define: {
     __APP_VERSION__: JSON.stringify(sha),
     __BUILD_TIME__: JSON.stringify(new Date().toISOString()),
   },
   plugins: [
     react(),
+    tailwindcss(),
     !artifact && VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['icon.svg'],

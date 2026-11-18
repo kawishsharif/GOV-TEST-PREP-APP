@@ -1,8 +1,11 @@
 // Google account card: sign in / out and cloud-sync status.
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import { Link } from 'react-router-dom';
-import { useToast } from './ui.jsx';
+import { useToast, GoogleG } from './ui.jsx';
 import { Icon } from './Icon.jsx';
+import { Button } from '@/components/ui/button';
+import { Card, CardTitle, CardDescription } from '@/components/ui/card';
+import { Skeleton } from '@/components/ui/skeleton';
 
 let mod = null; // sync module, loaded lazily so Firebase never slows the first paint
 const load = () => (mod ? Promise.resolve(mod) : import('../lib/sync.js').then((m) => (mod = m)));
@@ -21,15 +24,6 @@ const ago = (t) => {
   return s < 60 ? 'just now' : s < 3600 ? `${Math.round(s / 60)} min ago` : new Date(t).toLocaleString();
 };
 
-const GoogleG = () => (
-  <svg viewBox="0 0 48 48" width="20" height="20" aria-hidden="true">
-    <path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.6 13.3l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z" />
-    <path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.7 6C44.1 38 46.5 31.8 46.5 24.5z" />
-    <path fill="#FBBC05" d="M10.5 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C.9 16.6 0 20.2 0 24s.9 7.4 2.6 10.7l7.9-6.1z" />
-    <path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.7-6c-2.2 1.5-4.9 2.3-8.2 2.3-6.3 0-11.6-4.1-13.5-9.9l-7.9 6.1C6.6 42.6 14.6 48 24 48z" />
-  </svg>
-);
-
 /** compact: one-line banner variant for the dashboard. */
 export function AccountCard({ compact = false, onDismiss }) {
   const s = useSync();
@@ -41,10 +35,12 @@ export function AccountCard({ compact = false, onDismiss }) {
   if (s.status === 'unavailable' || s.status === 'loading') {
     if (compact) return null;
     return (
-      <section className="card">
-        <h2>Account &amp; sync</h2>
-        <p className="muted" style={{ margin: 0 }}>{s.status === 'loading' ? 'Loading sign-in…' : (s.error || 'Sign-in is available on the installed web app.')}</p>
-      </section>
+      <Card>
+        <CardTitle>Account &amp; sync</CardTitle>
+        {s.status === 'loading'
+          ? <div className="flex items-center gap-3" aria-label="Loading sign-in"><Skeleton className="size-11 rounded-full" /><div className="flex-1 space-y-2"><Skeleton className="h-4 w-1/2" /><Skeleton className="h-3 w-1/3" /></div></div>
+          : <CardDescription>{s.error || 'Sign-in is available on the installed web app.'}</CardDescription>}
+      </Card>
     );
   }
   const doSignIn = async () => {
@@ -61,48 +57,55 @@ export function AccountCard({ compact = false, onDismiss }) {
 
   if (s.status === 'signedOut' && s.blocked) {
     return (
-      <section className="card account" style={{ borderColor: 'var(--bad)' }}>
-        {!compact && <h2>Account &amp; sync</h2>}
-        <p style={{ margin: 0 }}><b style={{ color: 'var(--bad)' }}>This account has been blocked by the administrator.</b> You were signed out and your progress is no longer synced. Your progress on this device is still available. Contact the administrator if you think this is a mistake.</p>
-      </section>
+      <Card className="border-destructive">
+        {!compact && <CardTitle>Account &amp; sync</CardTitle>}
+        <p className="m-0"><b className="text-destructive">This account has been blocked by the administrator.</b> You were signed out and your progress is no longer synced. Your progress on this device is still available. Contact the administrator if you think this is a mistake.</p>
+      </Card>
     );
   }
   if (s.status === 'signedOut') {
     return (
-      <section className="card account">
-        {!compact && <h2>Account &amp; sync</h2>}
-        <p style={{ marginTop: compact ? 0 : undefined }}>
+      <Card>
+        {!compact && <CardTitle>Account &amp; sync</CardTitle>}
+        <p className="m-0">
           {compact ? <b>Keep your progress safe. </b> : null}
           Sign in with Google to back up your progress and continue on any phone or laptop.
         </p>
-        <div className="row wrap">
-          <button className="btn google" disabled={busy} onClick={doSignIn}><GoogleG /> {busy ? 'Opening Google…' : 'Sign in with Google'}</button>
-          {compact && onDismiss && <button className="btn ghost sm" onClick={onDismiss}>Not now</button>}
+        <div className="flex flex-wrap gap-3">
+          <Button variant="google" disabled={busy} onClick={doSignIn}><GoogleG /> {busy ? 'Opening Google…' : 'Sign in with Google'}</Button>
+          {compact && onDismiss && <Button variant="ghost" size="sm" onClick={onDismiss}>Not now</Button>}
         </div>
-      </section>
+      </Card>
     );
   }
   const u = s.user;
   return (
-    <section className="card account">
-      {!compact && <h2>Account &amp; sync</h2>}
-      <div className="row">
-        {u.photo ? <img className="avatar" src={u.photo} alt="" referrerPolicy="no-referrer" /> : <span className="avatar">{(u.name || '?')[0]}</span>}
-        <div style={{ flex: 1, minWidth: 0 }}>
-          <b style={{ display: 'block', overflow: 'hidden', textOverflow: 'ellipsis' }}>{u.name}</b>
-          <small className="muted">{s.syncing ? 'Syncing…' : s.error ? s.error : s.lastSync ? `Progress synced ${ago(s.lastSync)}` : 'Signed in'}</small>
+    <Card>
+      {!compact && <CardTitle>Account &amp; sync</CardTitle>}
+      <div className="flex items-center gap-3">
+        <Avatar photo={u.photo} name={u.name} />
+        <div className="min-w-0 flex-1">
+          <b className="block truncate">{u.name}</b>
+          <small className={s.error ? 'block text-sm text-destructive' : 'block text-sm text-muted-foreground'}>{s.syncing ? 'Syncing…' : s.error ? s.error : s.lastSync ? `Progress synced ${ago(s.lastSync)}` : 'Signed in'}</small>
         </div>
       </div>
       {!compact && (
-        <div className="row wrap" style={{ marginTop: 12 }}>
-          <button className="btn" disabled={s.syncing} onClick={doSync}><Icon name="repeat" /> Sync now</button>
-          <button className="btn ghost" disabled={busy} onClick={doSignOut}>Sign out</button>
+        <div className="flex flex-wrap gap-3">
+          <Button disabled={s.syncing} onClick={doSync}><Icon name={s.syncing ? 'loader' : 'refresh'} /> Sync now</Button>
+          <Button variant="ghost" disabled={busy} onClick={doSignOut}><Icon name="logout" /> Sign out</Button>
         </div>
       )}
       {!compact && (u.email || '').toLowerCase() === 'engrkawish22@gmail.com' && (
-        <Link className="btn block" style={{ marginTop: 10 }} to="/admin"><Icon name="settings" /> User management (admin)</Link>
+        <Button asChild className="w-full"><Link to="/admin"><Icon name="users" /> User management (admin)</Link></Button>
       )}
-      {!compact && <p className="muted" style={{ fontSize: '.8rem', margin: '10px 0 0' }}>Synced: attempts, mistakes, flashcards, mocks, plan and settings. Your AI API keys stay on this device only. Signing out saves your progress to your account and removes it (and your AI keys) from this device.</p>}
-    </section>
+      {!compact && <p className="m-0 text-xs text-muted-foreground">Synced: attempts, mistakes, flashcards, mocks, plan and settings. Your AI API keys stay on this device only. Signing out saves your progress to your account and removes it (and your AI keys) from this device.</p>}
+    </Card>
   );
+}
+
+/** Round profile picture, or the first letter of the name. */
+export function Avatar({ photo, name, className = 'size-11' }) {
+  return photo
+    ? <img className={`${className} shrink-0 rounded-full object-cover`} src={photo} alt="" referrerPolicy="no-referrer" />
+    : <span className={`${className} grid shrink-0 place-items-center rounded-full bg-secondary font-bold`} aria-hidden="true">{(name || '?')[0].toUpperCase()}</span>;
 }

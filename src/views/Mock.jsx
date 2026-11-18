@@ -1,7 +1,10 @@
 // Mock test start screen: pattern, blueprint, history.
 import { Link, useNavigate } from 'react-router-dom';
-import { Page, useExam, useConfirm, Empty } from '../components/ui.jsx';
+import { Page, useExam, useConfirm, Empty, LinkCard, SectionTitle, Stat, List, ListRow, Kbd, KeyHints } from '../components/ui.jsx';
 import { Icon } from '../components/Icon.jsx';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { buildMock, mockBlueprint, rankBand } from '../lib/mock.js';
 import { save } from '../lib/store.js';
 import { fmtDay, fmtDuration } from '../lib/util.js';
@@ -28,48 +31,47 @@ export default function Mock() {
   return (
     <Page title="Full mock test" sub="CTS-style simulation" base={base}>
       {dialog}
-      {active && (
-        <Link className="card row" to={base + 'mock/run'} style={{ textDecoration: 'none', color: 'inherit', borderColor: 'var(--warn)' }}>
-          <Icon name="mock" /><div style={{ flex: 1 }}><b>Resume mock in progress</b><br /><small className="muted">The timer is still running.</small></div><Icon name="chev" className="chev" />
-        </Link>
-      )}
-      <section className="card">
-        <div className="grid3">
-          <div className="stat"><b>{s.totalQuestions}</b><span>questions</span></div>
-          <div className="stat"><b>{s.minutes}</b><span>minutes</span></div>
-          <div className="stat"><b>{s.negativeMarking ? `−${s.negativeValue}` : 'None'}</b><span>negative marking</span></div>
+      {active && <LinkCard to={base + 'mock/run'} icon="mock" tone="warning" title="Resume mock in progress" sub="The timer is still running." />}
+      <Card>
+        <div className="grid grid-cols-3 gap-2.5">
+          <Stat value={s.totalQuestions} label="questions" />
+          <Stat value={s.minutes} label="minutes" />
+          <Stat value={s.negativeMarking ? `−${s.negativeValue}` : 'None'} label="negative marking" />
         </div>
-        <p className="muted" style={{ fontSize: '.85rem', margin: '12px 0' }}>{exam.pattern.note} Change the pattern in <Link to={base + 'settings'}>Settings</Link>.</p>
-        <button className="btn primary block" onClick={start} disabled={active}><Icon name="bolt" /> {active ? 'A mock is already running' : 'Start mock test'}</button>
-        <p className="muted hide-mobile" style={{ fontSize: '.8rem', marginTop: 10 }}>Keyboard: <span className="kbd">1</span>–<span className="kbd">4</span> answer · <span className="kbd">F</span> flag · <span className="kbd">N</span>/<span className="kbd">P</span> next/previous</p>
-      </section>
+        <p className="m-0 text-sm text-muted-foreground">{exam.pattern.note} Change the pattern in <Link to={base + 'settings'}>Settings</Link>.</p>
+        <Button variant="default" className="w-full" onClick={start} disabled={active}><Icon name="bolt" /> {active ? 'A mock is already running' : 'Start mock test'}</Button>
+        <KeyHints className="m-0">Keyboard: <Kbd>1</Kbd>–<Kbd>4</Kbd> answer · <Kbd>F</Kbd> flag · <Kbd>N</Kbd>/<Kbd>P</Kbd> next/previous</KeyHints>
+      </Card>
 
-      <div className="sec-title">Paper blueprint</div>
-      <section className="card">
-        <table className="simple">
-          <thead><tr><th>Section</th><th className="num">Weight</th><th className="num">Qs</th></tr></thead>
-          <tbody>
+      <SectionTitle>Paper blueprint</SectionTitle>
+      <Card>
+        <Table>
+          <TableHeader><TableRow><TableHead>Section</TableHead><TableHead className="text-right">Weight</TableHead><TableHead className="text-right">Qs</TableHead></TableRow></TableHeader>
+          <TableBody>
             {bp.map((sec) => (
-              <tr key={sec.id}><td>{sec.name}<br /><small className="muted">{sec.topics.filter((t) => t.count).map((t) => `${t.name} ${t.count}`).join(' · ')}</small></td><td className="num">{sec.weight}%</td><td className="num"><b>{sec.count}</b></td></tr>
+              <TableRow key={sec.id}>
+                <TableCell className="min-w-0 whitespace-normal">{sec.name}<small className="block text-xs text-muted-foreground">{sec.topics.filter((t) => t.count).map((t) => `${t.name} ${t.count}`).join(' · ')}</small></TableCell>
+                <TableCell className="text-right tabular-nums">{sec.weight}%</TableCell>
+                <TableCell className="text-right tabular-nums"><b>{sec.count}</b></TableCell>
+              </TableRow>
             ))}
-          </tbody>
-        </table>
-      </section>
+          </TableBody>
+        </Table>
+      </Card>
 
-      <div className="sec-title">Past mocks</div>
+      <SectionTitle>Past mocks</SectionTitle>
       {st.mocks.length ? (
-        <section className="card"><ul className="list">
+        <Card className="py-2"><List>
           {[...st.mocks].reverse().map((m) => {
             const band = rankBand(m.pct, m.rules.passPercent);
             return (
-              <li key={m.id}><Link className="list-link" to={`${base}result/${m.id}`}>
-                <div className="stat" style={{ minWidth: 72, textAlign: 'center', padding: 8 }}><b style={{ fontSize: '1.2rem' }}>{m.pct}%</b></div>
-                <div className="grow"><b>{band.label}</b><small className="muted">{fmtDay(m.day, { day: 'numeric', month: 'short', year: 'numeric' })} · {m.correct}/{m.total} correct · {fmtDuration(m.timeUsed)}{m.auto ? ' · auto-submitted' : ''}</small></div>
-                <Icon name="chev" className="chev" />
-              </Link></li>
+              <ListRow key={m.id} to={`${base}result/${m.id}`}
+                icon={null}
+                title={<span className="flex items-center gap-3"><span className="w-16 shrink-0 rounded-lg bg-secondary py-1.5 text-center text-lg tabular-nums">{m.pct}%</span><span className="min-w-0">{band.label}</span></span>}
+                sub={<span className="block pl-19">{fmtDay(m.day, { day: 'numeric', month: 'short', year: 'numeric' })} · {m.correct}/{m.total} correct · {fmtDuration(m.timeUsed)}{m.auto ? ' · auto-submitted' : ''}</span>} />
             );
           })}
-        </ul></section>
+        </List></Card>
       ) : <Empty>No mock tests yet. Take your first one to get a baseline score.</Empty>}
     </Page>
   );

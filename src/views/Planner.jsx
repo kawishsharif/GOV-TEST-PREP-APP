@@ -3,11 +3,16 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Page, useExam, Empty, Bar, useToast } from '../components/ui.jsx';
 import { Icon } from '../components/Icon.jsx';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+import { Switch } from '@/components/ui/switch';
+import { cn } from '@/lib/utils';
 import { generatePlan } from '../lib/planner.js';
 import { save } from '../lib/store.js';
 import { dayKey, fmtDay, pct } from '../lib/util.js';
 
 const LINK = { practice: (t) => `quiz/topic/${t}`, notes: (t) => `notes/${t}`, mock: () => 'mock', mistakes: () => 'mistakes', cards: () => 'flashcards', formulas: () => 'formulas' };
+const TASK = "flex min-h-10 items-center gap-2 text-inherit no-underline before:text-muted-foreground before:content-['•']";
 
 export default function Planner() {
   const { exam, st, base } = useExam();
@@ -19,10 +24,10 @@ export default function Planner() {
   if (!st.plan) {
     return (
       <Page title="Study planner" sub={exam.title} back={base + 'more'} base={base}>
-        <section className="card">
-          <p>A day-by-day plan from today to your test date ({fmtDay(st.settings.testDate, { day: 'numeric', month: 'short', year: 'numeric' })}). Topics are weighted by exam weight and your weakness; a full mock every 7th day; the final week is revision and mocks.</p>
-          <button className="btn primary block" onClick={make}><Icon name="calendar" /> Generate my plan</button>
-        </section>
+        <Card>
+          <p className="m-0">A day-by-day plan from today to your test date ({fmtDay(st.settings.testDate, { day: 'numeric', month: 'short', year: 'numeric' })}). Topics are weighted by exam weight and your weakness; a full mock every 7th day; the final week is revision and mocks.</p>
+          <Button variant="default" className="w-full" onClick={make}><Icon name="calendar" /> Generate my plan</Button>
+        </Card>
       </Page>
     );
   }
@@ -31,31 +36,38 @@ export default function Planner() {
   const visible = days.filter((d) => showPast || d.d >= today);
   return (
     <Page title="Study planner" sub={`${doneCount}/${days.length} days done`} back={base + 'more'} base={base}>
-      <section className="card">
+      <Card>
         <Bar value={pct(doneCount, days.length)} tone="" />
-        <div className="row" style={{ marginTop: 12 }}>
-          <button className="btn block" onClick={make}><Icon name="repeat" /> Regenerate{stale ? ' (test date changed)' : ''}</button>
-          <button className="btn block ghost" onClick={() => setShowPast((v) => !v)}>{showPast ? 'Hide past days' : 'Show past days'}</button>
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <Button onClick={make}><Icon name="repeat" /> Regenerate{stale ? ' (test date changed)' : ''}</Button>
+          <Button variant="ghost" onClick={() => setShowPast((v) => !v)}>{showPast ? 'Hide past days' : 'Show past days'}</Button>
         </div>
-        <p className="muted" style={{ fontSize: '.8rem', margin: '10px 0 0' }}>Regenerate weekly: the plan re-weights towards topics where your accuracy is lowest. Ticked days are kept.</p>
-      </section>
+        <p className="m-0 text-xs text-muted-foreground">Regenerate weekly: the plan re-weights towards topics where your accuracy is lowest. Ticked days are kept.</p>
+      </Card>
       {!visible.length && <Empty>No days left in the plan. Update your test date in Settings and regenerate.</Empty>}
-      <section className="card" style={{ paddingTop: 4, paddingBottom: 4 }}>
-        {visible.map((day) => {
-          const isToday = day.d === today;
-          return (
-            <div key={day.d} className={`day ${isToday ? 'today' : ''} ${done[day.d] ? 'done' : ''}`}>
-              <div className="date"><b>{fmtDay(day.d, { day: 'numeric' })}</b>{fmtDay(day.d, { month: 'short' })}</div>
-              <div className="tasks">
-                {day.tasks.map((t, i) => <div key={i}>{LINK[t.k] ? <Link to={base + LINK[t.k](t.topic)} style={{ color: 'inherit' }}>{t.text}</Link> : <span className="task">{t.text}</span>}</div>)}
+      {visible.length > 0 && (
+        <Card className="gap-0 divide-y py-1">
+          {visible.map((day) => {
+            const isToday = day.d === today, isDone = !!done[day.d];
+            return (
+              <div key={day.d} className="flex items-start gap-3 py-3">
+                <div className={cn('w-14 shrink-0 rounded-lg py-1.5 text-center text-xs', isToday ? 'bg-primary text-primary-foreground' : 'bg-secondary text-muted-foreground')}>
+                  <b className={cn('block text-xl leading-tight', !isToday && 'text-foreground')}>{fmtDay(day.d, { day: 'numeric' })}</b>{fmtDay(day.d, { month: 'short' })}
+                </div>
+                <div className={cn('min-w-0 flex-1 text-sm', isDone && 'line-through opacity-55')}>
+                  {day.tasks.map((t, i) => (
+                    <div key={i}>{LINK[t.k] ? <Link to={base + LINK[t.k](t.topic)} className={cn(TASK, 'hover:underline')}>{t.text}</Link> : <span className={TASK}>{t.text}</span>}</div>
+                  ))}
+                </div>
+                <div className="grid min-h-12 min-w-12 place-items-center">
+                  <Switch checked={isDone} aria-label={`Mark ${fmtDay(day.d, { day: 'numeric', month: 'long' })} done`}
+                    onCheckedChange={(v) => { done[day.d] = v; save(exam.id); }} />
+                </div>
               </div>
-              <label className="switch toggle" aria-label={`Mark ${fmtDay(day.d, { day: 'numeric', month: 'long' })} done`}>
-                <input type="checkbox" checked={!!done[day.d]} onChange={(e) => { done[day.d] = e.target.checked; save(exam.id); }} />
-              </label>
-            </div>
-          );
-        })}
-      </section>
+            );
+          })}
+        </Card>
+      )}
     </Page>
   );
 }

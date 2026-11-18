@@ -71,9 +71,16 @@ You can also add questions without touching code: **More → Import questions (J
 
 ```
 src/            React app (views, components, lib: store, bank, stats, mock, srs, planner, generators, ai)
+  components/ui/  shadcn/ui primitives (button, card, dialog, select, switch, table, …)
+  index.css       Tailwind CSS v4 + theme tokens (light/dark)
+  styles.css      bespoke widgets (answer options, notes, mock palette, chart, print sheet)
 public/exams/   exam packs (config, notes, strategy, compiled questions)
 content/        question source files
 tools/          build-bank.mjs (compile + validate)
 ```
+
+**UI stack:** Tailwind CSS v4 (`@tailwindcss/vite`), shadcn/ui components (JSX, Radix primitives; config in `components.json`),
+lucide-react icons and sonner toasts. Colours are semantic tokens (`bg-card`, `text-muted-foreground`, `bg-brand`, …) defined
+once in `src/index.css`; dark mode is the `.dark` class on `<html>`. Add more components with `npx shadcn@latest add <name>`.
 
 *Independent study tool, not affiliated with WAPDA or CTS. Confirm the official test pattern from your call letter.*

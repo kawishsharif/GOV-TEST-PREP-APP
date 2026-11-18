@@ -2,9 +2,14 @@
 // The database rules allow only the admin's verified account to read profiles or change a status.
 import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Page, useToast, useConfirm, Empty, Chips } from '../components/ui.jsx';
-import { useSync } from '../components/Account.jsx';
+import { Page, useToast, useConfirm, Empty, Chips, Stat, List, LoadingCards } from '../components/ui.jsx';
+import { useSync, Avatar } from '../components/Account.jsx';
 import { Icon } from '../components/Icon.jsx';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Card } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Field } from '@/components/ui/label';
 
 const fmt = (t) => (t ? new Date(t).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' }) : '—');
 const ago = (t) => {
@@ -65,60 +70,63 @@ export default function Admin() {
   };
 
   let body;
-  if (!mod || s.status === 'loading') body = <p className="muted">Loading…</p>;
+  if (!mod || s.status === 'loading') body = <LoadingCards count={2} />;
   else if (s.status !== 'signedIn') body = <Empty>Sign in with the administrator's Google account to manage users. <Link to="/exams">Go to sign-in</Link></Empty>;
   else if (!admin) body = <Empty>This page is only for the administrator.</Empty>;
   else body = (
     <>
-      <div className="grid3" style={{ marginBottom: 14 }}>
-        <div className="stat"><b>{counts.all}</b><span>users</span></div>
-        <div className="stat"><b style={{ color: 'var(--good)' }}>{counts.active}</b><span>active</span></div>
-        <div className="stat"><b style={{ color: 'var(--bad)' }}>{counts.blocked}</b><span>blocked</span></div>
+      <div className="mb-4 grid grid-cols-3 gap-2.5">
+        <Stat value={counts.all} label="users" />
+        <Stat value={counts.active} tone="success" label="active" />
+        <Stat value={counts.blocked} tone="destructive" label="blocked" />
       </div>
-      <section className="card">
-        <label className="field" style={{ marginBottom: 10 }}><span>Search by name or email</span>
-          <input id="admin-search" type="text" value={q} onChange={(e) => setQ(e.target.value)} placeholder="e.g. ali or @gmail.com" />
-        </label>
-        <div className="row between wrap">
+      <Card>
+        <Field label="Search by name or email" className="mb-0">
+          <div className="relative">
+            <Icon name="search" className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted-foreground" />
+            <Input id="admin-search" type="search" className="pl-9" value={q} onChange={(e) => setQ(e.target.value)} placeholder="e.g. ali or @gmail.com" />
+          </div>
+        </Field>
+        <div className="flex flex-wrap items-center justify-between gap-3">
           <Chips value={filter} onChange={setFilter} items={[['all', 'All', counts.all], ['active', 'Active', counts.active], ['blocked', 'Blocked', counts.blocked]]} />
-          <button className="btn sm ghost" onClick={load}><Icon name="repeat" /> Refresh</button>
+          <Button size="sm" variant="ghost" onClick={load}><Icon name="refresh" /> Refresh</Button>
         </div>
-      </section>
-      {error && <section className="card" style={{ borderColor: 'var(--bad)' }}><p style={{ margin: 0 }}>{error}</p></section>}
+      </Card>
+      {error && <Card className="border-destructive" role="alert"><p className="m-0 flex items-center gap-2"><Icon name="alert" className="text-destructive" />{error}</p></Card>}
       {users && !shown.length && <Empty>No users match.</Empty>}
-      {!users && !error && <p className="muted">Loading users…</p>}
+      {!users && !error && <LoadingCards count={1} />}
       {shown.length > 0 && (
-        <section className="card" style={{ paddingTop: 4, paddingBottom: 4 }}>
-          <ul className="list">
+        <Card className="py-1">
+          <List>
             {shown.map((u) => {
               const blocked = u.status === 'blocked';
               const self = u.id === s.user.uid;
               return (
-                <li key={u.id} className="user-row">
-                  {u.photo ? <img className="avatar" src={u.photo} alt="" referrerPolicy="no-referrer" /> : <span className="avatar">{(u.name || u.email || '?')[0].toUpperCase()}</span>}
-                  <div className="grow">
-                    <div className="row wrap" style={{ gap: 6 }}>
-                      <b>{u.name || '(no name)'}</b>
-                      <span className={`tag ${blocked ? 'blocked' : 'active'}`}>{blocked ? 'Blocked' : 'Active'}</span>
-                      {self && <span className="tag">You (admin)</span>}
+                <li key={u.id} className="user-row flex items-center gap-3 py-3">
+                  <Avatar photo={u.photo} name={u.name || u.email} />
+                  <div className="min-w-0 flex-1">
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      <b className="min-w-0 break-words">{u.name || '(no name)'}</b>
+                      <Badge variant={blocked ? 'destructive' : 'success'}>{blocked ? 'Blocked' : 'Active'}</Badge>
+                      {self && <Badge>You (admin)</Badge>}
                     </div>
-                    <small className="muted" style={{ display: 'block', wordBreak: 'break-all' }}>{u.email}</small>
-                    <small className="muted" style={{ display: 'block' }}>
+                    <small className="block text-sm break-all text-muted-foreground">{u.email}</small>
+                    <small className="block text-xs text-muted-foreground">
                       Joined {fmt(u.createdAt)} · Active {ago(u.lastSeen)}{u.answered != null ? ` · ${u.answered} questions` : ''}{u.mocks ? ` · ${u.mocks} mocks` : ''}
                     </small>
                   </div>
                   {!self && (
-                    <button className={`btn sm ${blocked ? 'primary' : 'danger'}`} disabled={busy === u.id} onClick={() => change(u, blocked ? 'active' : 'blocked')}>
-                      {busy === u.id ? '…' : blocked ? 'Activate' : 'Block'}
-                    </button>
+                    <Button size="sm" variant={blocked ? 'default' : 'destructive'} disabled={busy === u.id} onClick={() => change(u, blocked ? 'active' : 'blocked')}>
+                      {busy === u.id ? <Icon name="loader" /> : blocked ? 'Activate' : 'Block'}
+                    </Button>
                   )}
                 </li>
               );
             })}
-          </ul>
-        </section>
+          </List>
+        </Card>
       )}
-      <p className="muted" style={{ fontSize: '.8rem' }}>Users appear here after they sign in with Google. A blocked user is signed out at their next sync and cannot sign in or sync again until activated.</p>
+      <p className="px-1 text-xs text-muted-foreground">Users appear here after they sign in with Google. A blocked user is signed out at their next sync and cannot sign in or sync again until activated.</p>
     </>
   );
 

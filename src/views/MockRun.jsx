@@ -1,7 +1,9 @@
 // Live mock test: countdown, palette, flag-for-review, auto-submit, keyboard shortcuts.
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
-import { Sheet, useExam, useConfirm } from '../components/ui.jsx';
+import { Sheet, useExam, useConfirm, ActionBar, Kbd, KeyHints, TopbarButton } from '../components/ui.jsx';
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 import { QuestionCard } from '../components/QuestionCard.jsx';
 import { Icon } from '../components/Icon.jsx';
 import { questionById } from '../lib/bank.js';
@@ -22,7 +24,7 @@ function Timer({ deadline, onExpire }) {
     return () => clearInterval(t);
   }, [deadline, onExpire]);
   const left = Math.max(0, deadline - now);
-  return <span className={`timer ${left < 5 * 60000 ? 'low' : ''}`} role="timer" aria-label="Time left">{fmtDuration(left)}</span>;
+  return <span className={cn('shrink-0 rounded-lg px-2.5 py-1 font-mono text-base font-bold tabular-nums', left < 5 * 60000 ? 'bg-[#c2410c] text-white' : 'bg-white/15')} role="timer" aria-label="Time left">{fmtDuration(left)}</span>;
 }
 
 export default function MockRun() {
@@ -85,7 +87,7 @@ export default function MockRun() {
   useEffect(() => {
     if (!m) return;
     const onKey = (e) => {
-      if (e.target.matches?.('input, textarea, select') || e.metaKey || e.ctrlKey || e.altKey || document.querySelector('.scrim')) return;
+      if (e.target.matches?.('input, textarea, select') || e.metaKey || e.ctrlKey || e.altKey || document.querySelector('[role="dialog"]')) return;
       const k = e.key.toLowerCase();
       if (['1', '2', '3', '4'].includes(k)) choose(order[Number(k) - 1]);
       else if (k === 'f') toggleFlag();
@@ -109,43 +111,49 @@ export default function MockRun() {
 
   return (
     <>
-      <header className="topbar">
-        <button className="iconbtn" onClick={() => setPalette(true)} aria-label="Question palette"><Icon name="grid" /></button>
-        <div className="title"><h1>Mock test</h1><span>{answered}/{m.qids.length} answered</span></div>
-        <Timer deadline={m.deadline} onExpire={expire} />
-        <button className="btn sm" style={{ marginLeft: 8, background: 'transparent', color: 'inherit', borderColor: 'rgba(255,255,255,.5)' }} onClick={askSubmit}>Submit</button>
+      <header className="topbar sticky top-0 z-20 bg-topbar text-topbar-foreground pt-[env(safe-area-inset-top)]">
+        <div className="mx-auto flex min-h-16 max-w-3xl items-center gap-2 px-2 sm:px-4">
+          <TopbarButton icon="grid" label="Question palette" onClick={() => setPalette(true)} />
+          <div className="min-w-0 flex-1">
+            <h1 className="m-0 truncate text-base font-bold tracking-tight">Mock test</h1>
+            <span className="block truncate text-xs opacity-85">{answered}/{m.qids.length} answered</span>
+          </div>
+          <Timer deadline={m.deadline} onExpire={expire} />
+          <Button size="sm" variant="ghost" className="ml-1 border border-white/50 text-topbar-foreground hover:bg-white/10 hover:text-topbar-foreground" onClick={askSubmit}>Submit</Button>
+        </div>
       </header>
-      <main className="full">
+      <main className="mx-auto w-full max-w-3xl px-4 pt-4 pb-[calc(140px+env(safe-area-inset-bottom))]">
         {dialog}
         <QuestionCard key={q.id} q={q} exam={exam} order={order} chosen={chosen} onChoose={choose} num={m.i + 1} total={m.qids.length} flagged={flagged} hideTags />
-        <p className="muted hide-mobile" style={{ fontSize: '.8rem', textAlign: 'center' }}><span className="kbd">1</span>–<span className="kbd">4</span> answer · <span className="kbd">F</span> flag · <span className="kbd">N</span>/<span className="kbd">P</span> next/previous · tap a chosen option again to clear it</p>
+        <KeyHints className="text-center"><Kbd>1</Kbd>–<Kbd>4</Kbd> answer · <Kbd>F</Kbd> flag · <Kbd>N</Kbd>/<Kbd>P</Kbd> next/previous · tap a chosen option again to clear it</KeyHints>
       </main>
-      <div className="actionbar"><div className="inner">
-        <button className="btn sq" aria-label="Previous question" disabled={m.i === 0} onClick={() => goTo(m.i - 1)}><Icon name="prev" /></button>
-        <button className="btn sq" aria-label={flagged ? 'Remove flag' : 'Flag for review'} aria-pressed={flagged} onClick={toggleFlag}
-          style={flagged ? { background: 'var(--flag)', borderColor: 'var(--flag)', color: '#fff' } : undefined}><Icon name="flag" /></button>
-        <button className="btn sq" aria-label="Question palette" onClick={() => setPalette(true)}><Icon name="grid" /></button>
+      <ActionBar>
+        <Button size="icon" className="flex-none" aria-label="Previous question" disabled={m.i === 0} onClick={() => goTo(m.i - 1)}><Icon name="prev" /></Button>
+        <Button size="icon" className={cn('flex-none', flagged && 'border-flag bg-flag text-white hover:bg-flag/90 hover:text-white')}
+          aria-label={flagged ? 'Remove flag' : 'Flag for review'} aria-pressed={flagged} onClick={toggleFlag}><Icon name="flag" /></Button>
+        <Button size="icon" className="flex-none" aria-label="Question palette" onClick={() => setPalette(true)}><Icon name="grid" /></Button>
         {m.i + 1 < m.qids.length
-          ? <button className="btn primary" onClick={() => goTo(m.i + 1)}>Next <Icon name="next" /></button>
-          : <button className="btn accent" onClick={askSubmit}>Review &amp; submit</button>}
-      </div></div>
+          ? <Button variant="default" onClick={() => goTo(m.i + 1)}>Next <Icon name="next" /></Button>
+          : <Button variant="brand" onClick={askSubmit}>Review &amp; submit</Button>}
+      </ActionBar>
 
       <Sheet open={palette} onClose={() => setPalette(false)} label="Question palette">
-        <div className="row between" style={{ marginBottom: 10 }}><h2 style={{ margin: 0 }}>Questions</h2>
-          <button className="iconbtn" aria-label="Close" onClick={() => setPalette(false)}><Icon name="x" /></button></div>
-        <div className="legend" style={{ marginBottom: 12 }}>
+        <h2 className="m-0 pr-10 text-lg font-semibold tracking-tight">Questions</h2>
+        <div className="legend">
           <span><i className="a" />Answered ({answered})</span><span><i />Unanswered ({m.qids.length - answered})</span>
           <span><i className="f" />Flagged ({m.qids.filter((id) => m.flags[id]).length})</span>
         </div>
         <div className="palette">
           {m.qids.map((id, i) => (
-            <button key={id} className={`${m.answers[id] != null ? 'ans' : ''} ${m.flags[id] ? 'flag' : ''} ${i === m.i ? 'cur' : ''}`}
+            <button key={id} type="button" className={cn(m.answers[id] != null && 'ans', m.flags[id] && 'flag', i === m.i && 'cur')}
               aria-label={`Question ${i + 1}${m.answers[id] != null ? ', answered' : ''}${m.flags[id] ? ', flagged' : ''}`}
               onClick={() => { goTo(i); setPalette(false); }}>{i + 1}</button>
           ))}
         </div>
-        <button className="btn danger block" style={{ marginTop: 16 }} onClick={askSubmit}>Submit test</button>
-        <button className="btn ghost block" style={{ marginTop: 8 }} onClick={() => { bank(); saveNow(exam.id); nav(base + 'dashboard'); }}>Leave for now (timer keeps running)</button>
+        <div className="space-y-2">
+          <Button variant="destructive" className="w-full" onClick={askSubmit}>Submit test</Button>
+          <Button variant="ghost" className="w-full" onClick={() => { bank(); saveNow(exam.id); nav(base + 'dashboard'); }}>Leave for now (timer keeps running)</Button>
+        </div>
       </Sheet>
     </>
   );
