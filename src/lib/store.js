@@ -121,6 +121,17 @@ export function applyState(examId, next) {
 addEventListener('pagehide', flushNow);
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') flushNow(); });
 
+/** Remove every exam's progress (and saved AI keys) from this device. Used after signing out. */
+export function clearDeviceData() {
+  pending.clear();
+  for (const id of [...cache.keys()]) cache.delete(id);
+  const keys = [];
+  for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k && k.startsWith(PREFIX + 'exam:')) keys.push(k); }
+  keys.forEach((k) => localStorage.removeItem(k));
+  global.aiKeys = {};
+  saveGlobal();
+}
+
 export function resetExam(exam) {
   cache.delete(exam.id);
   localStorage.removeItem(examKey(exam.id));

@@ -4,8 +4,10 @@ import { HashRouter, MemoryRouter, Routes, Route, Navigate, Outlet, useParams } 
 import { loadExam } from './lib/bank.js';
 import { global, saveGlobal } from './lib/store.js';
 import { ExamContext, ToastProvider, useStoreVersion } from './components/ui.jsx';
+import { AuthGate } from './components/AuthGate.jsx';
 
 const Home = lazy(() => import('./views/Home.jsx'));
+const Admin = lazy(() => import('./views/Admin.jsx'));
 const Dashboard = lazy(() => import('./views/Dashboard.jsx'));
 const Settings = lazy(() => import('./views/Settings.jsx'));
 const Practice = lazy(() => import('./views/Practice.jsx'));
@@ -70,8 +72,7 @@ export default function App() {
   useStoreVersion();
   useEffect(() => {
     if (import.meta.env.VITE_TARGET !== 'artifact') {
-      const start = () => import('./lib/sync.js').then((m) => m.initSync()).catch(() => {});
-      'requestIdleCallback' in window ? requestIdleCallback(start) : setTimeout(start, 500);
+      import('./lib/sync.js').then((m) => m.initSync()).catch(() => {}); // sign-in is required, so start at once
     }
   }, []);
   useEffect(() => {
@@ -82,11 +83,13 @@ export default function App() {
   });
   return (
     <ToastProvider>
+      <AuthGate>
       <Router>
         <Suspense fallback={<Loading />}>
           <Routes>
             <Route path="/" element={<StartRedirect />} />
             <Route path="/exams" element={<Home />} />
+            <Route path="/admin" element={<Admin />} />
             <Route path="/x/:examId" element={<ExamShell />}>
               <Route index element={<Navigate to="dashboard" replace />} />
               <Route path="dashboard" element={<Dashboard />} />
@@ -114,6 +117,7 @@ export default function App() {
           </Routes>
         </Suspense>
       </Router>
+      </AuthGate>
     </ToastProvider>
   );
 }

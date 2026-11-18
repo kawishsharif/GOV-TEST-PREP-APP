@@ -1,14 +1,53 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Each signed-in user can read and write only their own progress: users/{their uid}/exams/{examId}
+
+    // The administrator: this verified Google account only.
+    function isAdmin() {
+      return request.auth != null
+        && request.auth.token.email == 'engrkawish22@gmail.com'
+        && request.auth.token.email_verified == true;
+    }
+    function isSelf(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+    function profilePath(uid) {
+      return /databases/$(database)/documents/profiles/$(uid);
+    }
+    // A user who has been blocked by the admin can no longer read or write progress.
+    function notBlocked(uid) {
+      return !exists(profilePath(uid)) || get(profilePath(uid)).data.status != 'blocked';
+    }
+
+    // Progress: each signed-in, non-blocked user can read and write only their own documents.
     match /users/{userId}/exams/{examId} {
-      allow read, delete: if request.auth != null && request.auth.uid == userId;
-      allow create, update: if request.auth != null && request.auth.uid == userId
+      allow read, delete: if isSelf(userId) && notBlocked(userId);
+      allow create, update: if isSelf(userId) && notBlocked(userId)
         && request.resource.data.keys().hasOnly(['data', 'updatedAt', 'app', 'v'])
         && request.resource.data.data is string
         && request.resource.data.data.size() < 1000000;
     }
+
+    // Profiles for user management.
+    //  - a user creates their own profile once, always as 'active', and may refresh name/photo/activity;
+    //  - only the admin can read every profile and change 'status' (block / activate);
+    //  - nobody can change their own status or email, and profiles are never deleted from the app.
+    match /profiles/{uid} {
+      allow read: if isAdmin() || isSelf(uid);
+      allow create: if isSelf(uid)
+        && request.resource.data.keys().hasOnly(['uid', 'name', 'email', 'photo', 'status', 'createdAt', 'lastSeen', 'answered', 'mocks'])
+        && request.resource.data.uid == uid
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.status == 'active';
+      allow update: if
+        (isSelf(uid)
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['name', 'photo', 'lastSeen', 'answered', 'mocks']))
+        || (isAdmin() && !isSelf(uid)
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status', 'statusChangedAt'])
+          && request.resource.data.status in ['active', 'blocked']);
+      allow delete: if false;
+    }
+
     // Everything else is closed.
     match /{document=**} {
       allow read, write: if false;

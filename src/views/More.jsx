@@ -1,6 +1,7 @@
 // "More" tab: everything that is not on the bottom bar.
 import { Link } from 'react-router-dom';
 import { Page, useExam, useToast } from '../components/ui.jsx';
+import { useSync } from '../components/Account.jsx';
 import { Icon } from '../components/Icon.jsx';
 
 /* global __APP_VERSION__, __BUILD_TIME__ */
@@ -25,6 +26,8 @@ export default function More() {
   const { exam, st, base } = useExam();
   const m = Object.keys(st.mistakes).length;
   const toast = useToast();
+  const sync = useSync();
+  const isAdmin = sync.status === 'signedIn' && (sync.user?.email || '').toLowerCase() === 'engrkawish22@gmail.com';
   const checkUpdate = async () => {
     if (!window.__checkForUpdate) { toast('Updates are checked automatically when the app opens'); return; }
     toast('Checking for updates…');
@@ -47,6 +50,7 @@ export default function More() {
         <Item to={base + 'import'} icon="upload" title="Import questions (JSON)" sub="Add your own questions to the bank" />
         <Item to={base + 'settings'} icon="settings" title="Settings & backup" sub="Test date, pattern, weights, theme, export" />
         <Item to="/exams" icon="home" title="All exams" sub="Switch to another test prep" />
+        {isAdmin && <Item to="/admin" icon="settings" title="User management (admin)" sub="See users, block or activate them" />}
       </ul></section>
       <section className="card">
         <h2>App version</h2>

@@ -1,5 +1,6 @@
 // Google account card: sign in / out and cloud-sync status.
 import { useEffect, useState, useSyncExternalStore } from 'react';
+import { Link } from 'react-router-dom';
 import { useToast } from './ui.jsx';
 import { Icon } from './Icon.jsx';
 
@@ -52,10 +53,20 @@ export function AccountCard({ compact = false, onDismiss }) {
   };
   const doSignOut = async () => {
     setBusy(true);
-    try { await (await load()).signOutUser(); toast('Signed out. Your progress stays on this device.'); } finally { setBusy(false); }
+    try { await (await load()).signOutUser(); toast('Signed out. Your progress is saved in your account.'); }
+    catch (e) { toast(e.message, 6000); }
+    finally { setBusy(false); }
   };
   const doSync = async () => { await (await load()).syncNow(); };
 
+  if (s.status === 'signedOut' && s.blocked) {
+    return (
+      <section className="card account" style={{ borderColor: 'var(--bad)' }}>
+        {!compact && <h2>Account &amp; sync</h2>}
+        <p style={{ margin: 0 }}><b style={{ color: 'var(--bad)' }}>This account has been blocked by the administrator.</b> You were signed out and your progress is no longer synced. Your progress on this device is still available. Contact the administrator if you think this is a mistake.</p>
+      </section>
+    );
+  }
   if (s.status === 'signedOut') {
     return (
       <section className="card account">
@@ -88,7 +99,10 @@ export function AccountCard({ compact = false, onDismiss }) {
           <button className="btn ghost" disabled={busy} onClick={doSignOut}>Sign out</button>
         </div>
       )}
-      {!compact && <p className="muted" style={{ fontSize: '.8rem', margin: '10px 0 0' }}>Synced: attempts, mistakes, flashcards, mocks, plan and settings. Your AI API keys stay on this device only.</p>}
+      {!compact && (u.email || '').toLowerCase() === 'engrkawish22@gmail.com' && (
+        <Link className="btn block" style={{ marginTop: 10 }} to="/admin"><Icon name="settings" /> User management (admin)</Link>
+      )}
+      {!compact && <p className="muted" style={{ fontSize: '.8rem', margin: '10px 0 0' }}>Synced: attempts, mistakes, flashcards, mocks, plan and settings. Your AI API keys stay on this device only. Signing out saves your progress to your account and removes it (and your AI keys) from this device.</p>}
     </section>
   );
 }
