@@ -13,13 +13,23 @@ export function QuestionTags({ q, exam }) {
       <Badge>{exam.topicIndex[q.topic]?.name || q.topic}</Badge>
       {q.sub && <Badge>{q.sub}</Badge>}
       <Badge>{DIFF[q.difficulty] || q.difficulty}</Badge>
-      <Badge>{TYPE[q.type] || q.type}</Badge>
-      {q.style && <Badge>{q.style}</Badge>}
+      {!q.reported && <Badge>{TYPE[q.type] || q.type}</Badge>}
+      {q.style && <Badge variant={q.reported ? 'warning' : 'secondary'}>{q.style}</Badge>}
       {q.source === 'ai' && <Badge variant="ai">AI-generated</Badge>}
       {q.source === 'template' && <Badge variant="brand">Generated variant</Badge>}
       {q.source === 'import' && <Badge>Imported</Badge>}
-      {q.verifiedSource && <Badge>{q.verifiedSource}</Badge>}
+      {q.verifiedSource && <Badge variant={q.reported ? 'brand' : 'secondary'}>{q.reported && <Icon name="check" />}{q.verifiedSource}</Badge>}
       {q.asOf && <Badge variant="warning">As of {q.asOf}</Badge>}
+    </div>
+  );
+}
+
+/** Where a real past-paper question came from, and any correction made to the source's answer key. */
+function ReportedSource({ r }) {
+  return (
+    <div className="mt-3 space-y-1 border-t border-border/70 pt-3 text-xs text-muted-foreground">
+      <p className="m-0"><b className="text-foreground">Reported in:</b> {r.paper} · collected from {r.via}. Not an official paper; answer checked by Learn &amp; Lead.</p>
+      {r.note && <p className="m-0 font-medium text-warning">Answer-key correction: {r.note}</p>}
     </div>
   );
 }
@@ -65,6 +75,7 @@ export function QuestionCard({ q, exam, order, chosen = null, reveal = false, on
           {q.solution
             ? <><h2>Worked solution</h2><ol>{q.solution.map((s, i) => <li key={i}><Rich text={s} /></li>)}</ol></>
             : <><h2>Explanation</h2><p className="m-0"><Rich text={q.explanation} /></p></>}
+          {q.reported && <ReportedSource r={q.reported} />}
         </div>
       )}
     </Card>

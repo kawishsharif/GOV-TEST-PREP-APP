@@ -1,0 +1,3710 @@
+[
+ {
+  "id": "pp-001",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The surge impedance of a transmission line is:",
+  "options": [
+   "Product of current and voltage",
+   "Ratio of resistance to reactance",
+   "Ratio of voltage to resistance",
+   "Ratio of voltage to current under surge (travelling-wave) conditions"
+  ],
+  "answer": 3,
+  "explanation": "Surge (characteristic) impedance Zc = √(L/C) is the ratio of the voltage wave to the current wave travelling along the line — about 400 Ω for overhead lines and 40 Ω for cables.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-002",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The depletion region of a PN junction is formed by:",
+  "options": [
+   "Free electrons only",
+   "Immobile (fixed) ionised donor and acceptor atoms",
+   "Holes only",
+   "Mobile majority carriers"
+  ],
+  "answer": 1,
+  "explanation": "Near the junction, electrons and holes recombine and leave behind fixed positive donor ions (n side) and negative acceptor ions (p side). These immobile charges form the depletion layer and its barrier field.",
+  "reported": {
+   "paper": "WAPDA Junior Engineer (PTS), 22 May 2022",
+   "via": "t4tutorials.pk",
+   "note": "The source key said \"mobile\" donor and acceptor ions; the ions in the depletion region are immobile — corrected."
+  },
+  "verifiedSource": "WAPDA Junior Engineer (PTS), 22 May 2022",
+  "source": "bank"
+ },
+ {
+  "id": "pp-003",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The main function of a starter in a DC motor is to:",
+  "options": [
+   "Maintain torque",
+   "Control the supply voltage",
+   "Increase speed",
+   "Limit the starting current"
+  ],
+  "answer": 3,
+  "explanation": "At standstill there is no back EMF, so Ia = V/Ra would be many times rated current. The starter inserts series resistance that is cut out as speed (and back EMF) builds up.",
+  "reported": {
+   "paper": "WAPDA Junior Engineer (Electrical) 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Junior Engineer (Electrical) 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-004",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The efficiency of a transformer is maximum when:",
+  "options": [
+   "Core loss is zero",
+   "Iron loss = copper loss",
+   "Iron loss is greater than copper loss",
+   "Copper loss is greater than iron loss"
+  ],
+  "answer": 1,
+  "explanation": "Efficiency peaks when the variable (copper, I²R) loss equals the constant (iron) loss, i.e. at the load fraction x = √(Pi/Pcu,FL).",
+  "reported": {
+   "paper": "WAPDA JE (Electrical) 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA JE (Electrical) 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-005",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In transmission lines, skin effect increases with:",
+  "options": [
+   "Decrease in voltage",
+   "Decrease in current",
+   "Decrease in frequency",
+   "Increase in frequency"
+  ],
+  "answer": 3,
+  "explanation": "Skin depth δ = √(2ρ/ωμ) falls as frequency rises, so current crowds to the surface and effective AC resistance increases. It is also larger for thicker conductors.",
+  "reported": {
+   "paper": "WAPDA Sub Engineer (Electrical) 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Sub Engineer (Electrical) 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-006",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The purpose of a surge (lightning) arrester in a substation is to:",
+  "options": [
+   "Absorb load current",
+   "Protect equipment from lightning and switching overvoltages",
+   "Increase the voltage level",
+   "Reduce harmonics"
+  ],
+  "answer": 1,
+  "explanation": "An arrester (ZnO) is non-conducting at normal voltage; on a surge it conducts and diverts the energy to earth, clamping the voltage below the equipment insulation level (BIL).",
+  "reported": {
+   "paper": "WAPDA Assistant Engineer (Electrical) 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Assistant Engineer (Electrical) 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-007",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The function of a choke coil in a fluorescent tube light is to:",
+  "options": [
+   "Raise the power factor",
+   "Increase current",
+   "Rectify the current",
+   "Limit the current (and give the starting voltage kick)"
+  ],
+  "answer": 3,
+  "explanation": "The choke (ballast) is an inductor in series: it produces the high-voltage kick when the starter opens, then limits the tube current because the arc has negative resistance.",
+  "reported": {
+   "paper": "WAPDA Sub Engineer (Electrical) 2018",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Sub Engineer (Electrical) 2018",
+  "source": "bank"
+ },
+ {
+  "id": "pp-008",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The core of a transformer is laminated to reduce:",
+  "options": [
+   "Copper loss",
+   "Eddy current loss",
+   "Hysteresis loss",
+   "Leakage flux"
+  ],
+  "answer": 1,
+  "explanation": "Thin insulated laminations cut the paths of circulating eddy currents; eddy loss ∝ (lamination thickness)². Hysteresis loss is reduced by the core material (silicon steel), not by laminating.",
+  "reported": {
+   "paper": "WAPDA Junior Engineer (Electrical) 2017",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Junior Engineer (Electrical) 2017",
+  "source": "bank"
+ },
+ {
+  "id": "pp-009",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The power factor of a purely inductive circuit is:",
+  "options": [
+   "0.5",
+   "1",
+   "0.707",
+   "0"
+  ],
+  "answer": 3,
+  "explanation": "Current lags voltage by 90°, so cos 90° = 0: the circuit takes no average (real) power, only reactive power.",
+  "reported": {
+   "paper": "WAPDA JE (Electrical) 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA JE (Electrical) 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-010",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In a 3-phase system, the phase difference between the voltages of any two phases is:",
+  "options": [
+   "60°",
+   "90°",
+   "120°",
+   "180°"
+  ],
+  "answer": 2,
+  "explanation": "A balanced three-phase supply has three equal voltages displaced 360°/3 = 120° apart (phase sequence RYB).",
+  "reported": {
+   "paper": "WAPDA Sub Engineer (Electrical) 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Sub Engineer (Electrical) 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-011",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The insulation traditionally used in high-voltage underground cables is:",
+  "options": [
+   "Impregnated paper",
+   "Vulcanised rubber",
+   "PVC",
+   "Cotton"
+  ],
+  "answer": 0,
+  "explanation": "Classic HV cables use oil- or mass-impregnated paper; modern ones use XLPE. PVC is limited to low voltage (≈ up to 3.3–11 kV) because of high dielectric loss and poor thermal rating.",
+  "reported": {
+   "paper": "WAPDA JE Power 2019",
+   "via": "t4tutorials.pk",
+   "note": "The source key said PVC, which is a low-voltage insulation; the textbook answer for HV cables is impregnated paper — corrected."
+  },
+  "verifiedSource": "WAPDA JE Power 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-012",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The main function of a breather in a transformer is to:",
+  "options": [
+   "Prevent oil leakage",
+   "Maintain the voltage",
+   "Remove moisture from the air entering the conservator",
+   "Cool the transformer oil"
+  ],
+  "answer": 2,
+  "explanation": "As oil expands and contracts the conservator \"breathes\". The silica-gel breather dries the incoming air so moisture does not spoil the oil’s dielectric strength. Blue gel turns pink when saturated.",
+  "reported": {
+   "paper": "WAPDA Assistant Engineer (Electrical) 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Assistant Engineer (Electrical) 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-013",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In a series RLC circuit, the impedance at resonance is:",
+  "options": [
+   "Minimum (equal to R)",
+   "Maximum",
+   "Infinite",
+   "Zero"
+  ],
+  "answer": 0,
+  "explanation": "At resonance XL = XC, the reactances cancel and Z = R, the minimum value, so the current is maximum. (A parallel resonant circuit is the opposite: maximum impedance.)",
+  "reported": {
+   "paper": "WAPDA Sub Engineer (Electrical) 2018",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Sub Engineer (Electrical) 2018",
+  "source": "bank"
+ },
+ {
+  "id": "pp-014",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which component stores electrical energy in an electric field?",
+  "options": [
+   "Resistor",
+   "Inductor",
+   "Capacitor",
+   "Transformer"
+  ],
+  "answer": 2,
+  "explanation": "A capacitor stores W = ½CV² in the electric field between its plates; an inductor stores ½LI² in a magnetic field; a resistor only dissipates.",
+  "reported": {
+   "paper": "WAPDA JE Electrical 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA JE Electrical 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-015",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Corona in overhead transmission lines can be reduced by:",
+  "options": [
+   "Increasing the spacing between conductors",
+   "Increasing the voltage",
+   "Using thinner stranded conductors",
+   "Decreasing conductor diameter"
+  ],
+  "answer": 0,
+  "explanation": "Corona depends on the surface field. A larger conductor radius (or bundled conductors) and wider spacing both reduce the field, raising the disruptive critical voltage.",
+  "reported": {
+   "paper": "WAPDA Sub Engineer (Electrical) 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Sub Engineer (Electrical) 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-016",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The primary and secondary windings of a transformer are linked by:",
+  "options": [
+   "Resistive coupling",
+   "Capacitive coupling",
+   "Magnetic coupling (mutual flux)",
+   "A direct electrical connection"
+  ],
+  "answer": 2,
+  "explanation": "The windings are electrically isolated; energy passes through the mutual flux in the core (Faraday’s law), which is why a transformer also gives galvanic isolation.",
+  "reported": {
+   "paper": "WAPDA JE Electrical 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA JE Electrical 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-017",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which of these instruments can measure alternating current?",
+  "options": [
+   "Hot-wire meter",
+   "Digital frequency meter",
+   "Magnetic compass",
+   "PMMC meter"
+  ],
+  "answer": 0,
+  "explanation": "A hot-wire instrument responds to I²R heating, so it reads true RMS on AC or DC. A PMMC meter’s torque averages to zero on AC unless a rectifier is added.",
+  "reported": {
+   "paper": "WAPDA JE Power 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA JE Power 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-018",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The voltage across a resistor and the current through it are:",
+  "options": [
+   "Lagging by 90°",
+   "In phase opposition",
+   "In the same phase",
+   "In quadrature"
+  ],
+  "answer": 2,
+  "explanation": "For a pure resistance v = iR at every instant, so voltage and current peak together (phase angle 0°, power factor 1).",
+  "reported": {
+   "paper": "WAPDA Sub Engineer (Electrical) 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Sub Engineer (Electrical) 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-019",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The controlling torque in a moving-coil (PMMC) instrument is provided by:",
+  "options": [
+   "Spring control",
+   "Air friction",
+   "Damping magnets",
+   "Gravity control"
+  ],
+  "answer": 0,
+  "explanation": "Two phosphor-bronze hair springs give a controlling torque proportional to deflection (and also carry current to the coil). Damping is by eddy currents in the aluminium former.",
+  "reported": {
+   "paper": "WAPDA JE Electrical 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA JE Electrical 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-020",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The term \"load factor\" in power systems is defined as:",
+  "options": [
+   "Maximum demand / average load",
+   "Average load × maximum demand",
+   "Connected load / maximum demand",
+   "Average load / maximum demand"
+  ],
+  "answer": 3,
+  "explanation": "Load factor = average load ÷ maximum demand over a period (always ≤ 1). A high load factor means plant capacity is used well, lowering cost per kWh. (Connected load / maximum demand is the reciprocal of demand factor.)",
+  "reported": {
+   "paper": "WAPDA Assistant Engineer (Electrical) 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Assistant Engineer (Electrical) 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-021",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In a large synchronous generator (alternator), the rotating part is the:",
+  "options": [
+   "Stator",
+   "Rotor (field)",
+   "Armature",
+   "Frame"
+  ],
+  "answer": 1,
+  "explanation": "Large alternators use a stationary armature and a rotating DC field: the high-voltage, high-current armature is easier to insulate and connect when it does not rotate, and only low-power excitation passes through slip rings.",
+  "reported": {
+   "paper": "WAPDA JE Power 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA JE Power 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-022",
+  "topic": "power",
+  "difficulty": "hard",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "For a 220 kV system, the highest system voltage for which equipment is rated is:",
+  "options": [
+   "260 kV",
+   "300 kV",
+   "230 kV",
+   "245 kV"
+  ],
+  "answer": 3,
+  "explanation": "IEC standard voltages: nominal 220 kV → highest system voltage Um = 245 kV (similarly 132 → 145 kV, 500 → 550 kV). Insulation levels (BIL) are chosen for Um.",
+  "reported": {
+   "paper": "WAPDA Assistant Engineer (Electrical) 2018",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Assistant Engineer (Electrical) 2018",
+  "source": "bank"
+ },
+ {
+  "id": "pp-023",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The dielectric strength of air at normal temperature and pressure is approximately:",
+  "options": [
+   "100 kV/mm",
+   "3 kV/mm",
+   "10 kV/mm",
+   "30 kV/mm"
+  ],
+  "answer": 1,
+  "explanation": "About 30 kV/cm peak (21.1 kV/cm RMS) = 3 kV/mm. It falls with lower air density (altitude, heat), which is why corona is worse in hills and hot weather.",
+  "reported": {
+   "paper": "WAPDA JE Power 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA JE Power 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-024",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The Ferranti effect is:",
+  "options": [
+   "Power loss due to corona",
+   "Improvement of power factor",
+   "Voltage drop along the line",
+   "Rise of receiving-end voltage above sending-end voltage at light or no load"
+  ],
+  "answer": 3,
+  "explanation": "Line charging current (leading) flowing through the series inductance raises the receiving-end voltage on long, lightly loaded lines. Shunt reactors are used to control it.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-025",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The most commonly used material for fuse wire is:",
+  "options": [
+   "Copper",
+   "Tin–lead alloy",
+   "Tungsten",
+   "Silver"
+  ],
+  "answer": 1,
+  "explanation": "Tin–lead (≈63/37) has a low melting point and suitable resistivity for rewirable fuses. Silver is used in high-rupturing-capacity (HRC) cartridge fuses for its stable characteristics.",
+  "reported": {
+   "paper": "WAPDA JE Power 2018",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA JE Power 2018",
+  "source": "bank"
+ },
+ {
+  "id": "pp-026",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "A Zener diode is primarily used for:",
+  "options": [
+   "Amplification",
+   "High-frequency switching",
+   "Rectification",
+   "Voltage regulation"
+  ],
+  "answer": 3,
+  "explanation": "In reverse breakdown the Zener voltage stays almost constant over a wide current range, so it is used as a shunt voltage regulator and voltage reference.",
+  "reported": {
+   "paper": "WAPDA Electrical Sub Engineer 2018",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Sub Engineer 2018",
+  "source": "bank"
+ },
+ {
+  "id": "pp-027",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The main function of a rectifier is to:",
+  "options": [
+   "Change frequency",
+   "Convert AC to DC",
+   "Convert DC to AC",
+   "Increase voltage"
+  ],
+  "answer": 1,
+  "explanation": "A rectifier uses diodes (or thyristors) to pass current in one direction only. DC→AC is an inverter; AC→AC at another frequency is a cycloconverter.",
+  "reported": {
+   "paper": "WAPDA Technical Cadre Exam 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Technical Cadre Exam 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-028",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "A centre-tapped full-wave rectifier uses how many diodes?",
+  "options": [
+   "3",
+   "4",
+   "1",
+   "2"
+  ],
+  "answer": 3,
+  "explanation": "The centre-tapped version needs 2 diodes (each conducts on alternate half-cycles); the bridge full-wave rectifier needs 4 diodes but no centre tap. Each diode in the centre-tap circuit must withstand PIV = 2Vm.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-029",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The unit of capacitance is the:",
+  "options": [
+   "Henry",
+   "Farad",
+   "Ohm",
+   "Tesla"
+  ],
+  "answer": 1,
+  "explanation": "Farad = coulomb per volt (C = Q/V). Henry is inductance, tesla is flux density.",
+  "reported": {
+   "paper": "WAPDA Electrical Test 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Test 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-030",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The Buchholz relay is used for the protection of:",
+  "options": [
+   "Oil-immersed transformers",
+   "Generators",
+   "Induction motors",
+   "Transmission lines"
+  ],
+  "answer": 0,
+  "explanation": "It sits in the pipe between the tank and conservator of oil-filled transformers (above ≈500 kVA). Slow gas build-up from incipient faults gives an alarm; a violent oil surge from a severe internal fault trips the breaker.",
+  "reported": {
+   "paper": "WAPDA Power Division Test 2018",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Power Division Test 2018",
+  "source": "bank"
+ },
+ {
+  "id": "pp-031",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "Real past paper (reported)",
+  "q": "The frequency of the voltage generated by a 4-pole alternator running at 1500 rpm is:",
+  "options": [
+   "75 Hz",
+   "25 Hz",
+   "50 Hz",
+   "100 Hz"
+  ],
+  "answer": 2,
+  "solution": [
+   "f = PN/120",
+   "f = 4 × 1500/120",
+   "f = 50 Hz"
+  ],
+  "explanation": "f = 50 Hz",
+  "reported": {
+   "paper": "WAPDA Power Generation Exam 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Power Generation Exam 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-032",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In a hydroelectric plant, the turbine converts the energy of water into:",
+  "options": [
+   "Mechanical energy",
+   "Nuclear energy",
+   "Chemical energy",
+   "Thermal energy"
+  ],
+  "answer": 0,
+  "explanation": "Potential energy of the head becomes kinetic energy in the penstock; the turbine converts it into mechanical (shaft) energy, and the generator then produces electricity.",
+  "reported": {
+   "paper": "WAPDA Hydel Wing Test 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Hydel Wing Test 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-033",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which of the following is a renewable energy source?",
+  "options": [
+   "Natural gas",
+   "Coal",
+   "Solar",
+   "Diesel"
+  ],
+  "answer": 2,
+  "explanation": "Solar (like hydro and wind) is replenished naturally; coal, oil and gas are finite fossil fuels.",
+  "reported": {
+   "paper": "WAPDA Power Wing Test 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Power Wing Test 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-034",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Power is transmitted at high voltage mainly to reduce the:",
+  "options": [
+   "Current (and hence I²R losses)",
+   "Line resistance",
+   "Frequency",
+   "Power transmitted"
+  ],
+  "answer": 0,
+  "explanation": "For the same power P = √3 VI cosφ, raising V lowers I; losses I²R fall with 1/V², and smaller conductors can be used.",
+  "reported": {
+   "paper": "WAPDA Power Transmission Test 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Power Transmission Test 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-035",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The power factor of a purely capacitive circuit is:",
+  "options": [
+   "1 lagging",
+   "1 leading",
+   "Zero (leading)",
+   "0.5"
+  ],
+  "answer": 2,
+  "explanation": "Current leads voltage by 90°, so cos 90° = 0: no real power is consumed. \"Leading\" describes the current, but the power factor value is zero.",
+  "reported": {
+   "paper": "WAPDA Electrical Test 2018",
+   "via": "t4tutorials.pk",
+   "note": "The source key said \"1 leading\"; a pure capacitor has power factor zero (leading) — corrected."
+  },
+  "verifiedSource": "WAPDA Electrical Test 2018",
+  "source": "bank"
+ },
+ {
+  "id": "pp-036",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The Ferranti effect is most prominent in:",
+  "options": [
+   "Long transmission lines",
+   "Underground LV distributors",
+   "Short transmission lines",
+   "Medium transmission lines"
+  ],
+  "answer": 0,
+  "explanation": "Charging current grows with line length, so the receiving-end voltage rise is significant only on long (> 250 km) EHV lines, especially at no load.",
+  "reported": {
+   "paper": "WAPDA Transmission Line Exam 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Transmission Line Exam 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-037",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "A DC generator converts:",
+  "options": [
+   "Chemical energy to mechanical energy",
+   "Electrical energy to mechanical energy",
+   "Mechanical energy to electrical energy",
+   "Thermal energy to electrical energy"
+  ],
+  "answer": 2,
+  "explanation": "The prime mover turns the armature in the field; by Faraday’s law an EMF is induced, and the commutator delivers it as DC.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer Test 2018",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer Test 2018",
+  "source": "bank"
+ },
+ {
+  "id": "pp-038",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The purpose of the commutator in a DC machine is to:",
+  "options": [
+   "Reverse the current in each armature coil as it passes the brushes",
+   "Increase voltage",
+   "Reduce resistance",
+   "Reduce armature reaction"
+  ],
+  "answer": 0,
+  "explanation": "The armature EMF is alternating inside each coil; the commutator (a mechanical rectifier) reverses each coil’s connection at the neutral axis so the brush output is unidirectional (and, in a motor, torque stays in one direction).",
+  "reported": {
+   "paper": "WAPDA Technical Cadre Test 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Technical Cadre Test 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-039",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which type of motor is traditionally used for electric traction (trains)?",
+  "options": [
+   "Stepper motor",
+   "DC shunt motor",
+   "DC series motor",
+   "Synchronous motor"
+  ],
+  "answer": 2,
+  "explanation": "A series motor gives very high starting torque (T ∝ Ia² below saturation) and automatically slows on heavy load, ideal for traction. Modern trains increasingly use inverter-fed induction motors.",
+  "reported": {
+   "paper": "WAPDA Power Wing Test 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Power Wing Test 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-040",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The slip of an induction motor is zero when the rotor runs at:",
+  "options": [
+   "Full load",
+   "Synchronous speed",
+   "No load",
+   "Standstill"
+  ],
+  "answer": 1,
+  "explanation": "s = (Ns − Nr)/Ns = 0 only when Nr = Ns. Then no EMF is induced in the rotor and no torque develops, so an induction motor never quite reaches synchronous speed by itself.",
+  "reported": {
+   "paper": "WAPDA Technical Test 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Technical Test 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-041",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The no-load current of a transformer is:",
+  "options": [
+   "Large and leading the voltage",
+   "Large and lagging the voltage",
+   "Small and in phase with the voltage",
+   "Small and lagging the voltage by a large angle"
+  ],
+  "answer": 3,
+  "explanation": "It is only 2–5 % of rated current and mostly magnetising, so it lags the voltage by about 75–85° (no-load power factor ≈ 0.1–0.2).",
+  "reported": {
+   "paper": "WAPDA Power Transformer Exam 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Power Transformer Exam 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-042",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The short-circuit test on a transformer is used to determine:",
+  "options": [
+   "Iron losses",
+   "Full-load copper losses (and equivalent impedance)",
+   "Turns ratio",
+   "Insulation resistance"
+  ],
+  "answer": 1,
+  "explanation": "With the secondary shorted, rated current flows at a few per cent of rated voltage, so core flux and iron loss are negligible: the wattmeter reads copper loss, and Vsc/Isc gives the equivalent impedance.",
+  "reported": {
+   "paper": "WAPDA Transformer Maintenance Exam 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Transformer Maintenance Exam 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-043",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "A galvanometer can be converted into an ammeter by connecting a:",
+  "options": [
+   "High resistance in series",
+   "Low resistance in series",
+   "High resistance in parallel",
+   "Low resistance (shunt) in parallel"
+  ],
+  "answer": 3,
+  "explanation": "A low shunt Rsh = Ig·G/(I − Ig) bypasses most of the current. A high series resistance would instead make it a voltmeter.",
+  "reported": {
+   "paper": "WAPDA Technical Cadre Exam 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Technical Cadre Exam 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-044",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The SI unit of electric charge is the:",
+  "options": [
+   "Volt",
+   "Coulomb",
+   "Ampere",
+   "Joule"
+  ],
+  "answer": 1,
+  "explanation": "One coulomb is the charge carried by 1 A in 1 s (Q = It), about 6.24 × 10¹⁸ electrons.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer Exam 2018",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer Exam 2018",
+  "source": "bank"
+ },
+ {
+  "id": "pp-045",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The working principle of a moving-coil instrument is based on the:",
+  "options": [
+   "Chemical effect of current",
+   "Heating effect of current",
+   "Electrostatic effect",
+   "Magnetic effect of current"
+  ],
+  "answer": 3,
+  "explanation": "A current-carrying coil in the field of a permanent magnet experiences a force (F = BIL), giving a deflecting torque proportional to current — hence a uniform scale.",
+  "reported": {
+   "paper": "WAPDA Technical Test 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Technical Test 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-046",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In control systems, negative feedback is mainly used to:",
+  "options": [
+   "Reduce stability",
+   "Reduce error and improve accuracy",
+   "Increase the open-loop gain",
+   "Increase error"
+  ],
+  "answer": 1,
+  "explanation": "Feeding the output back and comparing it with the reference reduces error and sensitivity to parameter changes and disturbances, at the cost of overall gain (and possible stability issues if not designed well).",
+  "reported": {
+   "paper": "WAPDA Control System Exam 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Control System Exam 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-047",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "On a Bode magnitude plot, a single (simple) pole causes a slope of:",
+  "options": [
+   "−30 dB/decade",
+   "−40 dB/decade",
+   "−10 dB/decade",
+   "−20 dB/decade"
+  ],
+  "answer": 3,
+  "explanation": "Each simple pole adds −20 dB/decade (−6 dB/octave) beyond its corner frequency; each zero adds +20 dB/decade. Two poles give −40 dB/decade.",
+  "reported": {
+   "paper": "WAPDA Control Engineering Test 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Control Engineering Test 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-048",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The bandwidth of an amplifier is the:",
+  "options": [
+   "Product of voltage and current gain",
+   "Range of frequencies over which the gain stays within 3 dB of its mid-band value",
+   "Maximum frequency only",
+   "Minimum frequency only"
+  ],
+  "answer": 1,
+  "explanation": "BW = f_H − f_L, measured between the half-power (−3 dB) points where gain falls to 0.707 of mid-band gain.",
+  "reported": {
+   "paper": "WAPDA Electronics Section Test 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electronics Section Test 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-049",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The main advantage of FM over AM is:",
+  "options": [
+   "Lower transmitter power",
+   "Narrower bandwidth",
+   "Simpler circuits",
+   "Better noise immunity"
+  ],
+  "answer": 3,
+  "explanation": "Noise mostly affects amplitude; an FM receiver’s limiter removes amplitude variations, so FM gives much better signal-to-noise ratio — at the cost of wider bandwidth.",
+  "reported": {
+   "paper": "WAPDA Communication Engineering Test 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Communication Engineering Test 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-050",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In transmission lines, corona loss increases with:",
+  "options": [
+   "Increase in conductor diameter",
+   "Decrease in voltage",
+   "Increase in operating voltage",
+   "Decrease in frequency"
+  ],
+  "answer": 2,
+  "explanation": "Peek’s formula: Pc ∝ (f + 25)(V − Vd)². Loss rises steeply once the operating voltage exceeds the disruptive critical voltage; a bigger conductor diameter raises Vd and reduces corona.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-051",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The purpose of a step-up transformer is to:",
+  "options": [
+   "Increase voltage",
+   "Increase frequency",
+   "Convert AC to DC",
+   "Decrease voltage"
+  ],
+  "answer": 0,
+  "explanation": "At a power station, generator voltage (11–22 kV) is stepped up to 132/220/500 kV for transmission; current falls in the same ratio.",
+  "reported": {
+   "paper": "WAPDA Power Wing Exam 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Power Wing Exam 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-052",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The open-circuit (no-load) test on a transformer is used to measure:",
+  "options": [
+   "Total losses",
+   "Efficiency directly",
+   "Iron (core) losses",
+   "Copper losses"
+  ],
+  "answer": 2,
+  "explanation": "At rated voltage with the secondary open, the small no-load current makes copper loss negligible, so the wattmeter reads core loss; it also gives the shunt branch R0 and X0.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-053",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "Real past paper (reported)",
+  "q": "In a 132 kV three-phase system (line-to-line), the line-to-neutral voltage is approximately:",
+  "options": [
+   "76.2 kV",
+   "57.1 kV",
+   "132 kV",
+   "66 kV"
+  ],
+  "answer": 0,
+  "solution": [
+   "V_LN = V_LL / √3",
+   "V_LN = 132 / 1.732",
+   "V_LN ≈ 76.2 kV"
+  ],
+  "explanation": "V_LN ≈ 76.2 kV",
+  "reported": {
+   "paper": "WAPDA Power Wing Test 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Power Wing Test 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-054",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which part is common to both DC machines and AC generators (alternators)?",
+  "options": [
+   "Rectifier",
+   "Commutator",
+   "Field winding",
+   "Slip rings"
+  ],
+  "answer": 2,
+  "explanation": "Both need a magnetic field produced by a field winding (excited with DC). DC machines have a commutator; alternators feed their rotating field through slip rings.",
+  "reported": {
+   "paper": "WAPDA Power Division Test 2018",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Power Division Test 2018",
+  "source": "bank"
+ },
+ {
+  "id": "pp-055",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The efficiency of a DC motor is maximum when:",
+  "options": [
+   "Copper (variable) losses = constant losses",
+   "Copper losses are greater than iron losses",
+   "Copper losses are less than iron losses",
+   "Mechanical losses are zero"
+  ],
+  "answer": 0,
+  "explanation": "As for any machine, efficiency peaks when variable losses (armature I²R) equal constant losses (iron, friction, windage, shunt-field).",
+  "reported": {
+   "paper": "WAPDA Junior Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Junior Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-056",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "A moving-iron instrument can measure:",
+  "options": [
+   "DC only",
+   "AC only",
+   "Both AC and DC",
+   "Neither (it measures resistance only)"
+  ],
+  "answer": 2,
+  "explanation": "The deflecting torque ∝ I², so it is independent of current direction and reads RMS on both AC and DC (with some error on DC from hysteresis).",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer Test 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer Test 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-057",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The main function of a Buchholz relay is to:",
+  "options": [
+   "Detect internal (incipient and severe) faults in oil-filled transformers",
+   "Measure power factor",
+   "Protect an induction motor",
+   "Detect overheating in an alternator"
+  ],
+  "answer": 0,
+  "explanation": "Gas released by insulation breakdown or arcing under oil collects in the relay: a slow build-up operates the alarm float, a violent surge operates the trip float.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-058",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In thermal (steam) power plants, the prime mover is usually a:",
+  "options": [
+   "Diesel engine",
+   "Gas turbine",
+   "Steam turbine",
+   "Hydraulic turbine"
+  ],
+  "answer": 2,
+  "explanation": "Boiler steam drives a steam turbine coupled to the alternator (Rankine cycle). Gas turbines are the prime movers in gas/combined-cycle plants.",
+  "reported": {
+   "paper": "WAPDA Assistant Engineer Electrical 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Assistant Engineer Electrical 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-059",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The function of a surge tank in a hydroelectric plant is to:",
+  "options": [
+   "Absorb pressure rise (water hammer) when load is rejected",
+   "Increase turbine speed",
+   "Remove silt",
+   "Store excess water"
+  ],
+  "answer": 0,
+  "explanation": "When the turbine gates close suddenly, the moving water column would cause a dangerous pressure surge in the penstock; the surge tank provides a free surface that absorbs it (and supplies water on sudden load increase).",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-060",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The major disadvantage of a nuclear power plant is:",
+  "options": [
+   "Very low capacity",
+   "High fuel cost",
+   "Air pollution",
+   "Disposal of radioactive waste"
+  ],
+  "answer": 3,
+  "explanation": "Fuel cost per kWh is low and there is no combustion smoke, but spent fuel stays radioactive for thousands of years and needs safe long-term storage; capital cost is also high.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-061",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "A fuse in an electrical circuit is used to:",
+  "options": [
+   "Prevent short circuits from occurring",
+   "Protect against damage from overcurrent",
+   "Prevent voltage drop",
+   "Increase current flow"
+  ],
+  "answer": 1,
+  "explanation": "The fuse element melts when current exceeds its rating for long enough, opening the circuit and protecting cables and equipment. It does not prevent a fault from occurring — it clears it.",
+  "reported": {
+   "paper": "WAPDA Sub Engineer Electrical 2022",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Sub Engineer Electrical 2022",
+  "source": "bank"
+ },
+ {
+  "id": "pp-062",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The frequency of the voltage generated by an alternator depends on:",
+  "options": [
+   "Field resistance",
+   "Load power factor",
+   "Armature current",
+   "Number of poles and speed"
+  ],
+  "answer": 3,
+  "explanation": "f = PN/120. That is why grid generators run at fixed synchronous speed (e.g. 3000 rpm for 2 poles, 1500 rpm for 4 poles at 50 Hz).",
+  "reported": {
+   "paper": "WAPDA Assistant Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Assistant Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-063",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In an oil circuit breaker, the arc is extinguished by:",
+  "options": [
+   "SF₆ gas",
+   "Transformer (insulating) oil",
+   "Water",
+   "Air"
+  ],
+  "answer": 1,
+  "explanation": "The arc decomposes the oil into gas (mainly hydrogen) whose high thermal conductivity and pressure cool and de-ionise the arc path. SF₆ breakers use SF₆ gas instead.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-064",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The relay generally used to detect earth faults (leakage to earth) is a/an:",
+  "options": [
+   "Reverse-power relay",
+   "Differential relay",
+   "Overcurrent (phase) relay",
+   "Earth-fault / earth-leakage relay"
+  ],
+  "answer": 3,
+  "explanation": "An earth-fault relay is fed from the residual connection of CTs (or a core-balance CT) and responds to zero-sequence current, which flows only when current leaks to earth.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-065",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The main function of a current transformer (CT) is to:",
+  "options": [
+   "Step up voltage",
+   "Step down current to a standard value (1 A or 5 A) for metering and protection",
+   "Increase power",
+   "Improve efficiency"
+  ],
+  "answer": 1,
+  "explanation": "A CT isolates instruments and relays from the high-voltage circuit and reduces the line current to 1 A or 5 A. Its secondary must never be opened under load (dangerous voltage).",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-066",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The primary function of a power transformer is to:",
+  "options": [
+   "Store electrical energy",
+   "Change frequency",
+   "Convert AC to DC",
+   "Step voltage up or down at the same frequency"
+  ],
+  "answer": 3,
+  "explanation": "A transformer transfers power between circuits by mutual induction, changing voltage and current in the turns ratio; frequency is unchanged and it does not work on steady DC.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-067",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In a power transformer, leakage flux is minimised by:",
+  "options": [
+   "Using a laminated core",
+   "Using concentric (or interleaved sandwich) windings",
+   "Increasing the air gap",
+   "Using higher-resistance conductors"
+  ],
+  "answer": 1,
+  "explanation": "Placing the LV and HV windings concentrically on the same limb (or interleaving sections) keeps them closely coupled, so less flux links only one winding. Laminations reduce eddy loss, not leakage.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-068",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The main losses that reduce transformer efficiency are:",
+  "options": [
+   "Friction and windage losses",
+   "Corona and dielectric losses",
+   "Brush-contact losses",
+   "Core (iron) and copper losses"
+  ],
+  "answer": 3,
+  "explanation": "A transformer has no moving parts, so its losses are iron loss (hysteresis + eddy, constant) and copper loss (I²R, varies with load²). Efficiency is typically 97–99.5 %.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-069",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The EMF generated per phase in an alternator (E = 4.44 f Φ N) is directly proportional to:",
+  "options": [
+   "Field-winding resistance only",
+   "Speed, flux per pole and turns per phase together",
+   "Armature current only",
+   "Load power factor only"
+  ],
+  "answer": 1,
+  "explanation": "E = 4.44 k f Φ N with f = PN/120, so EMF ∝ speed × flux per pole × turns per phase (times the winding factor).",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-070",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "When a synchronous motor runs at constant load and its excitation is adjusted for unity power factor, its armature current is:",
+  "options": [
+   "Minimum",
+   "Maximum",
+   "Zero",
+   "Equal to the short-circuit current"
+  ],
+  "answer": 0,
+  "explanation": "On the V-curve, armature current is lowest at unity power factor; under-excitation makes it draw lagging current and over-excitation leading current, both larger.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-071",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Compared with a slip-ring motor, the starting torque of a squirrel-cage induction motor is generally:",
+  "options": [
+   "Infinite",
+   "Zero",
+   "Low to moderate",
+   "Very high"
+  ],
+  "answer": 2,
+  "explanation": "The cage rotor has fixed, low resistance, giving low starting torque with high starting current (5–7 × rated). Slip-ring motors add external rotor resistance to get high starting torque.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-072",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The starting torque of a DC series motor is:",
+  "options": [
+   "High",
+   "Zero",
+   "Low",
+   "Medium"
+  ],
+  "answer": 0,
+  "explanation": "Field flux is produced by armature current, so torque ∝ Ia² below saturation — the highest starting torque of all DC motors.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-073",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The back EMF of a DC motor is proportional to:",
+  "options": [
+   "Armature current",
+   "Field current only",
+   "Speed × flux",
+   "Load torque"
+  ],
+  "answer": 2,
+  "explanation": "Eb = PΦZN/(60A) ∝ ΦN. Back EMF regulates the armature current: Ia = (V − Eb)/Ra.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2022",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2022",
+  "source": "bank"
+ },
+ {
+  "id": "pp-074",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The overall efficiency of a conventional (coal/steam) thermal power plant is typically about:",
+  "options": [
+   "25–35 %",
+   "45–60 %",
+   "70–80 %",
+   "15–25 %"
+  ],
+  "answer": 0,
+  "explanation": "Most heat is rejected in the condenser (Rankine cycle limit), so classic plants achieve about 30–35 %; modern supercritical units reach ~40 %+, and combined-cycle gas plants 50–60 %.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-075",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Arc interruption in a circuit breaker is achieved mainly by:",
+  "options": [
+   "Keeping the contacts closed",
+   "Adding series capacitors",
+   "Cooling, lengthening and de-ionising the arc so the gap’s dielectric strength recovers faster than the restriking voltage",
+   "Increasing the supply voltage"
+  ],
+  "answer": 2,
+  "explanation": "AC arcs are interrupted at a current zero; the breaker wins if the dielectric strength of the gap builds up faster than the transient recovery voltage. High-resistance (cooling, lengthening, splitting) and low-resistance (current-zero) methods both rely on de-ionisation.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-076",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In a DC motor, torque is directly proportional to:",
+  "options": [
+   "Flux × armature current",
+   "Speed × flux",
+   "Resistance × current",
+   "Armature voltage only"
+  ],
+  "answer": 0,
+  "explanation": "T = (PZ/2πA) Φ Ia, so T ∝ Φ Ia. For a shunt motor (Φ constant) T ∝ Ia; for a series motor T ∝ Ia².",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-077",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In a DC motor, the speed is inversely proportional to:",
+  "options": [
+   "Armature voltage",
+   "Supply voltage",
+   "Field flux",
+   "Number of armature conductors in parallel paths only"
+  ],
+  "answer": 2,
+  "explanation": "N ∝ Eb/Φ = (V − IaRa)/Φ. Weakening the field raises speed (field control); for a series motor at light load Φ is small, so speed rises dangerously.",
+  "reported": {
+   "paper": "WAPDA Sub Engineer Electrical 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Sub Engineer Electrical 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-078",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The purpose of oil in a transformer is:",
+  "options": [
+   "Cooling and insulation",
+   "Power factor correction",
+   "Voltage regulation",
+   "Current limiting"
+  ],
+  "answer": 0,
+  "explanation": "Mineral oil insulates the windings and carries heat to the tank and radiators by convection. Its dielectric strength (BDV) is tested regularly.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2019",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2019",
+  "source": "bank"
+ },
+ {
+  "id": "pp-079",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The slip of an induction motor is given by:",
+  "options": [
+   "Ns/Nr",
+   "Nr/Ns",
+   "(Ns − Nr)/Ns",
+   "(Nr − Ns)/Nr"
+  ],
+  "answer": 2,
+  "explanation": "Slip is the speed difference as a fraction of synchronous speed; rotor frequency = s × f. Typical full-load slip is 2–5 %.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-080",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The field excitation of a synchronous motor is provided by:",
+  "options": [
+   "Induction from the stator",
+   "A DC source",
+   "An AC source",
+   "A capacitor"
+  ],
+  "answer": 1,
+  "explanation": "The rotor field is DC-excited (exciter or static excitation through slip rings, or brushless exciter), so it locks with the rotating stator field at synchronous speed.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-081",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "A lagging power factor is caused by:",
+  "options": [
+   "A purely resistive load",
+   "A short circuit",
+   "A capacitive load",
+   "An inductive load"
+  ],
+  "answer": 3,
+  "explanation": "Inductive loads (motors, transformers, chokes) draw magnetising current that lags the voltage; capacitors are added to supply this reactive power locally.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-082",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "An alternator works at maximum efficiency when:",
+  "options": [
+   "It runs at no load",
+   "Variable (copper) losses = constant losses",
+   "Copper losses are greater than iron losses",
+   "Iron losses are zero"
+  ],
+  "answer": 1,
+  "explanation": "As with transformers and DC machines, efficiency is maximum when the load-dependent copper loss equals the constant losses (core, friction, windage, excitation).",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-083",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The primary purpose of a protective relay in a power system is to:",
+  "options": [
+   "Regulate voltage",
+   "Control frequency",
+   "Measure current",
+   "Detect faults and initiate circuit-breaker tripping"
+  ],
+  "answer": 3,
+  "explanation": "A relay senses abnormal conditions from CT/VT signals and closes the trip circuit of the breaker; the breaker then interrupts the fault current.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-084",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In power factor correction, shunt capacitors are used to:",
+  "options": [
+   "Increase line losses",
+   "Improve the power factor",
+   "Reduce active power",
+   "Reduce frequency"
+  ],
+  "answer": 1,
+  "explanation": "Capacitors supply the reactive power that inductive loads need, so the line carries less reactive current — power factor rises, current and I²R losses fall, and voltage improves.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-085",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The voltage regulation of a transformer depends mainly on:",
+  "options": [
+   "Frequency only",
+   "Core material only",
+   "Cooling method",
+   "Load current and load power factor"
+  ],
+  "answer": 3,
+  "explanation": "Regulation ≈ (I·R cosφ ± I·X sinφ)/V: it grows with load and is worst at low lagging power factor; it can be negative at leading power factor.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-086",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The direction of rotation of a 3-phase induction motor can be reversed by:",
+  "options": [
+   "Changing frequency",
+   "Interchanging any two supply phases",
+   "Changing rotor resistance",
+   "Increasing supply voltage"
+  ],
+  "answer": 1,
+  "explanation": "Swapping two lines reverses the phase sequence, which reverses the direction of the rotating magnetic field and hence the rotor.",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-087",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The purpose of power factor correction is to:",
+  "options": [
+   "Reduce the voltage",
+   "Increase the frequency",
+   "Increase motor torque",
+   "Reduce line current and losses for the same real power"
+  ],
+  "answer": 3,
+  "explanation": "For the same kW, I = P/(√3 V cosφ): raising cosφ lowers current, losses, voltage drop and kVA demand charges (WAPDA/DISCOs penalise industrial PF below 0.9).",
+  "reported": {
+   "paper": "WAPDA Electrical Engineer 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "WAPDA Electrical Engineer 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-088",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In a synchronous motor with constant excitation, when the load increases the armature current:",
+  "options": [
+   "Decreases",
+   "Increases",
+   "Remains constant",
+   "Becomes zero"
+  ],
+  "answer": 1,
+  "explanation": "Speed stays synchronous; the rotor falls back by a larger load angle δ, and the stator draws more current to supply the extra power (P = (EV/Xs) sin δ).",
+  "reported": {
+   "paper": "PPSC AE Electrical 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "PPSC AE Electrical 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-089",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "For maximum power transfer from a DC source to a load, the load resistance must be:",
+  "options": [
+   "Half the source resistance",
+   "Double the source resistance",
+   "Negligible",
+   "Equal to the source (Thevenin) resistance"
+  ],
+  "answer": 3,
+  "explanation": "P = V²R_L/(R_s + R_L)² is maximum at R_L = R_s, giving P_max = V²/(4R_s) at 50 % efficiency. For AC, the load is the complex conjugate of the source impedance.",
+  "reported": {
+   "paper": "PPSC AE Electrical 2022",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "PPSC AE Electrical 2022",
+  "source": "bank"
+ },
+ {
+  "id": "pp-090",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The instrument used to measure very high (insulation) resistance is the:",
+  "options": [
+   "Ammeter",
+   "Kelvin double bridge",
+   "Megger",
+   "Wheatstone bridge"
+  ],
+  "answer": 2,
+  "explanation": "A megger applies 500 V–5 kV DC and reads in megohms. A Wheatstone bridge suits medium resistances and a Kelvin double bridge very low ones.",
+  "reported": {
+   "paper": "PPSC AE Electrical 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "PPSC AE Electrical 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-091",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The main reason for providing a tap changer on a transformer is to:",
+  "options": [
+   "Adjust the output voltage",
+   "Change the frequency",
+   "Control the core flux only",
+   "Reduce copper loss"
+  ],
+  "answer": 0,
+  "explanation": "Taps change the effective turns ratio to hold secondary voltage within limits as load and supply vary. On-load tap changers (OLTC) on grid transformers do this without interrupting supply.",
+  "reported": {
+   "paper": "PPSC AE Electrical 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "PPSC AE Electrical 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-092",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "Real past paper (reported)",
+  "q": "A transmission line has a sending-end voltage of 220 kV and a receiving-end voltage of 200 kV at full load. The voltage regulation is:",
+  "options": [
+   "8 %",
+   "9 %",
+   "10 %",
+   "5 %"
+  ],
+  "answer": 2,
+  "solution": [
+   "Regulation = (Vs − Vr)/Vr × 100",
+   "= (220 − 200)/200 × 100",
+   "= 10 %"
+  ],
+  "explanation": "= 10 %",
+  "reported": {
+   "paper": "PPSC AE Electrical 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "PPSC AE Electrical 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-093",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The input power of a balanced 3-phase motor is given by:",
+  "options": [
+   "√3 × V_L × I_L × cosφ",
+   "V × I × cosφ",
+   "3 × V_L × I_L × sinφ",
+   "V²/R"
+  ],
+  "answer": 0,
+  "explanation": "Three-phase real power P = √3 V_L I_L cosφ = 3 V_ph I_ph cosφ. The shaft output is this times the motor efficiency.",
+  "reported": {
+   "paper": "FESCO Assistant Engineer Test 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "FESCO Assistant Engineer Test 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-094",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The function of the governor of a generating unit is to:",
+  "options": [
+   "Reduce load",
+   "Maintain voltage",
+   "Maintain speed (and hence frequency)",
+   "Increase torque"
+  ],
+  "answer": 2,
+  "explanation": "The governor adjusts steam/water/fuel input to keep speed — and therefore frequency — constant as load changes (with a droop of about 4–5 %). Voltage is controlled by the AVR/excitation system.",
+  "reported": {
+   "paper": "PPSC Assistant Engineer (Electrical) 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "PPSC Assistant Engineer (Electrical) 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-095",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which instrument measures the real power in an AC circuit?",
+  "options": [
+   "Wattmeter",
+   "Energy meter",
+   "Ammeter",
+   "Voltmeter"
+  ],
+  "answer": 0,
+  "explanation": "A dynamometer wattmeter (current coil in series, pressure coil in parallel) reads V·I·cosφ. An energy meter integrates power over time (kWh).",
+  "reported": {
+   "paper": "MEPCO Assistant Engineer Electrical 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "MEPCO Assistant Engineer Electrical 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-096",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which conductor material is commonly used for overhead transmission lines?",
+  "options": [
+   "Iron",
+   "Copper",
+   "Aluminium (ACSR)",
+   "Silver"
+  ],
+  "answer": 2,
+  "explanation": "Aluminium is lighter and cheaper than copper for the same resistance; steel-cored aluminium (ACSR) adds tensile strength for long spans. WAPDA/NTDC use ACSR (e.g. Rail, Greeley, Lynx).",
+  "reported": {
+   "paper": "PPSC Assistant Engineer Electrical 2021",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "PPSC Assistant Engineer Electrical 2021",
+  "source": "bank"
+ },
+ {
+  "id": "pp-097",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which type of relay is mainly used for the protection of transmission lines?",
+  "options": [
+   "Distance relay",
+   "Buchholz relay",
+   "Thermal relay",
+   "Differential relay"
+  ],
+  "answer": 0,
+  "explanation": "Distance (impedance) relays measure V/I at the relay point; the impedance is proportional to the distance to the fault, giving fast, zone-based selective tripping (zone 1 ≈ 80 % of the line).",
+  "reported": {
+   "paper": "NTDC Assistant Engineer 2023",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "NTDC Assistant Engineer 2023",
+  "source": "bank"
+ },
+ {
+  "id": "pp-098",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The armature winding of a large alternator is usually placed on the:",
+  "options": [
+   "Slip rings",
+   "Rotor",
+   "Stator",
+   "Shaft"
+  ],
+  "answer": 2,
+  "explanation": "A stationary armature is easier to insulate for high voltage and can be connected directly to the busbars without sliding contacts; only the low-power DC field rotates.",
+  "reported": {
+   "paper": "LESCO Assistant Engineer 2022",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "LESCO Assistant Engineer 2022",
+  "source": "bank"
+ },
+ {
+  "id": "pp-099",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The primary purpose of a circuit breaker is to:",
+  "options": [
+   "Interrupt short-circuit (fault) currents",
+   "Step down voltage",
+   "Measure current",
+   "Control reactive power"
+  ],
+  "answer": 0,
+  "explanation": "A breaker can make and break normal load current and, on a relay trip signal, interrupt fault currents of many kA. Its rating includes breaking capacity in kA or MVA.",
+  "reported": {
+   "paper": "PPSC Assistant Engineer Electrical 2020",
+   "via": "t4tutorials.pk"
+  },
+  "verifiedSource": "PPSC Assistant Engineer Electrical 2020",
+  "source": "bank"
+ },
+ {
+  "id": "pp-100",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "A device that converts mechanical energy into electrical energy is called a:",
+  "options": [
+   "Transformer",
+   "Coil",
+   "Generator",
+   "Motor"
+  ],
+  "answer": 2,
+  "explanation": "A generator works on electromagnetic induction (Faraday, 1831): conductors moving through a magnetic field have an EMF induced in them. A motor does the reverse.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-101",
+  "topic": "circuits",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "Real past paper (reported)",
+  "q": "Determine the total charge entering a terminal between t = 1 s and t = 2 s if the current is i = (3t² − t) A.",
+  "options": [
+   "5.5 C",
+   "6.5 C",
+   "4.5 C",
+   "8.5 C"
+  ],
+  "answer": 0,
+  "solution": [
+   "Q = ∫ i dt from 1 to 2",
+   "= [t³ − t²/2] from 1 to 2",
+   "= (8 − 2) − (1 − 0.5)",
+   "= 5.5 C"
+  ],
+  "explanation": "= 5.5 C",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-102",
+  "topic": "circuits",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Using the passive sign convention, the reactive power Q absorbed by a capacitor is:",
+  "options": [
+   "Q = 0",
+   "Q = P",
+   "Q < 0 (it supplies reactive power)",
+   "Q > 0"
+  ],
+  "answer": 2,
+  "explanation": "Q = V·I·sinθ with θ = angle of V relative to I; for a capacitor the current leads, θ = −90°, so Q = −V²/Xc < 0. A capacitor absorbs negative vars — i.e. it supplies reactive power to inductive loads.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com",
+   "note": "The source key said Q > 0. Under the standard (passive) convention a capacitor absorbs negative reactive power, Q < 0 — corrected."
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-103",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The capacitance of a variable air capacitor is maximum when:",
+  "options": [
+   "Both sets of plates are fully meshed",
+   "The plates are shorted",
+   "The movable plates half overlap the fixed plates",
+   "The movable plates are most widely separated from the fixed plates"
+  ],
+  "answer": 0,
+  "explanation": "C = εA/d, and the effective area A is the overlapping area. It is largest when the movable vanes are fully meshed with the fixed vanes.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-104",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Large modern synchronous generators generate at a terminal voltage of approximately:",
+  "options": [
+   "220–500 kV",
+   "5–10 kV",
+   "13–30 kV",
+   "66–132 kV"
+  ],
+  "answer": 2,
+  "explanation": "Generator stator insulation limits terminal voltage to roughly 11–27 kV (e.g. 22 kV at Tarbela units); generator step-up transformers then raise it to 220/500 kV.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-105",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The capacitance of a parallel-plate capacitor (plate area A, separation d, permittivity ε) is:",
+  "options": [
+   "C = εA/d",
+   "C = εA/d²",
+   "C = εd/A",
+   "C = εA²/d"
+  ],
+  "answer": 0,
+  "explanation": "Capacitance rises with plate area and permittivity and falls with separation: C = ε₀εᵣA/d.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-106",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "An integrator is an op-amp circuit whose output is proportional to the ______ of the input signal.",
+  "options": [
+   "Derivative",
+   "Square",
+   "Integral",
+   "Logarithm"
+  ],
+  "answer": 2,
+  "explanation": "With R at the input and C in feedback, v_out = −(1/RC)∫v_in dt. Swapping R and C gives a differentiator.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-107",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "Real past paper (reported)",
+  "q": "At ω = 4 rad/s, the phasor impedance of a 0.5 H inductor is:",
+  "options": [
+   "j2 Ω",
+   "j0.125 Ω",
+   "j6 Ω",
+   "j4 Ω"
+  ],
+  "answer": 0,
+  "solution": [
+   "Z_L = jωL",
+   "= j × 4 × 0.5",
+   "= j2 Ω"
+  ],
+  "explanation": "= j2 Ω",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-108",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "Real past paper (reported)",
+  "q": "A fully charged 50 Ah battery rated for 10 h discharge is discharged at a steady 5 A. It will last about:",
+  "options": [
+   "15 h",
+   "8 h",
+   "10 h",
+   "5 h"
+  ],
+  "answer": 2,
+  "solution": [
+   "Rated current = 50 Ah/10 h = 5 A",
+   "Time = capacity/current = 50/5",
+   "= 10 h (at the rated rate; higher currents give less than rated Ah)"
+  ],
+  "explanation": "= 10 h (at the rated rate; higher currents give less than rated Ah)",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-109",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "Real past paper (reported)",
+  "q": "An alternating current completes 100 cycles in 0.1 s. Its frequency is:",
+  "options": [
+   "1 kHz",
+   "20 Hz",
+   "100 Hz",
+   "10 Hz"
+  ],
+  "answer": 0,
+  "solution": [
+   "f = cycles/time",
+   "= 100/0.1",
+   "= 1000 Hz = 1 kHz"
+  ],
+  "explanation": "= 1000 Hz = 1 kHz",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-110",
+  "topic": "wapda",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Pakistan’s ±660 kV Matiari–Lahore HVDC line is designed to transmit about:",
+  "options": [
+   "1500 MW",
+   "8000 MW",
+   "800 MW",
+   "4000 MW"
+  ],
+  "answer": 3,
+  "explanation": "The 878 km bipole (commissioned 2021, built under CPEC) carries up to 4000 MW from the southern coal and wind generation to Lahore.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-111",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "Real past paper (reported)",
+  "q": "In a Y-Y system, a line voltage of 220 V corresponds to a phase voltage of:",
+  "options": [
+   "110 V",
+   "127 V",
+   "381 V",
+   "220 V"
+  ],
+  "answer": 1,
+  "solution": [
+   "V_ph = V_L/√3",
+   "= 220/1.732",
+   "≈ 127 V"
+  ],
+  "explanation": "≈ 127 V",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-112",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The average power in an AC network (period T) is:",
+  "options": [
+   "P = (1/T)∫₀ᵀ v(t) dt",
+   "P = T∫₀ᵀ p(t) dt",
+   "P = (1/T)∫₀ᵀ i(t) dt",
+   "P = (1/T)∫₀ᵀ p(t) dt"
+  ],
+  "answer": 3,
+  "explanation": "Average power is the mean of instantaneous power p(t) = v(t)i(t) over one period; for sinusoids it equals V_rms·I_rms·cosφ.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-113",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The equivalent conductance of N resistors connected in parallel is:",
+  "options": [
+   "G_eq = G₁G₂…G_N",
+   "G_eq = G₁ + G₂ + … + G_N",
+   "G_eq² = G₁ + G₂ + … + G_N",
+   "1/G_eq = 1/G₁ + … + 1/G_N"
+  ],
+  "answer": 1,
+  "explanation": "In parallel, currents add for the same voltage: I = V(G₁ + G₂ + …), so conductances add (the dual of series resistances adding).",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-114",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "Real past paper (reported)",
+  "q": "How much energy does a 100 W bulb consume in four hours?",
+  "options": [
+   "200 Wh",
+   "25 Wh",
+   "50 Wh",
+   "400 Wh"
+  ],
+  "answer": 3,
+  "solution": [
+   "E = P × t",
+   "= 100 W × 4 h",
+   "= 400 Wh = 0.4 kWh (units)"
+  ],
+  "explanation": "= 400 Wh = 0.4 kWh (units)",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-115",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "An isolating transformer has a turns ratio of:",
+  "options": [
+   "1:2",
+   "1:1",
+   "1:√3",
+   "2:1"
+  ],
+  "answer": 1,
+  "explanation": "It gives galvanic isolation (for safety or noise) without changing the voltage, so primary and secondary turns are equal.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-116",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "When a capacitor is connected to an AC supply, the current:",
+  "options": [
+   "Is in phase with the voltage",
+   "Lags the voltage by 90°",
+   "Leads the voltage by 180°",
+   "Leads the voltage by π/2 rad"
+  ],
+  "answer": 3,
+  "explanation": "i = C dv/dt: the current is greatest when the voltage is changing fastest (at its zero crossing), so it leads by 90° (π/2 rad).",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-117",
+  "topic": "em",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "______ materials have low reluctance and are used as magnetic screens to protect equipment from external magnetic fields.",
+  "options": [
+   "Copper",
+   "Ferromagnetic (high-permeability)",
+   "Aluminium",
+   "Plastic"
+  ],
+  "answer": 1,
+  "explanation": "Flux prefers the low-reluctance path through a high-permeability shield (mu-metal, soft iron), diverting it around the enclosed space. Copper and aluminium shield only against changing fields via eddy currents.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-118",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "Real past paper (reported)",
+  "q": "What is the voltage across a 3 µF capacitor if the charge on one plate is 0.12 mC?",
+  "options": [
+   "80 V",
+   "4 V",
+   "140 V",
+   "40 V"
+  ],
+  "answer": 3,
+  "solution": [
+   "V = Q/C",
+   "= 0.12 × 10⁻³ / 3 × 10⁻⁶",
+   "= 40 V"
+  ],
+  "explanation": "= 40 V",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-119",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "For a BJT in the active region, the relationship between collector current Ic and emitter current Ie is:",
+  "options": [
+   "Ic > Ie",
+   "Ic < Ie (slightly)",
+   "Ic = 2Ie",
+   "Ic = −Ie"
+  ],
+  "answer": 1,
+  "explanation": "Ie = Ic + Ib, so Ic = αIe with α ≈ 0.98–0.995: the collector current is slightly less than the emitter current.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-120",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "cos(ωt − 90°) equals:",
+  "options": [
+   "sin ωt",
+   "cos ωt",
+   "−sin ωt",
+   "sin 2ωt"
+  ],
+  "answer": 0,
+  "explanation": "cos(θ − 90°) = cos θ cos 90° + sin θ sin 90° = sin θ. So a sine wave lags the cosine wave by 90°.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-121",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "numerical",
+  "style": "Real past paper (reported)",
+  "q": "A 24 V DC source is connected to 4 Ω and 8 Ω resistors in series. The current is:",
+  "options": [
+   "3 A",
+   "4 A",
+   "2 A",
+   "6 A"
+  ],
+  "answer": 2,
+  "solution": [
+   "R = 4 + 8 = 12 Ω",
+   "I = V/R = 24/12",
+   "= 2 A"
+  ],
+  "explanation": "= 2 A",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-122",
+  "topic": "circuits",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "Real past paper (reported)",
+  "q": "A series RLC circuit has R = 10 Ω, L = 0.1 H and C = 100 µF on a 100 V, 50 Hz supply. Its impedance is approximately:",
+  "options": [
+   "10 Ω",
+   "20 Ω",
+   "50 Ω",
+   "63 Ω"
+  ],
+  "answer": 0,
+  "solution": [
+   "XL = 2πfL = 31.42 Ω",
+   "XC = 1/(2πfC) = 31.83 Ω",
+   "Z = √(10² + (31.42 − 31.83)²)",
+   "≈ 10.0 Ω (almost at resonance, f₀ ≈ 50.3 Hz)"
+  ],
+  "explanation": "≈ 10.0 Ω (almost at resonance, f₀ ≈ 50.3 Hz)",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-123",
+  "topic": "power",
+  "difficulty": "hard",
+  "type": "numerical",
+  "style": "Real past paper (reported)",
+  "q": "A 500 MW thermal plant operates at 38 % overall efficiency using coal of calorific value 25 MJ/kg. Its coal consumption per hour is about:",
+  "options": [
+   "72,000 kg",
+   "500,000 kg",
+   "189,500 kg",
+   "18,950 kg"
+  ],
+  "answer": 2,
+  "solution": [
+   "Output per hour = 500 × 10⁶ × 3600 = 1.8 × 10¹² J",
+   "Heat input = 1.8 × 10¹² / 0.38 = 4.74 × 10¹² J",
+   "Coal = 4.74 × 10¹² / 25 × 10⁶",
+   "≈ 189,500 kg/h (≈ 190 tonnes per hour)"
+  ],
+  "explanation": "≈ 189,500 kg/h (≈ 190 tonnes per hour)",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com",
+   "note": "The source key gave 18,960 kg — ten times too small (a power-of-ten slip). The correct figure is ≈ 189,500 kg/h — options corrected."
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-124",
+  "topic": "protection",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "A 100 MVA, 220/33 kV power transformer is protected by a differential relay (CTs 1000:5 on HV, 5000:5 on LV). The purpose of this relay is to:",
+  "options": [
+   "Detect internal faults within the transformer zone",
+   "Measure transformer losses",
+   "Regulate voltage during load variations",
+   "Detect overcurrent from downstream faults"
+  ],
+  "answer": 0,
+  "explanation": "Differential protection compares (ratio- and phase-corrected) currents entering and leaving the protected zone; any significant difference means a fault inside the zone, which it trips instantly. External (through) faults are ignored.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-125",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The primary purpose of an economiser in a thermal power plant is to:",
+  "options": [
+   "Superheat the steam",
+   "Remove ash",
+   "Preheat the boiler feedwater using heat from the flue gases",
+   "Increase steam pressure"
+  ],
+  "answer": 2,
+  "explanation": "The economiser recovers heat from the exit flue gases to warm the feedwater before the boiler drum, raising boiler efficiency and saving fuel. (The air preheater does the same for combustion air.)",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-126",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "numerical",
+  "style": "Real past paper (reported)",
+  "q": "In an AM wave, the maximum and minimum envelope voltages are 10 V and 2 V. The modulation index is:",
+  "options": [
+   "0.67",
+   "0.83",
+   "1.2",
+   "0.4"
+  ],
+  "answer": 0,
+  "solution": [
+   "m = (Vmax − Vmin)/(Vmax + Vmin)",
+   "= (10 − 2)/(10 + 2)",
+   "= 8/12 ≈ 0.67"
+  ],
+  "explanation": "= 8/12 ≈ 0.67",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-127",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which method is most suitable for analysing multiple-input multiple-output (MIMO) control systems?",
+  "options": [
+   "Nyquist plot of a single loop",
+   "Bode plot",
+   "State-space representation",
+   "Root locus"
+  ],
+  "answer": 2,
+  "explanation": "State-space models ẋ = Ax + Bu, y = Cx + Du handle many inputs and outputs (and initial conditions) in one matrix framework; Bode, root locus and Nyquist are single-loop tools.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-128",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which smart-grid function is primarily responsible for real-time demand response and load balancing?",
+  "options": [
+   "Demand-side management (DSM)",
+   "Phasor measurement units (PMUs)",
+   "Distance relays",
+   "Microgrid controllers"
+  ],
+  "answer": 0,
+  "explanation": "DSM shifts or curtails consumer load in response to price or grid signals. PMUs provide synchronised measurements for wide-area monitoring, not demand control.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-129",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which power-electronic converter converts AC to an adjustable (variable) DC voltage?",
+  "options": [
+   "Cycloconverter",
+   "Uncontrolled diode bridge",
+   "Controlled (thyristor) rectifier",
+   "Inverter"
+  ],
+  "answer": 2,
+  "explanation": "Delaying the firing angle α of the thyristors varies the average output: for a full converter Vdc = (2Vm/π) cos α.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-130",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which control technique is commonly used in switch-mode power supplies to regulate the output voltage efficiently?",
+  "options": [
+   "Integral-cycle control",
+   "Pulse-width modulation (PWM)",
+   "Phase-angle control",
+   "Linear (series-pass) regulation"
+  ],
+  "answer": 1,
+  "explanation": "PWM varies the duty cycle of the switch (e.g. buck: Vo = D·Vin). The switch is either fully on or off, so losses are low and efficiency is high (85–95 %).",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-131",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In digital signal processing, the Z-transform is mainly used to:",
+  "options": [
+   "Convert continuous-time signals into discrete time",
+   "Measure signal power",
+   "Eliminate aliasing in sampled signals",
+   "Analyse and design discrete-time linear time-invariant systems"
+  ],
+  "answer": 3,
+  "explanation": "It is the discrete-time counterpart of the Laplace transform: difference equations become algebraic, and poles inside the unit circle mean a stable digital filter. Aliasing is prevented by an anti-aliasing filter and adequate sampling rate.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-132",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which method is commonly used for large-scale load-flow studies because of its fast (quadratic) convergence?",
+  "options": [
+   "Gauss–Seidel method",
+   "Newton–Raphson method",
+   "Trapezoidal method",
+   "Euler’s method"
+  ],
+  "answer": 1,
+  "explanation": "Newton–Raphson converges in a few iterations almost independently of system size; Gauss–Seidel is simple but needs many iterations on large systems. Fast-decoupled load flow is a simplified NR.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-133",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Why is a DC series motor unsuitable where constant speed is needed under varying load?",
+  "options": [
+   "It cannot be reversed",
+   "It needs an external regulator for its field",
+   "Its torque falls with load",
+   "Its speed varies widely with load"
+  ],
+  "answer": 3,
+  "explanation": "Flux depends on load current, so N ∝ 1/Φ changes greatly with load — and the motor races dangerously at no load. Shunt motors give nearly constant speed.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-134",
+  "topic": "machines",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "If the field winding of a running DC shunt motor opens, the motor will:",
+  "options": [
+   "Slow down gradually",
+   "Speed up dangerously (only residual flux remains)",
+   "Run at the same speed",
+   "Stop because armature current falls to zero"
+  ],
+  "answer": 1,
+  "explanation": "With only residual flux, back EMF collapses, armature current surges and N ∝ V/Φ rises sharply. Field-failure protection is fitted to trip the motor.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-135",
+  "topic": "electronics",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In frequency modulation, the bandwidth of the transmitted signal is determined mainly by:",
+  "options": [
+   "The transmitter power",
+   "The carrier frequency",
+   "The amplitude of the carrier",
+   "The frequency deviation and the highest modulating frequency"
+  ],
+  "answer": 3,
+  "explanation": "Carson’s rule: BW ≈ 2(Δf + f_m). Broadcast FM: 2(75 + 15) = 180 kHz (200 kHz channels).",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-136",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "When applying Thevenin’s theorem, the Thevenin equivalent resistance is found by:",
+  "options": [
+   "Measuring the total resistance with all sources active",
+   "Removing the load, deactivating independent sources and finding the resistance seen from the load terminals",
+   "Adding all resistances in series",
+   "Short-circuiting the output terminals"
+  ],
+  "answer": 1,
+  "explanation": "Voltage sources are replaced by shorts and current sources by opens (dependent sources stay; then use a test source). Alternatively R_th = V_oc/I_sc.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-137",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The primary reason for using FACTS devices in modern power grids is to:",
+  "options": [
+   "Generate active power",
+   "Eliminate transmission lines",
+   "Replace circuit breakers",
+   "Enhance power-flow controllability and stability"
+  ],
+  "answer": 3,
+  "explanation": "FACTS devices (SVC, STATCOM, TCSC, UPFC) use power electronics to control voltage, line impedance and phase angle quickly, increasing transfer capability and damping oscillations.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-138",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Series capacitors are installed in long AC transmission lines mainly to:",
+  "options": [
+   "Eliminate harmonics",
+   "Compensate the line’s series inductive reactance, increasing power transfer and stability",
+   "Raise the receiving-end voltage at no load",
+   "Reduce corona"
+  ],
+  "answer": 1,
+  "explanation": "P = VsVr sin δ / X: series capacitors reduce the net reactance X, raising the power limit, reducing voltage drop and improving stability (with care for sub-synchronous resonance).",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-139",
+  "topic": "power",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "HVDC transmission is preferred for very long distances mainly because it:",
+  "options": [
+   "Can be tapped easily at many points",
+   "Is cheaper to build at any distance",
+   "Needs no transformers",
+   "Has lower losses and no reactive/stability limit beyond the break-even distance"
+  ],
+  "answer": 3,
+  "explanation": "DC has no charging current, skin effect or stability limit and needs only two conductors (bipole). Converter stations are costly, so it pays beyond the break-even distance (≈ 600–800 km overhead).",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-140",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Distance protection is preferred for high-voltage transmission lines because it:",
+  "options": [
+   "Works independently of fault type",
+   "Responds only to overcurrent",
+   "Determines the fault location by measuring impedance",
+   "Needs no voltage transformers"
+  ],
+  "answer": 2,
+  "explanation": "Impedance to the fault is proportional to distance, so zones can be set (Z1 ≈ 80 % instantaneous, Z2/Z3 time-delayed backup). It needs both CT and VT inputs.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-141",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In a nuclear power plant, the primary function of the moderator is to:",
+  "options": [
+   "Slow down fast neutrons to sustain the chain reaction",
+   "Shield workers from radiation",
+   "Act as coolant and transfer heat to the turbine",
+   "Absorb excess neutrons"
+  ],
+  "answer": 0,
+  "explanation": "Fission neutrons are fast; slowing them (ordinary/heavy water, graphite) to thermal energies greatly raises the chance of further U-235 fission. Control rods (boron, cadmium) absorb neutrons.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-142",
+  "topic": "control",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In a linear time-invariant system, observability means that:",
+  "options": [
+   "The output is always zero",
+   "The system can be controlled with a single input",
+   "All state variables can be determined from the output measurements",
+   "The system is stable for all inputs"
+  ],
+  "answer": 2,
+  "explanation": "Kalman test: the observability matrix [C; CA; …; CAⁿ⁻¹] has full rank n. Controllability is the dual property (all states can be driven by the inputs).",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-143",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which feature lets a smart grid integrate renewable energy sources efficiently?",
+  "options": [
+   "Energy storage with real-time monitoring and demand response",
+   "Removing communication links",
+   "Manual control of distribution",
+   "Centralised generation only"
+  ],
+  "answer": 0,
+  "explanation": "Solar and wind are variable; storage, forecasting and demand response balance them in real time so they can be absorbed without curtailment or instability.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-144",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "A single-phase induction motor needs an auxiliary starting arrangement because:",
+  "options": [
+   "Its rotor has no conductors",
+   "It needs no external power",
+   "A single winding produces only a pulsating, not a rotating, magnetic field",
+   "It cannot run at high speed"
+  ],
+  "answer": 2,
+  "explanation": "A pulsating field equals two equal, opposite rotating fields, giving zero net starting torque. A split-phase or capacitor-start winding creates the phase shift needed to start.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-145",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In a three-phase induction motor, the rotor rotates because of:",
+  "options": [
+   "Interaction between the rotating magnetic field and the currents it induces in the rotor",
+   "Slip-ring excitation",
+   "An applied DC voltage",
+   "Permanent magnets in the rotor"
+  ],
+  "answer": 0,
+  "explanation": "The stator’s rotating field induces EMF and current in the rotor conductors (transformer action); the force on these currents drags the rotor after the field — Lenz’s law.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-146",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The main advantage of a ring-main distribution system over a radial system is:",
+  "options": [
+   "Lower installation cost",
+   "Higher voltage drop",
+   "Improved reliability and continuity of supply",
+   "Simpler protection"
+  ],
+  "answer": 2,
+  "explanation": "Each load point can be fed from two directions, so a faulted section can be isolated while the rest stays energised; voltage drop is also lower. It costs more and needs more complex protection.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-147",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "A linear control system is stable if all poles of its characteristic equation:",
+  "options": [
+   "Have negative real parts (lie in the left half-plane)",
+   "Lie on the imaginary axis",
+   "Have positive real parts",
+   "Lie in the right half of the s-plane"
+  ],
+  "answer": 0,
+  "explanation": "Each pole contributes e^(pt) to the response; it decays only if Re(p) < 0. Poles on the jω axis give sustained oscillation (marginal stability).",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-148",
+  "topic": "em",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which law states that the line integral of the magnetic field around a closed path equals the total current enclosed?",
+  "options": [
+   "Lenz’s law",
+   "Faraday’s law",
+   "Ampère’s circuital law",
+   "Coulomb’s law"
+  ],
+  "answer": 2,
+  "explanation": "∮H·dl = I_enclosed (Maxwell added the displacement current term). It gives, e.g., H = I/(2πr) around a long straight conductor.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-149",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which semiconductor device is commonly used in high-power controlled rectifier applications?",
+  "options": [
+   "SCR (thyristor)",
+   "LED",
+   "BJT",
+   "MOSFET"
+  ],
+  "answer": 0,
+  "explanation": "SCRs handle thousands of volts and amperes with low conduction loss and are line-commutated in AC–DC converters (including HVDC valves). MOSFETs suit lower-power, high-frequency switching.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-150",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which protection scheme is commonly used for detecting internal faults in a power transformer?",
+  "options": [
+   "Under-frequency protection",
+   "Directional protection",
+   "Overvoltage protection",
+   "Differential protection"
+  ],
+  "answer": 3,
+  "explanation": "Biased (percentage) differential protection with harmonic restraint (to ignore inrush current) is the main protection for large transformers, backed up by Buchholz and overcurrent relays.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-151",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which type of relay operates when the impedance seen by it falls below a set value?",
+  "options": [
+   "Thermal relay",
+   "Distance (impedance) relay",
+   "Differential relay",
+   "Buchholz relay"
+  ],
+  "answer": 1,
+  "explanation": "A fault reduces the V/I ratio seen at the relay; if it falls inside the zone setting the distance relay operates.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-152",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The primary function of a protective relay in a power system is to:",
+  "options": [
+   "Improve power factor",
+   "Store electrical energy",
+   "Generate electricity",
+   "Detect faults and abnormal conditions"
+  ],
+  "answer": 3,
+  "explanation": "Relays monitor current, voltage, frequency, etc., and when a fault is detected they trip the circuit breaker to isolate the faulty part.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-153",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which part of a DC machine carries the current that interacts with the field to convert electrical energy into mechanical energy (in a motor)?",
+  "options": [
+   "Commutator",
+   "Armature",
+   "Yoke",
+   "Field winding"
+  ],
+  "answer": 1,
+  "explanation": "Torque is produced on the current-carrying armature conductors in the field (F = BIL); the commutator keeps that torque unidirectional.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-154",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The main purpose of a modulator in a communication system is to:",
+  "options": [
+   "Remove noise",
+   "Amplify the signal",
+   "Convert digital to analog",
+   "Impress the information signal onto a carrier"
+  ],
+  "answer": 3,
+  "explanation": "Modulation shifts the message to a high-frequency carrier so it can be radiated by practical antennas and many channels can share the spectrum (frequency division).",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-155",
+  "topic": "protection",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which device is used to protect power distribution systems from overcurrent?",
+  "options": [
+   "Transformer",
+   "Circuit breaker",
+   "Capacitor",
+   "Inductor"
+  ],
+  "answer": 1,
+  "explanation": "Breakers (and fuses) interrupt current above a safe limit; in distribution, MCBs/MCCBs and relay-operated breakers on 11 kV feeders do this.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-156",
+  "topic": "machines",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The primary purpose of a step-down transformer in a distribution system is to:",
+  "options": [
+   "Generate electrical power",
+   "Increase voltage",
+   "Convert AC to DC",
+   "Reduce voltage to utilisation level"
+  ],
+  "answer": 3,
+  "explanation": "Grid voltage (132/11 kV) is stepped down by distribution transformers (11 kV/400 V) to the 400/230 V supplied to consumers.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-157",
+  "topic": "electronics",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The main advantage of digital signal processing over analog processing is:",
+  "options": [
+   "Always lower power",
+   "Higher noise immunity and repeatability",
+   "No need for sampling",
+   "Continuous signal values"
+  ],
+  "answer": 1,
+  "explanation": "Discrete levels are regenerated without accumulating noise, results are exactly repeatable, and the same hardware can be reprogrammed. The trade-offs are sampling, quantisation and processing delay.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-158",
+  "topic": "control",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which element of a control system processes the error signal and generates the control action?",
+  "options": [
+   "Disturbance",
+   "Plant",
+   "Sensor",
+   "Controller"
+  ],
+  "answer": 3,
+  "explanation": "The controller (e.g. PID) acts on e = r − y to produce the actuating signal for the plant; the sensor measures the output for feedback.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-159",
+  "topic": "pe",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which power-electronic device is commonly used as a fast switch in DC circuits?",
+  "options": [
+   "Diode",
+   "MOSFET",
+   "Transformer",
+   "Capacitor"
+  ],
+  "answer": 1,
+  "explanation": "A power MOSFET is voltage-controlled (almost no gate current) and switches very fast, so it is the usual switch in DC–DC converters and SMPS. A diode cannot be turned on/off by a control signal.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-160",
+  "topic": "power",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "In a thermal power plant, the main energy conversion sequence is:",
+  "options": [
+   "Heat (from fuel) → mechanical → electrical",
+   "Nuclear → chemical → electrical",
+   "Chemical → electrical directly",
+   "Mechanical → electrical only"
+  ],
+  "answer": 0,
+  "explanation": "Fuel’s chemical energy becomes heat in the boiler, steam drives the turbine (mechanical), and the alternator converts that to electrical energy.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-161",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "Which type of power is measured in volt-amperes (VA)?",
+  "options": [
+   "Active power",
+   "Reactive power",
+   "Apparent power",
+   "Instantaneous power"
+  ],
+  "answer": 2,
+  "explanation": "S = V_rms·I_rms (VA, kVA, MVA). Active power P is in W and reactive power Q in VAr; S² = P² + Q². Transformers are rated in kVA/MVA.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-162",
+  "topic": "circuits",
+  "difficulty": "easy",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The electrical power in a DC circuit is given by:",
+  "options": [
+   "P = V × I",
+   "P = V × I²",
+   "P = V² × I",
+   "P = I/V"
+  ],
+  "answer": 0,
+  "explanation": "P = VI = I²R = V²/R (watts).",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-163",
+  "topic": "circuits",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "The instantaneous power in an inductor is proportional to the:",
+  "options": [
+   "Resistance of the winding",
+   "Temperature of the inductor",
+   "Product of the instantaneous current and its rate of change",
+   "Square of the rate of change of current"
+  ],
+  "answer": 2,
+  "explanation": "p = v·i = L·i·(di/dt) = d/dt(½Li²): it is positive while the stored energy grows and negative while it is returned to the circuit.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-164",
+  "topic": "circuits",
+  "difficulty": "medium",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "For a connected network with b branches, n nodes and l independent loops, the fundamental theorem of network topology gives:",
+  "options": [
+   "b = l + n − 1",
+   "b = l + n",
+   "b = l + n − 4",
+   "b = l + n − 2"
+  ],
+  "answer": 0,
+  "explanation": "A tree has n − 1 branches; each of the remaining links closes one independent loop, so l = b − n + 1, i.e. b = l + n − 1.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ },
+ {
+  "id": "pp-165",
+  "topic": "machines",
+  "difficulty": "hard",
+  "type": "past-paper-style",
+  "style": "Real past paper (reported)",
+  "q": "For large induction motors, typical slip between no load and full load is about:",
+  "options": [
+   "20–25 %",
+   "3.5–5 %",
+   "1.5–2 %",
+   "8–10 %"
+  ],
+  "answer": 2,
+  "explanation": "Large machines have low rotor resistance, so full-load slip is small (≈ 1–2 %), giving high efficiency (rotor copper loss = s × air-gap power). Small motors run at 3–6 % slip.",
+  "reported": {
+   "paper": "Assistant Engineer (Electrical) paper, 2025",
+   "via": "testpointpk.com"
+  },
+  "verifiedSource": "Assistant Engineer (Electrical) paper, 2025",
+  "source": "bank"
+ }
+]

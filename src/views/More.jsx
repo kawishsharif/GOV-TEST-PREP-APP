@@ -35,6 +35,7 @@ export default function More() {
   return (
     <Page title="More" sub={exam.title} base={base}>
       <Card className="py-2"><List>
+        <ListRow to={base + 'quiz/pastpaper'} icon="trophy" title="Real past-paper questions" sub="Reported from WAPDA, PPSC, NTDC and 2025 AE papers" />
         <ListRow to={base + 'mistakes'} icon="repeat" title="Mistake notebook" sub={`${m} question${m === 1 ? '' : 's'} to fix`} />
         <ListRow to={base + 'flashcards'} icon="cards" title="Flashcards" sub="Spaced repetition: formulas, facts, definitions" />
         <ListRow to={base + 'quiz/numerical'} icon="calc" title="Numerical drill" sub="Calculation practice with worked steps" />

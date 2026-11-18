@@ -11,7 +11,7 @@ import { Card, CardTitle } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table';
 import { QuestionCard } from '../components/QuestionCard.jsx';
 import { Icon } from '../components/Icon.jsx';
-import { questionById, activeTopics } from '../lib/bank.js';
+import { questionById, activeTopics, allQuestions } from '../lib/bank.js';
 import { optionOrder, pickQuestions } from '../lib/quizcore.js';
 import { recordAttempt, save } from '../lib/store.js';
 import { pct, fmtDuration, shuffle } from '../lib/util.js';
@@ -36,6 +36,13 @@ function Starter({ mode, arg }) {
         const all = shuffle([...bank, ...extra]);
         if (!all.length) return setMsg('No numerical questions available yet.');
         newSession(exam, st, all, 'Numerical drill', 'n', extra);
+      } else if (mode === 'pastpaper') {
+        // Real (reported) past-paper questions: unseen and weak first, then the rest, up to 25 per session.
+        const all = allQuestions(exam, st).filter((q) => q.reported && (!arg || q.topic === arg));
+        if (!all.length) return setMsg('No past-paper questions available yet.');
+        const score = (q) => { const s = st.qstats[q.id]; return !s ? 0 : !s.ok ? 1 : 2 + Math.random(); };
+        const qs = shuffle(all).sort((a, b) => score(a) - score(b)).slice(0, 25);
+        newSession(exam, st, qs, arg ? `Past papers · ${exam.topicIndex[arg]?.name}` : 'Real past-paper questions', 'p');
       } else if (mode === 'mistakes') {
         const ids = Object.keys(st.mistakes).filter((id) => { const q = questionById(exam, st, id); return q && (!arg || q.topic === arg); });
         if (!ids.length) return nav(base + 'mistakes', { replace: true });

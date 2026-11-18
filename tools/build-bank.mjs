@@ -5,10 +5,13 @@
 //
 // Authoring tuple:  [code, question, [A, B, C, D], answerIndex, explanation, [whyWrong x3]?, extra?]
 //   code = difficulty (e|m|h) + type (c conceptual | n numerical | f factual | p past-paper-style) + optional style
-//          (W WAPDA, P PPSC, F FPSC, N NTS, T PTS, C CTS, V concept variant). Example: "mnC".
+//          (W WAPDA, P PPSC, F FPSC, N NTS, T PTS, C CTS, V concept variant, R reported real past paper). Example: "mnC".
+//   extra.topic overrides the file's topic for one question (used by the past-paper file, which spans topics).
+//   extra.reported = { paper, via, note? } marks a question reported from a real test; it becomes `reported`
+//   and `verifiedSource` (badge). The file's JSON name is `file` (default: topic).
 //   Numerical explanations are written as steps separated by " | " and become a `solution` array.
 //   whyWrong lists the reason for each WRONG option, in option order (it becomes `why`, null at the answer).
-import { readdir, writeFile, mkdir } from 'node:fs/promises';
+import { readdir, readFile, writeFile, mkdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
@@ -16,7 +19,7 @@ const ROOT = new URL('..', import.meta.url).pathname;
 const CHECK = process.argv.includes('--check');
 const DIFF = { e: 'easy', m: 'medium', h: 'hard' };
 const TYPE = { c: 'conceptual', n: 'numerical', f: 'factual', p: 'past-paper-style' };
-const STYLE = { W: 'WAPDA-style', P: 'PPSC-style', F: 'FPSC-style', N: 'NTS-style', T: 'PTS-style', C: 'CTS-style', V: 'Concept variant' };
+const STYLE = { W: 'WAPDA-style', P: 'PPSC-style', F: 'FPSC-style', N: 'NTS-style', T: 'PTS-style', C: 'CTS-style', V: 'Concept variant', R: 'Real past paper (reported)' };
 const DEFAULT_STYLE = { c: 'V', n: 'C', f: 'N', p: 'W' };
 
 let errors = 0, warnings = 0;
@@ -43,11 +46,13 @@ for (const examId of await readdir(join(ROOT, 'content'))) {
   const outDir = join(ROOT, 'public', 'exams', examId, 'questions');
   await mkdir(outDir, { recursive: true });
   const seenText = new Map();
+  const examCfg = JSON.parse(await readFile(join(ROOT, 'public', 'exams', examId, 'exam.json'), 'utf8'));
+  const TOPICS = new Set(examCfg.sections.flatMap((s) => s.topics.map((t) => t.id)));
   const summary = [];
   const files = (await readdir(srcDir)).filter((f) => f.endsWith('.mjs')).sort();
   for (const f of files) {
     const mod = (await import(pathToFileURL(join(srcDir, f)).href)).default;
-    const { topic, prefix, items, asOf, sub } = mod;
+    const { topic, prefix, items, asOf, sub, file = topic } = mod;
     const out = [];
     const ansPos = [0, 0, 0, 0];
     items.forEach((it, i) => {
@@ -85,7 +90,8 @@ for (const examId of await readdir(join(ROOT, 'content'))) {
         }
         return w;
       })() : null;
-      const obj = { id, topic, difficulty: d, type: t, style: s, q, options: rot(options), answer: target };
+      if (!TOPICS.has(extra.topic || topic)) err(`${where}: unknown topic "${extra.topic || topic}"`);
+      const obj = { id, topic: extra.topic || topic, difficulty: d, type: t, style: s, q, options: rot(options), answer: target };
       if (t === 'numerical' && explanation.includes(' | ')) {
         obj.solution = explanation.split(' | ').map((x) => x.trim());
         obj.explanation = obj.solution[obj.solution.length - 1];
@@ -94,13 +100,18 @@ for (const examId of await readdir(join(ROOT, 'content'))) {
       if (sub || extra.sub) obj.sub = extra.sub || sub;
       if (asOf || extra.asOf) obj.asOf = extra.asOf || asOf;
       if (extra.tags) obj.tags = extra.tags;
+      if (extra.reported) {
+        if (!extra.reported.paper || !extra.reported.via) err(`${where}: reported needs paper and via`);
+        obj.reported = extra.reported;
+        obj.verifiedSource = extra.reported.paper;
+      }
       obj.source = 'bank';
       ansPos[obj.answer]++;
       out.push(obj);
     });
     const num = out.filter((q) => q.type === 'numerical').length;
     summary.push({ file: f, topic, n: out.length, numerical: num, easy: out.filter((q) => q.difficulty === 'easy').length, medium: out.filter((q) => q.difficulty === 'medium').length, hard: out.filter((q) => q.difficulty === 'hard').length, ansPos: ansPos.join('/') });
-    if (!CHECK) await writeFile(join(outDir, `${topic}.json`), JSON.stringify(out, null, 1) + '\n');
+    if (!CHECK) await writeFile(join(outDir, `${file}.json`), JSON.stringify(out, null, 1) + '\n');
   }
   console.log(`\n${examId}`);
   console.table(summary);

@@ -10,7 +10,8 @@ The first exam card is **WAPDA Assistant Executive Engineer (Electrical), BPS-17
 
 | | |
 |---|---|
-| **Question bank** | 726 MCQs: 521 Electrical (≈30% numericals with worked steps), 64 English, 46 GK & current affairs (dated "as of"), 30 Pakistan Studies, 25 Islamic Studies, 15 Ethics, 21 Analytical. Every question has 4 options, one correct answer, an explanation and a "why it's wrong" note for each wrong option. |
+| **Real past papers** | 165 questions reported from real tests — WAPDA (Electrical Engineer / AE / JE 2017–2022), PPSC, FESCO/MEPCO/LESCO, NTDC AE papers, and a 2025 Assistant Engineer (Electrical) paper — collected from t4tutorials.pk and testpointpk.com. Each shows its source; every answer was re-checked and 5 wrong answer keys were corrected (marked in the app). They are *reported* questions: WAPDA/CTS do not publish official papers. Practice → "Real past-paper questions". |
+| **Question bank** | 891 MCQs: 686 Electrical (incl. 165 real past-paper questions — see below) (≈30% numericals with worked steps), 64 English, 46 GK & current affairs (dated "as of"), 30 Pakistan Studies, 25 Islamic Studies, 15 Ethics, 21 Analytical. Every question has 4 options, one correct answer, an explanation and a "why it's wrong" note for each wrong option. |
 | **Unlimited numericals** | Offline generators make fresh variants (slip, transformer efficiency, per-unit, pf correction, fault current, converters, control…) with wrong options built from the slips examiners plant. |
 | **Study notes** | 15 topic pages: definitions, formulas, most-repeated facts, common traps, solved examples. Printable Electrical **formula sheet**. **Top-scorer strategy** guide. |
 | **Practice** | Section → topic → difficulty → type → count; instant feedback; keyboard shortcuts (1–4, N, P). |

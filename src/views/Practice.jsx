@@ -5,7 +5,7 @@ import { Page, useExam, Chips, LinkCard, ActionBar } from '../components/ui.jsx'
 import { Icon } from '../components/Icon.jsx';
 import { Button } from '@/components/ui/button';
 import { Card, CardTitle } from '@/components/ui/card';
-import { activeSections, questionsForTopic, DIFF, TYPE } from '../lib/bank.js';
+import { activeSections, questionsForTopic, allQuestions, DIFF, TYPE } from '../lib/bank.js';
 import { pickQuestions, filterPool } from '../lib/quizcore.js';
 import { save } from '../lib/store.js';
 import { uid } from '../lib/util.js';
@@ -32,6 +32,8 @@ export default function Practice() {
   const unseen = pool.filter((q) => !st.qstats[q.id]).length;
   const ap = st.activePractice;
   const resume = ap && ap.i < ap.ids.length;
+  const past = allQuestions(exam, st).filter((q) => q.reported);
+  const pastDone = past.filter((q) => st.qstats[q.id]).length;
 
   const start = () => {
     const qs = pickQuestions(exam, st, { ...f, topics });
@@ -43,6 +45,11 @@ export default function Practice() {
   return (
     <Page title="Topic practice" sub={exam.title} base={base} full>
       {resume && <LinkCard to={base + 'quiz/session'} icon="practice" title={`Resume: ${ap.label}`} sub={`Question ${ap.i + 1} of ${ap.ids.length}`} />}
+      {past.length > 0 && (
+        <LinkCard to={base + 'quiz/pastpaper'} icon="trophy" className="border-gold"
+          title={`Real past-paper questions (${past.length})`}
+          sub={`Reported from WAPDA, PPSC, NTDC and 2025 AE papers · ${pastDone} attempted · answers checked`} />
+      )}
       <Card>
         <CardTitle>1 · Section</CardTitle>
         <Chips value={sec.id} onChange={(v) => update({ section: v, topics: [] })} items={sections.map((s) => [s.id, s.name])} />

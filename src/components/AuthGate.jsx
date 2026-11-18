@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
 const FEATURES = [
-  ['list', '700+ exam-style questions', 'Every section of the CTS syllabus, each with a clear explanation or worked solution.'],
+  ['list', '850+ exam-style questions', 'Every section of the CTS syllabus — including 165 real past-paper questions — each with a clear explanation.'],
   ['mock', 'Full-length mock tests', 'Timed to the official pattern, with section scores and a rank-band estimate.'],
   ['repeat', 'Revision that sticks', 'A mistake notebook and spaced-repetition flashcards for formulas and facts.'],
   ['calendar', 'A plan to your test date', 'A day-by-day schedule weighted towards your weakest topics.'],
