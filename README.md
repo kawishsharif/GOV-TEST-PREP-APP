@@ -47,6 +47,14 @@ On a phone, open the deployed URL and use **Add to Home screen**. It works offli
 
 **GitHub Pages:** `.github/workflows/deploy.yml` builds and publishes to GitHub Pages on every push to `main`. One-time setup: **Settings → Pages → Source: GitHub Actions**. The build uses relative paths, so it also works on Vercel, Netlify or any static host (`npm run build`, publish `dist/`).
 
+## Firebase (sign-in and sync)
+
+Project `learn-and-lead-c90bb`. Security rules live in `firestore.rules`; publish changes with:
+
+```bash
+npx firebase-tools deploy --only firestore
+```
+
 ## Adding or editing questions
 
 Questions are authored compactly in `content/<exam>/<topic>.mjs` and compiled to clean JSON in `public/exams/<exam>/questions/` by `npm run bank`. The build validates every question (4 unique options, valid answer, explanation, no duplicates, no "all of the above") and spreads correct answers evenly across A–D.
